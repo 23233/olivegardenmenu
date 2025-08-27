@@ -1,0 +1,723 @@
+{
+  "APPETIZERS": [
+    {
+      "name": "Fried Mozzarella",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/olive-garden-menu-and-specials.webp",
+      "calories": "800"
+    },
+    {
+      "name": "Stuffed Ziti Fritta",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Stuffed-Ziti-Fritta.webp",
+      "calories": "500"
+    },
+    {
+      "name": "Dipping Sauces Includes Breadsticks (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Dipping-Sauces-Includes-Breadsticks-V-1-1.webp",
+      "calories": "140"
+    },
+    {
+      "name": "Calamari",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Calamari.webp",
+      "calories": "670"
+    },
+    {
+      "name": "Meatballs Parmigiana",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Meatballs-Parmigiana.webp",
+      "calories": "1,040"
+    },
+    {
+      "name": "Spinach-Artichoke Dip",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Spinach-Artichoke-Dip.webp",
+      "calories": "1,160"
+    },
+    {
+      "name": "Lasagna Fritta",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Lasagna-Fritta.webp",
+      "calories": "1130"
+    },
+    {
+      "name": "Shrimp Fritto Misto",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Shrimp-Fritto-Misto.webp",
+      "calories": "1,280"
+    },
+    {
+      "name": "Toasted Ravioli",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Toasted-Ravioli.webp",
+      "calories": "650"
+    }
+  ],
+  "SOUPS, SALAD & BREADSTICKS": [
+    {
+      "name": "WEEKDAY Lunch Special: Soup, Salad and Breadsticks",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/WEEKDAY-Lunch-Special.webp",
+      "calories": "400"
+    },
+    {
+      "name": "Soup AND Salad AND Breadsticks",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Soup-AND-Salad-AND-Breadsticks.webp",
+      "calories": "400"
+    },
+    {
+      "name": "Homemade Soups",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Homemade-Soups.webp",
+      "calories": "110-230"
+    },
+    {
+      "name": "House Salad",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Our-Famous-House-Salad-scaled.webp",
+      "calories": "110"
+    },
+    {
+      "name": "Dipping Sauces Includes Breadsticks (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Dipping-Sauces-Includes-Breadsticks-V-1-1.webp",
+      "calories": "140"
+    }
+  ],
+  "Oven Baked Pastas": [
+    {
+      "name": "Three-Meat Manicotti",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Three-Meat-Manicotti.webp",
+      "calories": "1060"
+    },
+    {
+      "name": "Four-Cheese Manicotti",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Four-Cheese-Manicotti.jpg.webp",
+      "calories": "710"
+    }
+  ],
+  "AMAZING ALFREDOS": [
+    {
+      "name": "Chicken Alfredo",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Alfredo.webp",
+      "calories": "1,570"
+    },
+    {
+      "name": "Seafood Alfredo",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Seafood-Alfredo-1.webp",
+      "calories": "1,450"
+    },
+    {
+      "name": "Shrimp Alfredo",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Shrimp-Alfredo-1.webp",
+      "calories": "1,470"
+    },
+    {
+      "name": "Fettuccine Alfredo (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Fettuccine-Alfredo-V-1.webp",
+      "calories": "1,310"
+    }
+  ],
+  "CLASSIC ENTRÉES": [
+    {
+      "name": "Chicken Alfredo",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/classic-chicken-alfredo.webp",
+      "calories": "1,570"
+    },
+    {
+      "name": "Chicken and Shrimp Carbonara",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/chicken-and-shrimp-carbonara.webp",
+      "calories": "1,370"
+    },
+    {
+      "name": "Chicken Parmigiana",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/dinner-chicken-parm.webp",
+      "calories": "1,020"
+    },
+    {
+      "name": "Tour of Italy",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Tour-of-Italy.webp",
+      "calories": "1,550"
+    },
+    {
+      "name": "Spaghetti & Meatballs",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Spaghetti-Meatballs-1.webp",
+      "calories": "970"
+    },
+    {
+      "name": "Chicken Marsala Fettuccine",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Marsala-Fettuccine-1.webp",
+      "calories": "1,400"
+    },
+    {
+      "name": "Ravioli Carbonara",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Ravioli-Carbonara.webp",
+      "calories": "1,390"
+    },
+    {
+      "name": "Lasagna Classico",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/lasagna-classico.webp",
+      "calories": "940"
+    },
+    {
+      "name": "Shrimp Alfredo",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/olive-garden-menu-with-prices.webp",
+      "calories": "1,470"
+    },
+    {
+      "name": "Spaghetti with Meat Sauce",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Spaghetti_with_Meat_Sauce.webp",
+      "calories": "640"
+    },
+    {
+      "name": "Spaghetti with Marinara (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Spaghetti_with_Marinara.webp",
+      "calories": "490"
+    },
+    {
+      "name": "Fettuccine Alfredo (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/classic-fettuccine-alfredo.webp",
+      "calories": "1,310"
+    },
+    {
+      "name": "Chicken Tortelloni Alfredo",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/asiago-tortelloni-alfredo.webp",
+      "calories": "1,980"
+    },
+    {
+      "name": "Shrimp Scampi",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Shrimp-Scampi.webp",
+      "calories": "490"
+    },
+    {
+      "name": "Seafood Alfredo",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/seafood-alfredo.webp",
+      "calories": "1,450"
+    },
+    {
+      "name": "Five Cheese Ziti al Forno",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/classic-five-cheese-ziti-al-forn.webp",
+      "calories": "1,170"
+    },
+    {
+      "name": "Cheese Ravioli",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Cheese-Ravioli-1.webp",
+      "calories": "780"
+    },
+    {
+      "name": "Chicken Scampi",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Scampi.webp",
+      "calories": "1,050"
+    },
+    {
+      "name": "Eggplant Parmigiana (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/classic-eggplant-parmigiana.webp",
+      "calories": "1,070"
+    },
+    {
+      "name": "Grilled Chicken Margherita",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Margherita.webp",
+      "calories": "650"
+    }
+  ],
+  "LUNCH-SIZED FAVORITES": [
+    {
+      "name": "Chicken Parmigiana",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Parmigiana-1-1.webp",
+      "calories": "630"
+    },
+    {
+      "name": "Fettuccine Alfredo (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Fettuccine-Alfredo-V-1-1.webp",
+      "calories": "650"
+    },
+    {
+      "name": "Shrimp Scampi",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Shrimp-Scampi-1.webp",
+      "calories": "460"
+    },
+    {
+      "name": "Lasagna Classico",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Lasagna-Classico-2.webp",
+      "calories": "500"
+    },
+    {
+      "name": "Soup, Salad and Breadsticks | Lunch",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Soup-AND-Salad-AND-Breadsticks-1.webp",
+      "calories": "400"
+    },
+    {
+      "name": "Eggplant Parmigiana (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Eggplant-Parmigiana-V-1-1-1.webp",
+      "calories": "660"
+    },
+    {
+      "name": "Spaghetti & Meatballs",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Spaghetti-Meatballs-1.webp",
+      "calories": "680"
+    },
+    {
+      "name": "Cheese Ravioli",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Cheese-Ravioli-1.webp",
+      "calories": "450"
+    },
+    {
+      "name": "Five Cheese Ziti al Forno",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Five-Cheese-Ziti-al-Forno-1.webp",
+      "calories": "630"
+    }
+  ],
+  "FAMILY-STYLE MEALS": [
+    {
+      "name": "Family-Style Lasagna Bundle (Serves 4-6)",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/FAMILY-BUNDLES-Family-Style-Lasagna-Bundle-Serves-1.webp",
+      "calories": "6700"
+    },
+    {
+      "name": "Large Family-Style Lasagna Bundle (Serves up to 12)",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Large-Family-Style-Lasagna-Bundle-Serves-up-to-12-1.jpeg",
+      "calories": "13030"
+    },
+    {
+      "name": "Jumbo House Salad includes 12 Breadsticks (Serves 6)",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Jumbo-House-Salad-includes-12-Breadsticks-Serves-6-1-1.webp",
+      "calories": "1,650"
+    },
+    {
+      "name": "Chicken Alfredo",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Chicken-Alfredo-Serves-4-%E2%80%93-6-1.webp",
+      "calories": "6,050"
+    },
+    {
+      "name": "Chicken Parmigiana",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Chicken-Parmigiana-Serves-4-%E2%80%93-6-1.webp",
+      "calories": "4,790"
+    },
+    {
+      "name": "Fettuccine Alfredo",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Fettuccine-Alfredo-Serves-4-%E2%80%93-6-1.webp",
+      "calories": "5,010"
+    },
+    {
+      "name": "Shrimp Alfredo",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Shrimp-Alfredo-Serves-4-%E2%80%93-6-1.webp",
+      "calories": "5,680"
+    },
+    {
+      "name": "Five Cheese Ziti al Forno",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Five-Cheese-Ziti-al-Forno-Serves-4-%E2%80%93-6-1.webp",
+      "calories": "4,680"
+    },
+    {
+      "name": "Spaghetti with Meat Sauce",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Spaghetti-with-Meat-Sauce-Serves-4-%E2%80%93-6-1.webp",
+      "calories": "2,840"
+    },
+    {
+      "name": "Spaghetti with Marinara Sauce",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Spaghetti-with-Marinara-Sauce-Serves-4-6-1.webp",
+      "calories": "2,270"
+    },
+    {
+      "name": "Chicken Tortelloni Alfredo",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Tortelloni-Alfredo-serves-4-6-.webp",
+      "calories": "7,930"
+    },
+    {
+      "name": "Lasagna Classico",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Lasagna-Classico-Serves-up-to-6-1.webp",
+      "calories": "3,420"
+    },
+    {
+      "name": "Chicken Scampi",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Scampi-Serves-4-6-1.webp",
+      "calories": "4,190"
+    },
+    {
+      "name": "Chicken and Shrimp Carbonara",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-and-Shrimp-Carbonara-Serves-4-6-1.webp",
+      "calories": "5,460"
+    },
+    {
+      "name": "Shrimp Scampi",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Shrimp-Scampi-Serves-4-6-1.webp",
+      "calories": "1,980"
+    },
+    {
+      "name": "Homemade Soups Large",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Homemade-Soups-Large-Serves-12-1.webp",
+      "calories": "1,700"
+    },
+    {
+      "name": "Homemade Soups",
+      "image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Homemade-Soups-Serves-6-1.webp",
+      "calories": "850"
+    },
+    {
+      "name": "Breadsticks (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Breadsticks-V-1-1.webp",
+      "calories": "140"
+    }
+  ],
+  "CATERING": [
+    {
+      "name": "Chicken Alfredo (Serves 4 – 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Alfredo-Serves-4-6-1.webp",
+      "calories": "6,050"
+    },
+    {
+      "name": "Chicken Parmigiana (Serves 4 – 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Parmigiana-Serves-4-6-1.webp",
+      "calories": "4,790"
+    },
+    {
+      "name": "Fettuccine Alfredo (Serves 4 – 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Fettuccine-Alfredo-Serves-4-6-1.webp",
+      "calories": "5,010"
+    },
+    {
+      "name": "Shrimp Alfredo (Serves 4 – 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Shrimp-Alfredo-Serves-4-6-1.webp",
+      "calories": "5,680"
+    },
+    {
+      "name": "Five Cheese Ziti al Forno (Serves 4 – 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Five-Cheese-Ziti-al-Forno-Serves-4-6-1.webp",
+      "calories": "4,680"
+    },
+    {
+      "name": "Spaghetti with Meat Sauce** (Serves 4 – 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Spaghetti-with-Meat-SauceServes-4-–-6.webp",
+      "calories": "2,840"
+    },
+    {
+      "name": "Spaghetti with Marinara Sauce (Serves 4 – 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Spaghetti-with-Marinara-Sauce-Serves-4-6-1.webp",
+      "calories": "2,270"
+    },
+    {
+      "name": "Chicken Tortelloni Alfredo (serves 4 – 6 )",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Tortelloni-Alfredo-serves-4-6-.webp",
+      "calories": "7,930"
+    },
+    {
+      "name": "Lasagna Classico (Serves up to 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Lasagna-Classico-Serves-up-to-6-1.webp",
+      "calories": "3,420"
+    },
+    {
+      "name": "Lasagna Classico (Serves up to 12)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Lasagna-Classico-Serves-up-to-12.webp",
+      "calories": "6,470"
+    },
+    {
+      "name": "Chicken Scampi (Serves 4 – 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Scampi-Serves-4-6-1.webp",
+      "calories": "4,190"
+    },
+    {
+      "name": "Chicken and Shrimp Carbonara (Serves 4 – 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-and-Shrimp-Carbonara-Serves-4-6-1.webp",
+      "calories": "5,460"
+    },
+    {
+      "name": "Shrimp Scampi (Serves 4 – 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Shrimp-Scampi-Serves-4-6-1.webp",
+      "calories": "1,980"
+    },
+    {
+      "name": "Cheese Ravioli with Marinara or Meat Sauce (Serves 4 – 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Cheese-Ravioli-with-Marinara-or-Meat-Sauce-Serves-4-6.webp",
+      "calories": "3,510"
+    },
+    {
+      "name": "Chicken Parmigiana Combination (Serves 8 - 14)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Parmigiana-Combination-Serves-8-14.webp",
+      "calories": "22,020-25,550"
+    },
+    {
+      "name": "Lasagna Combination (Serves 8 - 14)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Lasagna-Combination-Serves-8-14.webp",
+      "calories": "23,570-27,100"
+    },
+    {
+      "name": "Create Your Own Pasta Station",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Create-Your-Own-Pasta-Station.webp",
+      "calories": "17,280"
+    },
+    {
+      "name": "Toasted Beef Ravioli (Serves 4 - 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Toasted-Beef-Ravioli-Serves-4-6.webp",
+      "calories": "2,590"
+    },
+    {
+      "name": "Alfredo Dipping Sauce (Serves 8)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Alfredo-Dipping-Sauce-Serves-8.webp",
+      "calories": "1,750"
+    },
+    {
+      "name": "Meat Dipping Sauce(Serves 8)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Meat-Dipping-SauceServes-8.webp",
+      "calories": "600"
+    },
+    {
+      "name": "Grilled Chicken Breasts (Serves 4 - 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Grilled-Chicken-Breasts-Serves-4-6.webp",
+      "calories": "810"
+    },
+    {
+      "name": "Chicken Fingers (Serves 4 - 6) - Perfect for Kids!",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Fingers-Serves-4-6-Perfect-for-Kids.webp",
+      "calories": "1350+170"
+    },
+    {
+      "name": "Italian Meatballs (Serves 4 - 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Italian-Meatballs-Serves-4-6.webp",
+      "calories": "1,710"
+    },
+    {
+      "name": "Italian Sausage (Serves 4 - 6)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Italian-Sausage-Serves-4-6.webp",
+      "calories": "1,990"
+    }
+  ],
+  "DESSERTS": [
+    {
+      "name": "Chocolate Lasagna (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chocolate-Lasagna-V-1.webp",
+      "calories": "980"
+    },
+    {
+      "name": "Black Tie Mousse Cake (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Black-Tie-Mousse-Cake-V-1.webp",
+      "calories": "750"
+    },
+    {
+      "name": "Tiramisu (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Tiramisu-V-1.webp",
+      "calories": "470"
+    },
+    {
+      "name": "Strawberry Cream Cake (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Strawberry-Cream-Cake-V.jpg.webp",
+      "calories": "540"
+    },
+    {
+      "name": "Warm Italian Doughnuts (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Warm-Italian-Doughnuts-V-1.webp",
+      "calories": "810"
+    },
+    {
+      "name": "Sicilian Cheesecake with Strawberry Topping (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Sicilian-Cheesecake-with-Strawberry-Topping-V-1.webp",
+      "calories": "700"
+    }
+  ],
+  "SIDES & SAUCES": [
+    {
+      "name": "Side Of Meatballs",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Side-Of-Meatballs-1.webp",
+      "calories": "480"
+    },
+    {
+      "name": "Side of Grilled Chicken",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Side-of-Grilled-Chicken-1.webp",
+      "calories": "130"
+    },
+    {
+      "name": "Side of Broccoli (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Side-of-Broccoli-V-1.webp",
+      "calories": "150"
+    },
+    {
+      "name": "Side of Italian Sausage",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Side-of-Italian-Sausage.webp",
+      "calories": "510"
+    },
+    {
+      "name": "Side of Asparagus",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Side-of-Asparagus.webp",
+      "calories": "140"
+    },
+    {
+      "name": "Side of Mashed Potatoes",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Side-of-Mashed-Potatoes.webp",
+      "calories": "200"
+    },
+    {
+      "name": "Side of Alfredo Sauce (Large)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Side-of-Alfredo-Sauce-Large.webp",
+      "calories": "1,750"
+    },
+    {
+      "name": "Side of Marinara Sauce (Large)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Side-of-Marinara-Sauce-Large-1.webp",
+      "calories": "600"
+    },
+    {
+      "name": "Side of Five Cheese Marinara Sauce (Large)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Side-of-Five-Cheese-Marinara-Sauce-Large.webp",
+      "calories": "800"
+    }
+  ],
+  "NON-ALCOHOLIC BEVERAGES": [
+    {
+      "name": "Gallon Iced Teas & Raspberry Lemonade",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Gallon-Iced-Teas-Raspberry-Lemonade.webp",
+      "calories": "800"
+    },
+    {
+      "name": "To Go Fountain Drinks",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/To-Go-Fountain-Drinks.webp",
+      "calories": "180"
+    },
+    {
+      "name": "Raspberry Lemonade",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Raspberry-Lemonade.webp",
+      "calories": "170"
+    },
+    {
+      "name": "Classic Lemonade",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Classic-Lemonade.webp",
+      "calories": "170"
+    },
+    {
+      "name": "2-Liter Soda",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/2-Liter-Soda.webp",
+      "calories": "0-790"
+    },
+    {
+      "name": "Strawberry-Passion Fruit Limonata",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Strawberry-Passion-Fruit-Limonata.webp",
+      "calories": "180"
+    },
+    {
+      "name": "Mango-Strawberry Iced Tea",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Mango-Strawberry-Iced-Tea.webp",
+      "calories": "100"
+    },
+    {
+      "name": "Bellini Peach-Raspberry Iced Tea",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Bellini-Peach-Raspberry-Iced-Tea.webp",
+      "calories": "80"
+    },
+    {
+      "name": "Fresh Brewed Sweet Iced Tea",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Fresh-Brewed-Sweet-Iced-Tea.webp",
+      "calories": "90"
+    },
+    {
+      "name": "Fresh Brewed Iced Tea",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Fresh-Brewed-Iced-Tea.webp",
+      "calories": "0"
+    },
+    {
+      "name": "Cappuccino",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Cappuccino.webp",
+      "calories": "150"
+    },
+    {
+      "name": "Lavazza Espresso",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Lavazza-Espresso-scaled.webp",
+      "calories": "60"
+    }
+  ],
+  "GLUTEN SENSITIVE": [
+    {
+      "name": "Zuppa Toscana",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Zuppa-Toscana.webp",
+      "calories": "220"
+    },
+    {
+      "name": "Famous House Salad without croutons",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Famous-House-Salad-without-croutons.webp",
+      "calories": "110"
+    },
+    {
+      "name": "Grilled Chicken Parmigiana",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Grilled-Chicken-Parmigiana.webp",
+      "calories": "810"
+    },
+    {
+      "name": "Herb-Grilled Salmon",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/HerbGrilledSalmon.webp",
+      "calories": "610"
+    },
+    {
+      "name": "6 oz Sirloin",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/6-oz.-Sirloin.webp",
+      "calories": "480"
+    },
+    {
+      "name": "Rotini Pasta with Marinara",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Rotini-Pasta-with-Marinara.webp",
+      "calories": "530"
+    },
+    {
+      "name": "Rotini Pasta with Meat Sauce",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Rotini-Pasta-with-Meat-Sauce.webp",
+      "calories": "680"
+    },
+    {
+      "name": "Grilled Chicken with Rotini Pasta & Marinara (kids)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Grilled-Chicken-with-Rotini-Pasta-Marinara-kids.webp",
+      "calories": "430"
+    },
+    {
+      "name": "Rotini with Marinara (kids)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Rotini-with-Marinara-kids.webp",
+      "calories": "260"
+    },
+    {
+      "name": "Rotini with Meat Sauce (kids)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Rotini-with-Meat-Sauce-kids.webp",
+      "calories": "340"
+    }
+  ],
+  "KIDS MEALS – FOR CHILDREN UNDER 12": [
+    {
+      "name": "Kids Alfredo Sauce with Choice of Pasta (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Alfredo-Sauce-with-Choice-of-Pasta-V.webp",
+      "calories": "440"
+    },
+    {
+      "name": "Kids Pizza",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Pizza.webp",
+      "calories": "400"
+    },
+    {
+      "name": "Kids Chicken Fingers",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Chicken-Fingers.webp",
+      "calories": "300"
+    },
+    {
+      "name": "Kids Macaroni & Cheese",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Macaroni-Cheese.webp",
+      "calories": "360"
+    },
+    {
+      "name": "Kids Meat Sauce with Choice of Pasta",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Meat-Sauce-with-Choice-of-Pasta.webp",
+      "calories": "110"
+    },
+    {
+      "name": "Kids Tomato Sauce with Choice of Pasta (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Tomato-Sauce-with-Choice-of-Pasta-V.jpg.webp",
+      "calories": "80"
+    },
+    {
+      "name": "Kids Five Cheese Marinara with Choice of Pasta (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Five-Cheese-Marinara-with-Choice-of-Pasta-V.webp",
+      "calories": "150"
+    },
+    {
+      "name": "Kids Cheese Ravioli (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Cheese-Ravioli-V.webp",
+      "calories": "340"
+    },
+    {
+      "name": "Kids Grilled Chicken with Rotini Pasta & Marinara",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Grilled-Chicken-with-Rotini-Pasta-Marinara.webp",
+      "calories": "430"
+    },
+    {
+      "name": "Kids Rotini with Marinara (V)",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Rotini-with-Marinara-V.webp",
+      "calories": "260"
+    },
+    {
+      "name": "Kids Rotini with Meat Sauce",
+      "image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Rotini-with-Meat-Sauce.webp",
+      "calories": "340"
+    }
+  ]
+}

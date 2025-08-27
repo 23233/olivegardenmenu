@@ -1,0 +1,122 @@
+# 工作流名称
+name: Auto PR with Local Conflict Check
+
+# 工作流触发条件
+on:
+  push:
+    branches-ignore:
+      - 'main'
+  workflow_dispatch:
+    inputs:
+      branch_name:
+        description: '请输入需要创建 PR 的分支名称'
+        required: true
+
+# 工作流任务
+jobs:
+  create-and-merge-pr:
+    runs-on: ubuntu-latest
+    steps:
+      # 步骤 1-4 保持不变 (触发条件、确定分支、检出代码、获取信息)
+      - name: Check Trigger Conditions
+        id: check_trigger
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" || \
+                ("${{ github.event_name }}" == "push" && "${{ github.event.head_commit.author.name }}" == "google-labs-jules[bot]") ]]; then
+            echo "should_run=true" >> $GITHUB_OUTPUT
+          else
+            echo "should_run=false" >> $GITHUB_OUTPUT
+          fi
+      - name: Determine Branch Name
+        if: steps.check_trigger.outputs.should_run == 'true'
+        id: get_branch
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "branch=${{ github.event.inputs.branch_name }}" >> $GITHUB_OUTPUT
+          else
+            echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+          fi
+      - name: Checkout The Correct Branch
+        if: steps.check_trigger.outputs.should_run == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.get_branch.outputs.branch }}
+          # 获取完整的历史记录，这对于正确的合并计算至关重要
+          fetch-depth: 0
+      - name: Get Latest Commit Info
+        if: steps.check_trigger.outputs.should_run == 'true'
+        id: commit_info
+        run: |
+          echo "author=$(git log -1 --pretty=format:'%an')" >> $GITHUB_OUTPUT
+          echo "message=$(git log -1 --pretty=format:'%s')" >> $GITHUB_OUTPUT
+
+      # 步骤 5: 创建PR (不再需要标签)
+      - name: Find Existing PR or Create a New One
+        if: steps.check_trigger.outputs.should_run == 'true'
+        id: create_pr
+        run: |
+          HEAD_BRANCH="${{ steps.get_branch.outputs.branch }}"
+          PR_URL=$(gh pr list --head "$HEAD_BRANCH" --state open --json url --jq '.[0].url')
+          if [ -n "$PR_URL" ]; then
+            echo "✅ Found existing PR: $PR_URL"
+          else
+            echo "No existing PR found. Creating a new one..."
+            PR_BODY="**Commit Author:** \`${{ steps.commit_info.outputs.author }}\`<br>**Commit Message:** \`${{ steps.commit_info.outputs.message }}\`<br><br>This PR was automatically triggered by **${{ github.actor }}**."
+            PR_URL=$(gh pr create --base main --head "$HEAD_BRANCH" --title "feat: 自动合并来自 $HEAD_BRANCH" --body "$PR_BODY")
+            if [ $? -ne 0 ]; then exit 1; fi
+            echo "✅ Successfully created new PR: $PR_URL"
+          fi
+          echo "pr_url=$PR_URL" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+
+      # --- 核心改动：本地冲突检查 ---
+
+      # 步骤 6：检查与 main 分支是否存在合并冲突
+      - name: Check for Merge Conflicts with Main Branch
+        if: steps.check_trigger.outputs.should_run == 'true'
+        id: conflict_check
+        run: |
+          # 【重要修复】为 Git 设置一个身份，防止 "Committer identity unknown" 错误
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # 从远程拉取最新的 main 分支状态
+          git fetch origin main
+
+          echo "Attempting a dry-run merge of 'main' into '${{ steps.get_branch.outputs.branch }}'..."
+
+          # 尝试合并，如果失败（有冲突），git merge会返回非0退出码
+          if git merge origin/main --no-commit --no-ff; then
+            # 如果成功，说明没有冲突
+            echo "✅ No merge conflicts detected."
+            # 使用 git reset 来撤销成功的“预演”合并
+            echo "Aborting the successful dry-run to keep the branch clean."
+            git reset --hard HEAD
+            echo "mergeable=true" >> $GITHUB_OUTPUT
+          else
+            # 如果失败，说明存在冲突
+            echo "::warning::Merge conflict detected! Aborting automatic merge."
+            # 在合并失败的情况下，使用 git merge --abort 是正确的
+            git merge --abort
+            echo "mergeable=false" >> $GITHUB_OUTPUT
+          fi
+
+      # 步骤 7：仅在无冲突时合并PR
+      - name: Merge the Pull Request if No Conflicts
+        # 仅当上一步的输出为 'true' 时才运行
+        if: steps.check_trigger.outputs.should_run == 'true' && steps.conflict_check.outputs.mergeable == 'true'
+        run: |
+          echo "Merging PR as no conflicts were found: ${{ steps.create_pr.outputs.pr_url }}"
+          gh pr merge ${{ steps.create_pr.outputs.pr_url }} --squash --delete-branch
+          echo "✅ PR successfully merged and branch deleted."
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+
+      # 步骤 8：报告冲突（可选，但推荐）
+      - name: Report Conflicts if Found
+        # 仅当上一步的输出为 'false' 时才运行
+        if: steps.check_trigger.outputs.should_run == 'true' && steps.conflict_check.outputs.mergeable == 'false'
+        run: |
+          echo "Pull Request has been created, but not merged due to conflicts."
+          echo "Please resolve the conflicts in PR ${{ steps.create_pr.outputs.pr_url }} manually."

@@ -1,0 +1,18 @@
+name: Deploy on Tag
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'  # 匹配如 v1.0.0, v1.2.3 这样的标签格式
+      - 'v*'      # 或者简单匹配所有以 'v' 开头的标签
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
