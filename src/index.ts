@@ -143,8 +143,8 @@ function generateHead(siteConfig: any, menuData: any): string {
                          max-height: 0; overflow: hidden; 
                          transition: max-height 0.4s ease-out;
                        }
-            .submenu.active { max-height: 500px; }
-            .has-submenu:hover .submenu { max-height: 500px; }
+            .submenu.active { max-height: 1000px; }
+            .has-submenu:hover .submenu { max-height: 1000px; }
             
             .submenu li a { padding: 0.5rem 1rem; display: block; }
             .submenu li:first-child a { padding-top: 1rem; }
@@ -290,6 +290,9 @@ function generateMainContent(data: typeof menuData): string {
     return isNaN(priceNumber) ? '$0.00' : `$${priceNumber.toFixed(2)}`;
   };
 
+  categories.push("Near Me")
+
+
   return `
     <main class="container">
         <h1>Explore the Full Olive Garden Menu for 2025 🍝</h1>
@@ -297,7 +300,7 @@ function generateMainContent(data: typeof menuData): string {
         <details class="quick-jumps">
             <summary>🚀 Quick Jumps to Olive Garden Menu Sections</summary>
             <ul>
-                ${categories.map((cat,index) => `<li><span>${index + 1}.</span><a href="#${toKebabCase(cat)}">${cat}</a></li>`).join('')}
+                ${categories.map((cat, index) => `<li><span>${index + 1}.</span><a href="#${toKebabCase(cat)}">${cat}</a></li>`).join('')}
             </ul>
         </details>
         ${categories.map(category => {
@@ -354,7 +357,26 @@ function generateMainContent(data: typeof menuData): string {
                     </table>
                 </details>
             </section>
-        `}).join('')}
+        `
+  }).join('')}
+        
+  <section id="near-me">
+          <h2>Find an Olive Garden Near Me! 📍</h2>
+          <p>Craving some delicious Italian food? 🍝 Use the map below to find the nearest Olive Garden restaurant to you! We've got hundreds of locations across the country, so there's a good chance there's one just around the corner.</p>
+          <div style="text-align: center; margin: 20px 0;">
+            <iframe 
+              src="${siteConfig.maps.url}" 
+              width="100%" 
+              height="450px" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <p>For a detailed list of all Olive Garden locations, including addresses and hours, check out our new <a href="/near-me/"><strong>Olive Garden Near Me</strong></a> page. We've got all the info you need to get your pasta fix! 🚀</p>
+        </section>
+        
     </main>
     `;
 }
