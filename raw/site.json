@@ -1,0 +1,99 @@
+{
+  "siteName": "Olive Garden Menu With Prices",
+  "baseURL": "https://olivegardenmenuguide.com/",
+  "maxWidth": 1280,
+  "googleAnalyticsId": "",
+  "googleAdsenseId": "",
+  "logoUrl": "/static/image/logo-2.png",
+  "colors": {
+    "primary": "#FFC0CB",
+    "secondary": "#4A4A4A",
+    "background": "#FFFFFF",
+    "text_primary": "#121212",
+    "text_secondary": "#5A5A5A",
+    "accent": "#e53e3e",
+    "footer_bg": "#333333",
+    "footer_text": "#cccccc"
+  },
+  "navigation": {
+    "header": [
+      {
+        "text": "Olive Garden Menu 2025",
+        "submenu": [
+          {
+            "text": "Olive Garden Drink Menu 2025",
+            "url": "/menu/"
+          },
+          {
+            "text": "Olive Garden Lunch Menu 2025",
+            "url": "/menu/"
+          },
+          {
+            "text": "Olive Garden Dinner Menu 2025",
+            "url": "/menu/"
+          },
+          {
+            "text": "Olive Garden Dessert Menu 2025",
+            "url": "/menu/"
+          },
+          {
+            "text": "Olive Garden Catering Menu 2025",
+            "url": "/menu/"
+          },
+          {
+            "text": "Olive Garden Kids Menu 2025",
+            "url": "/menu/"
+          },
+          {
+            "text": "Olive Garden Pasta Menu 2025",
+            "url": "/menu/"
+          },
+          {
+            "text": "Olive Garden Soup Menu 2025",
+            "url": "/menu/"
+          },
+          {
+            "text": "Nutrition & Allergen Menu 2025",
+            "url": "/menu/"
+          }
+        ]
+      },
+      {
+        "text": "Olive Garden Specials",
+        "url": "/about/"
+      },
+      {
+        "text": "Happy Hours 2025",
+        "url": "/about/"
+      },
+      {
+        "text": "Coupons",
+        "url": "/about/"
+      },
+      {
+        "text": "Holiday Hours 2025",
+        "url": "/about/"
+      }
+    ],
+    "footer": [
+      {
+        "text": "This website is not affiliated with, sponsored by, or endorsed by Olive Garden. All trademarks, names, and logos belong to their respective owners. For official information, visit the official Olive Garden website."
+      },
+      {
+        "text": "© 2025 Olive Garden Menu"
+      },
+      {
+        "text": "Contact Us",
+        "url": "/contact_us"
+      },
+      {
+        "text": "Privacy Policy",
+        "url": "/privacy_policy"
+      },
+      {
+        "text": "Terms of Service",
+        "url": "/terms_of_service"
+      }
+    ]
+  }
+}

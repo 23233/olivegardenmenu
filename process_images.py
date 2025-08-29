@@ -4,7 +4,7 @@ import requests
 import threading
 import uuid
 from datetime import datetime
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from PIL import Image
 import piexif
@@ -105,7 +105,15 @@ def process_item(item):
     if not source_url:
         return {'status': 'error', 'reason': '缺少有效的 image_url'}
 
-    original_filename = os.path.basename(urlparse(source_url).path)
+    # 1. 从URL解析路径
+    parsed_path = urlparse(source_url).path
+
+    # 2. 对路径进行URL解码，以处理像 %E2%80%93 这样的字符
+    decoded_path = unquote(parsed_path)
+
+    # 3. 从解码后的路径中获取文件名
+    original_filename = os.path.basename(decoded_path)
+
     webp_filename = os.path.splitext(original_filename)[0] + '.webp'
 
     local_image_path = os.path.join(IMAGE_DOWNLOAD_DIR, original_filename)

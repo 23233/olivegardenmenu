@@ -1,47 +1,9 @@
 import { Hono } from 'hono'
 import { serveStatic } from 'hono/cloudflare-workers'
 import menuData from '../raw/index.json'
+import siteConfig from "../raw/site.json"
 
 const app = new Hono()
-
-// --- Data & Config ---
-
-const siteConfig = {
-  siteName: "Olive Garden Menu With Prices",
-  logoUrl: "/static/image/logo-2.png",
-  colors: {
-    primary: "#FFC0CB",
-    secondary: "#4A4A4A",
-    background: "#FFFFFF",
-    text_primary: "#121212",
-    text_secondary: "#5A5A5A",
-    accent: "#e53e3e",
-    footer_bg: "#333333",
-    footer_text: "#cccccc",
-  },
-  navigation: {
-    header: [
-      { text: "Olive Garden Menu 2025", submenu: [
-          { text: "Olive Garden Drink Menu 2025", url: "/menu/"},
-          { text: "Olive Garden Lunch Menu 2025", url: "/menu/"},
-          { text: "Olive Garden Dinner Menu 2025", url: "/menu/"},
-        ]},
-      { text: "Olive Garden Specials", url: "/about/" },
-      { text: "Happy Hours 2025", url: "/about/" },
-      { text: "Coupons", url: "/about/" },
-    ],
-    footer: [
-      { text: "This website is not affiliated with, sponsored by, or endorsed by Olive Garden. All trademarks, names, and logos belong to their respective owners. For official information, visit the official Olive Garden website." },
-      { text: "© 2025 Olive Garden Menu" },
-      { text: "Contact Us", url: "/contact_us" },
-      { text: "Privacy Policy", url: "/privacy_policy" },
-      { text: "Terms of Service", url: "/terms_of_service" }
-    ]
-  }
-};
-
-// --- Descriptions and Recommendations are now loaded from index.json ---
-// No more hardcoded data here!
 
 // --- Utility Functions ---
 
@@ -57,7 +19,7 @@ function generateHead(siteConfig: any): string {
   const coreKeyword = "Olive Garden Menu";
   const title = `The Complete ${coreKeyword} 2025: Prices, Specials & Calories`;
   const description = `Explore the full ${coreKeyword} for 2025. We have the complete list of prices, calories, and special menu items. Your ultimate guide to the Olive Garden menu.`;
-  const pageUrl = "https://olivegardenmenu.info/";
+  const pageUrl = siteConfig.siteUrl;
 
   const ldJson = {
     "@context": "https://schema.org",
@@ -96,7 +58,7 @@ function generateHead(siteConfig: any): string {
                 margin: 0; 
                 line-height: 1.6; 
             }
-            .container { max-width: 960px; margin: 0 auto; padding: 20px; }
+            .container { max-width: ${siteConfig.maxWidth}px; margin: 0 auto; padding: 20px; }
             h1, h2, h3 { color: var(--text-primary); line-height: 1.2; }
             h1 { font-size: 2.5rem; text-align: center; margin-bottom: 0.5rem; }
             h2 { font-size: 2rem; border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-top: 40px; }
@@ -112,7 +74,7 @@ function generateHead(siteConfig: any): string {
             }
             .main-nav { display: flex; justify-content: space-between; align-items: center;padding: 0; }
             .logo img { height: 40px; }
-            .nav-links { display: flex; gap: 1rem; list-style: none; margin: 0; padding: 0;align-items: center; }
+            .nav-links { display: flex; gap: 0.5rem; list-style: none; margin: 0; padding: 0;align-items: center; }
             .nav-links a { color: white; padding: 0.5rem; text-decoration: none; }
             .nav-links a:hover { color: var(--accent); }
             .nav-toggle { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
@@ -147,12 +109,12 @@ function generateHead(siteConfig: any): string {
             }
             
             .menu-card-content { padding: 15px; }
-            .menu-card h3 { font-size: 1.2rem; margin-top: 0; }
+            .menu-card h3 { font-size: 1.2rem; margin-top: 0; min-height: 2.9rem;}
             
             .price-calories-container {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: baseline;
                 margin-top: 15px;
             }
             .price { font-size: 1.1rem; font-weight: bold; color: var(--accent); }
@@ -163,14 +125,14 @@ function generateHead(siteConfig: any): string {
             
             .recommend-badge {
                 position: absolute;
-                width: 150px;
+                width: 100px; /* Smaller width */
                 text-align: center;
-                top: 25px;
-                right: -35px;
-                padding: 5px 0;
+                top: 15px; /* Adjusted position */
+                right: -25px; /* Adjusted position */
+                padding: 3px 0; /* Reduced padding */
                 background-color: var(--accent);
                 color: white;
-                font-size: 0.9rem;
+                font-size: 0.75rem; /* Smaller font */
                 font-weight: bold;
                 transform: rotate(45deg);
                 box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -316,7 +278,7 @@ function generateMainContent(data: typeof menuData): string {
                                 <h3>${item.name}</h3>
                                 <div class="price-calories-container">
                                     <span class="price">${formatPrice(item.price)}</span>
-                                    <span class="calories-badge">${item.calories} Calories</span>
+                                    <span class="calories-badge">${item.calories} Cal</span>
                                  </div>
                             </div>
                         </div>
