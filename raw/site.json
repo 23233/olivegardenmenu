@@ -107,5 +107,10 @@
         "url": "/terms_of_service"
       }
     ]
+  },
+  "maps": {
+    "url": "https://www.google.com/maps/d/u/0/embed?mid=1CXiMZzDvaQyZXw4Zf-qlD39LUepUUoc&ehbc=2E312F&noprof=1",
+    "width": 640,
+    "height": 480
   }
 }
