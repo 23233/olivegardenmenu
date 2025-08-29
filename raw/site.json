@@ -1,10 +1,18 @@
 {
+  "coreKeyword": "Olive Garden Menu",
+  "pageGoal": "",
+  "heroImage": "",
   "siteName": "Olive Garden Menu With Prices",
   "baseURL": "https://olivegardenmenuguide.com/",
   "maxWidth": 1280,
   "googleAnalyticsId": "",
   "googleAdsenseId": "",
   "logoUrl": "/static/image/logo-2.png",
+  "favicon": {
+    "url": "/static/image/favicon32.ico",
+    "size": 32
+  },
+  "appleTouchIcon": "/static/image/apple-touch-icon.png",
   "colors": {
     "primary": "#FFC0CB",
     "secondary": "#4A4A4A",
@@ -80,7 +88,7 @@
         "text": "This website is not affiliated with, sponsored by, or endorsed by Olive Garden. All trademarks, names, and logos belong to their respective owners. For official information, visit the official Olive Garden website."
       },
       {
-        "text": "© 2025 Olive Garden Menu"
+        "text": "© 2025 Olive Garden Menu Guide"
       },
       {
         "text": "Contact Us",

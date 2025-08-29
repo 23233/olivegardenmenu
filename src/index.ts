@@ -11,24 +11,82 @@ function toKebabCase(str: string): string {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
+/**
+ * Safely joins a base URL with multiple path segments.
+ * Handles leading/trailing slashes to prevent duplicates.
+ * @param base The base URL (e.g., "https://example.com/")
+ * @param paths The path segments to join (e.g., "path1", "/path2")
+ * @returns A correctly formatted full URL.
+ */
+function joinUrlPaths(base: string, ...paths: string[]): string {
+  const trimmedBase = base.endsWith('/') ? base.slice(0, -1) : base;
+  const trimmedPaths = paths.map(p => p.startsWith('/') ? p.slice(1) : p);
+  return [trimmedBase, ...trimmedPaths].join('/');
+}
+
 
 // --- HTML Generation Functions ---
 
-function generateHead(siteConfig: any): string {
-  const { siteName, colors } = siteConfig;
+// MODIFIED: Added menuData parameter and using the new joinUrlPaths utility
+function generateHead(siteConfig: any, menuData: any): string {
+  const { siteName, colors, baseURL } = siteConfig;
   const coreKeyword = "Olive Garden Menu";
   const title = `The Complete ${coreKeyword} 2025: Prices, Specials & Calories`;
   const description = `Explore the full ${coreKeyword} for 2025. We have the complete list of prices, calories, and special menu items. Your ultimate guide to the Olive Garden menu.`;
-  const pageUrl = siteConfig.siteUrl;
 
-  const ldJson = {
-    "@context": "https://schema.org",
-    "@graph": [
-      { "@type": "WebSite", "name": siteName, "url": pageUrl },
-      { "@type": "Organization", "name": siteName, "url": pageUrl, "logo": `${pageUrl}${siteConfig.logoUrl}` },
-      { "@type": "WebPage", "url": pageUrl, "name": title, "description": description, "isPartOf": { "@id": `${pageUrl}#website` } }
-    ]
+  // Use the base URL directly from config
+  const pageUrl = baseURL;
+
+  // Construct absolute URLs safely using the utility function
+  const logoUrl = joinUrlPaths(pageUrl, siteConfig.logoUrl);
+
+  const graph = [
+    { "@type": "WebSite", "name": siteName, "url": pageUrl, "@id": `${pageUrl}#website` },
+    { "@type": "Organization", "name": siteName, "url": pageUrl, "logo": logoUrl },
+    { "@type": "WebPage", "url": pageUrl, "name": title, "description": description, "isPartOf": { "@id": `${pageUrl}#website` } }
+  ];
+
+  const menu = {
+    "@type": "Menu",
+    "name": "Olive Garden Full Menu",
+    "hasMenuSection": [] as any[]
   };
+
+  for (const category in menuData) {
+    if (Object.prototype.hasOwnProperty.call(menuData, category)) {
+      // @ts-ignore
+      const categoryData = menuData[category];
+      const menuSection = {
+        "@type": "MenuSection",
+        "name": category,
+        "description": categoryData.description,
+        "hasMenuItem": [] as any[]
+      };
+
+      categoryData.items.forEach((item: any) => {
+        const menuItem = {
+          "@type": "MenuItem",
+          "name": item.name,
+          "image": joinUrlPaths(pageUrl, item.image_url), // Safely join image URL
+          "offers": {
+            "@type": "Offer",
+            "price": item.price,
+            "priceCurrency": "USD"
+          },
+          "nutrition": {
+            "@type": "NutritionInformation",
+            "calories": item.calories + " Cal"
+          }
+        };
+        menuSection.hasMenuItem.push(menuItem);
+      });
+
+      menu.hasMenuSection.push(menuSection);
+    }
+  }
+
+  // @ts-ignore
+  graph.push(menu);
 
   return `
     <head>
@@ -39,11 +97,11 @@ function generateHead(siteConfig: any): string {
         <link rel="canonical" href="${pageUrl}">
         <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
         <link rel="alternate" hreflang="en" href="${pageUrl}"><link rel="alternate" hreflang="x-default" href="${pageUrl}">
-        <meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${pageUrl}"><meta property="og:site_name" content="${siteName}"><meta property="og:type" content="website"><meta property="og:image" content="${pageUrl}${siteConfig.logoUrl}">
-        <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${pageUrl}${siteConfig.logoUrl}">
-        <link rel="icon" href="/static/image/favicon32.ico" sizes="32x32">
-        <link rel="apple-touch-icon" href="/static/image/apple-touch-icon.webp">
-        <script type="application/ld+json">${JSON.stringify(ldJson)}</script>
+        <meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${pageUrl}"><meta property="og:site_name" content="${siteName}"><meta property="og:type" content="website"><meta property="og:image" content="${logoUrl}">
+        <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${logoUrl}">
+        <link rel="icon" href="${siteConfig.favicon.url}" sizes="${siteConfig.favicon.size}x${siteConfig.favicon.size}">
+        <link rel="apple-touch-icon" href="${siteConfig.appleTouchIcon}">
+        <script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@graph": graph })}</script>
         <style>
             :root {
                 --primary: ${colors.primary}; --secondary: ${colors.secondary}; --background: ${colors.background};
@@ -91,7 +149,6 @@ function generateHead(siteConfig: any): string {
             .submenu li a { padding: 0.5rem 1rem; display: block; }
             .submenu li:first-child a { padding-top: 1rem; }
             .submenu li:last-child a { padding-bottom: 1rem; }
-
             .menu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
             
             .menu-card { 
@@ -119,7 +176,6 @@ function generateHead(siteConfig: any): string {
             }
             .price { font-size: 1.1rem; font-weight: bold; color: var(--accent); }
             .calories-badge { color: var(--text-secondary); font-size: 0.9rem; font-weight: 500; }
-
             .category-description { margin: -5px 0 25px; font-style: italic; color: var(--text-secondary); text-align: left; }
             .category-description strong { color: var(--text-primary); font-weight: 600; }
             
@@ -138,9 +194,8 @@ function generateHead(siteConfig: any): string {
                 box-shadow: 0 2px 4px rgba(0,0,0,0.2);
                 z-index: 2;
             }
-
             .quick-jumps, .data-table-details { background-color: #f9f9f9; padding: 15px; border: 1px solid #eee; border-radius: 8px; margin: 20px 0; }
-            .quick-jumps summary, .data-table-details summary { font-weight: bold; cursor: pointer; font-size: 1.1rem; }
+            .quick-jumps summary, .data-table-details summary { font-weight: bold; cursor: pointer; font-size: 0.9rem; }
             .quick-jumps ul { list-style: none; padding-left: 0; }
             .quick-jumps span { margin-right: 5px; font-size: 12px;color: var(--text-secondary) }
             .data-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
@@ -153,14 +208,11 @@ function generateHead(siteConfig: any): string {
             .footer-links { display: flex; gap: 1rem; }
             .footer-links a { color: var(--footer-text); }
             .footer-disclaimer { font-size: 0.8rem; color: #999; margin-top: 1rem; text-align: center; width: 100%; }
-
             .submenu-parent-button {
                 background: none; border: none; color: white; padding: 0.5rem; margin: 0;
                 font-size: inherit; font-family: inherit; cursor: pointer; display: flex; align-items: center; width: 100%; text-align: left;
             }
-
             @media (min-width: 769px) { .submenu-parent-button { width: auto; } }
-
             @media (max-width: 768px) {
                 h1 {font-size: 2rem;}
                 .nav-links { 
@@ -180,7 +232,6 @@ function generateHead(siteConfig: any): string {
 }
 
 function generateHeader(siteConfig: any): string {
-  // This function remains the same
   const { navigation, logoUrl, siteName } = siteConfig;
   const generateSubmenu = (submenuItems: any[]) => {
     return `<ul class="submenu">${submenuItems.map(sub => `<li><a href="${sub.url}">${sub.text}</a></li>`).join('')}</ul>`;
@@ -211,7 +262,6 @@ function generateHeader(siteConfig: any): string {
 }
 
 function generateFooter(siteConfig: any): string {
-  // This function remains the same
   const { navigation } = siteConfig;
   const copyright = navigation.footer.find((i:any) => i.text.startsWith('©'));
   const disclaimer = navigation.footer.find((i:any) => i.text.startsWith('This website'));
@@ -232,7 +282,6 @@ function generateFooter(siteConfig: any): string {
     `;
 }
 
-// --- START: UPDATED Main Content Function ---
 function generateMainContent(data: typeof menuData): string {
   const categories = Object.keys(data);
   const formatPrice = (price: any) => {
@@ -252,9 +301,8 @@ function generateMainContent(data: typeof menuData): string {
             </ul>
         </details>
         ${categories.map(category => {
-    // Read the new data structure from JSON
     const categoryData = (data as any)[category];
-    if (!categoryData || !categoryData.items) return ''; // Skip if the category is malformed
+    if (!categoryData || !categoryData.items) return '';
 
     const items = categoryData.items;
     const baseDescription = categoryData.description || '';
@@ -310,8 +358,6 @@ function generateMainContent(data: typeof menuData): string {
     </main>
     `;
 }
-// --- END: UPDATED Main Content Function ---
-
 
 // --- Hono App ---
 
@@ -319,7 +365,8 @@ function generateMainContent(data: typeof menuData): string {
 app.get('/static/*', serveStatic({ root: './' }))
 
 app.get('/', (c) => {
-  const head = generateHead(siteConfig);
+  // MODIFIED: Pass menuData to generateHead
+  const head = generateHead(siteConfig, menuData);
   const header = generateHeader(siteConfig);
   const mainContent = generateMainContent(menuData);
   const footer = generateFooter(siteConfig);
