@@ -3,6 +3,7 @@
 # 网站元数据 (Site Metadata)
 
 siteName: "Olive Garden Menu With Prices"
+baseURL: "https://olivegardenmenuguide.com"
 
 # 技术集成 (Technical Integrations)
 

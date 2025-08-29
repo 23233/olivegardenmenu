@@ -18,7 +18,7 @@
 ## 输入定义 (Input Definitions)
 
 1. **`site.md`**: 站点全局配置文件。
-    * 包含`siteName`,  `googleAnalyticsId`, `googleAdsenseId`。
+    * 包含`siteName`, `baseURL`, `googleAnalyticsId`, `googleAdsenseId`。
     * **可能**包含`colors`对象（若缺失，需智能生成）和`navigation`数组。
 
 2. **页面文件 (e.g., `docs/index.md`)**: 特定页面的内容与指令文件。
@@ -56,7 +56,7 @@
         * **Robots**: **必须**包含一个全面的`<meta name="robots">`标签，例如:
           `<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>`。
         * **Hreflang**: 如果本次任务生成多种语言，**必须**在此处添加所有语言版本的`hreflang`链接，包括`x-default` 。
-          * URL结构采用子目录方式 (e.g., `/es/page.html`)。
+          * URL结构采用子目录方式 (e.g., `baseURL/es/page.html`)。
     * **社交媒体与品牌化**:
         * **必须**生成Open Graph (`og:`) 和 Twitter Card (`twitter:`) 标签，包括 `title`, `description`, `image`, `url`,
           和 `type`。
@@ -78,7 +78,6 @@
         * **关键词密度优化**: **智能地将核心及次要关键词自然融入H1, H2, H3标题中**，以优化关键词密度，但绝不能牺牲可读性或显得生硬。
     * **组件生成**: 解析`yaml`代码块，生成对应的HTML组件，并应用“数据零食化”原则。
     * **图片处理与性能优化**:
-        * 所有图片**必须**使用`<picture>`标签包裹，并提供`.webp`和其他格式的`<source>`。
         * **硬性约束**: 所有`<img>`标签**必须**包含`loading="lazy"`属性和**一个描述性的`alt`属性**。`alt`
           文本需准确描述图片内容，并在自然的情况下融入相关关键词。
     * **动态生成可交互目录**: 自动扫描所有`h2`和`h3`标题，并使用默认折叠的`<details>`和`<summary>`标签构建一个快速跳转目录。
