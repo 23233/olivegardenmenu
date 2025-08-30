@@ -32,7 +32,7 @@
         "headers": ["Special Offer", "Details", "Price"],
         "rows": [
           ["Never Ending Classics", "Unlimited servings of your fave pasta dishes. Yes, UNLIMITED.", "Starts at $11.99 (Dine-in only)"],
-          ["Buy One, Take One", "Eat a delicious meal now, take a second one home for later. It's a win-win!", "Starts at $12.99"],
+          ["Buy One, Take One", "Eat a delicious meal now, take a second one home for later. It's a win-win!", "Starts at $14.99"],
           ["$6 Take Home Entrées", "Add an extra entrée to your order for just SIX BUCKS. Unreal.", "$6 per entrée"]
         ]
       }
@@ -68,15 +68,23 @@
         "items": [
           {
             "question": "What is Olive Garden’s Buy One, Take One deal?",
-            "answer": "Order an entrée starting at $12.99 and take a second one home for free. It also includes unlimited soup or salad and breadsticks. It's available for a limited time, so get on it!"
+            "answer": "Order an entrée starting at $14.99 and take a second one home for free. It also includes unlimited soup or salad and breadsticks. It's available for a limited time, so get on it!"
           },
           {
             "question": "Does Olive Garden still have the Never-Ending Pasta Bowl?",
             "answer": "YES! It starts at $13.99 and you get unlimited pasta, sauce, and soup. You can add meat for an extra charge. It's the best."
           },
           {
-            "question": "What are Olive Garden’s lunch specials?",
-            "answer": "They have a bunch! Unlimited Soup, Salad & Breadsticks for $9.99, Lunch Duos starting at $7.99, and Lunch-Sized Favorites also starting at $7.99. They're available Monday-Friday until 3 PM."
+            "question": "Has Olive Garden brought back any fan-favorite dishes recently?",
+            "answer": "They're always listening to the fans! Olive Garden has reintroduced popular dishes like the Never-Ending Pasta Bowl and plans to bring back items such as Steak Gorgonzola Alfredo and Stuffed Chicken Marsala."
+          },
+          {
+            "question": "What is the best value meal from Olive Garden?",
+            "answer": "For the best bang for your buck, the Soup, Salad & Breadsticks Combo ($16.49) is unbeatable. You get unlimited servings of their signature house salad, a choice of homemade soup, and those famous warm breadsticks. It’s a filling meal at a great price!"
+          },
+          {
+            "question": "Are there any current deals available?",
+            "answer": "Definitely! The best way to stay on top of current deals is to check this page or sign up for their eClub. Right now, the big one is the Buy One, Take One promotion, but offers can change, so always check before you order!"
           }
         ]
       }
