@@ -491,33 +491,82 @@ const renderStoreDataTable = (data: any) => `
 `;
 
 function generatePageBody(data: any): string {
-    const bodyContent = data.contentBlocks.map((block: any) => {
-        switch (block.type) {
-            case 'hero':
-                return renderHero(block.data);
-            case 'richText':
-                return renderRichText(block.data);
-            case 'tableOfContents':
-                return renderTableOfContents(block.data, data.contentBlocks);
-            case 'imageGallery':
-                return renderImageGallery(block.data);
-            case 'dataTable':
-                if (block.data.categories) {
-                    return renderDataTable(block.data);
-                }
-                return renderStoreDataTable(block.data);
-            case 'faq':
-                return renderFaq(block.data);
-            case 'googleMap':
-                return renderGoogleMap(block.data);
-            default:
-                return `<!-- Unknown block type: ${block.type} -->`;
+  let bodyContent = data.contentBlocks.map((block: any) => {
+    switch (block.type) {
+      case 'hero':
+        return renderHero(block.data);
+      case 'richText':
+        return renderRichText(block.data);
+      case 'tableOfContents':
+        return renderTableOfContents(block.data, data.contentBlocks);
+      case 'imageGallery':
+        return renderImageGallery(block.data);
+      case 'dataTable':
+        if (block.data.categories) {
+          return renderDataTable(block.data);
         }
-    }).join('');
+        return renderStoreDataTable(block.data);
+      case 'faq':
+        return renderFaq(block.data);
+      case 'googleMap':
+        return renderGoogleMap(block.data);
+      default:
+        return `<!-- Unknown block type: ${block.type} -->`;
+    }
+  }).join('');
 
-    return `<main class="container">${bodyContent}</main>`;
+  const hasHero = data.contentBlocks.some((block: any) => block.type === 'hero');
+  if (!hasHero && data.metadata.h1) {
+    bodyContent = `<h1>${data.metadata.h1}</h1>` + bodyContent;
+  }
+
+  return `<main class="container">${bodyContent}</main>`;
 }
 
+function generateCommonScripts(): string {
+  return `
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const navToggle = document.querySelector('.nav-toggle');
+                const navLinks = document.querySelector('.nav-links');
+                if (navToggle && navLinks) {
+                    navToggle.addEventListener('click', () => {
+                        const isActive = navLinks.classList.toggle('active');
+                        navToggle.setAttribute('aria-expanded', isActive.toString());
+                    });
+                }
+                const submenuButtons = document.querySelectorAll('.submenu-parent-button');
+                submenuButtons.forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        const parentLi = button.parentElement;
+                        const submenu = parentLi.querySelector('.submenu');
+                        const toggleArrow = button.querySelector('.submenu-toggle');
+                        if (submenu) {
+                            const isExpanded = submenu.classList.toggle('active');
+                            button.setAttribute('aria-expanded', isExpanded.toString());
+                            if (toggleArrow) {
+                                toggleArrow.classList.toggle('active');
+                            }
+                        }
+                    });
+                });
+                const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+                if (scrollToTopBtn) {
+                    window.onscroll = function() {
+                        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                            scrollToTopBtn.style.display = "block";
+                        } else {
+                            scrollToTopBtn.style.display = "none";
+                        }
+                    };
+                    scrollToTopBtn.addEventListener('click', () => {
+                        window.scrollTo({top: 0, behavior: 'smooth'});
+                    });
+                }
+            });
+        </script>
+    `;
+}
 
 // --- Hono App ---
 
@@ -529,34 +578,79 @@ app.get('/', (c) => {
   const header = generateHeader(siteConfig);
   let mainContent = generatePageBody(menuData);
   const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
 
-  // Add the specific "Near Me" section only for the homepage
   const nearMeSection = `
-    <section id="near-me">
-      <h2>Find an Olive Garden Near Me! 📍</h2>
-      <p>Craving some delicious Italian food? 🍝 Use the map below to find the nearest Olive Garden restaurant to you! We've got hundreds of locations across the country, so there's a good chance there's one just around the corner.</p>
-      <div style="text-align: center; margin: 20px 0;">
-        <iframe
-          src="${siteConfig.maps.url}"
-          width="100%"
-          height="450px"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-      <p>For a detailed list of all Olive Garden locations, including addresses and hours, check out our new <a href="/near-me/"><strong>Olive Garden Near Me</strong></a> page. We've got all the info you need to get your pasta fix! 🚀</p>
-    </section>
+       <section id="near-me">
+        <h2>Find an Olive Garden Near Me! 📍</h2>
+        <p>Craving some delicious Italian food? 🍝 Use the map below to find the nearest Olive Garden restaurant to you! We've got hundreds of locations across the country, so there's a good chance there's one just around the corner.</p>
+        <div style="text-align: center; margin: 20px 0;">
+          <iframe
+            src="${siteConfig.maps.url}"
+            width="100%"
+            height="450px"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <p>For a detailed list of all Olive Garden locations, including addresses and hours, check out our new <a href="/near-me/"><strong>Olive Garden Near Me</strong></a> page. We've got all the info you need to get your pasta fix! 🚀</p>
+      </section>
   `;
 
-  // Since mainContent is a string, we find the closing tag of the last section to insert this before the end of main
-  const lastSectionEnd = mainContent.lastIndexOf('</main>');
-  if (lastSectionEnd !== -1) {
-      mainContent = mainContent.slice(0, lastSectionEnd) + nearMeSection + mainContent.slice(lastSectionEnd);
-  } else {
-      mainContent += nearMeSection;
-  }
+  const finalHtml = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent.replace('</main>', nearMeSection + '</main>')}
+        ${footer}
+        <div id="lightbox-modal">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-image">
+        </div>
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const modal = document.getElementById('lightbox-modal');
+                const modalImg = document.getElementById('lightbox-image');
+                const galleryImages = document.querySelectorAll('.shot-card img');
+                const closeBtn = document.querySelector('#lightbox-modal .close');
+                if (galleryImages.length > 0 && modal && modalImg && closeBtn) {
+                    galleryImages.forEach(image => {
+                        image.addEventListener('click', () => {
+                            modal.style.display = "block";
+                            // @ts-ignore
+                            modalImg.src = image.dataset.fullSrc;
+                        });
+                    });
+                    closeBtn.addEventListener('click', () => {
+                        modal.style.display = "none";
+                    });
+                    modal.addEventListener('click', (e) => {
+                        if (e.target === modal) {
+                            modal.style.display = "none";
+                        }
+                    });
+                }
+            });
+        </script>
+    </body>
+    </html>
+  `;
+
+  return c.html(finalHtml);
+})
+
+app.get('/near-me/', (c) => {
+  const head = generateHead(siteConfig, nearMeData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(nearMeData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
 
   const html = `
     <!DOCTYPE html>
@@ -566,151 +660,13 @@ app.get('/', (c) => {
         ${header}
         ${mainContent}
         ${footer}
-        <div id="lightbox-modal">
-            <span class="close">&times;</span>
-            <img class="lightbox-content" id="lightbox-image">
-        </div>
         <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const modal = document.getElementById('lightbox-modal');
-                const modalImg = document.getElementById('lightbox-image');
-                const galleryImages = document.querySelectorAll('.shot-card img');
-                const closeBtn = document.querySelector('#lightbox-modal .close');
-
-                if (galleryImages.length > 0 && modal && modalImg && closeBtn) {
-                    galleryImages.forEach(image => {
-                        image.addEventListener('click', () => {
-                            modal.style.display = "block";
-                            // @ts-ignore
-                            modalImg.src = image.dataset.fullSrc;
-                        });
-                    });
-
-                    closeBtn.addEventListener('click', () => {
-                        modal.style.display = "none";
-                    });
-
-                    modal.addEventListener('click', (e) => {
-                        if (e.target === modal) {
-                            modal.style.display = "none";
-                        }
-                    });
-                }
-
-                const navToggle = document.querySelector('.nav-toggle');
-                const navLinks = document.querySelector('.nav-links');
-
-                if (navToggle && navLinks) {
-                    navToggle.addEventListener('click', () => {
-                        const isActive = navLinks.classList.toggle('active');
-                        navToggle.setAttribute('aria-expanded', isActive.toString());
-                    });
-                }
-
-                const submenuButtons = document.querySelectorAll('.submenu-parent-button');
-                submenuButtons.forEach(button => {
-                    button.addEventListener('click', (e) => {
-                        const parentLi = button.parentElement;
-                        const submenu = parentLi.querySelector('.submenu');
-                        const toggleArrow = button.querySelector('.submenu-toggle');
-                        
-                        if (submenu) {
-                            const isExpanded = submenu.classList.toggle('active');
-                            button.setAttribute('aria-expanded', isExpanded.toString());
-                            if (toggleArrow) {
-                                toggleArrow.classList.toggle('active');
-                            }
-                        }
-                    });
-                });
-
-                const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-                if (scrollToTopBtn) {
-                    window.onscroll = function() {
-                        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                            scrollToTopBtn.style.display = "block";
-                        } else {
-                            scrollToTopBtn.style.display = "none";
-                        }
-                    };
-                    scrollToTopBtn.addEventListener('click', () => {
-                        window.scrollTo({top: 0, behavior: 'smooth'});
-                    });
-                }
-            });
-        </script>
+        ${commonScripts}
     </body>
     </html>
   `;
 
   return c.html(html);
-})
-
-app.get('/near-me/', (c) => {
-    const head = generateHead(siteConfig, nearMeData);
-    const header = generateHeader(siteConfig);
-    const mainContent = generatePageBody(nearMeData);
-    const footer = generateFooter(siteConfig);
-
-    const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const navToggle = document.querySelector('.nav-toggle');
-                const navLinks = document.querySelector('.nav-links');
-
-                if (navToggle && navLinks) {
-                    navToggle.addEventListener('click', () => {
-                        const isActive = navLinks.classList.toggle('active');
-                        navToggle.setAttribute('aria-expanded', isActive.toString());
-                    });
-                }
-
-                const submenuButtons = document.querySelectorAll('.submenu-parent-button');
-                submenuButtons.forEach(button => {
-                    button.addEventListener('click', (e) => {
-                        const parentLi = button.parentElement;
-                        const submenu = parentLi.querySelector('.submenu');
-                        const toggleArrow = button.querySelector('.submenu-toggle');
-
-                        if (submenu) {
-                            const isExpanded = submenu.classList.toggle('active');
-                            button.setAttribute('aria-expanded', isExpanded.toString());
-                            if (toggleArrow) {
-                                toggleArrow.classList.toggle('active');
-                            }
-                        }
-                    });
-                });
-
-                const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-                if (scrollToTopBtn) {
-                    window.onscroll = function() {
-                        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                            scrollToTopBtn.style.display = "block";
-                        } else {
-                            scrollToTopBtn.style.display = "none";
-                        }
-                    };
-                    scrollToTopBtn.addEventListener('click', () => {
-                        window.scrollTo({top: 0, behavior: 'smooth'});
-                    });
-                }
-            });
-        </script>
-    </body>
-    </html>
-  `;
-
-    return c.html(html);
 });
 
 export default app
