@@ -4,7 +4,7 @@
     "description": "Looking for Olive Garden coupons? 🏷️ We've got the latest promo codes for August 2025, including 20% off, free appetizers, and more. Get your discounts here! 👇",
     "coreKeyword": "Olive Garden Coupons",
     "pageGoal": "Provide users with the latest Olive Garden coupons and promo codes to encourage online orders and dine-in visits.",
-    "languages": ["en", "es"],
+    "languages": ["en"],
     "author": {
       "name": "Jules",
       "email": "jules@example.com"
@@ -15,58 +15,35 @@
     {
       "type": "hero",
       "data": {
-        "headline": {
-          "en": "Olive Garden Coupons, Promo Codes & Discounts! 🤑",
-          "es": "¡Cupones, Códigos Promocionales y Descuentos de Olive Garden! 🤑"
-        },
-        "subheading": {
-          "en": "Your ultimate guide to saving BIG at Olive Garden is here! 🚀",
-          "es": "¡Tu guía definitiva para ahorrar EN GRANDE en Olive Garden está aquí! 🚀"
-        }
+        "h1": "Olive Garden Coupons, Promo Codes & Discounts! 🤑",
+        "tagline": "Your ultimate guide to saving BIG at Olive Garden is here! 🚀"
       }
     },
     {
-      "type": "featureGrid",
+      "type": "dataTable",
       "data": {
-        "headline": {
-          "en": "Active Olive Garden Coupons for August 2025 🔥",
-          "es": "Cupones Activos de Olive Garden para Agosto 2025 🔥"
-        },
-        "items": [
-          {
-            "title": {"en": "20% Off Your Entire Bill", "es": "20% de Descuento en Tu Cuenta Total"},
-            "description": {"en": "Get a whopping 20% off your entire check. CODE: OGSAVE20", "es": "Obtén un enorme 20% de descuento en tu cuenta total. CÓDIGO: OGSAVE20"}
-          },
-          {
-            "title": {"en": "$5 Off Orders Over $30", "es": "$5 de Descuento en Pedidos de Más de $30"},
-            "description": {"en": "Spending more than $30? Get $5 off. Easy peasy. CODE: OGFIVE", "es": "¿Vas a gastar más de $30? Obtén $5 de descuento. Facilísimo. CÓDIGO: OGFIVE"}
-          },
-          {
-            "title": {"en": "Free Appetizer", "es": "Aperitivo Gratis"},
-            "description": {"en": "Get a FREE appetizer when you buy any entrée. What a steal! CODE: FREEAPP", "es": "Recibe un aperitivo GRATIS al comprar cualquier plato principal. ¡Qué ofertón! CÓDIGO: FREEAPP"}
-          },
-          {
-            "title": {"en": "Free Birthday Dessert", "es": "Postre de Cumpleaños Gratis"},
-            "description": {"en": "Join the Olive Garden eClub and get a FREE dessert on your birthday. Sweet!", "es": "Únete al eClub de Olive Garden y recibe un postre GRATIS en tu cumpleaños. ¡Genial!"}
-          }
+        "title": "Active Olive Garden Coupons for August 2025 🔥",
+        "headers": ["Offer", "Details", "Code"],
+        "rows": [
+          ["20% Off Your Entire Bill", "Get a whopping 20% off your entire check.", "OGSAVE20"],
+          ["$5 Off Orders Over $30", "Spending more than $30? Get $5 off. Easy peasy.", "OGFIVE"],
+          ["Free Appetizer", "Get a FREE appetizer when you buy any entrée. What a steal!", "FREEAPP"],
+          ["Free Birthday Dessert", "Join the Olive Garden eClub and get a FREE dessert on your birthday.", "N/A"]
         ]
       }
     },
     {
       "type": "faq",
       "data": {
-        "headline": {
-          "en": "Coupon FAQs 🤔",
-          "es": "Preguntas Frecuentes sobre Cupones 🤔"
-        },
-        "questions": [
+        "title": "Coupon FAQs 🤔",
+        "items": [
           {
-            "question": {"en": "How do I get Olive Garden coupons?", "es": "¿Cómo consigo cupones de Olive Garden?"},
-            "answer": {"en": "Join the Olive Garden eClub on their website! They'll send exclusive coupons and offers right to your inbox.", "es": "¡Únete al eClub de Olive Garden en su sitio web! Te enviarán cupones y ofertas exclusivas directamente a tu correo."}
+            "question": "How do I get Olive Garden coupons?",
+            "answer": "Join the Olive Garden eClub on their website! They'll send exclusive coupons and offers right to your inbox."
           },
           {
-            "question": {"en": "Does Olive Garden have a rewards program?", "es": "¿Olive Garden tiene un programa de recompensas?"},
-            "answer": {"en": "They don't have a traditional rewards program, but the eClub is where it's at for special offers and promotions.", "es": "No tienen un programa de recompensas tradicional, pero el eClub es el lugar para ofertas especiales y promociones."}
+            "question": "Does Olive Garden have a rewards program?",
+            "answer": "They don't have a traditional rewards program, but the eClub is where it's at for special offers and promotions."
           }
         ]
       }

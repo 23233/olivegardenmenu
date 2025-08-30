@@ -4,7 +4,7 @@
     "description": "OMG, you HAVE to see this week's Olive Garden specials! 🍝 We've got the full scoop on the Buy One Take One deal, Never Ending Pasta, and more. See all the deals before you go! 👇",
     "coreKeyword": "Olive Garden Specials",
     "pageGoal": "Inform users about the latest Olive Garden specials, deals, and promotions to drive interest and store visits.",
-    "languages": ["en", "es"],
+    "languages": ["en"],
     "author": {
       "name": "Jules",
       "email": "jules@example.com"
@@ -15,75 +15,48 @@
     {
       "type": "hero",
       "data": {
-        "headline": {
-          "en": "Olive Garden Specials, Deals & Promos You CANNOT Miss! 🤑",
-          "es": "¡Ofertas, Descuentos y Promociones de Olive Garden que NO TE PUEDES PERDER! 🤑"
-        },
-        "subheading": {
-          "en": "Your ultimate guide to the most legendary deals. Get ready to feast like royalty without breaking the bank!",
-          "es": "Tu guía definitiva para las ofertas más legendarias. ¡Prepárate para un banquete de reyes sin arruinarte!"
-        }
+        "h1": "Olive Garden Specials, Deals & Promos You CANNOT Miss! 🤑",
+        "tagline": "Your ultimate guide to the most legendary deals. Get ready to feast like royalty without breaking the bank!"
       }
     },
     {
       "type": "richText",
       "data": {
-        "content": {
-          "en": "<p>OMG, listen up! 📣 Olive Garden is dropping some legendary deals that'll make your wallet happy and your stomach even happier. From the iconic Buy One, Take One to the glorious Never-Ending Pasta Bowl, we're talking major foodie wins. Get ready to feast like royalty without spending a fortune. Let's get this bread(stick)! 🥖</p>",
-          "es": "<p>¡OMG, escucha! 📣 Olive Garden está lanzando unas ofertas legendarias que harán feliz a tu cartera y aún más a tu estómago. Desde el icónico Compra Uno, Llévate Otro hasta el glorioso Tazón de Pasta Interminable, estamos hablando de grandes victorias para los amantes de la comida. ¡Prepárate para un banquete de reyes sin gastar una fortuna! ¡Vamos a por esos palitos de pan! 🥖</p>"
-        }
+        "htmlContent": "<p>OMG, listen up! 📣 Olive Garden is dropping some legendary deals that'll make your wallet happy and your stomach even happier. From the iconic Buy One, Take One to the glorious Never-Ending Pasta Bowl, we're talking major foodie wins. Get ready to feast like royalty without spending a fortune. Let's get this bread(stick)! 🥖</p>"
       }
     },
     {
       "type": "dataTable",
       "data": {
-        "headline": {
-          "en": "Current Olive Garden Specials for August 2025 🔥",
-          "es": "Ofertas Actuales de Olive Garden para Agosto 2025 🔥"
-        },
+        "title": "Current Olive Garden Specials for August 2025 🔥",
         "headers": ["Special Offer", "Details", "Price"],
         "rows": [
-          [
-            {"en": "Never Ending Classics", "es": "Clásicos Interminables"},
-            {"en": "Unlimited servings of your fave pasta dishes. Yes, UNLIMITED.", "es": "Porciones ilimitadas de tus platos de pasta favoritos. Sí, ILIMITADAS."},
-            {"en": "Starts at $11.99 (Dine-in only)", "es": "Desde $11.99 (Solo en restaurante)"}
-          ],
-          [
-            {"en": "Buy One, Take One", "es": "Compra Uno, Llévate Otro"},
-            {"en": "Eat a delicious meal now, take a second one home for later. It's a win-win!", "es": "Come una deliciosa comida ahora, y llévate una segunda a casa para más tarde. ¡Todos ganan!"},
-            {"en": "Starts at $12.99", "es": "Desde $12.99"}
-          ],
-          [
-            {"en": "$6 Take Home Entrées", "es": "Platos para Llevar por $6"},
-            {"en": "Add an extra entrée to your order for just SIX BUCKS. Unreal.", "es": "Añade un plato extra a tu pedido por solo SEIS DÓLARES. Increíble."},
-            {"en": "$6 per entrée", "es": "$6 por plato"}
-          ]
+          ["Never Ending Classics", "Unlimited servings of your fave pasta dishes. Yes, UNLIMITED.", "Starts at $11.99 (Dine-in only)"],
+          ["Buy One, Take One", "Eat a delicious meal now, take a second one home for later. It's a win-win!", "Starts at $12.99"],
+          ["$6 Take Home Entrées", "Add an extra entrée to your order for just SIX BUCKS. Unreal.", "$6 per entrée"]
         ]
       }
     },
     {
       "type": "featureGrid",
       "data": {
-        "headline": {
-          "en": "All The Delicious Details... 👇",
-          "es": "Todos Los Detalles Deliciosos... 👇"
-        },
+        "title": "All The Delicious Details... 👇",
         "items": [
           {
-            "title": {"en": "Family Style Meals 👨‍👩‍👧‍👦", "es": "Comidas Estilo Familiar 👨‍👩‍👧‍👦"},
-            "description": {"en": "Got a whole crew to feed? Say less. Olive Garden's Family Style Meals are here to save the day, serving 4-12 people.", "es": "¿Tienes que alimentar a todo un grupo? No digas más. Las Comidas Estilo Familiar de Olive Garden están aquí para salvar el día, sirviendo de 4 a 12 personas."}
+            "title": "Family Style Meals 👨‍👩‍👧‍👦",
+            "description": "Got a whole crew to feed? Say less. Olive Garden's Family Style Meals are here to save the day, serving 4-12 people."
           },
           {
-            "title": {"en": "Never Ending Classics 🍝", "es": "Clásicos Interminables 🍝"},
-            "description": {"en": "This is not a drill! The Never Ending Classics are BACK, starting at just $11.99! Includes unlimited breadsticks, soup, AND salad.", "es": "¡No es un simulacro! ¡Los Clásicos Interminables están de VUELTA, desde solo $11.99! Incluye palitos de pan, sopa Y ensalada ilimitados."}
+            "title": "Never Ending Classics 🍝",
+            "description": "This is not a drill! The Never Ending Classics are BACK, starting at just $11.99! Includes unlimited breadsticks, soup, AND salad."
           },
           {
-            "title": {"en": "Buy One, Take One ✌️", "es": "Compra Uno, Llévate Otro ✌️"},
-            "description": {"en": "Two meals are better than one. Get a hot entrée now, plus a chilled one to take home. Available for To-Go orders too!", "es": "Dos comidas son mejor que una. Disfruta de un plato caliente ahora, y llévate uno frío a casa. ¡También disponible para pedidos para llevar!"}
+            "title": "Buy One, Take One ✌️",
+            "description": "Two meals are better than one. Get a hot entrée now, plus a chilled one to take home. Available for To-Go orders too!"
           },
           {
-            "title": {"en": "$6 Take Home Entrées 🥡", "es": "Platos para Llevar por $6 🥡"},
-            "description": {"en": "Add a freshly prepared, chilled classic entrée to any dine-in order. It's the perfect way to score lunch for tomorrow.", "es": "Añade un plato clásico recién preparado y frío a cualquier pedido en el restaurante. Es la forma perfecta de asegurarte el almuerzo de mañana."}
+            "title": "$6 Take Home Entrées 🥡",
+            "description": "Add a freshly prepared, chilled classic entrée to any dine-in order. It's the perfect way to score lunch for tomorrow."
           }
         ]
       }
@@ -91,22 +64,19 @@
     {
       "type": "faq",
       "data": {
-        "headline": {
-          "en": "Your Questions, Answered! 🤔",
-          "es": "¡Tus Preguntas, Respondidas! 🤔"
-        },
-        "questions": [
+        "title": "Your Questions, Answered! 🤔",
+        "items": [
           {
-            "question": {"en": "What is Olive Garden’s Buy One, Take One deal?", "es": "¿Qué es la oferta Compra Uno, Llévate Otro de Olive Garden?"},
-            "answer": {"en": "Order an entrée starting at $12.99 and take a second one home for free. It also includes unlimited soup or salad and breadsticks. It's available for a limited time, so get on it!", "es": "Pide un plato principal desde $12.99 y llévate un segundo a casa gratis. También incluye sopa o ensalada ilimitada y palitos de pan. ¡Está disponible por tiempo limitado, así que aprovéchalo!"}
+            "question": "What is Olive Garden’s Buy One, Take One deal?",
+            "answer": "Order an entrée starting at $12.99 and take a second one home for free. It also includes unlimited soup or salad and breadsticks. It's available for a limited time, so get on it!"
           },
           {
-            "question": {"en": "Does Olive Garden still have the Never-Ending Pasta Bowl?", "es": "¿Olive Garden todavía tiene el Tazón de Pasta Interminable?"},
-            "answer": {"en": "YES! It starts at $13.99 and you get unlimited pasta, sauce, and soup. You can add meat for an extra charge. It's the best.", "es": "¡SÍ! Comienza en $13.99 y obtienes pasta, salsa y sopa ilimitadas. Puedes añadir carne por un cargo extra. Es lo mejor."}
+            "question": "Does Olive Garden still have the Never-Ending Pasta Bowl?",
+            "answer": "YES! It starts at $13.99 and you get unlimited pasta, sauce, and soup. You can add meat for an extra charge. It's the best."
           },
           {
-            "question": {"en": "What are Olive Garden’s lunch specials?", "es": "¿Cuáles son las ofertas de almuerzo de Olive Garden?"},
-            "answer": {"en": "They have a bunch! Unlimited Soup, Salad & Breadsticks for $9.99, Lunch Duos starting at $7.99, and Lunch-Sized Favorites also starting at $7.99. They're available Monday-Friday until 3 PM.", "es": "¡Tienen un montón! Sopa, Ensalada y Palitos de Pan ilimitados por $9.99, Dúos de Almuerzo desde $7.99, y Favoritos a Tamaño de Almuerzo también desde $7.99. Están disponibles de lunes a viernes hasta las 3 PM."}
+            "question": "What are Olive Garden’s lunch specials?",
+            "answer": "They have a bunch! Unlimited Soup, Salad & Breadsticks for $9.99, Lunch Duos starting at $7.99, and Lunch-Sized Favorites also starting at $7.99. They're available Monday-Friday until 3 PM."
           }
         ]
       }

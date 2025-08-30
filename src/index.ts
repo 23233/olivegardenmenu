@@ -26,6 +26,7 @@ const app = new Hono()
 // --- Utility Functions ---
 
 function toKebabCase(str: string): string {
+  if (!str) return '';
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
@@ -486,7 +487,7 @@ const renderGoogleMap = (data: any) => `
 const renderStoreDataTable = (data: any) => `
   <section id="${toKebabCase(data.title)}">
     <h2>${data.title}</h2>
-    <p class="category-description">${data.description}</p>
+    ${data.description ? `<p class="category-description">${data.description}</p>` : ''}
     <details class="data-table-details" open>
       <summary>Click to view all locations</summary>
       <table class="data-table">
