@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "h1": "Contact Us",
-    "description": "Get in touch with the Olive Garden Menu Guide team. We'd love to hear from you!",
+    "h1": "Got a Question? Contact the Olive Garden Menu Guide Team! 💌",
+    "description": "Have a question or some feedback for us? 👋 We'd LOVE to hear from you! Here's how to get in touch with the Olive Garden Menu Guide team.",
     "coreKeyword": "Contact Olive Garden Menu Guide",
     "author": {
       "name": "The Olive Garden Menu Guide Team",
@@ -13,7 +13,7 @@
     {
       "type": "richText",
       "data": {
-        "htmlContent": "<p>If you have any questions, suggestions, or just want to say hi, feel free to reach out to us. We appreciate your feedback and are always looking for ways to improve our website.</p><h3>Email</h3><p>For general inquiries, please email us at <a href='mailto:contact@olivegardenmenuguide.com'>contact@olivegardenmenuguide.com</a>.</p><h3>Address</h3><p>Olive Garden Menu Guide<br>123 Pasta Lane<br>Tuscany, Italy 12345</p>"
+        "htmlContent": "<h3>Got a question, a hot tip, or just want to talk about how amazing breadsticks are? We're all ears! 👂</h3><p>We're super passionate about providing the best Olive Garden menu info out there, and we love hearing from fellow fans. Your feedback helps us make this site even better!</p><h3>Email Us! 📬</h3><p>For any and all inquiries, drop us a line at <a href='mailto:contact@olivegardenmenuguide.com'>contact@olivegardenmenuguide.com</a>. We read every email and will get back to you faster than you can say 'unlimited soup, salad, and breadsticks'!</p><h3>Our HQ 🇮🇹</h3><p>Olive Garden Menu Guide<br>123 Pasta Lane<br>Tuscany, Italy 12345</p><p><em>(Okay, not really, but a fan can dream, right? 😉 For now, email is the best way to reach us!)</em></p>"
       }
     }
   ]

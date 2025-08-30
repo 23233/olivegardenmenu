@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "h1": "Olive Garden Pasta Menu With Prices & Calories September 2025",
-    "description": "Explore the Olive Garden pasta menu for September 2025, featuring a wide range of pasta dishes with prices and calorie information. From Fettuccine Alfredo to the Create Your Own Pasta option.",
+    "h1": "The Official Olive Garden Pasta Menu 2025? Every Price! 🍝",
+    "description": "Craving carbs? 🍝 Check out the full Olive Garden Pasta Menu for 2025, with prices for every dish from Alfredo to Ziti. Let's get saucy! 👇",
     "coreKeyword": "Olive Garden Pasta Menu",
     "author": {
       "name": "The Olive Garden Menu Guide Team",
@@ -13,16 +13,16 @@
     {
       "type": "richText",
       "data": {
-        "htmlContent": "<p>Olive Garden’s pasta menu is packed with creamy, cheesy, and saucy goodness. If there’s one place that knows how to serve a plate of pasta that makes you forget your worries, it’s this one.</p>"
+        "htmlContent": "<p>Let's be real, you go to Olive Garden for the PASTA. 🍝 It's the ultimate comfort food, and their menu is a playground of creamy, cheesy, saucy goodness. Whether you're a fan of the classics or want to build your own masterpiece, the pasta possibilities are endless. Let's dive in! ✨</p>"
       }
     },
     {
       "type": "dataTable",
       "data": {
-        "title": "Olive Garden Pasta Menu",
+        "title": "Olive Garden Pasta Menu & Prices (September 2025)",
         "categories": {
           "CREATE YOUR OWN PASTA": {
-            "description": "Customize your perfect pasta dish. Choose your favorite pasta, sauce, and topping for a meal that's uniquely yours.",
+            "description": "Don't let them tell you what to do! Be your own pasta artist. Choose your pasta, sauce, and toppings to create the dish of your dreams. 🎨",
             "recommended": "Create Your Own Pasta – Cucina Mia",
             "items": [
               {
@@ -35,14 +35,15 @@
             ]
           },
           "CLASSIC PASTA ENTRÉES": {
-            "description": "Timeless Italian favorites, prepared with the freshest ingredients and our signature sauces that have been loved for generations.",
+            "description": "These are the legends! The tried-and-true pasta dishes that everyone loves. You can't go wrong with any of these. 🏆",
             "recommended": "Fettuccine Alfredo (V)",
             "items": [
               {
                 "name": "Chicken Alfredo",
                 "calories": "1,570",
                 "price": "19.99",
-                "image_url": "/static/image/upload/Chicken-Alfredo-1.webp"
+                "image_url": "/static/image/upload/Chicken-Alfredo-1.webp",
+                "review": "The GOAT of pasta dishes. Creamy, cheesy, and oh-so-satisfying. It's famous for a reason. 💯"
               },
               {
                 "name": "Spaghetti & Meatballs",
@@ -82,19 +83,19 @@
     {
       "type": "faq",
       "data": {
-        "title": "Frequently Asked Questions",
+        "title": "Your Pasta Questions, Answered! 🍝",
         "items": [
           {
-            "question": "Can I customize my pasta order?",
-            "answer": "Yes, Olive Garden offers a “Create Your Own Pasta” option, allowing you to select your preferred pasta type, sauce, and toppings to craft a dish that suits your taste."
+            "question": "Can I really create my own pasta at Olive Garden?",
+            "answer": "YES! The 'Create Your Own Pasta' option is the ultimate game-changer. You pick the pasta, the sauce, and the toppings. Go wild!"
           },
           {
-            "question": "Are there gluten-free pasta options available?",
-            "answer": "Yes, Olive Garden provides gluten-free pasta choices. You can request gluten-free rotini and pair it with suitable sauces to enjoy a meal that aligns with your dietary needs."
+            "question": "Are there gluten-free pasta options?",
+            "answer": "You bet! Olive Garden offers gluten-free rotini pasta. Just let your server know, and they'll hook you up with a delicious gluten-sensitive meal."
           },
           {
-            "question": "Do pasta entrées include soup or salad?",
-            "answer": "Yes, all pasta entrées come with your choice of soup and salad and the signature breadsticks, enhancing your dining experience with these classic accompaniments."
+            "question": "Do pasta dishes come with breadsticks and salad?",
+            "answer": "Of course! It wouldn't be Olive Garden without unlimited breadsticks and your choice of their famous house salad or a soup. It's all included with your entrée. 🙌"
           }
         ]
       }

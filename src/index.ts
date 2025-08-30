@@ -46,12 +46,12 @@ function joinUrlPaths(base: string, ...paths: string[]): string {
 
 // --- HTML Generation Functions ---
 
-function generateHead(siteConfig: any, data: any): string {
+function generateHead(siteConfig: any, data: any, pagePath: string): string {
   const { siteName, colors, baseURL } = siteConfig;
   const { metadata } = data;
   const { h1, description, coreKeyword, author, datePublished } = metadata;
 
-  const pageUrl = baseURL;
+  const pageUrl = joinUrlPaths(baseURL, pagePath);
   const logoUrl = joinUrlPaths(pageUrl, siteConfig.logoUrl);
 
   const graph = [
@@ -404,9 +404,9 @@ const renderImageGallery = (data: any) => `
     <h2>${data.title}</h2>
     <p class="category-description">${data.description}</p>
     <div class="shots-gallery-grid">
-      ${data.items.map((item: any) => `
+      ${data.items.map((item: any, index: number) => `
         <div class="shot-card">
-          <img src="${item.url}" alt="${item.alt}" loading="lazy" data-full-src="${item.url}">
+          <img src="${item.url}" alt="${item.alt} - photo ${index + 1}" loading="lazy" data-full-src="${item.url}">
         </div>
       `).join('')}
     </div>
@@ -592,7 +592,7 @@ function generateCommonScripts(): string {
 app.get('/static/*', serveStatic({ root: './' }))
 
 app.get('/', (c) => {
-  const head = generateHead(siteConfig, menuData);
+  const head = generateHead(siteConfig, menuData, '/');
   const header = generateHeader(siteConfig);
   let mainContent = generatePageBody(menuData);
   const footer = generateFooter(siteConfig);
@@ -664,7 +664,7 @@ app.get('/', (c) => {
 })
 
 app.get('/drink-menu/', (c) => {
-  const head = generateHead(siteConfig, drinkMenuData);
+  const head = generateHead(siteConfig, drinkMenuData, '/drink-menu/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(drinkMenuData);
   const footer = generateFooter(siteConfig);
@@ -688,7 +688,7 @@ app.get('/drink-menu/', (c) => {
 });
 
 app.get('/near-me/', (c) => {
-  const head = generateHead(siteConfig, nearMeData);
+  const head = generateHead(siteConfig, nearMeData, '/near-me/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(nearMeData);
   const footer = generateFooter(siteConfig);
@@ -712,7 +712,7 @@ app.get('/near-me/', (c) => {
 });
 
 app.get('/lunch-menu/', (c) => {
-  const head = generateHead(siteConfig, lunchMenuData);
+  const head = generateHead(siteConfig, lunchMenuData, '/lunch-menu/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(lunchMenuData);
   const footer = generateFooter(siteConfig);
@@ -736,7 +736,7 @@ app.get('/lunch-menu/', (c) => {
 });
 
 app.get('/dinner-menu/', (c) => {
-  const head = generateHead(siteConfig, dinnerMenuData);
+  const head = generateHead(siteConfig, dinnerMenuData, '/dinner-menu/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(dinnerMenuData);
   const footer = generateFooter(siteConfig);
@@ -760,7 +760,7 @@ app.get('/dinner-menu/', (c) => {
 });
 
 app.get('/dessert-menu/', (c) => {
-  const head = generateHead(siteConfig, dessertMenuData);
+  const head = generateHead(siteConfig, dessertMenuData, '/dessert-menu/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(dessertMenuData);
   const footer = generateFooter(siteConfig);
@@ -784,7 +784,7 @@ app.get('/dessert-menu/', (c) => {
 });
 
 app.get('/catering-menu/', (c) => {
-  const head = generateHead(siteConfig, cateringMenuData);
+  const head = generateHead(siteConfig, cateringMenuData, '/catering-menu/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(cateringMenuData);
   const footer = generateFooter(siteConfig);
@@ -808,7 +808,7 @@ app.get('/catering-menu/', (c) => {
 });
 
 app.get('/kids-menu/', (c) => {
-  const head = generateHead(siteConfig, kidsMenuData);
+  const head = generateHead(siteConfig, kidsMenuData, '/kids-menu/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(kidsMenuData);
   const footer = generateFooter(siteConfig);
@@ -832,7 +832,7 @@ app.get('/kids-menu/', (c) => {
 });
 
 app.get('/pasta-menu/', (c) => {
-  const head = generateHead(siteConfig, pastaMenuData);
+  const head = generateHead(siteConfig, pastaMenuData, '/pasta-menu/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(pastaMenuData);
   const footer = generateFooter(siteConfig);
@@ -856,7 +856,7 @@ app.get('/pasta-menu/', (c) => {
 });
 
 app.get('/soup-menu/', (c) => {
-  const head = generateHead(siteConfig, soupMenuData);
+  const head = generateHead(siteConfig, soupMenuData, '/soup-menu/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(soupMenuData);
   const footer = generateFooter(siteConfig);
@@ -880,7 +880,7 @@ app.get('/soup-menu/', (c) => {
 });
 
 app.get('/nutrition-allergen-menu/', (c) => {
-  const head = generateHead(siteConfig, nutritionAllergenMenuData);
+  const head = generateHead(siteConfig, nutritionAllergenMenuData, '/nutrition-allergen-menu/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(nutritionAllergenMenuData);
   const footer = generateFooter(siteConfig);
@@ -904,7 +904,7 @@ app.get('/nutrition-allergen-menu/', (c) => {
 });
 
 app.get('/contact_us/', (c) => {
-  const head = generateHead(siteConfig, contactUsData);
+  const head = generateHead(siteConfig, contactUsData, '/contact_us/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(contactUsData);
   const footer = generateFooter(siteConfig);
@@ -928,7 +928,7 @@ app.get('/contact_us/', (c) => {
 });
 
 app.get('/privacy_policy/', (c) => {
-  const head = generateHead(siteConfig, privacyPolicyData);
+  const head = generateHead(siteConfig, privacyPolicyData, '/privacy_policy/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(privacyPolicyData);
   const footer = generateFooter(siteConfig);
@@ -952,7 +952,7 @@ app.get('/privacy_policy/', (c) => {
 });
 
 app.get('/terms_of_service/', (c) => {
-  const head = generateHead(siteConfig, termsOfServiceData);
+  const head = generateHead(siteConfig, termsOfServiceData, '/terms_of_service/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(termsOfServiceData);
   const footer = generateFooter(siteConfig);
@@ -976,7 +976,7 @@ app.get('/terms_of_service/', (c) => {
 });
 
 app.get('/specials/', (c) => {
-  const head = generateHead(siteConfig, specialsData);
+  const head = generateHead(siteConfig, specialsData, '/specials/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(specialsData);
   const footer = generateFooter(siteConfig);
@@ -1000,7 +1000,7 @@ app.get('/specials/', (c) => {
 });
 
 app.get('/happy-hours/', (c) => {
-  const head = generateHead(siteConfig, happyHoursData);
+  const head = generateHead(siteConfig, happyHoursData, '/happy-hours/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(happyHoursData);
   const footer = generateFooter(siteConfig);
@@ -1024,7 +1024,7 @@ app.get('/happy-hours/', (c) => {
 });
 
 app.get('/coupons/', (c) => {
-  const head = generateHead(siteConfig, couponsData);
+  const head = generateHead(siteConfig, couponsData, '/coupons/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(couponsData);
   const footer = generateFooter(siteConfig);
@@ -1048,7 +1048,7 @@ app.get('/coupons/', (c) => {
 });
 
 app.get('/holiday-hours/', (c) => {
-  const head = generateHead(siteConfig, holidayHoursData);
+  const head = generateHead(siteConfig, holidayHoursData, '/holiday-hours/');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(holidayHoursData);
   const footer = generateFooter(siteConfig);
