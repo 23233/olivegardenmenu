@@ -365,7 +365,7 @@ const renderDataTable = (data: any) => {
     const recommendedItemName = categoryData.recommended;
     return `
           <div id="${toKebabCase(categoryName)}">
-            <h3>${categoryName} - Olive Garden Menu</h3>
+            <h3>${categoryName} of Olive Garden Menu</h3>
             <p class="category-description">${categoryData.description}</p>
             <div class="menu-grid">
               ${categoryData.items.map((item: any) => `
@@ -376,7 +376,7 @@ const renderDataTable = (data: any) => {
                     <h4>${item.name}</h4>
                     <div class="price-calories-container">
                       <span class="price">${formatPrice(item.price)}</span>
-                      <span class="calories-badge">${item.calories} Cal</span>
+                      <span class="calories-badge">${item.calories} Calorie</span>
                     </div>
                   </div>
                 </div>
