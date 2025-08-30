@@ -179,7 +179,7 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
                 line-height: 1.6; 
             }
             .container { max-width: ${siteConfig.maxWidth}px; margin: 0 auto; padding: 20px; }
-            h1, h2, h3 { color: var(--text-primary); line-height: 1.2; }
+            h1, h2, h3 , h4 { color: var(--text-primary); line-height: 1.2; }
             h1 { font-size: 2.5rem; text-align: center; margin-bottom: 0.5rem; }
             h2 { font-size: 2rem; border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-top: 40px; }
             p { color: var(--text-secondary); }
@@ -228,7 +228,7 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
             }
             
             .menu-card-content { padding: 15px; }
-            .menu-card h3 { font-size: 1.2rem; margin-top: 0; min-height: 2.9rem;}
+            .menu-card h3 , .menu-card h4 { font-size: 1.2rem; margin-top: 0; min-height: 2.9rem;}
             
             .price-calories-container {
                 display: flex;
@@ -375,7 +375,7 @@ const renderHero = (data: any) => `
 `;
 
 const renderRichText = (data: any) => `
-  <section class="rich-text">
+  <section class="rich-text" id="${toKebabCase(data.title)}">
     ${data.title ? `<h2>${data.title}</h2>` : ''}
     <div>${data.htmlContent}</div>
   </section>
