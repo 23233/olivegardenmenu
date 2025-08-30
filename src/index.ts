@@ -3,6 +3,9 @@ import { serveStatic } from 'hono/cloudflare-workers'
 import menuData from '../raw/index.json';
 import siteConfig from "../raw/site.json";
 import nearMeData from "../raw/near_me.json";
+import contactUsData from "../raw/contact_us.json";
+import privacyPolicyData from "../raw/privacy_policy.json";
+import termsOfServiceData from "../raw/terms_of_service.json";
 
 const app = new Hono()
 
@@ -649,6 +652,78 @@ app.get('/near-me/', (c) => {
   const head = generateHead(siteConfig, nearMeData);
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(nearMeData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/contact_us/', (c) => {
+  const head = generateHead(siteConfig, contactUsData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(contactUsData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/privacy_policy/', (c) => {
+  const head = generateHead(siteConfig, privacyPolicyData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(privacyPolicyData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/terms_of_service/', (c) => {
+  const head = generateHead(siteConfig, termsOfServiceData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(termsOfServiceData);
   const footer = generateFooter(siteConfig);
   const commonScripts = generateCommonScripts();
 

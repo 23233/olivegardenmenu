@@ -96,15 +96,15 @@
       },
       {
         "text": "Contact Us",
-        "url": "/contact_us"
+        "url": "/contact_us/"
       },
       {
         "text": "Privacy Policy",
-        "url": "/privacy_policy"
+        "url": "/privacy_policy/"
       },
       {
         "text": "Terms of Service",
-        "url": "/terms_of_service"
+        "url": "/terms_of_service/"
       }
     ]
   },
