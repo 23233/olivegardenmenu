@@ -601,7 +601,7 @@ app.get('/', (c) => {
   const nearMeSection = `
        <section id="near-me">
         <h2>Find an Olive Garden Near Me! 📍</h2>
-        <p>Craving some delicious Italian food? 🍝 Use the map below to find the nearest Olive Garden restaurant to you! We've got hundreds of locations across the country, so there's a good chance there's one just around the corner.</p>
+        <p>Craving some delicious Italian food? 🍝 Use the map below to find the nearest Olive Garden restaurant to you! We've got thousands of locations across the country, so there's a good chance there's one just around the corner.</p>
         <div style="text-align: center; margin: 20px 0;">
           <iframe
             src="${siteConfig.maps.url}"

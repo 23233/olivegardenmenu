@@ -27,8 +27,8 @@
     {
       "type": "dataTable",
       "data": {
-        "title": "Complete List of Olive Garden Locations in the US",
-        "description": "Browse the table below to find the address for every Olive Garden restaurant. We've compiled this list to make your search as easy as possible!",
+        "title": "Partial List of Olive Garden Locations in the US.",
+        "description": "Browse the table below to find the address for some of our Olive Garden restaurants. We've compiled this list to make your search as easy as possible",
         "headers": ["City", "State", "Address"],
         "rows": [
           ["Thornton", "CO", "1151 E 120th Ave, Thornton, CO 80233"],
