@@ -30,57 +30,57 @@
         "submenu": [
           {
             "text": "Olive Garden Drink Menu 2025",
-            "url": "/menu/"
+            "url": "/drink-menu/"
           },
           {
             "text": "Olive Garden Lunch Menu 2025",
-            "url": "/menu/"
+            "url": "/lunch-menu/"
           },
           {
             "text": "Olive Garden Dinner Menu 2025",
-            "url": "/menu/"
+            "url": "/dinner-menu/"
           },
           {
             "text": "Olive Garden Dessert Menu 2025",
-            "url": "/menu/"
+            "url": "/dessert-menu/"
           },
           {
             "text": "Olive Garden Catering Menu 2025",
-            "url": "/menu/"
+            "url": "/catering-menu/"
           },
           {
             "text": "Olive Garden Kids Menu 2025",
-            "url": "/menu/"
+            "url": "/kids-menu/"
           },
           {
             "text": "Olive Garden Pasta Menu 2025",
-            "url": "/menu/"
+            "url": "/pasta-menu/"
           },
           {
             "text": "Olive Garden Soup Menu 2025",
-            "url": "/menu/"
+            "url": "/soup-menu/"
           },
           {
             "text": "Nutrition & Allergen Menu 2025",
-            "url": "/menu/"
+            "url": "/nutrition-allergen-menu/"
           }
         ]
       },
       {
         "text": "Olive Garden Specials",
-        "url": "/about/"
+        "url": "/specials/"
       },
       {
         "text": "Happy Hours 2025",
-        "url": "/about/"
+        "url": "/happy-hours/"
       },
       {
         "text": "Coupons",
-        "url": "/about/"
+        "url": "/coupons/"
       },
       {
         "text": "Holiday Hours 2025",
-        "url": "/about/"
+        "url": "/holiday-hours/"
       },
       {
         "text": "Olive Garden Near Me",

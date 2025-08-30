@@ -98,6 +98,39 @@ function generateHead(siteConfig: any, data: any): string {
     graph.push(primaryImage);
   }
 
+  // Dynamically add Menu and MenuItem schema
+  const dataTableBlock = data.contentBlocks.find((block: any) => block.type === 'dataTable');
+  if (dataTableBlock && dataTableBlock.data && dataTableBlock.data.categories) {
+    const categories = dataTableBlock.data.categories;
+    for (const categoryName in categories) {
+      const category = categories[categoryName];
+      const menuItems = category.items.map((item: any) => ({
+        "@type": "MenuItem",
+        "name": item.name,
+        "description": item.review || `A delicious ${item.name} from the Olive Garden menu.`,
+        "image": joinUrlPaths(pageUrl, item.image_url),
+        "offers": {
+          "@type": "Offer",
+          "price": item.price,
+          "priceCurrency": "USD"
+        },
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": `${item.calories} Cal`
+        }
+      }));
+
+      const menuSchema = {
+        "@type": "Menu",
+        "name": categoryName,
+        "description": category.description,
+        "hasMenuItem": menuItems
+      };
+      // @ts-ignore
+      graph.push(menuSchema);
+    }
+  }
+
   return `
     <head>
         <meta charset="UTF-8">
@@ -188,7 +221,16 @@ function generateHead(siteConfig: any, data: any): string {
             .calories-badge { color: var(--text-secondary); font-size: 0.9rem; font-weight: 500; }
             .category-description { margin: -5px 0 25px; font-style: italic; color: var(--text-secondary); text-align: left; }
             .category-description strong { color: var(--text-primary); font-weight: 600; }
-            
+            .review-text {
+                font-size: 0.85rem;
+                font-style: italic;
+                color: #444;
+                margin: 10px 0;
+                padding: 10px;
+                border-left: 3px solid var(--accent);
+                background-color: #f9f9f9;
+                border-radius: 4px;
+            }
             .recommend-badge {
                 position: absolute;
                 width: 100px; /* Smaller width */
@@ -226,6 +268,8 @@ function generateHead(siteConfig: any, data: any): string {
             .footer-links { display: flex; gap: 1rem; }
             .footer-links a { color: var(--footer-text); }
             .footer-disclaimer { font-size: 0.8rem; color: #999; margin-top: 1rem; text-align: center; width: 100%; }
+            .video-container { position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; margin: 2rem 0; }
+            .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
             .submenu-parent-button {
                 background: none; border: none; color: white; padding: 0.5rem; margin: 0;
                 font-size: inherit; font-family: inherit; cursor: pointer; display: flex; align-items: center; width: 100%; text-align: left;
@@ -374,9 +418,10 @@ const renderDataTable = (data: any) => {
                   <img src="${item.image_url}" alt="Image of ${item.name}" loading="lazy">
                   <div class="menu-card-content">
                     <h4>${item.name}</h4>
+                    ${item.review ? `<p class="review-text">${item.review}</p>` : ''}
                     <div class="price-calories-container">
                       <span class="price">${formatPrice(item.price)}</span>
-                      <span class="calories-badge">${item.calories} Calorie</span>
+                      <span class="calories-badge">${item.calories} Cal</span>
                     </div>
                   </div>
                 </div>
@@ -386,7 +431,7 @@ const renderDataTable = (data: any) => {
         `
   }).join('')}
     </section>
-  `;
+  `;7
 };
 
 const renderFaq = (data: any) => `
