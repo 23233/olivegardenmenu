@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "h1": "Olive Garden Nutrition, Allergen Menu & Gluten-Free Options 2025",
+    "description": "Find detailed nutrition and allergen information for the Olive Garden menu. Make informed choices with our complete guide to calories, fat, carbs, and gluten-free options.",
+    "coreKeyword": "Olive Garden Nutrition",
+    "author": {
+      "name": "The Olive Garden Menu Guide Team",
+      "email": "contact@olivegardenmenuguide.com"
+    },
+    "datePublished": "2025-08-30"
+  },
+  "contentBlocks": [
+    {
+      "type": "richText",
+      "data": {
+        "htmlContent": "<p>Olive Garden is known for its creamy pastas, endless breadsticks, and fresh salads from their complete menu. But if olive garden nutrition, the Olive Garden allergen menu, or Olive Garden gluten-free menu matter to you, knowing what’s on your plate is key.</p>"
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "title": "APPETIZERS",
+        "description": "",
+        "headers": ["Dish", "Calories", "Price"],
+        "rows": [
+          ["Fried Mozzarella", "800", "9.79"],
+          ["Stuffed Ziti Fritta", "500", "10.49"],
+          ["Dipping Sauces Includes Breadsticks (V)", "140", "5.49"],
+          ["Calamari", "670", "13.29"],
+          ["Meatballs Parmigiana", "1,040", "12.29"],
+          ["Spinach-Artichoke Dip", "1,160", "11.99"],
+          ["Lasagna Fritta", "1130", "12.29"],
+          ["Shrimp Fritto Misto", "1,280", "14.79"],
+          ["Toasted Ravioli", "650", "10.79"]
+        ]
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "title": "CLASSIC ENTRÉES",
+        "description": "",
+        "headers": ["Dish", "Calories", "Price"],
+        "rows": [
+          ["Chicken Alfredo", "1,570", "19.99"],
+          ["Chicken and Shrimp Carbonara", "1,370", "21.99"],
+          ["Chicken Parmigiana", "1,020", "19.99"],
+          ["Tour of Italy", "1,550", "21.99"],
+          ["Spaghetti & Meatballs", "970", "16.78"],
+          ["Chicken Marsala Fettuccine", "1,400", "20.49"],
+          ["Ravioli Carbonara", "1,390", "17.99"],
+          ["Lasagna Classico", "940", "18.29"],
+          ["Shrimp Alfredo", "1,470", "20.99"],
+          ["Spaghetti with Meat Sauce", "640", "12.99"],
+          ["Spaghetti with Marinara (V)", "490", "12.99"],
+          ["Fettuccine Alfredo (V)", "1,310", "16.49"],
+          ["Chicken Tortelloni Alfredo", "1,980", "22.29"],
+          ["Shrimp Scampi", "490", "20.49"],
+          ["Seafood Alfredo", "1,450", "21.99"],
+          ["Five Cheese Ziti al Forno", "1,170", "17.99"],
+          ["Cheese Ravioli", "780", "16.99"],
+          ["Chicken Scampi", "1,050", "20.49"],
+          ["Eggplant Parmigiana (V)", "1,070", "17.49"],
+          ["Grilled Chicken Margherita", "650", "20.29"]
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "Does Olive Garden offer a gluten-free menu?",
+            "answer": "Yes, Olive Garden provides a gluten-sensitive menu featuring items like Gluten-Free Rotini with Marinara or Meat Sauce, Herb-Grilled Salmon, and the Famous House Salad without croutons."
+          },
+          {
+            "question": "Does Olive Garden have an allergen menu?",
+            "answer": "Yes, Olive Garden offers an Allergen Guide that details which menu items contain common allergens like dairy, nuts, shellfish, and more. This guide helps guests make informed dining choices based on their dietary needs."
+          }
+        ]
+      }
+    }
+  ]
+}

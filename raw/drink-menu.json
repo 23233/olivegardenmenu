@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "h1": "Olive Garden Drink Menu Summer 2025",
+    "description": "Explore the full Olive Garden drink menu for Summer 2025. From classic non-alcoholic lemonades to signature cocktails, find the perfect beverage to accompany your meal.",
+    "coreKeyword": "Olive Garden Drink Menu",
+    "author": {
+      "name": "The Olive Garden Menu Guide Team",
+      "email": "contact@olivegardenmenuguide.com"
+    },
+    "datePublished": "2025-08-30"
+  },
+  "contentBlocks": [
+    {
+      "type": "richText",
+      "data": {
+        "htmlContent": "<p>Olive Garden’s drink menu adds the perfect sip to every meal. From classic non-alcoholic lemonades to signature cocktails, there’s something for everyone. For a lighter option, the Raspberry Lemonade brings flavor with only 170 calories.</p>"
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "title": "Olive Garden Drink Menu",
+        "categories": {
+          "NON-ALCOHOLIC BEVERAGES": {
+            "description": "Quench your thirst with a refreshing selection of sodas, lemonades, iced teas, and more.",
+            "recommended": "Raspberry Lemonade",
+            "items": [
+              {
+                "name": "Gallon Iced Teas & Raspberry Lemonade",
+                "calories": "800",
+                "price": "6.49",
+                "image_url": "/static/image/upload/Gallon-Iced-Teas-Raspberry-Lemonade.webp"
+              },
+              {
+                "name": "To Go Fountain Drinks",
+                "calories": "180",
+                "price": "3.99",
+                "image_url": "/static/image/upload/To-Go-Fountain-Drinks.webp"
+              },
+              {
+                "name": "Raspberry Lemonade",
+                "calories": "170",
+                "price": "4.49",
+                "image_url": "/static/image/upload/Raspberry_Lemonade-removebg-preview.webp",
+                "review": "So refreshing! 🍋 The perfect balance of sweet and tart. It's the ultimate thirst quencher. Plus, it's bottomless. What's not to love? 🥤"
+              },
+              {
+                "name": "Classic Lemonade",
+                "calories": "170",
+                "price": "3.99",
+                "image_url": "/static/image/upload/Classic-Lemonade.webp"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "Does Olive Garden Drink menu offer free refills on drinks?",
+            "answer": "Yes, Olive Garden provides complimentary refills on soft drinks, raspberry lemonade, teas, fruit juices, and “Caffè la Toscana” upon request."
+          },
+          {
+            "question": "Are there non-alcoholic beverages available at Olive Garden?",
+            "answer": "Yes, Olive Garden offers a variety of non-alcoholic beverages, including Italian Bottled Water, Raspberry Lemonade, Classic Lemonade, Fresh Brewed Iced Tea, Flavored Iced Teas, and Fountain Drinks."
+          },
+          {
+            "question": "Are there kid-friendly beverage options at Olive Garden?",
+            "answer": "Absolutely, Olive Garden offers a variety of kid-friendly beverages, including Milk, Fruit Juices, and Lemonade."
+          }
+        ]
+      }
+    }
+  ]
+}

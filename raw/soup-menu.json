@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "h1": "Olive Garden Soup Menu September 2025 – Fresh, Flavorful, and Always Satisfying",
+    "description": "Discover the Olive Garden soup menu for September 2025. Explore our four classic soups, including the fan-favorite Zuppa Toscana, and find prices and calorie information.",
+    "coreKeyword": "Olive Garden Soup Menu",
+    "author": {
+      "name": "The Olive Garden Menu Guide Team",
+      "email": "contact@olivegardenmenuguide.com"
+    },
+    "datePublished": "2025-08-30"
+  },
+  "contentBlocks": [
+    {
+      "type": "richText",
+      "data": {
+        "htmlContent": "<p>Olive Garden’s soup menu is all about comfort, warmth, and rich flavors. Every bowl is packed with fresh ingredients, that makes it a go-to choice for anyone craving a hearty meal.</p>"
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "title": "Olive Garden Soup Menu Summer 2025",
+        "categories": {
+          "SOUPS, SALAD & BREADSTICKS": {
+            "description": "Enjoy our famous unlimited breadsticks and garden salad, perfectly paired with a variety of hearty homemade soups.",
+            "recommended": "WEEKDAY Lunch Special: Soup, Salad and Breadsticks",
+            "items": [
+              {
+                "name": "WEEKDAY Lunch Special: Soup, Salad and Breadsticks",
+                "calories": "400",
+                "price": "9.99",
+                "image_url": "/static/image/upload/WEEKDAY-Lunch-Special-Soup-Salad-and-Breadsticks-1.webp",
+                "review": "The LEGENDARY deal. Unlimited breadsticks, salad, and your choice of homemade soup. It's the ultimate lunch hack. Pro-tip: dip the breadsticks in the Zuppa Toscana. You can thank me later. 😉"
+              },
+              {
+                "name": "Soup AND Salad AND Breadsticks",
+                "calories": "400",
+                "price": "12.99",
+                "image_url": "/static/image/upload/Soup-AND-Salad-AND-Breadsticks-1.webp"
+              },
+              {
+                "name": "Homemade Soups",
+                "calories": "110-230",
+                "price": "8.99",
+                "image_url": "/static/image/upload/Homemade-Soups-1.webp"
+              },
+              {
+                "name": "House Salad",
+                "calories": "110",
+                "price": "7.99",
+                "image_url": "/static/image/upload/House-Salad-1.webp"
+              },
+              {
+                "name": "Dipping Sauces Includes Breadsticks (V)",
+                "calories": "140",
+                "price": "5.39",
+                "image_url": "/static/image/upload/Dipping-Sauces-Includes-Breadsticks-V.webp"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "What soups are available at Olive Garden?",
+            "answer": "Olive Garden offers four soups: Chicken & Gnocchi, Pasta e Fagioli, Minestrone, and Zuppa Toscana."
+          },
+          {
+            "question": "Can I get unlimited soup, salad, and breadsticks with my entrée?",
+            "answer": "Yes, every entrée includes unlimited soup or salad and breadsticks."
+          },
+          {
+            "question": "Are the soups made fresh daily?",
+            "answer": "Yes, all soups are prepared fresh every day."
+          }
+        ]
+      }
+    }
+  ]
+}

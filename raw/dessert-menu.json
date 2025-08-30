@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "h1": "Olive Garden Dessert Menu Summer 2025 – Full Menu & Prices",
+    "description": "Indulge in the Olive Garden dessert menu for Summer 2025. Explore a variety of sweet treats, including the famous Chocolate Lasagna and classic Tiramisu, with full prices and calorie information.",
+    "coreKeyword": "Olive Garden Dessert Menu",
+    "author": {
+      "name": "The Olive Garden Menu Guide Team",
+      "email": "contact@olivegardenmenuguide.com"
+    },
+    "datePublished": "2025-08-30"
+  },
+  "contentBlocks": [
+    {
+      "type": "richText",
+      "data": {
+        "htmlContent": "<p>Olive Garden knows how to end a meal on a sweet note, and their dessert menu is proof. Each treat is crafted to satisfy those sugar cravings, no matter how full you think you are.</p>"
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "title": "Olive Garden Desserts Menu September 2025",
+        "categories": {
+          "DESSERTS": {
+            "description": "Indulge your sweet tooth with our decadent desserts, from rich chocolate cakes to classic Italian tiramisu.",
+            "recommended": "Tiramisu (V)",
+            "items": [
+              {
+                "name": "Chocolate Lasagna (V)",
+                "calories": "980",
+                "price": "10.49",
+                "image_url": "/static/image/upload/Chocolate-Lasagna-V.webp"
+              },
+              {
+                "name": "Black Tie Mousse Cake (V)",
+                "calories": "750",
+                "price": "10.79",
+                "image_url": "/static/image/upload/Black-Tie-Mousse-Cake.webp"
+              },
+              {
+                "name": "Tiramisu (V)",
+                "calories": "470",
+                "price": "9.99",
+                "image_url": "/static/image/upload/Tiramisu-V-1.webp",
+                "review": "Save room for this! 🍰 Creamy, coffee-soaked ladyfingers and a dusting of cocoa. It's light, it's airy, and it's the perfect sweet ending to your meal. An Italian classic done right."
+              },
+              {
+                "name": "Strawberry Cream Cake (V)",
+                "calories": "540",
+                "price": "10.49",
+                "image_url": "/static/image/upload/Strawberry-Cream-Cake-V.jpg.webp"
+              },
+              {
+                "name": "Warm Italian Doughnuts (V)",
+                "calories": "810",
+                "price": "9.79",
+                "image_url": "/static/image/upload/Warm-Italian-Doughnuts-V.webp"
+              },
+              {
+                "name": "Sicilian Cheesecake with Strawberry Topping (V)",
+                "calories": "700",
+                "price": "9.99",
+                "image_url": "/static/image/upload/Sicilian-Cheesecake-with-Strawberry-Topping-V-1.webp"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "Can I order dessert at Olive Garden without having a full meal?",
+            "answer": "Absolutely! You’re welcome to visit Olive Garden just for dessert, whether you’re dining in or opting for takeout."
+          },
+          {
+            "question": "Are there gluten-free dessert options available?",
+            "answer": "Yes, Olive Garden offers gluten-free desserts, such as the Flourless Chocolate Torte."
+          },
+          {
+            "question": "How many calories are in the Black Tie Mousse Cake?",
+            "answer": "The Black Tie Mousse Cake contains 750 calories per slice."
+          }
+        ]
+      }
+    }
+  ]
+}

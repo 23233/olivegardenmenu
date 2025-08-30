@@ -6,6 +6,15 @@ import nearMeData from "../raw/near_me.json";
 import contactUsData from "../raw/contact_us.json";
 import privacyPolicyData from "../raw/privacy_policy.json";
 import termsOfServiceData from "../raw/terms_of_service.json";
+import drinkMenuData from "../raw/drink-menu.json";
+import lunchMenuData from "../raw/lunch-menu.json";
+import dinnerMenuData from "../raw/dinner-menu.json";
+import dessertMenuData from "../raw/dessert-menu.json";
+import cateringMenuData from "../raw/catering-menu.json";
+import kidsMenuData from "../raw/kids-menu.json";
+import pastaMenuData from "../raw/pasta-menu.json";
+import soupMenuData from "../raw/soup-menu.json";
+import nutritionAllergenMenuData from "../raw/nutrition-allergen-menu.json";
 
 const app = new Hono()
 
@@ -648,10 +657,226 @@ app.get('/', (c) => {
   return c.html(finalHtml);
 })
 
+app.get('/drink-menu/', (c) => {
+  const head = generateHead(siteConfig, drinkMenuData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(drinkMenuData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
 app.get('/near-me/', (c) => {
   const head = generateHead(siteConfig, nearMeData);
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(nearMeData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/lunch-menu/', (c) => {
+  const head = generateHead(siteConfig, lunchMenuData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(lunchMenuData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/dinner-menu/', (c) => {
+  const head = generateHead(siteConfig, dinnerMenuData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(dinnerMenuData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/dessert-menu/', (c) => {
+  const head = generateHead(siteConfig, dessertMenuData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(dessertMenuData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/catering-menu/', (c) => {
+  const head = generateHead(siteConfig, cateringMenuData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(cateringMenuData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/kids-menu/', (c) => {
+  const head = generateHead(siteConfig, kidsMenuData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(kidsMenuData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/pasta-menu/', (c) => {
+  const head = generateHead(siteConfig, pastaMenuData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(pastaMenuData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/soup-menu/', (c) => {
+  const head = generateHead(siteConfig, soupMenuData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(soupMenuData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/nutrition-allergen-menu/', (c) => {
+  const head = generateHead(siteConfig, nutritionAllergenMenuData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(nutritionAllergenMenuData);
   const footer = generateFooter(siteConfig);
   const commonScripts = generateCommonScripts();
 
@@ -744,4 +969,4 @@ app.get('/terms_of_service/', (c) => {
   return c.html(html);
 });
 
-export default app
+export default app;

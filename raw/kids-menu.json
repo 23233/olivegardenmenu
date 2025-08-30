@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "h1": "Olive Garden Kids Menu With Prices & Calories September 2025",
+    "description": "Explore the Olive Garden kids menu for September 2025, featuring a variety of kid-friendly meals with prices and calorie information. Find favorites like Kids Cheese Ravioli and Macaroni & Cheese.",
+    "coreKeyword": "Olive Garden Kids Menu",
+    "author": {
+      "name": "The Olive Garden Menu Guide Team",
+      "email": "contact@olivegardenmenuguide.com"
+    },
+    "datePublished": "2025-08-30"
+  },
+  "contentBlocks": [
+    {
+      "type": "richText",
+      "data": {
+        "htmlContent": "<p>Kids deserve a feast too, and Olive Garden knows how to keep little food lovers happy. The Kids Menu is full of tasty picks made for young appetites.</p>"
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "title": "Olive Garden Kids Menu September 2025",
+        "categories": {
+          "KIDS MEALS – FOR CHILDREN UNDER 12": {
+            "description": "Delightful and perfectly portioned meals for our younger guests, including classic pasta and chicken fingers.",
+            "recommended": "Kids Pizza",
+            "items": [
+              {
+                "name": "Kids Alfredo Sauce with Choice of Pasta (V)",
+                "calories": "440",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Alfredo-Sauce-with-Choice-of-Pasta-V.webp"
+              },
+              {
+                "name": "Kids Pizza",
+                "calories": "400",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Pizza.webp",
+                "review": "A personal pizza that's perfect for the little ones! 🍕 Cheesy, saucy, and just the right size. It's a guaranteed crowd-pleaser for even the pickiest eaters."
+              },
+              {
+                "name": "Kids Chicken Fingers",
+                "calories": "300",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Chicken-Fingers.webp"
+              },
+              {
+                "name": "Kids Macaroni & Cheese",
+                "calories": "360",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Macaroni-Cheese.webp"
+              },
+              {
+                "name": "Kids Meat Sauce with Choice of Pasta",
+                "calories": "110",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Meat-Sauce-with-Choice-of-Pasta.webp"
+              },
+              {
+                "name": "Kids Tomato Sauce with Choice of Pasta (V)",
+                "calories": "80",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Tomato-Sauce-with-Choice-of-Pasta-V.jpg.webp"
+              },
+              {
+                "name": "Kids Five Cheese Marinara with Choice of Pasta (V)",
+                "calories": "150",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Five-Cheese-Marinara-with-Choice-of-Pasta-V.webp"
+              },
+              {
+                "name": "Kids Cheese Ravioli (V)",
+                "calories": "340",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Cheese-Ravioli-V.webp"
+              },
+              {
+                "name": "Kids Grilled Chicken with Rotini Pasta & Marinara",
+                "calories": "430",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Grilled-Chicken-with-Rotini-Pasta-Marinara.webp"
+              },
+              {
+                "name": "Kids Rotini with Marinara (V)",
+                "calories": "260",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Rotini-with-Marinara-V.webp"
+              },
+              {
+                "name": "Kids Rotini with Meat Sauce",
+                "calories": "340",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Rotini-with-Meat-Sauce.webp"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "What age group is the Kids Menu designed for?",
+            "answer": "The Kids Menu is crafted for children aged 12 and under."
+          },
+          {
+            "question": "Do kids’ meals include sides and drinks?",
+            "answer": "Yes, each kids’ meal comes with a choice of side, such as grapes or steamed broccoli, and a 1% low-fat milk."
+          },
+          {
+            "question": "Are there gluten-sensitive options available?",
+            "answer": "Absolutely. Olive Garden offers gluten-sensitive choices like the Kids Rotini with Marinara or Meat Sauce, prepared with gluten-free pasta."
+          }
+        ]
+      }
+    }
+  ]
+}

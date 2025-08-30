@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "h1": "Olive Garden Lunch Menu 2025 – Full Menu, Prices & Hours",
+    "description": "Discover the Olive Garden lunch menu for 2025, featuring lunch-sized favorites, prices, and hours. Enjoy classics like Fettuccine Alfredo and the famous Soup, Salad & Breadsticks combo.",
+    "coreKeyword": "Olive Garden Lunch Menu",
+    "author": {
+      "name": "The Olive Garden Menu Guide Team",
+      "email": "contact@olivegardenmenuguide.com"
+    },
+    "datePublished": "2025-08-30"
+  },
+  "contentBlocks": [
+    {
+      "type": "richText",
+      "data": {
+        "htmlContent": "<p>Olive Garden’s lunch menu is where classic Italian flavors meet comfort at a price that won’t break the bank. The famous Soup, Salad & Breadsticks combo keeps people coming back, and for good reason—unlimited fresh salad, warm breadsticks, and a bowl of hearty soup. Light, filling, and packed with flavor.</p>"
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "title": "Olive Garden Lunch Menu September 2025",
+        "categories": {
+          "LUNCH-SIZED FAVORITES": {
+            "description": "Enjoy your favorite Olive Garden classics in perfectly portioned lunch sizes, available weekdays until 3 p.m.",
+            "recommended": "Chicken Parmigiana",
+            "items": [
+              {
+                "name": "Chicken Parmigiana",
+                "calories": "630",
+                "price": "13.49",
+                "image_url": "/static/image/upload/Chicken-Parmigiana-1-1.webp",
+                "review": "The perfect lunch-sized portion of a classic! Crispy chicken, melted cheese, and rich marinara, all over a bed of spaghetti. It's a midday power-up that won't send you into a food coma. 💪"
+              },
+              {
+                "name": "Fettuccine Alfredo (V)",
+                "calories": "650",
+                "price": "12.49",
+                "image_url": "/static/image/upload/Fettuccine-Alfredo-V-1-1.webp"
+              },
+              {
+                "name": "Shrimp Scampi",
+                "calories": "460",
+                "price": "13.49",
+                "image_url": "/static/image/upload/Shrimp-Scampi-1.webp"
+              },
+              {
+                "name": "Lasagna Classico",
+                "calories": "500",
+                "price": "13.49",
+                "image_url": "/static/image/upload/Lasagna-Classico-2.webp"
+              },
+              {
+                "name": "Spaghetti & Meatballs",
+                "calories": "680",
+                "price": "13.49",
+                "image_url": "/static/image/upload/Spaghetti-Meatballs-1.webp"
+              },
+              {
+                "name": "Cheese Ravioli",
+                "calories": "450",
+                "price": "12.49",
+                "image_url": "/static/image/upload/Cheese-Ravioli-1.webp"
+              },
+              {
+                "name": "Five Cheese Ziti al Forno",
+                "calories": "630",
+                "price": "12.49",
+                "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-1.webp"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "When are Olive Garden’s lunch hours?",
+            "answer": "Lunch is typically served Monday through Friday until 3:00 PM. On weekends and holidays, only the dinner menu is available all day."
+          },
+          {
+            "question": "Does Olive Garden offer lunch specials?",
+            "answer": "Yes, Olive Garden provides lunch-sized favorites, including options like Spaghetti with Marinara or Meat Sauce, Fettuccine Alfredo, and Eggplant Parmigiana, each accompanied by unlimited soup or salad and breadsticks."
+          },
+          {
+            "question": "Are lunch portions available on weekends?",
+            "answer": "Lunch-sized portions are generally offered Monday through Friday before 3:00 PM. On weekends, only dinner portions are available."
+          }
+        ]
+      }
+    }
+  ]
+}

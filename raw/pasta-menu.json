@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "h1": "Olive Garden Pasta Menu With Prices & Calories September 2025",
+    "description": "Explore the Olive Garden pasta menu for September 2025, featuring a wide range of pasta dishes with prices and calorie information. From Fettuccine Alfredo to the Create Your Own Pasta option.",
+    "coreKeyword": "Olive Garden Pasta Menu",
+    "author": {
+      "name": "The Olive Garden Menu Guide Team",
+      "email": "contact@olivegardenmenuguide.com"
+    },
+    "datePublished": "2025-08-30"
+  },
+  "contentBlocks": [
+    {
+      "type": "richText",
+      "data": {
+        "htmlContent": "<p>Olive Garden’s pasta menu is packed with creamy, cheesy, and saucy goodness. If there’s one place that knows how to serve a plate of pasta that makes you forget your worries, it’s this one.</p>"
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "title": "Olive Garden Pasta Menu",
+        "categories": {
+          "CREATE YOUR OWN PASTA": {
+            "description": "Customize your perfect pasta dish. Choose your favorite pasta, sauce, and topping for a meal that's uniquely yours.",
+            "recommended": "Create Your Own Pasta – Cucina Mia",
+            "items": [
+              {
+                "name": "Create Your Own Pasta – Cucina Mia",
+                "calories": "540-1300",
+                "price": "19.49",
+                "image_url": "/static/image/upload/Create-Your-Own-Pasta-–-Cucina-Mia-1.webp",
+                "review": "Unleash your inner pasta artist! 🎨 Choose your pasta, sauce, and toppings to create your perfect bowl. Want angel hair with alfredo and shrimp? You got it. The possibilities are endless!"
+              }
+            ]
+          },
+          "CLASSIC PASTA ENTRÉES": {
+            "description": "Timeless Italian favorites, prepared with the freshest ingredients and our signature sauces that have been loved for generations.",
+            "recommended": "Fettuccine Alfredo (V)",
+            "items": [
+              {
+                "name": "Chicken Alfredo",
+                "calories": "1,570",
+                "price": "19.99",
+                "image_url": "/static/image/upload/Chicken-Alfredo-1.webp"
+              },
+              {
+                "name": "Spaghetti & Meatballs",
+                "calories": "970",
+                "price": "16.78",
+                "image_url": "/static/image/upload/Spaghetti-Meatballs-1.webp"
+              },
+              {
+                "name": "Fettuccine Alfredo (V)",
+                "calories": "1,310",
+                "price": "16.49",
+                "image_url": "/static/image/upload/Fettuccine-Alfredo-V-2.webp"
+              },
+              {
+                "name": "Chicken Tortelloni Alfredo",
+                "calories": "1,980",
+                "price": "22.29",
+                "image_url": "/static/image/upload/Chicken-Tortelloni-Alfredo-1.webp"
+              },
+              {
+                "name": "Five Cheese Ziti al Forno",
+                "calories": "1,170",
+                "price": "17.99",
+                "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-1.webp"
+              },
+              {
+                "name": "Cheese Ravioli",
+                "calories": "780",
+                "price": "16.99",
+                "image_url": "/static/image/upload/Cheese-Ravioli-1.webp"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "Can I customize my pasta order?",
+            "answer": "Yes, Olive Garden offers a “Create Your Own Pasta” option, allowing you to select your preferred pasta type, sauce, and toppings to craft a dish that suits your taste."
+          },
+          {
+            "question": "Are there gluten-free pasta options available?",
+            "answer": "Yes, Olive Garden provides gluten-free pasta choices. You can request gluten-free rotini and pair it with suitable sauces to enjoy a meal that aligns with your dietary needs."
+          },
+          {
+            "question": "Do pasta entrées include soup or salad?",
+            "answer": "Yes, all pasta entrées come with your choice of soup and salad and the signature breadsticks, enhancing your dining experience with these classic accompaniments."
+          }
+        ]
+      }
+    }
+  ]
+}

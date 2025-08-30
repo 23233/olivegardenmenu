@@ -1,0 +1,206 @@
+{
+  "metadata": {
+    "h1": "Olive Garden Dinner Menu With Prices & Hours September 2025",
+    "description": "Explore the Olive Garden dinner menu for September 2025. Find prices, hours, and a full list of dinner entrees, including classics like Chicken Alfredo and Lasagna Classico.",
+    "coreKeyword": "Olive Garden Dinner Menu",
+    "author": {
+      "name": "The Olive Garden Menu Guide Team",
+      "email": "contact@olivegardenmenuguide.com"
+    },
+    "datePublished": "2025-08-30"
+  },
+  "contentBlocks": [
+    {
+      "type": "richText",
+      "data": {
+        "htmlContent": "<p>Olive Garden’s dinner menu is packed with comfort, flavor, and that warm, homestyle Italian goodness that keeps people coming back. The Chicken Alfredo steals the show as the most famous dish—creamy, rich, and satisfying, it’s a favorite for a reason. A plate of this indulgence costs around $20.99 and comes in at 1,570 calories that makes it a hearty pick for those who love a good Alfredo fix.</p>"
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "title": "Olive Garden Dinner Menu Summer 2025",
+        "categories": {
+          "CLASSIC ENTRÉES": {
+            "description": "Timeless Italian favorites, prepared with the freshest ingredients and our signature sauces that have been loved for generations.",
+            "recommended": "Lasagna Classico",
+            "items": [
+              {
+                "name": "Chicken Alfredo",
+                "calories": "1,570",
+                "price": "19.99",
+                "image_url": "/static/image/upload/Chicken-Alfredo-1.webp"
+              },
+              {
+                "name": "Chicken and Shrimp Carbonara",
+                "calories": "1,370",
+                "price": "21.99",
+                "image_url": "/static/image/upload/Chicken-and-Shrimp-Carbonara-1.webp"
+              },
+              {
+                "name": "Chicken Parmigiana",
+                "calories": "1,020",
+                "price": "19.99",
+                "image_url": "/static/image/upload/Chicken-Parmigiana-2.webp"
+              },
+              {
+                "name": "Tour of Italy",
+                "calories": "1,550",
+                "price": "21.99",
+                "image_url": "/static/image/upload/Tour-of-Italy-2.webp"
+              },
+              {
+                "name": "Spaghetti & Meatballs",
+                "calories": "970",
+                "price": "16.78",
+                "image_url": "/static/image/upload/Spaghetti-Meatballs-1.webp"
+              },
+              {
+                "name": "Chicken Marsala Fettuccine",
+                "calories": "1,400",
+                "price": "20.49",
+                "image_url": "/static/image/upload/Chicken-Marsala-Fettuccine-1.webp"
+              },
+              {
+                "name": "Ravioli Carbonara",
+                "calories": "1,390",
+                "price": "17.99",
+                "image_url": "/static/image/upload/Ravioli-Carbonara-1.webp"
+              },
+              {
+                "name": "Lasagna Classico",
+                "calories": "940",
+                "price": "18.29",
+                "image_url": "/static/image/upload/Lasagna-Classico-2.webp",
+                "review": "This is the real deal, folks! Layers of pasta, savory meat sauce, and so much cheese. It's like a warm hug on a plate. 🍝 If you want a taste of classic Olive Garden, this is IT. 10/10 comfort food."
+              },
+              {
+                "name": "Shrimp Alfredo",
+                "calories": "1,470",
+                "price": "20.99",
+                "image_url": "/static/image/upload/Shrimp-Alfredo-2.webp"
+              },
+              {
+                "name": "Spaghetti with Meat Sauce",
+                "calories": "640",
+                "price": "12.99",
+                "image_url": "/static/image/upload/Spaghetti-with-Meat-Sauce-1.webp"
+              },
+              {
+                "name": "Spaghetti with Marinara (V)",
+                "calories": "490",
+                "price": "12.99",
+                "image_url": "/static/image/upload/Spaghetti-with-Marinara-V-1.webp"
+              },
+              {
+                "name": "Fettuccine Alfredo (V)",
+                "calories": "1,310",
+                "price": "16.49",
+                "image_url": "/static/image/upload/Fettuccine-Alfredo-V-2.webp"
+              },
+              {
+                "name": "Chicken Tortelloni Alfredo",
+                "calories": "1,980",
+                "price": "22.29",
+                "image_url": "/static/image/upload/Chicken-Tortelloni-Alfredo-1.webp"
+              },
+              {
+                "name": "Shrimp Scampi",
+                "calories": "490",
+                "price": "20.49",
+                "image_url": "/static/image/upload/Shrimp-Scampi-1.webp"
+              },
+              {
+                "name": "Seafood Alfredo",
+                "calories": "1,450",
+                "price": "21.99",
+                "image_url": "/static/image/upload/Seafood-Alfredo-2.webp"
+              },
+              {
+                "name": "Five Cheese Ziti al Forno",
+                "calories": "1,170",
+                "price": "17.99",
+                "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-1.webp"
+              },
+              {
+                "name": "Cheese Ravioli",
+                "calories": "780",
+                "price": "16.99",
+                "image_url": "/static/image/upload/Cheese-Ravioli-1.webp"
+              },
+              {
+                "name": "Chicken Scampi",
+                "calories": "1,050",
+                "price": "20.49",
+                "image_url": "/static/image/upload/Chicken-Scampi-1.webp"
+              },
+              {
+                "name": "Eggplant Parmigiana (V)",
+                "calories": "1,070",
+                "price": "17.49",
+                "image_url": "/static/image/upload/Eggplant-Parmigiana-V-1.webp"
+              },
+              {
+                "name": "Grilled Chicken Margherita",
+                "calories": "650",
+                "price": "20.29",
+                "image_url": "/static/image/upload/Grilled-Chicken-Margherita-1.webp"
+              }
+            ]
+          },
+          "AMAZING ALFREDOS": {
+            "description": "Indulge in our rich, creamy, and house-made Alfredo sauce, served with a variety of perfectly cooked pasta and proteins.",
+            "recommended": "Chicken Alfredo",
+            "items": [
+              {
+                "name": "Chicken Alfredo",
+                "calories": "1,570",
+                "price": "21.49",
+                "image_url": "/static/image/upload/Chicken-Alfredo-2-1.webp",
+                "review": "The creamiest, dreamiest Alfredo sauce you'll ever have. The grilled chicken is tender and the fettuccine is cooked perfectly. It's rich, it's decadent, and it's worth every single calorie. 🤤"
+              },
+              {
+                "name": "Seafood Alfredo",
+                "calories": "1,450",
+                "price": "23.49",
+                "image_url": "/static/image/upload/Seafood-Alfredo-1-1.webp"
+              },
+              {
+                "name": "Shrimp Alfredo",
+                "calories": "1,470",
+                "price": "22.49",
+                "image_url": "/static/image/upload/Shrimp-Alfredo-1-1.webp"
+              },
+              {
+                "name": "Fettuccine Alfredo (V)",
+                "calories": "1,310",
+                "price": "17.49",
+                "image_url": "/static/image/upload/Fettuccine-Alfredo-V-1-1.webp"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "Can I get lunch-sized portions during dinner hours?",
+            "answer": "Typically, lunch portions are available Monday through Friday until 3 p.m. However, some locations accommodate requests for lunch-sized portions during dinner hours."
+          },
+          {
+            "question": "Are there gluten-free dinner options available?",
+            "answer": "Absolutely. Olive Garden offers gluten-free rotini pasta that can be paired with marinara or meat sauce. Additionally, certain salads and proteins can be modified to accommodate gluten-sensitive guests."
+          },
+          {
+            "question": "Does Olive Garden offer family-style dinner meals?",
+            "answer": "Yes, Olive Garden provides Family-Style Meals designed to serve 4-6 people. These bundles include entrees like Chicken Alfredo, Lasagna Classico, and Chicken Parmigiana, accompanied by soup or salad and breadsticks."
+          }
+        ]
+      }
+    }
+  ]
+}
