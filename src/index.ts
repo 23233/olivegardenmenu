@@ -431,7 +431,7 @@ const renderDataTable = (data: any) => {
         `
   }).join('')}
     </section>
-  `;7
+  `;
 };
 
 const renderFaq = (data: any) => `
