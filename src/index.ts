@@ -399,6 +399,19 @@ const renderTableOfContents = (data: any, blocks: any[]) => {
   `;
 };
 
+const renderCategoryJumpLinks = (data: any) => {
+  const categories = Object.keys(data.categories);
+  // Use a different emoji to distinguish from the main ToC
+  return `
+    <details class="quick-jumps" open>
+      <summary>🍝 ${data.title}</summary>
+      <ul>
+        ${categories.map(category => `<li><a href="#${toKebabCase(category)}">${category}</a></li>`).join('')}
+      </ul>
+    </details>
+  `;
+};
+
 const renderImageGallery = (data: any) => `
   <section id="${toKebabCase(data.title)}">
     <h2>${data.title}</h2>
@@ -517,6 +530,8 @@ function generatePageBody(data: any): string {
         return renderRichText(block.data);
       case 'tableOfContents':
         return renderTableOfContents(block.data, data.contentBlocks);
+      case 'categoryJumpLinks':
+        return renderCategoryJumpLinks(block.data);
       case 'imageGallery':
         return renderImageGallery(block.data);
       case 'dataTable':
