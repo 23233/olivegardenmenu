@@ -21,92 +21,95 @@
       "data": {
         "title": "Olive Garden Catering Menu & Prices (September 2025)",
         "categories": {
-          "Catering Pans (Serves 4 – 6)": {
-            "description": "Olive Garden’s Catering Pans bring restaurant-quality Italian dishes straight to your event. Made for sharing, these trays deliver the same rich flavors and generous portions that make dining in so special—without the hassle of cooking. Perfect for feeding a small group with ease.",
-            "recommended": "Chicken Alfredo (Serves 4 – 6)",
+          "CATERING": {
+            "description": "Bring the taste of Olive Garden to your next event with our convenient and delicious catering pans. Everyone will thank you! 🙌",
+            "recommended": "Lasagna Classico (Serves up to 12)",
             "items": [
-              { "name": "Chicken Alfredo (Serves 4 - 6)", "calories": "6,050-6,600", "price": "76.99", "image_url": "/static/image/upload/Chicken-Alfredo-Serves-4-6-1.webp" },
-              { "name": "Chicken Parmigiana (Serves 4 - 6)", "calories": "4,790", "price": "62.99", "image_url": "/static/image/upload/Chicken-Parmigiana-Serves-4-6-1.webp" },
-              { "name": "Fettuccine Alfredo (Serves 4 - 6)", "calories": "5,010-5,620", "price": "61.99", "image_url": "/static/image/upload/Fettuccine-Alfredo-Serves-4-6-1.webp" },
-              { "name": "Shrimp Alfredo (Serves 4 - 6)", "calories": "5,680", "price": "73.99", "image_url": "/static/image/upload/Shrimp-Alfredo-Serves-4-6-1.webp" },
-              { "name": "Five Cheese Ziti al Forno (Serves 4 - 6)", "calories": "4,680", "price": "54.49", "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-Serves-4-6-1.webp" },
-              { "name": "Spaghetti with Meat Sauce (Serves 4 - 6)", "calories": "2,840-4,830", "price": "59.99", "image_url": "/static/image/upload/Spaghetti-with-Meat-Sauce-Serves-4-–-6-1.webp" },
-              { "name": "Spaghetti with Marinara Sauce (Serves 4 - 6)", "calories": "2,270-4,260", "price": "59.99", "image_url": "/static/image/upload/Spaghetti-with-Marinara-Sauce-Serves-4-6-1.webp" },
-              { "name": "Chicken Tortelloni Alfredo (serves 4 - 6 )", "calories": "7,930", "price": "72.79", "image_url": "/static/image/upload/Chicken-Tortelloni-Alfredo-serves-4-6-1-1.webp" },
-              { "name": "Lasagna Classico (Serves up to 6)", "calories": "3,420", "price": "53.49", "image_url": "/static/image/upload/Lasagna-Classico-Serves-up-to-6-1.webp" },
-              { "name": "Lasagna Classico (Serves up to 12)", "calories": "6,470", "price": "63.49", "image_url": "/static/image/upload/Lasagna-Classico-Serves-up-to-12.webp" },
-              { "name": "Chicken Scampi (Serves 4 - 6)", "calories": "4,190", "price": "67.99", "image_url": "/static/image/upload/Chicken-Scampi-Serves-4-6-1.webp" },
-              { "name": "Chicken and Shrimp Carbonara (Serves 4 - 6)", "calories": "5,460", "price": "73.99", "image_url": "/static/image/upload/Chicken-and-Shrimp-Carbonara-Serves-4-6-1.webp" },
-              { "name": "Shrimp Scampi (Serves 4 - 6)", "calories": "1,980", "price": "71.99", "image_url": "/static/image/upload/Shrimp-Scampi-Serves-4-6-1.webp" },
-              { "name": "Cheese Ravioli with Marinara or Meat Sauce (Serves 4 - 6)", "calories": "3,170-3,510", "price": "54.49", "image_url": "/static/image/upload/Cheese-Ravioli-with-Marinara-or-Meat-Sauce-Serves-4-6.webp" }
-            ]
-          },
-          "Meal Combinations": {
-            "description": "Can't decide? Get the best of both worlds with these amazing meal combinations. Perfect for pleasing everyone at the party!",
-            "recommended": "Lasagna Combination (Serves 8 - 14)",
-            "items": [
-              { "name": "Chicken Parmigiana Combination (Serves 8 - 14)", "calories": "22,020-25,550", "price": "227.50", "image_url": "/static/image/upload/Chicken-Parmigiana-Combination-Serves-8-14.webp" },
-              { "name": "Create Your Own Pasta Station", "calories": "17,280", "price": "145.00", "image_url": "/static/image/upload/Create-Your-Own-Pasta-Station.webp" },
-              { "name": "Lasagna Combination (Serves 8 - 14)", "calories": "23,570-27,100", "price": "227.50", "image_url": "/static/image/upload/Lasagna-Combination-Serves-8-14.webp" }
-            ]
-          },
-          "Soups, Salad & Breadsticks (Catering)": {
-            "description": "It's not an Olive Garden meal without the essentials! Get jumbo salads, gallons of soup, and dozens of those famous breadsticks.",
-            "recommended": "Our Famous Jumbo House Salad",
-            "items": [
-              { "name": "Our Famous Jumbo House Salad includes 12 Breadsticks (Serves 6)", "calories": "1,650", "price": "24.99", "image_url": "/static/image/upload/Our-Famous-Jumbo-House-Salad-includes-12-Breadsticks-Serves-6-1.webp" },
-              { "name": "Homemade Soups (Serves 6)", "calories": "850-1,870", "price": "20.29", "image_url": "/static/image/upload/Homemade-Soups-Serves-6.jpg" },
-              { "name": "Homemade Soups Large (Serves 12)", "calories": "1700-3,750", "price": "31.99", "image_url": "/static/image/upload/Homemade-Soups-Large-Serves-12-1.webp" },
-              { "name": "Breadsticks", "calories": "840-1680", "price": "8.29", "image_url": "/static/image/upload/Breadsticks.webp" }
-            ]
-          },
-          "Appetizers (Catering)": {
-            "description": "Kick off your event with these crowd-pleasing appetizers. Perfect for sharing while the main course is on its way.",
-            "recommended": "Spinach-Artichoke Dip (Serves 4 - 6)",
-            "items": [
-              { "name": "Fried Mozzarella (Serves 4 - 6)", "calories": "3,450", "price": "32.99", "image_url": "/static/image/upload/Fried-Mozzarella-Serves-4-6.webp" },
-              { "name": "Spinach-Artichoke Dip (Serves 4 - 6)", "calories": "2,310", "price": "27.99", "image_url": "/static/image/upload/Spinach-Artichoke-Dip-Serves-4-6.webp" },
-              { "name": "Toasted Beef Ravioli (Serves 4 - 6)", "calories": "2,590", "price": "33.99", "image_url": "/static/image/upload/Toasted-Beef-Ravioli-Serves-4-6.webp" }
-            ]
-          },
-          "Perfect New Additions": {
-            "description": "Need a little something extra? Add on grilled chicken, meatballs, or a side of broccoli to complete your catering spread.",
-            "recommended": "Italian Meatballs (Serves 4 - 6)",
-            "items": [
-              { "name": "Grilled Chicken Breasts (Serves 4 - 6)", "calories": "810", "price": "27.49", "image_url": "/static/image/upload/Grilled-Chicken-Breasts-Serves-4-6.webp" },
-              { "name": "Chicken Fingers (Serves 4 - 6) - Perfect for Kids!", "calories": "1350", "price": "30.99", "image_url": "/static/image/upload/Chicken-Fingers-Serves-4-6-Perfect-for-Kids.webp" },
-              { "name": "Italian Meatballs (Serves 4 - 6)", "calories": "1,710", "price": "21.99", "image_url": "/static/image/upload/Italian-Meatballs-Serves-4-6.webp" },
-              { "name": "Italian Sausage (Serves 4 - 6)", "calories": "1,990", "price": "21.79", "image_url": "/static/image/upload/Italian-Sausage-Serves-4-6.webp" },
-              { "name": "Broccoli (Serves 4 - 6)", "calories": "610", "price": "19.99", "image_url": "/static/image/upload/Broccoli-Serves-4-6.webp" }
-            ]
-          },
-          "Homemade Sauces (Catering)": {
-            "description": "Get a tub of our famous homemade sauces to go! Perfect for dipping breadsticks or adding extra flavor to any dish.",
-            "recommended": "Alfredo Dipping Sauce (Serves 8)",
-            "items": [
-              { "name": "Alfredo Dipping Sauce (Serves 8)", "calories": "1,750", "price": "11.49", "image_url": "/static/image/upload/Alfredo-Dipping-Sauce-Serves-8-1.webp" },
-              { "name": "Five Cheese Marinara Dipping Sauce (Serves 8)", "calories": "800", "price": "9.99", "image_url": "/static/image/upload/Five-Cheese-Marinara-Dipping-Sauce-Serves-8-1.webp" },
-              { "name": "Marinara Dipping Sauce (Serves 8)", "calories": "290", "price": "9.99", "image_url": "/static/image/upload/Marinara-Dipping-Sauce-Serves-8-1.webp" },
-              { "name": "Meat Dipping Sauce (Serves 8)", "calories": "600", "price": "9.99", "image_url": "/static/image/upload/Meat-Dipping-Sauce-Serves-8.webp" }
-            ]
-          },
-          "Desserts (Catering)": {
-            "description": "End your event on a sweet note with our decadent, full-sized desserts. The perfect finale to any meal.",
-            "recommended": "Black Tie Mousse Cake",
-            "items": [
-              { "name": "Sicilian Cheesecake", "calories": "700-1400", "price": "78.99", "image_url": "/static/image/upload/Sicilian-Cheesecake.webp" },
-              { "name": "Tiramisu", "calories": "470 per slice", "price": "78.99", "image_url": "/static/image/upload/Tiramisu.webp" },
-              { "name": "Black Tie Mousse Cake", "calories": "450 per slice", "price": "78.99", "image_url": "/static/image/upload/Black-Tie-Mousse-Cake.webp" }
-            ]
-          },
-          "Beverages (Catering)": {
-            "description": "Don't forget the drinks! Quench your guests' thirst with our selection of refreshing beverages, available by the gallon or bottle.",
-            "recommended": "Gallon Iced Teas & Raspberry Lemonade",
-            "items": [
-              { "name": "Gallon Iced Teas & Raspberry Lemonade", "calories": "40-1,810", "price": "9.49", "image_url": "/static/image/upload/ToGo-Gallon-Iced-Teas-Raspberry-Lemonade.webp" },
-              { "name": "2-Liter Soda", "calories": "0-790", "price": "5.49", "image_url": "/static/image/upload/2-Liter-Soda.webp" },
-              { "name": "San Pellegrino Sparkling (1 liter bottle)", "calories": "50", "price": "5.99", "image_url": "/static/image/upload/San-Pellegrino-Sparkling-1-liter-bottle.webp" },
-              { "name": "Acqua Panna Spring (1 liter bottle)", "calories": "50", "price": "5.99", "image_url": "/static/image/upload/Acqua-Panna-Spring-1-liter-bottle.webp" }
+              {
+                "name": "Chicken Alfredo (Serves 4 – 6)",
+                "calories": "6,050",
+                "price": "66.99",
+                "image_url": "/static/image/upload/Chicken-Alfredo-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Chicken Parmigiana (Serves 4 – 6)",
+                "calories": "4,790",
+                "price": "61.99",
+                "image_url": "/static/image/upload/Chicken-Parmigiana-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Fettuccine Alfredo (Serves 4 – 6)",
+                "calories": "5,010",
+                "price": "50.99",
+                "image_url": "/static/image/upload/Fettuccine-Alfredo-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Shrimp Alfredo (Serves 4 – 6)",
+                "calories": "5,680",
+                "price": "72.29",
+                "image_url": "/static/image/upload/Shrimp-Alfredo-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Five Cheese Ziti al Forno (Serves 4 – 6)",
+                "calories": "4,680",
+                "price": "52.49",
+                "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Spaghetti with Meat Sauce** (Serves 4 – 6)",
+                "calories": "2,840",
+                "price": "48.99",
+                "image_url": "/static/image/upload/Spaghetti-with-Meat-Sauce-Serves-4-–-6-1.webp"
+              },
+              {
+                "name": "Spaghetti with Marinara Sauce (Serves 4 – 6)",
+                "calories": "2,270",
+                "price": "48.99",
+                "image_url": "/static/image/upload/Spaghetti-with-Marinara-Sauce-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Chicken Tortelloni Alfredo (serves 4 – 6 )",
+                "calories": "7,930",
+                "price": "71.39",
+                "image_url": "/static/image/upload/Chicken-Tortelloni-Alfredo-serves-4-6-1-1.webp"
+              },
+              {
+                "name": "Lasagna Classico (Serves up to 6)",
+                "calories": "3,420",
+                "price": "52.99",
+                "image_url": "/static/image/upload/Lasagna-Classico-Serves-up-to-6-1.webp"
+              },
+              {
+                "name": "Lasagna Classico (Serves up to 12)",
+                "calories": "6,470",
+                "price": "62.99",
+                "image_url": "/static/image/upload/Lasagna-Classico-Serves-up-to-12.webp",
+                "review": "Be the hero of your next party! This giant pan of Lasagna Classico will have everyone cheering. It's the easiest way to bring the Olive Garden experience home. 🎉"
+              },
+              {
+                "name": "Chicken Scampi (Serves 4 – 6)",
+                "calories": "4,190",
+                "price": "59.99",
+                "image_url": "/static/image/upload/Chicken-Scampi-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Chicken and Shrimp Carbonara (Serves 4 – 6)",
+                "calories": "5,460",
+                "price": "72.79",
+                "image_url": "/static/image/upload/Chicken-and-Shrimp-Carbonara-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Shrimp Scampi (Serves 4 – 6)",
+                "calories": "1,980",
+                "price": "70.79",
+                "image_url": "/static/image/upload/Shrimp-Scampi-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Cheese Ravioli with Marinara or Meat Sauce (Serves 4 – 6)",
+                "calories": "3,510",
+                "price": "52.99",
+                "image_url": "/static/image/upload/Cheese-Ravioli-with-Marinara-or-Meat-Sauce-Serves-4-6.webp"
+              }
             ]
           }
         }
