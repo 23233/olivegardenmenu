@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "h1": "Olive Garden Holiday Hours 2025 📅",
+    "description": "Is Olive Garden open on Christmas or Thanksgiving? 🦃 We've got the complete 2025 holiday schedule and regular hours to help you plan your visit. Check the hours before you go! 👇",
+    "coreKeyword": "Olive Garden Holiday Hours",
+    "pageGoal": "Inform customers about Olive Garden's operating hours during holidays and regular weeks to help them plan their visits.",
+    "languages": ["en", "es"],
+    "author": {
+      "name": "Jules",
+      "email": "jules@example.com"
+    },
+    "datePublished": "2025-08-30"
+  },
+  "contentBlocks": [
+    {
+      "type": "hero",
+      "data": {
+        "headline": {
+          "en": "Olive Garden Holiday Hours 2025 & Weekly Schedule 📅",
+          "es": "Horario de Días Festivos y Semanal de Olive Garden 2025 📅"
+        },
+        "subheading": {
+          "en": "Is Olive Garden open today? Here's the full scoop on their holiday and regular hours.",
+          "es": "¿Está Olive Garden abierto hoy? Aquí tienes toda la información sobre sus horarios festivos y regulares."
+        }
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "headline": {
+          "en": "Olive Garden Holiday Hours 2025 🎄",
+          "es": "Horario de Días Festivos de Olive Garden 2025 🎄"
+        },
+        "headers": ["Holiday", "Date", "Hours"],
+        "rows": [
+          [{"en": "Labor Day", "es": "Día del Trabajo"}, {"en": "Monday, Sept 1", "es": "Lunes, 1 de Septiembre"}, {"en": "11:00 AM – 10:00 PM", "es": "11:00 AM – 10:00 PM"}],
+          [{"en": "Thanksgiving Day", "es": "Día de Acción de Gracias"}, {"en": "Thursday, Nov 27", "es": "Jueves, 27 de Noviembre"}, {"en": "CLOSED 😭", "es": "CERRADO 😭"}],
+          [{"en": "Christmas Day", "es": "Día de Navidad"}, {"en": "Thursday, Dec 25", "es": "Jueves, 25 de Diciembre"}, {"en": "CLOSED 😭", "es": "CERRADO 😭"}]
+        ]
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "headline": {
+          "en": "Regular Weekly Hours 🕒",
+          "es": "Horario Semanal Regular 🕒"
+        },
+        "headers": ["Day", "Hours"],
+        "rows": [
+          [{"en": "Monday - Thursday", "es": "Lunes - Jueves"}, {"en": "11:00 AM - 10:00 PM", "es": "11:00 AM - 10:00 PM"}],
+          [{"en": "Friday - Saturday", "es": "Viernes - Sábado"}, {"en": "11:00 AM - 11:00 PM", "es": "11:00 AM - 11:00 PM"}],
+          [{"en": "Sunday", "es": "Domingo"}, {"en": "11:00 AM - 10:00 PM", "es": "11:00 AM - 10:00 PM"}]
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "headline": {
+          "en": "Holiday Hours FAQs 🤔",
+          "es": "Preguntas Frecuentes sobre Horarios Festivos 🤔"
+        },
+        "questions": [
+          {
+            "question": {"en": "Is Olive Garden open on Christmas?", "es": "¿Olive Garden abre en Navidad?"},
+            "answer": {"en": "No, Olive Garden is closed on Christmas Day so the team can spend time with their families.", "es": "No, Olive Garden está cerrado el día de Navidad para que el equipo pueda pasar tiempo con sus familias."}
+          },
+          {
+            "question": {"en": "Is Olive Garden open on Thanksgiving?", "es": "¿Olive Garden abre en Acción de Gracias?"},
+            "answer": {"en": "No, Olive Garden is also closed on Thanksgiving Day.", "es": "No, Olive Garden también está cerrado el Día de Acción de Gracias."}
+          }
+        ]
+      }
+    }
+  ]
+}

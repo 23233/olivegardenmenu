@@ -15,6 +15,11 @@ import kidsMenuData from "../raw/kids-menu.json";
 import pastaMenuData from "../raw/pasta-menu.json";
 import soupMenuData from "../raw/soup-menu.json";
 import nutritionAllergenMenuData from "../raw/nutrition-allergen-menu.json";
+import specialsData from "../raw/specials.json";
+import happyHoursData from "../raw/happy-hours.json";
+import couponsData from "../raw/coupons.json";
+import holidayHoursData from "../raw/holiday-hours.json";
+
 
 const app = new Hono()
 
@@ -949,6 +954,102 @@ app.get('/terms_of_service/', (c) => {
   const head = generateHead(siteConfig, termsOfServiceData);
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(termsOfServiceData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/specials/', (c) => {
+  const head = generateHead(siteConfig, specialsData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(specialsData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/happy-hours/', (c) => {
+  const head = generateHead(siteConfig, happyHoursData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(happyHoursData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/coupons/', (c) => {
+  const head = generateHead(siteConfig, couponsData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(couponsData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+app.get('/holiday-hours/', (c) => {
+  const head = generateHead(siteConfig, holidayHoursData);
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(holidayHoursData);
   const footer = generateFooter(siteConfig);
   const commonScripts = generateCommonScripts();
 

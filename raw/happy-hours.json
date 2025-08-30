@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "h1": "Olive Garden Happy Hour Times & Menu (August 2025) 🍻",
+    "description": "Don't miss the Olive Garden Happy Hour! 🕒 We've got the scoop on the times and menu deals, like $5 cocktails and appetizers. See the full list before you go! 👇",
+    "coreKeyword": "Olive Garden Happy Hour",
+    "pageGoal": "Detail the Olive Garden happy hour times, menu, and prices to attract customers during off-peak hours.",
+    "languages": ["en", "es"],
+    "author": {
+      "name": "Jules",
+      "email": "jules@example.com"
+    },
+    "datePublished": "2025-08-30"
+  },
+  "contentBlocks": [
+    {
+      "type": "hero",
+      "data": {
+        "headline": {
+          "en": "Olive Garden Happy Hour: The Happiest Hours of the Day! 🍻",
+          "es": "¡Happy Hour de Olive Garden: Las Horas Más Felices del Día! 🍻"
+        },
+        "subheading": {
+          "en": "It's 5 o'clock somewhere, right? 😉 Get awesome deals on drinks and appetizers, Monday to Friday, 3-6 PM.",
+          "es": "Son las 5 en algún lugar, ¿verdad? 😉 Consigue ofertas increíbles en bebidas y aperitivos, de lunes a viernes, de 3 a 6 PM."
+        }
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "headline": {
+          "en": "Happy Hour Times 🕒",
+          "es": "Horario del Happy Hour 🕒"
+        },
+        "headers": ["Day", "Hours"],
+        "rows": [
+          [{"en": "Monday", "es": "Lunes"}, {"en": "3:00 PM – 6:00 PM", "es": "3:00 PM – 6:00 PM"}],
+          [{"en": "Tuesday", "es": "Martes"}, {"en": "3:00 PM – 6:00 PM", "es": "3:00 PM – 6:00 PM"}],
+          [{"en": "Wednesday", "es": "Miércoles"}, {"en": "3:00 PM – 6:00 PM", "es": "3:00 PM – 6:00 PM"}],
+          [{"en": "Thursday", "es": "Jueves"}, {"en": "3:00 PM – 6:00 PM", "es": "3:00 PM – 6:00 PM"}],
+          [{"en": "Friday", "es": "Viernes"}, {"en": "3:00 PM – 6:00 PM", "es": "3:00 PM – 6:00 PM"}],
+          [{"en": "Saturday", "es": "Sábado"}, {"en": "No Happy Hour 😭", "es": "No Hay Happy Hour 😭"}],
+          [{"en": "Sunday", "es": "Domingo"}, {"en": "No Happy Hour 😭", "es": "No Hay Happy Hour 😭"}]
+        ]
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "headline": {
+          "en": "Happy Hour Menu & Prices 🥂",
+          "es": "Menú y Precios del Happy Hour 🥂"
+        },
+        "headers": ["Item", "Regular Price", "Happy Hour Price"],
+        "rows": [
+          [{"en": "Tortellini al Forno", "es": "Tortellini al Forno"}, {"en": "$6.99", "es": "$6.99"}, {"en": "$5.00", "es": "$5.00"}],
+          [{"en": "Crispy Risotto Bites", "es": "Bocaditos de Risotto Crujientes"}, {"en": "$6.49", "es": "$6.49"}, {"en": "$5.00", "es": "$5.00"}],
+          [{"en": "Mango Martini", "es": "Martini de Mango"}, {"en": "$8.99", "es": "$8.99"}, {"en": "$5.00", "es": "$5.00"}],
+          [{"en": "Bud Light Bottle", "es": "Botella de Bud Light"}, {"en": "$5.00", "es": "$5.00"}, {"en": "$4.00", "es": "$4.00"}]
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "headline": {
+          "en": "Happy Hour FAQs 🤔",
+          "es": "Preguntas Frecuentes del Happy Hour 🤔"
+        },
+        "questions": [
+          {
+            "question": {"en": "Does Olive Garden have Happy Hour?", "es": "¿Olive Garden tiene Happy Hour?"},
+            "answer": {"en": "Yes! Many locations have Happy Hour with deals on drinks and appetizers. Availability can vary, so check with your local spot.", "es": "¡Sí! Muchos locales tienen Happy Hour con ofertas en bebidas y aperitivos. La disponibilidad puede variar, así que consulta con tu restaurante local."}
+          },
+          {
+            "question": {"en": "Are Happy Hour specials available on weekends?", "es": "¿Las ofertas de Happy Hour están disponibles los fines de semana?"},
+            "answer": {"en": "Nope, Happy Hour is a weekday thing. Monday through Friday only!", "es": "No, el Happy Hour es solo entre semana. ¡De lunes a viernes únicamente!"}
+          }
+        ]
+      }
+    }
+  ]
+}
