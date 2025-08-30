@@ -1,5 +1,5 @@
-import { Hono } from 'hono'
-import { serveStatic } from 'hono/cloudflare-workers'
+import {Hono} from 'hono'
+import {serveStatic} from 'hono/cloudflare-workers'
 import menuData from '../raw/index.json';
 import siteConfig from "../raw/site.json";
 import nearMeData from "../raw/near_me.json";
@@ -47,23 +47,23 @@ function joinUrlPaths(base: string, ...paths: string[]): string {
 // --- HTML Generation Functions ---
 
 function generateHead(siteConfig: any, data: any, pagePath: string): string {
-  const { siteName, colors, baseURL } = siteConfig;
-  const { metadata } = data;
-  const { h1, description, coreKeyword, author, datePublished } = metadata;
+  const {siteName, colors, baseURL} = siteConfig;
+  const {metadata} = data;
+  const {h1, description, coreKeyword, author, datePublished} = metadata;
 
   const pageUrl = joinUrlPaths(baseURL, pagePath);
   const logoUrl = joinUrlPaths(pageUrl, siteConfig.logoUrl);
 
   const graph = [
-    { "@type": "WebSite", "name": siteName, "url": pageUrl, "@id": `${pageUrl}#website` },
-    { "@type": "Organization", "name": siteName, "url": pageUrl, "logo": logoUrl },
+    {"@type": "WebSite", "name": siteName, "url": pageUrl, "@id": `${pageUrl}#website`},
+    {"@type": "Organization", "name": siteName, "url": pageUrl, "logo": logoUrl},
     {
       "@type": "WebPage",
       "url": pageUrl,
       "name": h1,
       "description": description,
-      "isPartOf": { "@id": `${pageUrl}#website` },
-      "primaryImageOfPage": { "@id": `${pageUrl}#primaryimage` }
+      "isPartOf": {"@id": `${pageUrl}#website`},
+      "primaryImageOfPage": {"@id": `${pageUrl}#primaryimage`}
     },
     {
       "@type": "Person",
@@ -163,7 +163,7 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
         <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${h1}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${logoUrl}">
         <link rel="icon" href="${siteConfig.favicon.url}" sizes="${siteConfig.favicon.size}x${siteConfig.favicon.size}">
         <link rel="apple-touch-icon" href="${siteConfig.appleTouchIcon}">
-        <script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@graph": graph })}</script>
+        <script type="application/ld+json">${JSON.stringify({"@context": "https://schema.org", "@graph": graph})}</script>
         <style>
             :root {
                 --primary: ${colors.primary}; --secondary: ${colors.secondary}; --background: ${colors.background};
@@ -313,7 +313,7 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
 }
 
 function generateHeader(siteConfig: any): string {
-  const { navigation, logoUrl, siteName } = siteConfig;
+  const {navigation, logoUrl, siteName} = siteConfig;
   const generateSubmenu = (submenuItems: any[]) => {
     return `<ul class="submenu">${submenuItems.map(sub => `<li><a href="${sub.url}">${sub.text}</a></li>`).join('')}</ul>`;
   };
@@ -343,10 +343,10 @@ function generateHeader(siteConfig: any): string {
 }
 
 function generateFooter(siteConfig: any): string {
-  const { navigation } = siteConfig;
-  const copyright = navigation.footer.find((i:any) => i.text && i.text.startsWith('©'));
-  const disclaimer = navigation.footer.find((i:any) => i.text && i.text.startsWith('This website'));
-  const links = navigation.footer.filter((i:any) => i.url);
+  const {navigation} = siteConfig;
+  const copyright = navigation.footer.find((i: any) => i.text && i.text.startsWith('©'));
+  const disclaimer = navigation.footer.find((i: any) => i.text && i.text.startsWith('This website'));
+  const links = navigation.footer.filter((i: any) => i.url);
 
   return `
     <footer>
@@ -384,7 +384,7 @@ const renderRichText = (data: any) => `
 const renderTableOfContents = (data: any, blocks: any[]) => {
   const headings = blocks.map(block => {
     if (block.data && block.data.title && (block.type === 'dataTable' || block.type === 'faq' || block.type === 'imageGallery' || block.type === 'richText')) {
-      return { title: block.data.title, id: toKebabCase(block.data.title) };
+      return {title: block.data.title, id: toKebabCase(block.data.title)};
     }
     return null;
   }).filter(Boolean);
@@ -406,7 +406,7 @@ const renderCategoryJumpLinks = (data: any) => {
     <details class="quick-jumps" open>
       <summary>🍝 ${data.title}</summary>
       <ul>
-        ${categories.map((category,index) => `<li><span class="">${index + 1}.</span><a href="#${toKebabCase(category)}">${category}</a></li>`).join('')}
+        ${categories.map((category, index) => `<li><span class="">${index + 1}.</span><a href="#${toKebabCase(category)}">${category}</a></li>`).join('')}
       </ul>
     </details>
   `;
@@ -428,9 +428,20 @@ const renderImageGallery = (data: any) => `
 
 const renderDataTable = (data: any) => {
   const formatPrice = (price: any) => {
-    if (price === null || typeof price === 'undefined') { return '$0.00'; }
-    const priceNumber = Number(price);
-    return isNaN(priceNumber) ? '$0.00' : `$${priceNumber.toFixed(2)}`;
+    if (price === null || typeof price === 'undefined') {
+      return '$0.00';
+    }
+    // 判断是否为纯数字
+    const isPureNumber = /^\d+$/.test(price);
+    if (isPureNumber) {
+      const priceNumber = Number(price);
+      return isNaN(priceNumber) ? '$0.00' : `$${priceNumber.toFixed(2)}`;
+    }
+    // 如果包含了符号则直接返回 否则加上符号返回
+    if (price.includes("$")) {
+      return price;
+    }
+    return "$" + price
   };
 
   return `
@@ -604,7 +615,7 @@ function generateCommonScripts(): string {
 // --- Hono App ---
 
 // @ts-ignore
-app.get('/static/*', serveStatic({ root: './' }))
+app.get('/static/*', serveStatic({root: './'}))
 
 app.get('/', (c) => {
   const head = generateHead(siteConfig, menuData, '/');
