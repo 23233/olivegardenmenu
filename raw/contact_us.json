@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "h1": "Contact Us",
+    "description": "Get in touch with the Olive Garden Menu Guide team. We'd love to hear from you!",
+    "coreKeyword": "Contact Olive Garden Menu Guide",
+    "author": {
+      "name": "The Olive Garden Menu Guide Team",
+      "email": "contact@olivegardenmenuguide.com"
+    },
+    "datePublished": "2025-08-30"
+  },
+  "contentBlocks": [
+    {
+      "type": "richText",
+      "data": {
+        "htmlContent": "<p>If you have any questions, suggestions, or just want to say hi, feel free to reach out to us. We appreciate your feedback and are always looking for ways to improve our website.</p><h3>Email</h3><p>For general inquiries, please email us at <a href='mailto:contact@olivegardenmenuguide.com'>contact@olivegardenmenuguide.com</a>.</p><h3>Address</h3><p>Olive Garden Menu Guide<br>123 Pasta Lane<br>Tuscany, Italy 12345</p>"
+      }
+    }
+  ]
+}
