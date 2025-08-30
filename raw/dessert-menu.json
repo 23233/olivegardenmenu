@@ -28,40 +28,40 @@
               {
                 "name": "Chocolate Lasagna (V)",
                 "calories": "980",
-                "price": "10.49",
+                "price": "12.29",
                 "image_url": "/static/image/upload/Chocolate-Lasagna-V.webp",
                 "review": "Layers of chocolatey, creamy goodness. This isn't just a dessert, it's an experience. An absolute must for any chocolate lover. 🍫"
               },
               {
                 "name": "Black Tie Mousse Cake (V)",
                 "calories": "750",
-                "price": "10.79",
+                "price": "12.49",
                 "image_url": "/static/image/upload/Black-Tie-Mousse-Cake.webp",
                 "review": "So fancy, so delicious! This cake is pure elegance. Rich chocolate cake, creamy cheesecake filling... what's not to love? 🤵"
               },
               {
                 "name": "Tiramisu (V)",
                 "calories": "470",
-                "price": "9.99",
+                "price": "11.99",
                 "image_url": "/static/image/upload/Tiramisu-V-1.webp",
                 "review": "Save room for this! 🍰 Creamy, coffee-soaked ladyfingers and a dusting of cocoa. It's light, it's airy, and it's the perfect sweet ending to your meal. An Italian classic done right."
               },
               {
                 "name": "Strawberry Cream Cake (V)",
                 "calories": "540",
-                "price": "10.49",
+                "price": "12.29",
                 "image_url": "/static/image/upload/Strawberry-Cream-Cake-V.jpg.webp"
               },
               {
                 "name": "Warm Italian Doughnuts (V)",
                 "calories": "810",
-                "price": "9.79",
+                "price": "11.49",
                 "image_url": "/static/image/upload/Warm-Italian-Doughnuts-V.webp"
               },
               {
                 "name": "Sicilian Cheesecake with Strawberry Topping (V)",
                 "calories": "700",
-                "price": "9.99",
+                "price": "11.99",
                 "image_url": "/static/image/upload/Sicilian-Cheesecake-with-Strawberry-Topping-V-1.webp"
               }
             ]
@@ -77,6 +77,10 @@
           {
             "question": "Can I just go to Olive Garden for dessert?",
             "answer": "Totally! You can pop in just for dessert anytime. Whether you're dining in or grabbing takeout, your sweet tooth is always welcome. 🥳"
+          },
+          {
+            "question": "What dessert should I not skip at Olive Garden?",
+            "answer": "If there’s one dessert to order, it’s the Black Tie Mousse Cake. Layers of rich chocolate cake, creamy cheesecake, and silky mousse make it a must-try. If you're a chocolate lover, the Chocolate Lasagna is also a legendary choice!"
           },
           {
             "question": "Are there any gluten-free desserts?",

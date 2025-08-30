@@ -26,36 +26,42 @@
             "recommended": "WEEKDAY Lunch Special: Soup, Salad and Breadsticks",
             "items": [
               {
-                "name": "WEEKDAY Lunch Special: Soup, Salad and Breadsticks",
-                "calories": "400",
-                "price": "9.99",
+                "name": "WEEKDAY Lunch Special (Mon-Fri 11-2:30PM)",
+                "calories": "400-520",
+                "price": "13.49",
                 "image_url": "/static/image/upload/WEEKDAY-Lunch-Special-Soup-Salad-and-Breadsticks-1.webp",
                 "review": "The LEGENDARY deal. Unlimited breadsticks, salad, and your choice of homemade soup. It's the ultimate lunch hack. Pro-tip: dip the breadsticks in the Zuppa Toscana. You can thank me later. 😉"
               },
               {
                 "name": "Soup AND Salad AND Breadsticks",
-                "calories": "400",
-                "price": "12.99",
+                "calories": "400-520",
+                "price": "16.49",
                 "image_url": "/static/image/upload/Soup-AND-Salad-AND-Breadsticks-1.webp"
               },
               {
                 "name": "Homemade Soups",
                 "calories": "110-230",
-                "price": "8.99",
+                "price": "11.29",
                 "image_url": "/static/image/upload/Homemade-Soups-1.webp",
                 "review": "Can't decide? Just get a bowl of your favorite! The Zuppa Toscana is a fan-fave for a reason. 🔥"
               },
               {
-                "name": "House Salad",
-                "calories": "110",
-                "price": "7.99",
+                "name": "Our Famous House Salad",
+                "calories": "290",
+                "price": "11.29",
                 "image_url": "/static/image/upload/House-Salad-1.webp"
               },
               {
                 "name": "Dipping Sauces Includes Breadsticks (V)",
-                "calories": "140",
-                "price": "5.39",
+                "calories": "440-870",
+                "price": "8.49",
                 "image_url": "/static/image/upload/Dipping-Sauces-Includes-Breadsticks-V.webp"
+              },
+              {
+                "name": "Breadsticks (V)",
+                "calories": "140",
+                "price": "5.49",
+                "image_url": "/static/image/upload/Breadsticks-V.webp"
               }
             ]
           }

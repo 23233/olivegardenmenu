@@ -27,70 +27,70 @@
             "items": [
               {
                 "name": "Kids Alfredo Sauce with Choice of Pasta (V)",
-                "calories": "440",
-                "price": "7.49",
+                "calories": "440+",
+                "price": "7.99",
                 "image_url": "/static/image/upload/Kids-Alfredo-Sauce-with-Choice-of-Pasta-V.webp"
               },
               {
                 "name": "Kids Pizza",
-                "calories": "400",
-                "price": "7.49",
+                "calories": "440+",
+                "price": "7.99",
                 "image_url": "/static/image/upload/Kids-Pizza.webp",
                 "review": "A personal pizza that's perfect for the little ones! 🍕 Cheesy, saucy, and just the right size. It's a guaranteed crowd-pleaser for even the pickiest eaters."
               },
               {
                 "name": "Kids Chicken Fingers",
-                "calories": "300",
-                "price": "7.49",
+                "calories": "300+",
+                "price": "7.99",
                 "image_url": "/static/image/upload/Kids-Chicken-Fingers.webp",
                 "review": "You can't go wrong with chicken fingers! Crispy, juicy, and perfect for dipping. A total classic. 👍"
               },
               {
                 "name": "Kids Macaroni & Cheese",
                 "calories": "360",
-                "price": "7.49",
+                "price": "7.99",
                 "image_url": "/static/image/upload/Kids-Macaroni-Cheese.webp"
               },
               {
                 "name": "Kids Meat Sauce with Choice of Pasta",
-                "calories": "110",
-                "price": "7.49",
+                "calories": "415-680",
+                "price": "7.99",
                 "image_url": "/static/image/upload/Kids-Meat-Sauce-with-Choice-of-Pasta.webp"
               },
               {
                 "name": "Kids Tomato Sauce with Choice of Pasta (V)",
-                "calories": "80",
-                "price": "7.49",
+                "calories": "385-650",
+                "price": "7.99",
                 "image_url": "/static/image/upload/Kids-Tomato-Sauce-with-Choice-of-Pasta-V.jpg.webp"
               },
               {
                 "name": "Kids Five Cheese Marinara with Choice of Pasta (V)",
-                "calories": "150",
-                "price": "7.49",
+                "calories": "455-720",
+                "price": "7.99",
                 "image_url": "/static/image/upload/Kids-Five-Cheese-Marinara-with-Choice-of-Pasta-V.webp"
               },
               {
                 "name": "Kids Cheese Ravioli (V)",
-                "calories": "340",
-                "price": "7.49",
+                "calories": "475-690",
+                "price": "7.99",
                 "image_url": "/static/image/upload/Kids-Cheese-Ravioli-V.webp"
               },
               {
                 "name": "Kids Grilled Chicken with Rotini Pasta & Marinara",
-                "calories": "430",
-                "price": "7.49",
+                "calories": "530",
+                "price": "10.98",
                 "image_url": "/static/image/upload/Kids-Grilled-Chicken-with-Rotini-Pasta-Marinara.webp"
               },
               {
                 "name": "Kids Rotini with Marinara (V)",
-                "calories": "260",
-                "price": "7.49",
+                "calories": "400",
+                "price": "7.99",
                 "image_url": "/static/image/upload/Kids-Rotini-with-Marinara-V.webp"
               },
               {
                 "name": "Kids Rotini with Meat Sauce",
-                "calories": "340",
-                "price": "7.49",
+                "calories": "480",
+                "price": "7.99",
                 "image_url": "/static/image/upload/Kids-Rotini-with-Meat-Sauce.webp"
               }
             ]

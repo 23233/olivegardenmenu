@@ -13,56 +13,31 @@
     {
       "type": "richText",
       "data": {
-        "htmlContent": "<p>We LOVE Olive Garden for its delicious, comforting food. But we also know that making informed choices is super important! Whether you're counting calories, avoiding allergens, or eating gluten-free, this guide is for you. We've broken down the nutrition info to make it easy to find what you're looking for. Let's eat smart! 💪</p>"
+        "htmlContent": "<p>We LOVE Olive Garden for its delicious, comforting food. But we also know that making informed choices is super important! Whether you're counting calories, avoiding allergens, or eating gluten-free, this guide is for you. We've broken down the nutrition info to make it easy to find what you're looking for. Let's eat smart! 💪</p><p>Olive Garden offers a fantastic range of gluten-sensitive favorites, ensuring everyone can enjoy a delicious meal without worry. From fresh salads to hearty entrées, no flavor is sacrificed. A standout choice is the <strong>Herb-Grilled Salmon</strong>—tender, perfectly seasoned, and paired with steamed broccoli for a light yet satisfying meal.</p>"
       }
     },
     {
       "type": "dataTable",
       "data": {
-        "title": "APPETIZERS NUTRITION",
-        "description": "Here's the scoop on the starters! A great way to begin your meal.",
-        "headers": ["Dish", "Calories", "Price"],
-        "rows": [
-          ["Fried Mozzarella", "800", "9.79"],
-          ["Stuffed Ziti Fritta", "500", "10.49"],
-          ["Dipping Sauces Includes Breadsticks (V)", "140", "5.49"],
-          ["Calamari", "670", "13.29"],
-          ["Meatballs Parmigiana", "1,040", "12.29"],
-          ["Spinach-Artichoke Dip", "1,160", "11.99"],
-          ["Lasagna Fritta", "1130", "12.29"],
-          ["Shrimp Fritto Misto", "1,280", "14.79"],
-          ["Toasted Ravioli", "650", "10.79"]
-        ]
-      }
-    },
-    {
-      "type": "dataTable",
-      "data": {
-        "title": "CLASSIC ENTRÉES NUTRITION",
-        "description": "The main event! Here are the nutrition facts for the classic Olive Garden entrees.",
-        "headers": ["Dish", "Calories", "Price"],
-        "rows": [
-          ["Chicken Alfredo", "1,570", "19.99"],
-          ["Chicken and Shrimp Carbonara", "1,370", "21.99"],
-          ["Chicken Parmigiana", "1,020", "19.99"],
-          ["Tour of Italy", "1,550", "21.99"],
-          ["Spaghetti & Meatballs", "970", "16.78"],
-          ["Chicken Marsala Fettuccine", "1,400", "20.49"],
-          ["Ravioli Carbonara", "1,390", "17.99"],
-          ["Lasagna Classico", "940", "18.29"],
-          ["Shrimp Alfredo", "1,470", "20.99"],
-          ["Spaghetti with Meat Sauce", "640", "12.99"],
-          ["Spaghetti with Marinara (V)", "490", "12.99"],
-          ["Fettuccine Alfredo (V)", "1,310", "16.49"],
-          ["Chicken Tortelloni Alfredo", "1,980", "22.29"],
-          ["Shrimp Scampi", "490", "20.49"],
-          ["Seafood Alfredo", "1,450", "21.99"],
-          ["Five Cheese Ziti al Forno", "1,170", "17.99"],
-          ["Cheese Ravioli", "780", "16.99"],
-          ["Chicken Scampi", "1,050", "20.49"],
-          ["Eggplant Parmigiana (V)", "1,070", "17.49"],
-          ["Grilled Chicken Margherita", "650", "20.29"]
-        ]
+        "title": "Gluten Sensitive Options at Olive Garden",
+        "categories": {
+          "Gluten-Sensitive Menu": {
+            "description": "Enjoy a delicious Italian meal without the gluten! These dishes are specially prepared to be gluten-sensitive. Please note that our kitchens are not gluten-free environments.",
+            "recommended": "Herb-Grilled Salmon",
+            "items": [
+              { "name": "Zuppa Toscana", "calories": "220", "price": "11.29", "image_url": "/static/image/upload/Zuppa-Toscana.webp" },
+              { "name": "Famous House Salad without croutons", "calories": "110", "price": "11.29", "image_url": "/static/image/upload/best-olive-garden-menu-items.webp" },
+              { "name": "Grilled Chicken Parmigiana", "calories": "810", "price": "25.99", "image_url": "/static/image/upload/Grilled-Chicken-Parmigiana.webp" },
+              { "name": "Herb-Grilled Salmon", "calories": "610", "price": "30.29", "image_url": "/static/image/upload/Herb-Grilled-Salmon.webp" },
+              { "name": "6 oz Sirloin", "calories": "480", "price": "27.49", "image_url": "/static/image/upload/6-oz-Sirloin.webp" },
+              { "name": "Rotini Pasta with Marinara", "calories": "530", "price": "17.99", "image_url": "/static/image/upload/Rotini-Pasta-with-Marinara.webp" },
+              { "name": "Rotini Pasta with Meat Sauce", "calories": "680", "price": "17.99", "image_url": "/static/image/upload/Rotini-Pasta-with-Meat-Sauce.webp" },
+              { "name": "Grilled Chicken with Rotini Pasta & Marinara (kids)", "calories": "430+100", "price": "10.98", "image_url": "/static/image/upload/Grilled-Chicken-with-Rotini-Pasta-Marinara-kids.webp" },
+              { "name": "Rotini with Marinara (kids)", "calories": "260+", "price": "7.99", "image_url": "/static/image/upload/Rotini-with-Marinara-kids.webp" },
+              { "name": "Rotini with Meat Sauce (kids)", "calories": "340+", "price": "7.99", "image_url": "/static/image/upload/Rotini-with-Meat-Sauce-kids.webp" }
+            ]
+          }
+        }
       }
     },
     {
@@ -75,8 +50,16 @@
             "answer": "YES! They have a great gluten-sensitive menu. You can get things like Gluten-Free Rotini pasta, Herb-Grilled Salmon, and the Famous House Salad (just ask for no croutons!). They've got you covered. ✅"
           },
           {
+            "question": "Are there vegan options available at Olive Garden?",
+            "answer": "Yes, there are! The classic Spaghetti with Marinara Sauce is vegan-friendly. You can also enjoy the Famous House Salad (ask for no croutons or cheese, with oil and vinegar dressing) and the iconic Breadsticks (they're dairy-free!)."
+          },
+          {
             "question": "Where can I find the Olive Garden allergen menu?",
             "answer": "Olive Garden provides a detailed Allergen Guide that lists which dishes contain common allergens like dairy, nuts, etc. It's super helpful for making safe choices for you and your family! We recommend asking for the latest version at the restaurant."
+          },
+          {
+            "question": "What is the healthiest meal at Olive Garden?",
+            "answer": "For a healthy and delicious option, the Herb-Grilled Salmon is a fantastic choice at just 610 calories, served with fresh broccoli. The Zuppa Toscana (220 calories) and Minestrone soup (110 calories) are also great lighter options!"
           }
         ]
       }
