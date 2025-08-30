@@ -21,34 +21,16 @@
       "data": {
         "title": "Olive Garden Pasta Menu & Prices (September 2025)",
         "categories": {
-          "OVEN BAKED PASTAS": {
-            "description": "Hot, bubbly, and baked to cheesy perfection! These pasta dishes are the ultimate comfort food, fresh from the oven. 🔥",
-            "recommended": "Five Cheese Ziti al Forno",
+          "CREATE YOUR OWN PASTA": {
+            "description": "Don't let them tell you what to do! Be your own pasta artist. Choose your pasta, sauce, and toppings to create the dish of your dreams. 🎨",
+            "recommended": "Create Your Own Pasta – Cucina Mia",
             "items": [
               {
-                "name": "Chicken Tortelloni Alfredo",
-                "calories": "1,980",
-                "price": "29.49",
-                "image_url": "/static/image/upload/Chicken-Tortelloni-Alfredo-1.webp"
-              },
-              {
-                "name": "Five Cheese Ziti al Forno",
-                "calories": "1,170",
-                "price": "21.49",
-                "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-1.webp",
-                "review": "A baked pasta masterpiece! Ziti, five cheeses, and a creamy marinara sauce. It's cheesy, it's saucy, and it's absolutely delicious. 🧀"
-              },
-              {
-                "name": "Three-Meat Manicotti",
-                "calories": "1,060",
-                "price": "22.99",
-                "image_url": "/static/image/upload/Three-Meat-Manicotti.webp"
-              },
-              {
-                "name": "Four-Cheese Manicotti",
-                "calories": "710",
-                "price": "17.99",
-                "image_url": "/static/image/upload/Four-Cheese-Manicotti.jpg"
+                "name": "Create Your Own Pasta – Cucina Mia",
+                "calories": "540-1300",
+                "price": "19.49",
+                "image_url": "/static/image/upload/Create-Your-Own-Pasta-–-Cucina-Mia-1.webp",
+                "review": "Unleash your inner pasta artist! 🎨 Choose your pasta, sauce, and toppings to create your perfect bowl. Want angel hair with alfredo and shrimp? You got it. The possibilities are endless!"
               }
             ]
           },
@@ -76,23 +58,22 @@
                 "image_url": "/static/image/upload/Fettuccine-Alfredo-V-2.webp"
               },
               {
+                "name": "Chicken Tortelloni Alfredo",
+                "calories": "1,980",
+                "price": "22.29",
+                "image_url": "/static/image/upload/Chicken-Tortelloni-Alfredo-1.webp"
+              },
+              {
+                "name": "Five Cheese Ziti al Forno",
+                "calories": "1,170",
+                "price": "17.99",
+                "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-1.webp"
+              },
+              {
                 "name": "Cheese Ravioli",
                 "calories": "780",
                 "price": "16.99",
                 "image_url": "/static/image/upload/Cheese-Ravioli-1.webp"
-              }
-            ]
-          },
-          "CREATE YOUR OWN PASTA": {
-            "description": "Don't let them tell you what to do! Be your own pasta artist. Choose your pasta, sauce, and toppings to create the dish of your dreams. 🎨",
-            "recommended": "Create Your Own Pasta – Cucina Mia",
-            "items": [
-              {
-                "name": "Create Your Own Pasta – Cucina Mia",
-                "calories": "540-1300",
-                "price": "19.49",
-                "image_url": "/static/image/upload/Create-Your-Own-Pasta-–-Cucina-Mia-1.webp",
-                "review": "Unleash your inner pasta artist! 🎨 Choose your pasta, sauce, and toppings to create your perfect bowl. Want angel hair with alfredo and shrimp? You got it. The possibilities are endless!"
               }
             ]
           }

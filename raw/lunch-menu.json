@@ -26,67 +26,49 @@
             "recommended": "Chicken Parmigiana",
             "items": [
               {
-                "name": "Lasagna Classico",
-                "calories": "500",
-                "price": "15.49",
-                "image_url": "/static/image/upload/Lasagna-Classico-1.webp",
-                "review": "A lunch-sized slice of heaven! All the cheesy, meaty goodness of the original, but you'll still be able to function after eating it. A true win-win. 🏆"
-              },
-              {
                 "name": "Chicken Parmigiana",
                 "calories": "630",
-                "price": "15.49",
+                "price": "13.49",
                 "image_url": "/static/image/upload/Chicken-Parmigiana-1-1.webp",
                 "review": "The perfect lunch-sized portion of a classic! Crispy chicken, melted cheese, and rich marinara, all over a bed of spaghetti. It's a midday power-up that won't send you into a food coma. 💪"
               },
               {
                 "name": "Fettuccine Alfredo (V)",
                 "calories": "650",
-                "price": "14.49",
+                "price": "12.49",
                 "image_url": "/static/image/upload/Fettuccine-Alfredo-V-1-1.webp",
                 "review": "Creamy, dreamy, and the perfect portion size. This is how you do lunch right. So good! 🤤"
               },
               {
                 "name": "Shrimp Scampi",
                 "calories": "460",
-                "price": "15.49",
+                "price": "13.49",
                 "image_url": "/static/image/upload/Shrimp-Scampi-1.webp"
               },
               {
-                "name": "Spaghetti",
-                "calories": "290-360",
-                "price": "14.49",
-                "image_url": "/static/image/upload/Spaghetti.webp"
-              },
-              {
-                "name": "Eggplant Parmigiana (V)",
-                "calories": "660",
-                "price": "14.49",
-                "image_url": "/static/image/upload/Eggplant-Parmigiana-V-1.webp"
+                "name": "Lasagna Classico",
+                "calories": "500",
+                "price": "13.49",
+                "image_url": "/static/image/upload/Lasagna-Classico-2.webp",
+                "review": "A lunch-sized slice of heaven! All the cheesy, meaty goodness of the original, but you'll still be able to function after eating it. A true win-win. 🏆"
               },
               {
                 "name": "Spaghetti & Meatballs",
-                "calories": "610-680",
-                "price": "15.49",
+                "calories": "680",
+                "price": "13.49",
                 "image_url": "/static/image/upload/Spaghetti-Meatballs-1.webp"
               },
               {
                 "name": "Cheese Ravioli",
-                "calories": "450-500",
-                "price": "14.49",
+                "calories": "450",
+                "price": "12.49",
                 "image_url": "/static/image/upload/Cheese-Ravioli-1.webp"
               },
               {
                 "name": "Five Cheese Ziti al Forno",
                 "calories": "630",
-                "price": "14.49",
+                "price": "12.49",
                 "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-1.webp"
-              },
-              {
-                "name": "Soup, Salad and Breadsticks | Lunch",
-                "calories": "400-520",
-                "price": "13.49",
-                "image_url": "/static/image/upload/Soup-Salad-and-Breadsticks-Lunch.webp"
               }
             ]
           }
@@ -100,7 +82,7 @@
         "items": [
           {
             "question": "What are Olive Garden’s lunch hours?",
-            "answer": "The magic happens Monday through Friday until 3:00 PM! On weekends and holidays, it's the dinner menu all day, so plan accordingly."
+            "answer": "The magic happens Monday through Friday until 3:00 PM! 셋업. On weekends and holidays, it's the dinner menu all day, so plan accordingly."
           },
           {
             "question": "Does Olive Garden have lunch specials?",

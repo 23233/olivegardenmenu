@@ -68,7 +68,7 @@
       "type": "richText",
       "data": {
         "title": "Olive Garden Regular Hours 🕒",
-        "htmlContent": "<h3>Regular Weekly Hours</h3><ul><li><strong>Monday:</strong> 11:00 AM - 10:00 PM</li><li><strong>Tuesday:</strong> 11:00 AM - 10:00 PM</li><li><strong>Wednesday:</strong> 11:00 AM - 10:00 PM</li><li><strong>Thursday:</strong> 11:00 AM - 10:00 PM</li><li><strong>Friday:</strong> 11:00 AM - 10:00 PM</li><li><strong>Saturday:</strong> 11:00 AM - 10:00 PM</li><li><strong>Sunday:</strong> 11:00 AM - 10:00 PM</li></ul><p>Please note that holiday hours may vary. We recommend calling your local Olive Garden to confirm hours before visiting.</p>"
+        "htmlContent": "<h3>Regular Weekly Hours</h3><ul><li><strong>Monday - Thursday:</strong> 11:00 AM - 10:00 PM</li><li><strong>Friday - Saturday:</strong> 11:00 AM - 11:00 PM</li><li><strong>Sunday:</strong> 11:00 AM - 10:00 PM</li></ul><p>Please note that holiday hours may vary. We recommend calling your local Olive Garden to confirm hours before visiting.</p>"
       }
     }
   ]
