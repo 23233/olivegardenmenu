@@ -27,80 +27,88 @@ function joinUrlPaths(base: string, ...paths: string[]): string {
 
 // --- HTML Generation Functions ---
 
-// MODIFIED: Added menuData parameter and using the new joinUrlPaths utility
-function generateHead(siteConfig: any, menuData: any): string {
+function generateHead(siteConfig: any, data: any): string {
   const { siteName, colors, baseURL } = siteConfig;
-  const coreKeyword = "Olive Garden Menu";
-  const title = `The Complete ${coreKeyword} 2025: Prices, Specials & Calories`;
-  const description = `Explore the full ${coreKeyword} for 2025. We have the complete list of prices, calories, and special menu items. Your ultimate guide to the Olive Garden menu.`;
+  const { metadata } = data;
+  const { h1, description, coreKeyword, author, datePublished } = metadata;
 
-  // Use the base URL directly from config
   const pageUrl = baseURL;
-
-  // Construct absolute URLs safely using the utility function
   const logoUrl = joinUrlPaths(pageUrl, siteConfig.logoUrl);
 
   const graph = [
     { "@type": "WebSite", "name": siteName, "url": pageUrl, "@id": `${pageUrl}#website` },
     { "@type": "Organization", "name": siteName, "url": pageUrl, "logo": logoUrl },
-    { "@type": "WebPage", "url": pageUrl, "name": title, "description": description, "isPartOf": { "@id": `${pageUrl}#website` } }
+    {
+      "@type": "WebPage",
+      "url": pageUrl,
+      "name": h1,
+      "description": description,
+      "isPartOf": { "@id": `${pageUrl}#website` },
+      "primaryImageOfPage": { "@id": `${pageUrl}#primaryimage` }
+    },
+    {
+      "@type": "Person",
+      "name": author.name,
+      "email": author.email
+    }
   ];
 
-  const menu = {
-    "@type": "Menu",
-    "name": "Olive Garden Full Menu",
-    "hasMenuSection": [] as any[]
-  };
-
-  for (const category in menuData.menuContent) {
-    if (Object.prototype.hasOwnProperty.call(menuData.menuContent, category)) {
-      // @ts-ignore
-      const categoryData = menuData.menuContent[category];
-      if (!categoryData.items) continue; // Skip if there are no items, like in the gallery
-
-      const menuSection = {
-        "@type": "MenuSection",
-        "name": category,
-        "description": categoryData.description,
-        "hasMenuItem": [] as any[]
-      };
-
-      categoryData.items.forEach((item: any) => {
-        const menuItem = {
-          "@type": "MenuItem",
-          "name": item.name,
-          "image": joinUrlPaths(pageUrl, item.image_url), // Safely join image URL
-          "offers": {
-            "@type": "Offer",
-            "price": item.price,
-            "priceCurrency": "USD"
-          },
-          "nutrition": {
-            "@type": "NutritionInformation",
-            "calories": item.calories + " Cal"
-          }
-        };
-        menuSection.hasMenuItem.push(menuItem);
-      });
-
-      menu.hasMenuSection.push(menuSection);
-    }
+  // Dynamically add FAQPage schema if an FAQ block exists
+  const faqBlock = data.contentBlocks.find((block: any) => block.type === 'faq');
+  if (faqBlock) {
+    const faqPageSchema = {
+      "@type": "FAQPage",
+      "mainEntity": faqBlock.data.items.map((item: any) => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer
+        }
+      }))
+    };
+    // @ts-ignore
+    graph.push(faqPageSchema);
   }
 
-  // @ts-ignore
-  graph.push(menu);
+  // Dynamically add ImageGallery schema and its images
+  const galleryBlock = data.contentBlocks.find((block: any) => block.type === 'imageGallery');
+  if (galleryBlock) {
+    const imageGallerySchema = {
+      "@type": "ImageGallery",
+      "name": galleryBlock.data.title,
+      "description": galleryBlock.data.description,
+      "image": galleryBlock.data.items.map((item: any) => ({
+        "@type": "ImageObject",
+        "contentUrl": joinUrlPaths(pageUrl, item.url),
+        "caption": item.alt
+      }))
+    };
+    // @ts-ignore
+    graph.push(imageGallerySchema);
+
+    // Add primary image for WebPage
+    const primaryImage = {
+      "@type": "ImageObject",
+      "@id": `${pageUrl}#primaryimage`,
+      "url": joinUrlPaths(pageUrl, galleryBlock.data.items[0].url),
+      "caption": galleryBlock.data.items[0].alt
+    };
+    // @ts-ignore
+    graph.push(primaryImage);
+  }
 
   return `
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>${title}</title>
+        <title>${h1}</title>
         <meta name="description" content="${description}">
         <link rel="canonical" href="${pageUrl}">
         <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
         <link rel="alternate" hreflang="en" href="${pageUrl}"><link rel="alternate" hreflang="x-default" href="${pageUrl}">
-        <meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${pageUrl}"><meta property="og:site_name" content="${siteName}"><meta property="og:type" content="website"><meta property="og:image" content="${logoUrl}">
-        <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${logoUrl}">
+        <meta property="og:title" content="${h1}"><meta property="og:description" content="${description}"><meta property="og:url" content="${pageUrl}"><meta property="og:site_name" content="${siteName}"><meta property="og:type" content="website"><meta property="og:image" content="${logoUrl}">
+        <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${h1}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${logoUrl}">
         <link rel="icon" href="${siteConfig.favicon.url}" sizes="${siteConfig.favicon.size}x${siteConfig.favicon.size}">
         <link rel="apple-touch-icon" href="${siteConfig.appleTouchIcon}">
         <script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@graph": graph })}</script>
@@ -292,104 +300,136 @@ function generateFooter(siteConfig: any): string {
     `;
 }
 
-function generateMainContent(data: typeof menuData): string {
-  const { menuContent, shotsGallery } = data;
-  const menuCategories = Object.keys(menuContent);
+// --- Component Rendering Functions ---
 
-  menuCategories.push("Near Me")
+const renderHero = (data: any) => `
+  <section class="hero" style="background-image: url('${data.imageUrl}');">
+    <div class="hero-content">
+      <h1>${data.h1}</h1>
+      <p>${data.tagline}</p>
+    </div>
+  </section>
+`;
 
+const renderRichText = (data: any) => `
+  <section class="rich-text">
+    ${data.title ? `<h2>${data.title}</h2>` : ''}
+    <div>${data.htmlContent}</div>
+  </section>
+`;
+
+const renderTableOfContents = (data: any, blocks: any[]) => {
+  const headings = blocks.map(block => {
+    if (block.data && block.data.title && (block.type === 'dataTable' || block.type === 'faq' || block.type === 'imageGallery' || block.type === 'richText')) {
+      return { title: block.data.title, id: toKebabCase(block.data.title) };
+    }
+    return null;
+  }).filter(Boolean);
+
+  return `
+    <details class="quick-jumps" open>
+      <summary>🚀 ${data.title}</summary>
+      <ul>
+        ${headings.map((h, index) => `<li><span>${index + 1}.</span><a href="#${h.id}">${h.title}</a></li>`).join('')}
+      </ul>
+    </details>
+  `;
+};
+
+const renderImageGallery = (data: any) => `
+  <section id="${toKebabCase(data.title)}">
+    <h2>${data.title}</h2>
+    <p class="category-description">${data.description}</p>
+    <div class="shots-gallery-grid">
+      ${data.items.map((item: any) => `
+        <div class="shot-card">
+          <img src="${item.url}" alt="${item.alt}" loading="lazy" data-full-src="${item.url}">
+        </div>
+      `).join('')}
+    </div>
+  </section>
+`;
+
+const renderDataTable = (data: any) => {
   const formatPrice = (price: any) => {
     if (price === null || typeof price === 'undefined') { return '$0.00'; }
     const priceNumber = Number(price);
     return isNaN(priceNumber) ? '$0.00' : `$${priceNumber.toFixed(2)}`;
   };
 
-  const renderMenuCategory = (categoryName: string, categoryData: any) => {
-    if (!categoryData || !categoryData.items) { return ''; }
-    const items = categoryData.items;
-    const baseDescription = categoryData.description || '';
+  return `
+    <section id="${toKebabCase(data.title)}">
+      <h2>${data.title}</h2>
+      ${Object.keys(data.categories).map(categoryName => {
+    const categoryData = data.categories[categoryName];
     const recommendedItemName = categoryData.recommended;
-    let fullDescription = baseDescription;
-    if (baseDescription && recommendedItemName) {
-      fullDescription += ` As a special recommendation, don't miss out on the <strong>${recommendedItemName}</strong>.`;
-    }
     return `
-      <section id="${toKebabCase(categoryName)}">
-        <h2>${categoryName.replace(/–/g, '-')} - Olive Garden Menu</h2>
-        ${fullDescription ? `<p class="category-description">${fullDescription}</p>` : ''}
-        <div class="menu-grid">
-          ${items.map((item: any) => `
-            <div class="menu-card">
-              ${item.name === recommendedItemName ? '<div class="recommend-badge">Recommended</div>' : ''}
-              <img src="${item.image_url}" alt="Image of ${item.name} from the Olive Garden Menu" loading="lazy">
-              <div class="menu-card-content">
-                <h3>${item.name}</h3>
-                <div class="price-calories-container">
-                  <span class="price">${formatPrice(item.price)}</span>
-                  <span class="calories-badge">${item.calories} Cal</span>
+          <div id="${toKebabCase(categoryName)}">
+            <h3>${categoryName} - Olive Garden Menu</h3>
+            <p class="category-description">${categoryData.description}</p>
+            <div class="menu-grid">
+              ${categoryData.items.map((item: any) => `
+                <div class="menu-card">
+                  ${item.name === recommendedItemName ? '<div class="recommend-badge">Recommended</div>' : ''}
+                  <img src="${item.image_url}" alt="Image of ${item.name}" loading="lazy">
+                  <div class="menu-card-content">
+                    <h4>${item.name}</h4>
+                    <div class="price-calories-container">
+                      <span class="price">${formatPrice(item.price)}</span>
+                      <span class="calories-badge">${item.calories} Cal</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          `).join('')}
-        </div>
-        <details class="data-table-details">
-          <summary>Show Full Price & Calorie Data for the ${categoryName.replace(/–/g, '-')} Olive Garden Menu</summary>
-          <table class="data-table">
-            <thead><tr><th>Item</th><th>Price</th><th>Calories</th></tr></thead>
-            <tbody>
-              ${items.map((item: any) => `
-                <tr><td>${item.name}</td><td>${formatPrice(item.price)}</td><td>${item.calories}</td></tr>
               `).join('')}
-            </tbody>
-          </table>
-        </details>
-      </section>
-    `;
-  };
-
-  const renderEmbededTwitter = (rawHtml :string) => {
-    return `
-      <section id="twitter-embed">
-        <div>${rawHtml}</div>
-      </section>
-    `;
-  };
-
-  const renderShotsGallery = (galleryData: any) => {
-    return `
-      <section id="shots-gallery">
-        <h2>Shots Gallery 📸 - <strong>Olive Garden Menu</strong></h2>
-        <p class="category-description">${galleryData.description}</p>
-        <div class="shots-gallery-grid">
-          ${galleryData.items.map((item: any) => `
-            <div class="shot-card">
-              <img src="${item.url}" alt="${item.alt}" loading="lazy" data-full-src="${item.url}">
             </div>
-          `).join('')}
-        </div>
-      </section>
-    `;
-  };
+          </div>
+        `
+  }).join('')}
+    </section>
+  `;
+};
+
+const renderFaq = (data: any) => `
+  <section id="${toKebabCase(data.title)}">
+    <h2>${data.title}</h2>
+    <div class="faq-container">
+      ${data.items.map((item: any) => `
+        <details class="faq-item">
+          <summary>${item.question}</summary>
+          <p>${item.answer}</p>
+        </details>
+      `).join('')}
+    </div>
+  </section>
+`;
+
+
+function generateMainContent(data: any): string {
+  const { metadata, contentBlocks } = data;
+
+  const bodyContent = contentBlocks.map((block: any) => {
+    switch (block.type) {
+      case 'hero':
+        return renderHero(block.data);
+      case 'richText':
+        return renderRichText(block.data);
+      case 'tableOfContents':
+        return renderTableOfContents(block.data, contentBlocks);
+      case 'imageGallery':
+        return renderImageGallery(block.data);
+      case 'dataTable':
+        return renderDataTable(block.data);
+      case 'faq':
+        return renderFaq(block.data);
+      default:
+        return '';
+    }
+  }).join('');
 
   return `
     <main class="container">
-      <h1>${data.h1}</h1>
-      <p style="text-align: center;">${data.description}</p>
-      ${renderShotsGallery(shotsGallery)}
-      
-      ${renderEmbededTwitter(data.embedded_twitter.html)}
-      
-      <details class="quick-jumps" open>
-        <summary>🚀 Quick Jumps to Olive Garden Menu Sections</summary>
-        <ul>
-          ${menuCategories.map((cat, index) => `<li><span>${index + 1}.</span><a href="#${toKebabCase(cat)}">${cat}</a></li>`).join('')}
-        </ul>
-      </details>
-      
-      ${menuCategories.map(category => renderMenuCategory(category, (menuContent as any)[category])).join('')}
-
-        
-      <section id="near-me">
+      ${bodyContent}
+       <section id="near-me">
         <h2>Find an Olive Garden Near Me! 📍</h2>
         <p>Craving some delicious Italian food? 🍝 Use the map below to find the nearest Olive Garden restaurant to you! We've got hundreds of locations across the country, so there's a good chance there's one just around the corner.</p>
         <div style="text-align: center; margin: 20px 0;">
@@ -405,9 +445,8 @@ function generateMainContent(data: typeof menuData): string {
         </div>
         <p>For a detailed list of all Olive Garden locations, including addresses and hours, check out our new <a href="/near-me/"><strong>Olive Garden Near Me</strong></a> page. We've got all the info you need to get your pasta fix! 🚀</p>
       </section>
-        
     </main>
-    `;
+  `;
 }
 
 // --- Hono App ---

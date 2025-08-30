@@ -1,1030 +1,816 @@
 {
-  "h1": "Explore the Full Olive Garden Menu for September 2025 \uD83C\uDF5D",
-  "description": "Welcome to your complete guide to the Olive Garden Menu. Find all items, prices, and calorie information for the entire Olive Garden menu lineup below.",
-  "shotsGallery": {
-    "description": "Check out these real-life shots from Olive Garden Menu restaurants! See the deliciousness for yourself!",
-    "items": [
-      {
-        "url": "/static/image/shots/unnamed (19).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (2).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (21).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (22).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (23).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (24).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (26).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (27).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (28).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (29).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (3).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (30).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (31).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
-      },
-      {
-        "url": "/static/image/shots/unnamed (7).webp",
-        "alt": "A delicious-looking dish from Olive Garden"
+  "metadata": {
+    "h1": "Olive Garden Menu with Prices - September 2025",
+    "description": "OMG, you HAVE to see the Olive Garden Menu for this month! \uD83C\uDF5D We've got the full scoop on all the classic dishes, prices, and our brutally honest reviews. See the full lineup before you go! \uD83D\uDC47",
+    "coreKeyword": "Olive Garden Menu",
+    "pageGoal": "Provide a comprehensive, easy-to-navigate guide to the Olive Garden menu, including prices, special items, and answers to common questions, to help users plan their visit and maximize their dining experience.",
+    "languages": [
+      "en-US"
+    ],
+    "author": {
+      "name": "jackal",
+      "email": "menu@olivegardenmenuguide.com"
+    },
+    "datePublished": "2025-08-30"
+  },
+  "contentBlocks": [
+    {
+      "type": "hero",
+      "data": {
+        "h1": "This Week's Olive Garden Menu With Prices (September 2025)? \uD83D\uDC40 Every Dish, Rated! \uD83D\uDD25",
+        "tagline": "Your ultimate guide to every single item on the Olive Garden menu for September 2025. Prices, calories, and what's ACTUALLY worth ordering. Let's dive in! \uD83C\uDF5D"
       }
-    ]
-  },
-  "menuContent": {
-    "APPETIZERS": {
-      "description": "Perfect for sharing, our appetizers are a great start to any Italian meal, featuring crispy bites and savory flavors.",
-      "recommended": "Fried Mozzarella",
-      "items": [
-        {
-          "name": "Fried Mozzarella",
-          "calories": "800",
-          "price": "9.79",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Fried-Mozzarella-1.webp",
-          "image_url": "/static/image/upload/Fried-Mozzarella-1.webp"
-        },
-        {
-          "name": "Stuffed Ziti Fritta",
-          "calories": "500",
-          "price": "10.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Stuffed-Ziti-Fritta-1.webp",
-          "image_url": "/static/image/upload/Stuffed-Ziti-Fritta-1.webp"
-        },
-        {
-          "name": "Dipping Sauces Includes Breadsticks (V)",
-          "calories": "140",
-          "price": "5.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Dipping-Sauces-Includes-Breadsticks-V-2.webp",
-          "image_url": "/static/image/upload/Dipping-Sauces-Includes-Breadsticks-V-2.webp"
-        },
-        {
-          "name": "Calamari",
-          "calories": "670",
-          "price": "13.29",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Calamari-1.webp",
-          "image_url": "/static/image/upload/Calamari-1.webp"
-        },
-        {
-          "name": "Meatballs Parmigiana",
-          "calories": "1,040",
-          "price": "12.29",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Meatballs-Parmigiana-1.webp",
-          "image_url": "/static/image/upload/Meatballs-Parmigiana-1.webp"
-        },
-        {
-          "name": "Spinach-Artichoke Dip",
-          "calories": "1,160",
-          "price": "11.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Spinach-Artichoke-Dip-1.webp",
-          "image_url": "/static/image/upload/Spinach-Artichoke-Dip-1.webp"
-        },
-        {
-          "name": "Lasagna Fritta",
-          "calories": "1130",
-          "price": "12.29",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Lasagna-Fritta-2.webp",
-          "image_url": "/static/image/upload/Lasagna-Fritta-2.webp"
-        },
-        {
-          "name": "Shrimp Fritto Misto",
-          "calories": "1,280",
-          "price": "14.79",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Shrimp-Fritto-Misto-1.webp",
-          "image_url": "/static/image/upload/Shrimp-Fritto-Misto-1.webp"
-        },
-        {
-          "name": "Toasted Ravioli",
-          "calories": "650",
-          "price": "10.79",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Toasted-Ravioli-1.webp",
-          "image_url": "/static/image/upload/Toasted-Ravioli-1.webp"
-        }
-      ]
     },
-    "CLASSIC ENTRÉES": {
-      "description": "Timeless Italian favorites, prepared with the freshest ingredients and our signature sauces that have been loved for generations.",
-      "recommended": "Lasagna Classico",
-      "items": [
-        {
-          "name": "Chicken Alfredo",
-          "calories": "1,570",
-          "price": "19.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Chicken-Alfredo-1.webp",
-          "image_url": "/static/image/upload/Chicken-Alfredo-1.webp"
-        },
-        {
-          "name": "Chicken and Shrimp Carbonara",
-          "calories": "1,370",
-          "price": "21.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Chicken-and-Shrimp-Carbonara-1.webp",
-          "image_url": "/static/image/upload/Chicken-and-Shrimp-Carbonara-1.webp"
-        },
-        {
-          "name": "Chicken Parmigiana",
-          "calories": "1,020",
-          "price": "19.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Chicken-Parmigiana-2.webp",
-          "image_url": "/static/image/upload/Chicken-Parmigiana-2.webp"
-        },
-        {
-          "name": "Tour of Italy",
-          "calories": "1,550",
-          "price": "21.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Tour-of-Italy-2.webp",
-          "image_url": "/static/image/upload/Tour-of-Italy-2.webp"
-        },
-        {
-          "name": "Spaghetti & Meatballs",
-          "calories": "970",
-          "price": "16.78",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Spaghetti-Meatballs-1.webp",
-          "image_url": "/static/image/upload/Spaghetti-Meatballs-1.webp"
-        },
-        {
-          "name": "Chicken Marsala Fettuccine",
-          "calories": "1,400",
-          "price": "20.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Chicken-Marsala-Fettuccine-1.webp",
-          "image_url": "/static/image/upload/Chicken-Marsala-Fettuccine-1.webp"
-        },
-        {
-          "name": "Ravioli Carbonara",
-          "calories": "1,390",
-          "price": "17.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Ravioli-Carbonara-1.webp",
-          "image_url": "/static/image/upload/Ravioli-Carbonara-1.webp"
-        },
-        {
-          "name": "Lasagna Classico",
-          "calories": "940",
-          "price": "18.29",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Lasagna-Classico-2.webp",
-          "image_url": "/static/image/upload/Lasagna-Classico-2.webp"
-        },
-        {
-          "name": "Shrimp Alfredo",
-          "calories": "1,470",
-          "price": "20.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Shrimp-Alfredo-2.webp",
-          "image_url": "/static/image/upload/Shrimp-Alfredo-2.webp"
-        },
-        {
-          "name": "Spaghetti with Meat Sauce",
-          "calories": "640",
-          "price": "12.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Spaghetti-with-Meat-Sauce-1.webp",
-          "image_url": "/static/image/upload/Spaghetti-with-Meat-Sauce-1.webp"
-        },
-        {
-          "name": "Spaghetti with Marinara (V)",
-          "calories": "490",
-          "price": "12.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Spaghetti-with-Marinara-V-1.webp",
-          "image_url": "/static/image/upload/Spaghetti-with-Marinara-V-1.webp"
-        },
-        {
-          "name": "Fettuccine Alfredo (V)",
-          "calories": "1,310",
-          "price": "16.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Fettuccine-Alfredo-V-2.webp",
-          "image_url": "/static/image/upload/Fettuccine-Alfredo-V-2.webp"
-        },
-        {
-          "name": "Chicken Tortelloni Alfredo",
-          "calories": "1,980",
-          "price": "22.29",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Chicken-Tortelloni-Alfredo-1.webp",
-          "image_url": "/static/image/upload/Chicken-Tortelloni-Alfredo-1.webp"
-        },
-        {
-          "name": "Shrimp Scampi",
-          "calories": "490",
-          "price": "20.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Shrimp-Scampi-1.webp",
-          "image_url": "/static/image/upload/Shrimp-Scampi-1.webp"
-        },
-        {
-          "name": "Seafood Alfredo",
-          "calories": "1,450",
-          "price": "21.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Seafood-Alfredo-2.webp",
-          "image_url": "/static/image/upload/Seafood-Alfredo-2.webp"
-        },
-        {
-          "name": "Five Cheese Ziti al Forno",
-          "calories": "1,170",
-          "price": "17.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Five-Cheese-Ziti-al-Forno-1.webp",
-          "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-1.webp"
-        },
-        {
-          "name": "Cheese Ravioli",
-          "calories": "780",
-          "price": "16.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Cheese-Ravioli-1.webp",
-          "image_url": "/static/image/upload/Cheese-Ravioli-1.webp"
-        },
-        {
-          "name": "Chicken Scampi",
-          "calories": "1,050",
-          "price": "20.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Chicken-Scampi-1.webp",
-          "image_url": "/static/image/upload/Chicken-Scampi-1.webp"
-        },
-        {
-          "name": "Eggplant Parmigiana (V)",
-          "calories": "1,070",
-          "price": "17.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Eggplant-Parmigiana-V-1.webp",
-          "image_url": "/static/image/upload/Eggplant-Parmigiana-V-1.webp"
-        },
-        {
-          "name": "Grilled Chicken Margherita",
-          "calories": "650",
-          "price": "20.29",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Grilled-Chicken-Margherita-1.webp",
-          "image_url": "/static/image/upload/Grilled-Chicken-Margherita-1.webp"
-        }
-      ]
+    {
+      "type": "tableOfContents",
+      "data": {
+        "title": "Jump to Your Favorite Section"
+      }
     },
-    "AMAZING ALFREDOS": {
-      "description": "Indulge in our rich, creamy, and house-made Alfredo sauce, served with a variety of perfectly cooked pasta and proteins.",
-      "recommended": "Chicken Alfredo",
-      "items": [
-        {
-          "name": "Chicken Alfredo",
-          "calories": "1,570",
-          "price": "21.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Chicken-Alfredo-2-1.webp",
-          "image_url": "/static/image/upload/Chicken-Alfredo-2-1.webp"
-        },
-        {
-          "name": "Seafood Alfredo",
-          "calories": "1,450",
-          "price": "23.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Seafood-Alfredo-1-1.webp",
-          "image_url": "/static/image/upload/Seafood-Alfredo-1-1.webp"
-        },
-        {
-          "name": "Shrimp Alfredo",
-          "calories": "1,470",
-          "price": "22.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Shrimp-Alfredo-1-1.webp",
-          "image_url": "/static/image/upload/Shrimp-Alfredo-1-1.webp"
-        },
-        {
-          "name": "Fettuccine Alfredo (V)",
-          "calories": "1,310",
-          "price": "17.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Fettuccine-Alfredo-V-1-1.webp",
-          "image_url": "/static/image/upload/Fettuccine-Alfredo-V-1-1.webp"
-        }
-      ]
+    {
+      "type": "imageGallery",
+      "data": {
+        "title": "Customer Photos of Olive Garden Dishes! \uD83D\uDCF8",
+        "description": "Check out these real-life shots from Olive Garden restaurants! See the deliciousness for yourself!",
+        "items": [
+          {
+            "url": "/static/image/shots/unnamed (19).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (2).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (21).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (22).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (23).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (24).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (26).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (27).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (28).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (29).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (3).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (30).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (31).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          },
+          {
+            "url": "/static/image/shots/unnamed (7).webp",
+            "alt": "A delicious-looking dish from Olive Garden"
+          }
+        ]
+      }
     },
-    "SOUPS, SALAD & BREADSTICKS": {
-      "description": "Enjoy our famous unlimited breadsticks and garden salad, perfectly paired with a variety of hearty homemade soups.",
-      "recommended": "WEEKDAY Lunch Special: Soup, Salad and Breadsticks",
-      "items": [
-        {
-          "name": "WEEKDAY Lunch Special: Soup, Salad and Breadsticks",
-          "calories": "400",
-          "price": "9.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/WEEKDAY-Lunch-Special-Soup-Salad-and-Breadsticks-1.webp",
-          "image_url": "/static/image/upload/WEEKDAY-Lunch-Special-Soup-Salad-and-Breadsticks-1.webp"
-        },
-        {
-          "name": "Soup AND Salad AND Breadsticks",
-          "calories": "400",
-          "price": "12.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Soup-AND-Salad-AND-Breadsticks-1.webp",
-          "image_url": "/static/image/upload/Soup-AND-Salad-AND-Breadsticks-1.webp"
-        },
-        {
-          "name": "Homemade Soups",
-          "calories": "110-230",
-          "price": "8.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Homemade-Soups-1.webp",
-          "image_url": "/static/image/upload/Homemade-Soups-1.webp"
-        },
-        {
-          "name": "House Salad",
-          "calories": "110",
-          "price": "7.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/House-Salad-1.webp",
-          "image_url": "/static/image/upload/House-Salad-1.webp"
-        },
-        {
-          "name": "Dipping Sauces Includes Breadsticks (V)",
-          "calories": "140",
-          "price": "5.39",
-          "width": 1180,
-          "height": 730,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Dipping-Sauces-Includes-Breadsticks-V.webp",
-          "image_url": "/static/image/upload/Dipping-Sauces-Includes-Breadsticks-V.webp"
-        }
-      ]
+    {
+      "type": "richText",
+      "data": {
+        "title": "What's the Real Deal with Olive Garden?",
+        "htmlContent": "<p>What's the deal with Olive Garden? 🤔 Is it *actually* authentic Italian food? Well, not exactly, and that's what makes it legendary! 🍝 Olive Garden is the king of American-Italian comfort food. Think endless breadsticks, giant bowls of pasta, and that famous salad. It's the place you go for a family dinner, a date night, or when you just need a hug in the form of carbs. Founded in 1982, it's become an American icon for a reason: consistently delicious, super welcoming, and always a good time. So grab a seat, and let's get this bread (stick)!</p>"
+      }
     },
-    "CREATE YOUR OWN PASTA": {
-      "description": "Customize your perfect pasta dish. Choose your favorite pasta, sauce, and topping for a meal that's uniquely yours.",
-      "recommended": "Create Your Own Pasta – Cucina Mia",
-      "items": [
-        {
-          "name": "Create Your Own Pasta – Cucina Mia",
-          "calories": "540-1300",
-          "price": "19.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Create-Your-Own-Pasta-%E2%80%93-Cucina-Mia-1.webp",
-          "image_url": "/static/image/upload/Create-Your-Own-Pasta-–-Cucina-Mia-1.webp"
+    {
+      "type": "dataTable",
+      "data": {
+        "title": "The Full Olive Garden Menu (September 2025)",
+        "categories": {
+          "APPETIZERS": {
+            "description": "Perfect for sharing, our appetizers are a great start to any Italian meal, featuring crispy bites and savory flavors.",
+            "recommended": "Fried Mozzarella",
+            "items": [
+              {
+                "name": "Fried Mozzarella",
+                "calories": "800",
+                "price": "9.79",
+                "image_url": "/static/image/upload/Fried-Mozzarella-1.webp"
+              },
+              {
+                "name": "Stuffed Ziti Fritta",
+                "calories": "500",
+                "price": "10.49",
+                "image_url": "/static/image/upload/Stuffed-Ziti-Fritta-1.webp"
+              },
+              {
+                "name": "Dipping Sauces Includes Breadsticks (V)",
+                "calories": "140",
+                "price": "5.49",
+                "image_url": "/static/image/upload/Dipping-Sauces-Includes-Breadsticks-V-2.webp"
+              },
+              {
+                "name": "Calamari",
+                "calories": "670",
+                "price": "13.29",
+                "image_url": "/static/image/upload/Calamari-1.webp"
+              },
+              {
+                "name": "Meatballs Parmigiana",
+                "calories": "1,040",
+                "price": "12.29",
+                "image_url": "/static/image/upload/Meatballs-Parmigiana-1.webp"
+              },
+              {
+                "name": "Spinach-Artichoke Dip",
+                "calories": "1,160",
+                "price": "11.99",
+                "image_url": "/static/image/upload/Spinach-Artichoke-Dip-1.webp"
+              },
+              {
+                "name": "Lasagna Fritta",
+                "calories": "1130",
+                "price": "12.29",
+                "image_url": "/static/image/upload/Lasagna-Fritta-2.webp"
+              },
+              {
+                "name": "Shrimp Fritto Misto",
+                "calories": "1,280",
+                "price": "14.79",
+                "image_url": "/static/image/upload/Shrimp-Fritto-Misto-1.webp"
+              },
+              {
+                "name": "Toasted Ravioli",
+                "calories": "650",
+                "price": "10.79",
+                "image_url": "/static/image/upload/Toasted-Ravioli-1.webp"
+              }
+            ]
+          },
+          "CLASSIC ENTRÉES": {
+            "description": "Timeless Italian favorites, prepared with the freshest ingredients and our signature sauces that have been loved for generations.",
+            "recommended": "Lasagna Classico",
+            "items": [
+              {
+                "name": "Chicken Alfredo",
+                "calories": "1,570",
+                "price": "19.99",
+                "image_url": "/static/image/upload/Chicken-Alfredo-1.webp"
+              },
+              {
+                "name": "Chicken and Shrimp Carbonara",
+                "calories": "1,370",
+                "price": "21.99",
+                "image_url": "/static/image/upload/Chicken-and-Shrimp-Carbonara-1.webp"
+              },
+              {
+                "name": "Chicken Parmigiana",
+                "calories": "1,020",
+                "price": "19.99",
+                "image_url": "/static/image/upload/Chicken-Parmigiana-2.webp"
+              },
+              {
+                "name": "Tour of Italy",
+                "calories": "1,550",
+                "price": "21.99",
+                "image_url": "/static/image/upload/Tour-of-Italy-2.webp"
+              },
+              {
+                "name": "Spaghetti & Meatballs",
+                "calories": "970",
+                "price": "16.78",
+                "image_url": "/static/image/upload/Spaghetti-Meatballs-1.webp"
+              },
+              {
+                "name": "Chicken Marsala Fettuccine",
+                "calories": "1,400",
+                "price": "20.49",
+                "image_url": "/static/image/upload/Chicken-Marsala-Fettuccine-1.webp"
+              },
+              {
+                "name": "Ravioli Carbonara",
+                "calories": "1,390",
+                "price": "17.99",
+                "image_url": "/static/image/upload/Ravioli-Carbonara-1.webp"
+              },
+              {
+                "name": "Lasagna Classico",
+                "calories": "940",
+                "price": "18.29",
+                "image_url": "/static/image/upload/Lasagna-Classico-2.webp"
+              },
+              {
+                "name": "Shrimp Alfredo",
+                "calories": "1,470",
+                "price": "20.99",
+                "image_url": "/static/image/upload/Shrimp-Alfredo-2.webp"
+              },
+              {
+                "name": "Spaghetti with Meat Sauce",
+                "calories": "640",
+                "price": "12.99",
+                "image_url": "/static/image/upload/Spaghetti-with-Meat-Sauce-1.webp"
+              },
+              {
+                "name": "Spaghetti with Marinara (V)",
+                "calories": "490",
+                "price": "12.99",
+                "image_url": "/static/image/upload/Spaghetti-with-Marinara-V-1.webp"
+              },
+              {
+                "name": "Fettuccine Alfredo (V)",
+                "calories": "1,310",
+                "price": "16.49",
+                "image_url": "/static/image/upload/Fettuccine-Alfredo-V-2.webp"
+              },
+              {
+                "name": "Chicken Tortelloni Alfredo",
+                "calories": "1,980",
+                "price": "22.29",
+                "image_url": "/static/image/upload/Chicken-Tortelloni-Alfredo-1.webp"
+              },
+              {
+                "name": "Shrimp Scampi",
+                "calories": "490",
+                "price": "20.49",
+                "image_url": "/static/image/upload/Shrimp-Scampi-1.webp"
+              },
+              {
+                "name": "Seafood Alfredo",
+                "calories": "1,450",
+                "price": "21.99",
+                "image_url": "/static/image/upload/Seafood-Alfredo-2.webp"
+              },
+              {
+                "name": "Five Cheese Ziti al Forno",
+                "calories": "1,170",
+                "price": "17.99",
+                "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-1.webp"
+              },
+              {
+                "name": "Cheese Ravioli",
+                "calories": "780",
+                "price": "16.99",
+                "image_url": "/static/image/upload/Cheese-Ravioli-1.webp"
+              },
+              {
+                "name": "Chicken Scampi",
+                "calories": "1,050",
+                "price": "20.49",
+                "image_url": "/static/image/upload/Chicken-Scampi-1.webp"
+              },
+              {
+                "name": "Eggplant Parmigiana (V)",
+                "calories": "1,070",
+                "price": "17.49",
+                "image_url": "/static/image/upload/Eggplant-Parmigiana-V-1.webp"
+              },
+              {
+                "name": "Grilled Chicken Margherita",
+                "calories": "650",
+                "price": "20.29",
+                "image_url": "/static/image/upload/Grilled-Chicken-Margherita-1.webp"
+              }
+            ]
+          },
+          "AMAZING ALFREDOS": {
+            "description": "Indulge in our rich, creamy, and house-made Alfredo sauce, served with a variety of perfectly cooked pasta and proteins.",
+            "recommended": "Chicken Alfredo",
+            "items": [
+              {
+                "name": "Chicken Alfredo",
+                "calories": "1,570",
+                "price": "21.49",
+                "image_url": "/static/image/upload/Chicken-Alfredo-2-1.webp"
+              },
+              {
+                "name": "Seafood Alfredo",
+                "calories": "1,450",
+                "price": "23.49",
+                "image_url": "/static/image/upload/Seafood-Alfredo-1-1.webp"
+              },
+              {
+                "name": "Shrimp Alfredo",
+                "calories": "1,470",
+                "price": "22.49",
+                "image_url": "/static/image/upload/Shrimp-Alfredo-1-1.webp"
+              },
+              {
+                "name": "Fettuccine Alfredo (V)",
+                "calories": "1,310",
+                "price": "17.49",
+                "image_url": "/static/image/upload/Fettuccine-Alfredo-V-1-1.webp"
+              }
+            ]
+          },
+          "SOUPS, SALAD & BREADSTICKS": {
+            "description": "Enjoy our famous unlimited breadsticks and garden salad, perfectly paired with a variety of hearty homemade soups.",
+            "recommended": "WEEKDAY Lunch Special: Soup, Salad and Breadsticks",
+            "items": [
+              {
+                "name": "WEEKDAY Lunch Special: Soup, Salad and Breadsticks",
+                "calories": "400",
+                "price": "9.99",
+                "image_url": "/static/image/upload/WEEKDAY-Lunch-Special-Soup-Salad-and-Breadsticks-1.webp"
+              },
+              {
+                "name": "Soup AND Salad AND Breadsticks",
+                "calories": "400",
+                "price": "12.99",
+                "image_url": "/static/image/upload/Soup-AND-Salad-AND-Breadsticks-1.webp"
+              },
+              {
+                "name": "Homemade Soups",
+                "calories": "110-230",
+                "price": "8.99",
+                "image_url": "/static/image/upload/Homemade-Soups-1.webp"
+              },
+              {
+                "name": "House Salad",
+                "calories": "110",
+                "price": "7.99",
+                "image_url": "/static/image/upload/House-Salad-1.webp"
+              },
+              {
+                "name": "Dipping Sauces Includes Breadsticks (V)",
+                "calories": "140",
+                "price": "5.39",
+                "image_url": "/static/image/upload/Dipping-Sauces-Includes-Breadsticks-V.webp"
+              }
+            ]
+          },
+          "CREATE YOUR OWN PASTA": {
+            "description": "Customize your perfect pasta dish. Choose your favorite pasta, sauce, and topping for a meal that's uniquely yours.",
+            "recommended": "Create Your Own Pasta – Cucina Mia",
+            "items": [
+              {
+                "name": "Create Your Own Pasta – Cucina Mia",
+                "calories": "540-1300",
+                "price": "19.49",
+                "image_url": "/static/image/upload/Create-Your-Own-Pasta-–-Cucina-Mia-1.webp"
+              }
+            ]
+          },
+          "GARFIELD’S FAVORITES": {
+            "description": "A special selection of cheesy, comforting classics, guaranteed to satisfy even the biggest lasagna lovers.",
+            "recommended": "Lasagna Classico",
+            "items": [
+              {
+                "name": "Lasagna Fritta",
+                "calories": "1130",
+                "price": "11.99",
+                "image_url": "/static/image/upload/Lasagna-Fritta.webp"
+              },
+              {
+                "name": "Lasagna Classico",
+                "calories": "940",
+                "price": "19.79",
+                "image_url": "/static/image/upload/lasagna-classico.webp"
+              },
+              {
+                "name": "Tour of Italy",
+                "calories": "1550",
+                "price": "21.99",
+                "image_url": "/static/image/upload/Tour-of-Italy.webp"
+              },
+              {
+                "name": "Chocolate Lasagna (V)",
+                "calories": "910",
+                "price": "10.29",
+                "image_url": "/static/image/upload/Chocolate-Lasagna-V.webp"
+              }
+            ]
+          },
+          "LUNCH-SIZED FAVORITES": {
+            "description": "Enjoy your favorite Olive Garden classics in perfectly portioned lunch sizes, available weekdays until 3 p.m.",
+            "recommended": "Chicken Parmigiana",
+            "items": [
+              {
+                "name": "Chicken Parmigiana",
+                "calories": "630",
+                "price": "13.49",
+                "image_url": "/static/image/upload/Chicken-Parmigiana-1-1.webp"
+              },
+              {
+                "name": "Fettuccine Alfredo (V)",
+                "calories": "650",
+                "price": "12.49",
+                "image_url": "/static/image/upload/Fettuccine-Alfredo-V-1-1.webp"
+              },
+              {
+                "name": "Shrimp Scampi",
+                "calories": "460",
+                "price": "13.49",
+                "image_url": "/static/image/upload/Shrimp-Scampi-1.webp"
+              },
+              {
+                "name": "Lasagna Classico",
+                "calories": "500",
+                "price": "13.49",
+                "image_url": "/static/image/upload/Lasagna-Classico-2.webp"
+              },
+              {
+                "name": "Spaghetti & Meatballs",
+                "calories": "680",
+                "price": "13.49",
+                "image_url": "/static/image/upload/Spaghetti-Meatballs-1.webp"
+              },
+              {
+                "name": "Cheese Ravioli",
+                "calories": "450",
+                "price": "12.49",
+                "image_url": "/static/image/upload/Cheese-Ravioli-1.webp"
+              },
+              {
+                "name": "Five Cheese Ziti al Forno",
+                "calories": "630",
+                "price": "12.49",
+                "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-1.webp"
+              }
+            ]
+          },
+          "DESSERTS": {
+            "description": "Indulge your sweet tooth with our decadent desserts, from rich chocolate cakes to classic Italian tiramisu.",
+            "recommended": "Tiramisu (V)",
+            "items": [
+              {
+                "name": "Chocolate Lasagna (V)",
+                "calories": "980",
+                "price": "10.49",
+                "image_url": "/static/image/upload/Chocolate-Lasagna-V.webp"
+              },
+              {
+                "name": "Black Tie Mousse Cake (V)",
+                "calories": "750",
+                "price": "10.79",
+                "image_url": "/static/image/upload/Black-Tie-Mousse-Cake.webp"
+              },
+              {
+                "name": "Tiramisu (V)",
+                "calories": "470",
+                "price": "9.99",
+                "image_url": "/static/image/upload/Tiramisu-V-1.webp"
+              },
+              {
+                "name": "Strawberry Cream Cake (V)",
+                "calories": "540",
+                "price": "10.49",
+                "image_url": "/static/image/upload/Strawberry-Cream-Cake-V.jpg.webp"
+              },
+              {
+                "name": "Warm Italian Doughnuts (V)",
+                "calories": "810",
+                "price": "9.79",
+                "image_url": "/static/image/upload/Warm-Italian-Doughnuts-V.webp"
+              },
+              {
+                "name": "Sicilian Cheesecake with Strawberry Topping (V)",
+                "calories": "700",
+                "price": "9.99",
+                "image_url": "/static/image/upload/Sicilian-Cheesecake-with-Strawberry-Topping-V-1.webp"
+              }
+            ]
+          },
+          "SIDES": {
+            "description": "Complete your meal with our delicious sides, including classic Italian meatballs and fresh broccoli.",
+            "recommended": "Side Of Meatballs",
+            "items": [
+              {
+                "name": "Side Of Meatballs",
+                "calories": "480",
+                "price": "3.99",
+                "image_url": "/static/image/upload/Side-of-Meatballs.webp"
+              },
+              {
+                "name": "Side of Grilled Chicken",
+                "calories": "130",
+                "price": "4.99",
+                "image_url": "/static/image/upload/Side-of-Grilled-Chicken.webp"
+              },
+              {
+                "name": "Side of Broccoli (V)",
+                "calories": "150",
+                "price": "3.99",
+                "image_url": "/static/image/upload/Side-of-Broccoli-V.webp"
+              }
+            ]
+          },
+          "NON-ALCOHOLIC BEVERAGES": {
+            "description": "Quench your thirst with a refreshing selection of sodas, lemonades, iced teas, and more.",
+            "recommended": "Raspberry Lemonade",
+            "items": [
+              {
+                "name": "Gallon Iced Teas & Raspberry Lemonade",
+                "calories": "800",
+                "price": "6.49",
+                "image_url": "/static/image/upload/Gallon-Iced-Teas-Raspberry-Lemonade.webp"
+              },
+              {
+                "name": "To Go Fountain Drinks",
+                "calories": "180",
+                "price": "3.99",
+                "image_url": "/static/image/upload/To-Go-Fountain-Drinks.webp"
+              },
+              {
+                "name": "Raspberry Lemonade",
+                "calories": "170",
+                "price": "4.49",
+                "image_url": "/static/image/upload/Raspberry_Lemonade-removebg-preview.webp"
+              },
+              {
+                "name": "Classic Lemonade",
+                "calories": "170",
+                "price": "3.99",
+                "image_url": "/static/image/upload/Classic-Lemonade.webp"
+              }
+            ]
+          },
+          "GLUTEN SENSITIVE": {
+            "description": "Delicious gluten-sensitive options, thoughtfully prepared to cater to your dietary needs without compromising on flavor.",
+            "recommended": "Herb-Grilled Salmon",
+            "items": [
+              {
+                "name": "Zuppa Toscana",
+                "calories": "220",
+                "price": "9.29",
+                "image_url": "/static/image/upload/Zuppa-Toscana.webp"
+              },
+              {
+                "name": "Famous House Salad without croutons",
+                "calories": "110",
+                "price": "9.29",
+                "image_url": "/static/image/upload/Famous-House-Salad-without-croutons.webp"
+              },
+              {
+                "name": "Grilled Chicken Parmigiana",
+                "calories": "810",
+                "price": "21.49",
+                "image_url": "/static/image/upload/Grilled-Chicken-Parmigiana.webp"
+              },
+              {
+                "name": "Herb-Grilled Salmon",
+                "calories": "610",
+                "price": "23.49",
+                "image_url": "/static/image/upload/Herb-Grilled-Salmon.webp"
+              },
+              {
+                "name": "6 oz Sirloin",
+                "calories": "480",
+                "price": "20.79",
+                "image_url": "/static/image/upload/6-oz-Sirloin.webp"
+              },
+              {
+                "name": "Rotini Pasta with Marinara",
+                "calories": "530",
+                "price": "14.29",
+                "image_url": "/static/image/upload/Rotini-Pasta-with-Marinara.webp"
+              },
+              {
+                "name": "Rotini Pasta with Meat Sauce",
+                "calories": "680",
+                "price": "14.29",
+                "image_url": "/static/image/upload/Rotini-Pasta-with-Meat-Sauce.webp"
+              },
+              {
+                "name": "Grilled Chicken with Rotini Pasta & Marinara (kids)",
+                "calories": "430",
+                "price": "9.98",
+                "image_url": "/static/image/upload/Grilled-Chicken-with-Rotini-Pasta-Marinara-kids.webp"
+              },
+              {
+                "name": "Rotini with Marinara (kids)",
+                "calories": "260",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Rotini-with-Marinara-kids.webp"
+              },
+              {
+                "name": "Rotini with Meat Sauce (kids)",
+                "calories": "340",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Rotini-with-Meat-Sauce-kids.webp"
+              }
+            ]
+          },
+          "KIDS MEALS – FOR CHILDREN UNDER 12": {
+            "description": "Delightful and perfectly portioned meals for our younger guests, including classic pasta and chicken fingers.",
+            "recommended": "Kids Pizza",
+            "items": [
+              {
+                "name": "Kids Alfredo Sauce with Choice of Pasta (V)",
+                "calories": "440",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Alfredo-Sauce-with-Choice-of-Pasta-V.webp"
+              },
+              {
+                "name": "Kids Pizza",
+                "calories": "400",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Pizza.webp"
+              },
+              {
+                "name": "Kids Chicken Fingers",
+                "calories": "300",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Chicken-Fingers.webp"
+              },
+              {
+                "name": "Kids Macaroni & Cheese",
+                "calories": "360",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Macaroni-Cheese.webp"
+              },
+              {
+                "name": "Kids Meat Sauce with Choice of Pasta",
+                "calories": "110",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Meat-Sauce-with-Choice-of-Pasta.webp"
+              },
+              {
+                "name": "Kids Tomato Sauce with Choice of Pasta (V)",
+                "calories": "80",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Tomato-Sauce-with-Choice-of-Pasta-V.jpg.webp"
+              },
+              {
+                "name": "Kids Five Cheese Marinara with Choice of Pasta (V)",
+                "calories": "150",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Five-Cheese-Marinara-with-Choice-of-Pasta-V.webp"
+              },
+              {
+                "name": "Kids Cheese Ravioli (V)",
+                "calories": "340",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Cheese-Ravioli-V.webp"
+              },
+              {
+                "name": "Kids Grilled Chicken with Rotini Pasta & Marinara",
+                "calories": "430",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Grilled-Chicken-with-Rotini-Pasta-Marinara.webp"
+              },
+              {
+                "name": "Kids Rotini with Marinara (V)",
+                "calories": "260",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Rotini-with-Marinara-V.webp"
+              },
+              {
+                "name": "Kids Rotini with Meat Sauce",
+                "calories": "340",
+                "price": "7.49",
+                "image_url": "/static/image/upload/Kids-Rotini-with-Meat-Sauce.webp"
+              }
+            ]
+          },
+          "CATERING": {
+            "description": "Bring the taste of Olive Garden to your next event with our convenient and delicious catering pans.",
+            "recommended": "Lasagna Classico (Serves up to 12)",
+            "items": [
+              {
+                "name": "Chicken Alfredo (Serves 4 – 6)",
+                "calories": "6,050",
+                "price": "66.99",
+                "image_url": "/static/image/upload/Chicken-Alfredo-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Chicken Parmigiana (Serves 4 – 6)",
+                "calories": "4,790",
+                "price": "61.99",
+                "image_url": "/static/image/upload/Chicken-Parmigiana-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Fettuccine Alfredo (Serves 4 – 6)",
+                "calories": "5,010",
+                "price": "50.99",
+                "image_url": "/static/image/upload/Fettuccine-Alfredo-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Shrimp Alfredo (Serves 4 – 6)",
+                "calories": "5,680",
+                "price": "72.29",
+                "image_url": "/static/image/upload/Shrimp-Alfredo-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Five Cheese Ziti al Forno (Serves 4 – 6)",
+                "calories": "4,680",
+                "price": "52.49",
+                "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Spaghetti with Meat Sauce** (Serves 4 – 6)",
+                "calories": "2,840",
+                "price": "48.99",
+                "image_url": "/static/image/upload/Spaghetti-with-Meat-Sauce-Serves-4-–-6-1.webp"
+              },
+              {
+                "name": "Spaghetti with Marinara Sauce (Serves 4 – 6)",
+                "calories": "2,270",
+                "price": "48.99",
+                "image_url": "/static/image/upload/Spaghetti-with-Marinara-Sauce-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Chicken Tortelloni Alfredo (serves 4 – 6 )",
+                "calories": "7,930",
+                "price": "71.39",
+                "image_url": "/static/image/upload/Chicken-Tortelloni-Alfredo-serves-4-6-1-1.webp"
+              },
+              {
+                "name": "Lasagna Classico (Serves up to 6)",
+                "calories": "3,420",
+                "price": "52.99",
+                "image_url": "/static/image/upload/Lasagna-Classico-Serves-up-to-6-1.webp"
+              },
+              {
+                "name": "Lasagna Classico (Serves up to 12)",
+                "calories": "6,470",
+                "price": "62.99",
+                "image_url": "/static/image/upload/Lasagna-Classico-Serves-up-to-12.webp"
+              },
+              {
+                "name": "Chicken Scampi (Serves 4 – 6)",
+                "calories": "4,190",
+                "price": "59.99",
+                "image_url": "/static/image/upload/Chicken-Scampi-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Chicken and Shrimp Carbonara (Serves 4 – 6)",
+                "calories": "5,460",
+                "price": "72.79",
+                "image_url": "/static/image/upload/Chicken-and-Shrimp-Carbonara-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Shrimp Scampi (Serves 4 – 6)",
+                "calories": "1,980",
+                "price": "70.79",
+                "image_url": "/static/image/upload/Shrimp-Scampi-Serves-4-6-1.webp"
+              },
+              {
+                "name": "Cheese Ravioli with Marinara or Meat Sauce (Serves 4 – 6)",
+                "calories": "3,510",
+                "price": "52.99",
+                "image_url": "/static/image/upload/Cheese-Ravioli-with-Marinara-or-Meat-Sauce-Serves-4-6.webp"
+              }
+            ]
+          }
         }
-      ]
+      }
     },
-    "GARFIELD’S FAVORITES": {
-      "description": "A special selection of cheesy, comforting classics, guaranteed to satisfy even the biggest lasagna lovers.",
-      "recommended": "Lasagna Classico",
-      "items": [
-        {
-          "name": "Lasagna Fritta",
-          "calories": "1130",
-          "price": "11.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Lasagna-Fritta.webp",
-          "image_url": "/static/image/upload/Lasagna-Fritta.webp"
-        },
-        {
-          "name": "Lasagna Classico",
-          "calories": "940",
-          "price": "19.79",
-          "width": 300,
-          "height": 187,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/lasagna-classico.webp",
-          "image_url": "/static/image/upload/lasagna-classico.webp"
-        },
-        {
-          "name": "Tour of Italy",
-          "calories": "1550",
-          "price": "21.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Tour-of-Italy.webp",
-          "image_url": "/static/image/upload/Tour-of-Italy.webp"
-        },
-        {
-          "name": "Chocolate Lasagna (V)",
-          "calories": "910",
-          "price": "10.29",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chocolate-Lasagna-V.webp",
-          "image_url": "/static/image/upload/Chocolate-Lasagna-V.webp"
-        }
-      ]
+    {
+      "type": "faq",
+      "data": {
+        "title": "Your Biggest Olive Garden Questions, Answered! \uD83D\uDE4C",
+        "items": [
+          {
+            "question": "Does Olive Garden have a gluten-free menu?",
+            "answer": "YES! \uD83D\uDE4C They have a whole menu dedicated to gluten-sensitive folks. You can get rotini pasta with marinara or meat sauce, and even a grilled chicken parmigiana. They take it seriously, so you can order with confidence!"
+          },
+          {
+            "question": "What are the lunch hours at Olive Garden?",
+            "answer": "The legendary lunch deals (like the unlimited soup, salad, and breadsticks combo) are available on weekdays (Monday-Friday) until 3 p.m. So, plan your 'long lunch' accordingly! \uD83D\uDE09"
+          },
+          {
+            "question": "Is the lunch menu available on weekends?",
+            "answer": "Unfortunately, the special 'Lunch-Sized Favorites' prices are a weekday-only thing. But don't worry, the full menu is available all day, every day!"
+          },
+          {
+            "question": "Does Olive Garden have a secret menu?",
+            "answer": "While there's no official 'secret menu,' the 'Create Your Own Pasta' option is basically a secret menu in disguise! You can mix and match to create your own masterpiece. Also, pro-tip: you can ask for a mix of sauces. Alfredo-Marinara swirl, anyone? \uD83E\uDD2B"
+          },
+          {
+            "question": "Are there any vegetarian or vegan options?",
+            "answer": "Totally! The famous breadsticks are vegan (just ask for them without the butter brush), and the marinara sauce is your friend. You can create a vegan pasta dish, and the minestrone soup is also vegan. Vegetarians have even more options, like the Eggplant Parmigiana and Fettuccine Alfredo!"
+          },
+          {
+            "question": "Does Olive Garden offer a senior discount?",
+            "answer": "Olive Garden doesn't offer a standard, chain-wide senior discount. However, some individual locations might have special promotions, so it never hurts to ask your server!"
+          }
+        ]
+      }
     },
-    "LUNCH-SIZED FAVORITES": {
-      "description": "Enjoy your favorite Olive Garden classics in perfectly portioned lunch sizes, available weekdays until 3 p.m.",
-      "recommended": "Chicken Parmigiana",
-      "items": [
-        {
-          "name": "Chicken Parmigiana",
-          "calories": "630",
-          "price": "13.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Chicken-Parmigiana-1-1.webp",
-          "image_url": "/static/image/upload/Chicken-Parmigiana-1-1.webp"
-        },
-        {
-          "name": "Fettuccine Alfredo (V)",
-          "calories": "650",
-          "price": "12.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Fettuccine-Alfredo-V-1-1.webp",
-          "image_url": "/static/image/upload/Fettuccine-Alfredo-V-1-1.webp"
-        },
-        {
-          "name": "Shrimp Scampi",
-          "calories": "460",
-          "price": "13.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Shrimp-Scampi-1.webp",
-          "image_url": "/static/image/upload/Shrimp-Scampi-1.webp"
-        },
-        {
-          "name": "Lasagna Classico",
-          "calories": "500",
-          "price": "13.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Lasagna-Classico-2.webp",
-          "image_url": "/static/image/upload/Lasagna-Classico-2.webp"
-        },
-        {
-          "name": "Spaghetti & Meatballs",
-          "calories": "680",
-          "price": "13.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Spaghetti-Meatballs-1.webp",
-          "image_url": "/static/image/upload/Spaghetti-Meatballs-1.webp"
-        },
-        {
-          "name": "Cheese Ravioli",
-          "calories": "450",
-          "price": "12.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Cheese-Ravioli-1.webp",
-          "image_url": "/static/image/upload/Cheese-Ravioli-1.webp"
-        },
-        {
-          "name": "Five Cheese Ziti al Forno",
-          "calories": "630",
-          "price": "12.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Five-Cheese-Ziti-al-Forno-1.webp",
-          "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-1.webp"
-        }
-      ]
-    },
-    "DESSERTS": {
-      "description": "Indulge your sweet tooth with our decadent desserts, from rich chocolate cakes to classic Italian tiramisu.",
-      "recommended": "Tiramisu (V)",
-      "items": [
-        {
-          "name": "Chocolate Lasagna (V)",
-          "calories": "980",
-          "price": "10.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chocolate-Lasagna-V.webp",
-          "image_url": "/static/image/upload/Chocolate-Lasagna-V.webp"
-        },
-        {
-          "name": "Black Tie Mousse Cake (V)",
-          "calories": "750",
-          "price": "10.79",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Black-Tie-Mousse-Cake.webp",
-          "image_url": "/static/image/upload/Black-Tie-Mousse-Cake.webp"
-        },
-        {
-          "name": "Tiramisu (V)",
-          "calories": "470",
-          "price": "9.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Tiramisu-V-1.webp",
-          "image_url": "/static/image/upload/Tiramisu-V-1.webp"
-        },
-        {
-          "name": "Strawberry Cream Cake (V)",
-          "calories": "540",
-          "price": "10.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Strawberry-Cream-Cake-V.jpg.webp",
-          "image_url": "/static/image/upload/Strawberry-Cream-Cake-V.jpg.webp"
-        },
-        {
-          "name": "Warm Italian Doughnuts (V)",
-          "calories": "810",
-          "price": "9.79",
-          "width": 1563,
-          "height": 967,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Warm-Italian-Doughnuts-V.webp",
-          "image_url": "/static/image/upload/Warm-Italian-Doughnuts-V.webp"
-        },
-        {
-          "name": "Sicilian Cheesecake with Strawberry Topping (V)",
-          "calories": "700",
-          "price": "9.99",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Sicilian-Cheesecake-with-Strawberry-Topping-V-1.webp",
-          "image_url": "/static/image/upload/Sicilian-Cheesecake-with-Strawberry-Topping-V-1.webp"
-        }
-      ]
-    },
-    "SIDES": {
-      "description": "Complete your meal with our delicious sides, including classic Italian meatballs and fresh broccoli.",
-      "recommended": "Side Of Meatballs",
-      "items": [
-        {
-          "name": "Side Of Meatballs",
-          "calories": "480",
-          "price": "3.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Side-of-Meatballs.webp",
-          "image_url": "/static/image/upload/Side-of-Meatballs.webp"
-        },
-        {
-          "name": "Side of Grilled Chicken",
-          "calories": "130",
-          "price": "4.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Side-of-Grilled-Chicken.webp",
-          "image_url": "/static/image/upload/Side-of-Grilled-Chicken.webp"
-        },
-        {
-          "name": "Side of Broccoli (V)",
-          "calories": "150",
-          "price": "3.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Side-of-Broccoli-V.webp",
-          "image_url": "/static/image/upload/Side-of-Broccoli-V.webp"
-        }
-      ]
-    },
-    "NON-ALCOHOLIC BEVERAGES": {
-      "description": "Quench your thirst with a refreshing selection of sodas, lemonades, iced teas, and more.",
-      "recommended": "Raspberry Lemonade",
-      "items": [
-        {
-          "name": "Gallon Iced Teas & Raspberry Lemonade",
-          "calories": "800",
-          "price": "6.49",
-          "width": 286,
-          "height": 176,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Gallon-Iced-Teas-Raspberry-Lemonade.webp",
-          "image_url": "/static/image/upload/Gallon-Iced-Teas-Raspberry-Lemonade.webp"
-        },
-        {
-          "name": "To Go Fountain Drinks",
-          "calories": "180",
-          "price": "3.99",
-          "width": 286,
-          "height": 176,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/To-Go-Fountain-Drinks.webp",
-          "image_url": "/static/image/upload/To-Go-Fountain-Drinks.webp"
-        },
-        {
-          "name": "Raspberry Lemonade",
-          "calories": "170",
-          "price": "4.49",
-          "width": 286,
-          "height": 176,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Raspberry_Lemonade-removebg-preview.webp",
-          "image_url": "/static/image/upload/Raspberry_Lemonade-removebg-preview.webp"
-        },
-        {
-          "name": "Classic Lemonade",
-          "calories": "170",
-          "price": "3.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Classic-Lemonade.webp",
-          "image_url": "/static/image/upload/Classic-Lemonade.webp"
-        }
-      ]
-    },
-    "GLUTEN SENSITIVE": {
-      "description": "Delicious gluten-sensitive options, thoughtfully prepared to cater to your dietary needs without compromising on flavor.",
-      "recommended": "Herb-Grilled Salmon",
-      "items": [
-        {
-          "name": "Zuppa Toscana",
-          "calories": "220",
-          "price": "9.29",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Zuppa-Toscana.webp",
-          "image_url": "/static/image/upload/Zuppa-Toscana.webp"
-        },
-        {
-          "name": "Famous House Salad without croutons",
-          "calories": "110",
-          "price": "9.29",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Famous-House-Salad-without-croutons.webp",
-          "image_url": "/static/image/upload/Famous-House-Salad-without-croutons.webp"
-        },
-        {
-          "name": "Grilled Chicken Parmigiana",
-          "calories": "810",
-          "price": "21.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Grilled-Chicken-Parmigiana.webp",
-          "image_url": "/static/image/upload/Grilled-Chicken-Parmigiana.webp"
-        },
-        {
-          "name": "Herb-Grilled Salmon",
-          "calories": "610",
-          "price": "23.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Herb-Grilled-Salmon.webp",
-          "image_url": "/static/image/upload/Herb-Grilled-Salmon.webp"
-        },
-        {
-          "name": "6 oz Sirloin",
-          "calories": "480",
-          "price": "20.79",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/6-oz-Sirloin.webp",
-          "image_url": "/static/image/upload/6-oz-Sirloin.webp"
-        },
-        {
-          "name": "Rotini Pasta with Marinara",
-          "calories": "530",
-          "price": "14.29",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Rotini-Pasta-with-Marinara.webp",
-          "image_url": "/static/image/upload/Rotini-Pasta-with-Marinara.webp"
-        },
-        {
-          "name": "Rotini Pasta with Meat Sauce",
-          "calories": "680",
-          "price": "14.29",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Rotini-Pasta-with-Meat-Sauce.webp",
-          "image_url": "/static/image/upload/Rotini-Pasta-with-Meat-Sauce.webp"
-        },
-        {
-          "name": "Grilled Chicken with Rotini Pasta & Marinara (kids)",
-          "calories": "430",
-          "price": "9.98",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Grilled-Chicken-with-Rotini-Pasta-Marinara-kids.webp",
-          "image_url": "/static/image/upload/Grilled-Chicken-with-Rotini-Pasta-Marinara-kids.webp"
-        },
-        {
-          "name": "Rotini with Marinara (kids)",
-          "calories": "260",
-          "price": "7.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Rotini-with-Marinara-kids.webp",
-          "image_url": "/static/image/upload/Rotini-with-Marinara-kids.webp"
-        },
-        {
-          "name": "Rotini with Meat Sauce (kids)",
-          "calories": "340",
-          "price": "7.49",
-          "width": 300,
-          "height": 186,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Rotini-with-Meat-Sauce-kids.webp",
-          "image_url": "/static/image/upload/Rotini-with-Meat-Sauce-kids.webp"
-        }
-      ]
-    },
-    "KIDS MEALS – FOR CHILDREN UNDER 12": {
-      "description": "Delightful and perfectly portioned meals for our younger guests, including classic pasta and chicken fingers.",
-      "recommended": "Kids Pizza",
-      "items": [
-        {
-          "name": "Kids Alfredo Sauce with Choice of Pasta (V)",
-          "calories": "440",
-          "price": "7.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Alfredo-Sauce-with-Choice-of-Pasta-V.webp",
-          "image_url": "/static/image/upload/Kids-Alfredo-Sauce-with-Choice-of-Pasta-V.webp"
-        },
-        {
-          "name": "Kids Pizza",
-          "calories": "400",
-          "price": "7.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Pizza.webp",
-          "image_url": "/static/image/upload/Kids-Pizza.webp"
-        },
-        {
-          "name": "Kids Chicken Fingers",
-          "calories": "300",
-          "price": "7.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Chicken-Fingers.webp",
-          "image_url": "/static/image/upload/Kids-Chicken-Fingers.webp"
-        },
-        {
-          "name": "Kids Macaroni & Cheese",
-          "calories": "360",
-          "price": "7.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Macaroni-Cheese.webp",
-          "image_url": "/static/image/upload/Kids-Macaroni-Cheese.webp"
-        },
-        {
-          "name": "Kids Meat Sauce with Choice of Pasta",
-          "calories": "110",
-          "price": "7.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Meat-Sauce-with-Choice-of-Pasta.webp",
-          "image_url": "/static/image/upload/Kids-Meat-Sauce-with-Choice-of-Pasta.webp"
-        },
-        {
-          "name": "Kids Tomato Sauce with Choice of Pasta (V)",
-          "calories": "80",
-          "price": "7.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Tomato-Sauce-with-Choice-of-Pasta-V.jpg.webp",
-          "image_url": "/static/image/upload/Kids-Tomato-Sauce-with-Choice-of-Pasta-V.jpg.webp"
-        },
-        {
-          "name": "Kids Five Cheese Marinara with Choice of Pasta (V)",
-          "calories": "150",
-          "price": "7.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Five-Cheese-Marinara-with-Choice-of-Pasta-V.webp",
-          "image_url": "/static/image/upload/Kids-Five-Cheese-Marinara-with-Choice-of-Pasta-V.webp"
-        },
-        {
-          "name": "Kids Cheese Ravioli (V)",
-          "calories": "340",
-          "price": "7.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Cheese-Ravioli-V.webp",
-          "image_url": "/static/image/upload/Kids-Cheese-Ravioli-V.webp"
-        },
-        {
-          "name": "Kids Grilled Chicken with Rotini Pasta & Marinara",
-          "calories": "430",
-          "price": "7.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Grilled-Chicken-with-Rotini-Pasta-Marinara.webp",
-          "image_url": "/static/image/upload/Kids-Grilled-Chicken-with-Rotini-Pasta-Marinara.webp"
-        },
-        {
-          "name": "Kids Rotini with Marinara (V)",
-          "calories": "260",
-          "price": "7.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Rotini-with-Marinara-V.webp",
-          "image_url": "/static/image/upload/Kids-Rotini-with-Marinara-V.webp"
-        },
-        {
-          "name": "Kids Rotini with Meat Sauce",
-          "calories": "340",
-          "price": "7.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Kids-Rotini-with-Meat-Sauce.webp",
-          "image_url": "/static/image/upload/Kids-Rotini-with-Meat-Sauce.webp"
-        }
-      ]
-    },
-    "CATERING": {
-      "description": "Bring the taste of Olive Garden to your next event with our convenient and delicious catering pans.",
-      "recommended": "Lasagna Classico (Serves up to 12)",
-      "items": [
-        {
-          "name": "Chicken Alfredo (Serves 4 – 6)",
-          "calories": "6,050",
-          "price": "66.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Alfredo-Serves-4-6-1.webp",
-          "image_url": "/static/image/upload/Chicken-Alfredo-Serves-4-6-1.webp"
-        },
-        {
-          "name": "Chicken Parmigiana (Serves 4 – 6)",
-          "calories": "4,790",
-          "price": "61.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Parmigiana-Serves-4-6-1.webp",
-          "image_url": "/static/image/upload/Chicken-Parmigiana-Serves-4-6-1.webp"
-        },
-        {
-          "name": "Fettuccine Alfredo (Serves 4 – 6)",
-          "calories": "5,010",
-          "price": "50.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Fettuccine-Alfredo-Serves-4-6-1.webp",
-          "image_url": "/static/image/upload/Fettuccine-Alfredo-Serves-4-6-1.webp"
-        },
-        {
-          "name": "Shrimp Alfredo (Serves 4 – 6)",
-          "calories": "5,680",
-          "price": "72.29",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Shrimp-Alfredo-Serves-4-6-1.webp",
-          "image_url": "/static/image/upload/Shrimp-Alfredo-Serves-4-6-1.webp"
-        },
-        {
-          "name": "Five Cheese Ziti al Forno (Serves 4 – 6)",
-          "calories": "4,680",
-          "price": "52.49",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Five-Cheese-Ziti-al-Forno-Serves-4-6-1.webp",
-          "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-Serves-4-6-1.webp"
-        },
-        {
-          "name": "Spaghetti with Meat Sauce** (Serves 4 – 6)",
-          "calories": "2,840",
-          "price": "48.99",
-          "width": 286,
-          "height": 176,
-          "raw_image_url": "https://olivegardenmenuwithprices.us/wp-content/uploads/2025/03/Spaghetti-with-Meat-Sauce-Serves-4-%E2%80%93-6-1.webp",
-          "image_url": "/static/image/upload/Spaghetti-with-Meat-Sauce-Serves-4-–-6-1.webp"
-        },
-        {
-          "name": "Spaghetti with Marinara Sauce (Serves 4 – 6)",
-          "calories": "2,270",
-          "price": "48.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Spaghetti-with-Marinara-Sauce-Serves-4-6-1.webp",
-          "image_url": "/static/image/upload/Spaghetti-with-Marinara-Sauce-Serves-4-6-1.webp"
-        },
-        {
-          "name": "Chicken Tortelloni Alfredo (serves 4 – 6 )",
-          "calories": "7,930",
-          "price": "71.39",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Tortelloni-Alfredo-serves-4-6-1-1.webp",
-          "image_url": "/static/image/upload/Chicken-Tortelloni-Alfredo-serves-4-6-1-1.webp"
-        },
-        {
-          "name": "Lasagna Classico (Serves up to 6)",
-          "calories": "3,420",
-          "price": "52.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Lasagna-Classico-Serves-up-to-6-1.webp",
-          "image_url": "/static/image/upload/Lasagna-Classico-Serves-up-to-6-1.webp"
-        },
-        {
-          "name": "Lasagna Classico (Serves up to 12)",
-          "calories": "6,470",
-          "price": "62.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Lasagna-Classico-Serves-up-to-12.webp",
-          "image_url": "/static/image/upload/Lasagna-Classico-Serves-up-to-12.webp"
-        },
-        {
-          "name": "Chicken Scampi (Serves 4 – 6)",
-          "calories": "4,190",
-          "price": "59.99",
-          "width": 1180,
-          "height": 730,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-Scampi-Serves-4-6-1.webp",
-          "image_url": "/static/image/upload/Chicken-Scampi-Serves-4-6-1.webp"
-        },
-        {
-          "name": "Chicken and Shrimp Carbonara (Serves 4 – 6)",
-          "calories": "5,460",
-          "price": "72.79",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Chicken-and-Shrimp-Carbonara-Serves-4-6-1.webp",
-          "image_url": "/static/image/upload/Chicken-and-Shrimp-Carbonara-Serves-4-6-1.webp"
-        },
-        {
-          "name": "Shrimp Scampi (Serves 4 – 6)",
-          "calories": "1,980",
-          "price": "70.79",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Shrimp-Scampi-Serves-4-6-1.webp",
-          "image_url": "/static/image/upload/Shrimp-Scampi-Serves-4-6-1.webp"
-        },
-        {
-          "name": "Cheese Ravioli with Marinara or Meat Sauce (Serves 4 – 6)",
-          "calories": "3,510",
-          "price": "52.99",
-          "width": 590,
-          "height": 365,
-          "raw_image_url": "https://olivegardenmenue.com/wp-content/uploads/2025/03/Cheese-Ravioli-with-Marinara-or-Meat-Sauce-Serves-4-6.webp",
-          "image_url": "/static/image/upload/Cheese-Ravioli-with-Marinara-or-Meat-Sauce-Serves-4-6.webp"
-        }
-      ]
+    {
+      "type": "richText",
+      "data": {
+        "title": "",
+        "htmlContent": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The carbs are coming! The carbs are coming! <a href=\"https://t.co/gLawX1EeS7\">pic.twitter.com/gLawX1EeS7</a></p>&mdash; Olive Garden (@olivegarden) <a href=\"https://twitter.com/olivegarden/status/1959631862340391390?ref_src=twsrc%5Etfw\">August 24, 2025</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+      }
     }
-  },
-  "embedded_twitter": {
-    "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The carbs are coming! The carbs are coming! <a href=\"https://t.co/gLawX1EeS7\">pic.twitter.com/gLawX1EeS7</a></p>&mdash; Olive Garden (@olivegarden) <a href=\"https://twitter.com/olivegarden/status/1959631862340391390?ref_src=twsrc%5Etfw\">August 24, 2025</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
-  }
+  ]
 }
