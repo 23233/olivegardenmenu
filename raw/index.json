@@ -107,6 +107,27 @@
       }
     },
     {
+      "type": "categoryJumpLinks",
+      "data": {
+        "title": "Quick Jumps to Menu Categories 🍝",
+        "categories": {
+          "APPETIZERS": {},
+          "CLASSIC ENTRÉES": {},
+          "AMAZING ALFREDOS": {},
+          "SOUPS, SALAD & BREADSTICKS": {},
+          "CREATE YOUR OWN PASTA": {},
+          "GARFIELD’S FAVORITES": {},
+          "LUNCH-SIZED FAVORITES": {},
+          "DESSERTS": {},
+          "SIDES": {},
+          "NON-ALCOHOLIC BEVERAGES": {},
+          "GLUTEN SENSITIVE": {},
+          "KIDS MEALS – FOR CHILDREN UNDER 12": {},
+          "CATERING": {}
+        }
+      }
+    },
+    {
       "type": "dataTable",
       "data": {
         "title": "The Full Olive Garden Menu (September 2025)",
@@ -793,27 +814,7 @@
         }
       }
     },
-    {
-      "type": "categoryJumpLinks",
-      "data": {
-        "title": "Quick Jumps to Menu Categories 🍝",
-        "categories": {
-          "APPETIZERS": {},
-          "CLASSIC ENTRÉES": {},
-          "AMAZING ALFREDOS": {},
-          "SOUPS, SALAD & BREADSTICKS": {},
-          "CREATE YOUR OWN PASTA": {},
-          "GARFIELD’S FAVORITES": {},
-          "LUNCH-SIZED FAVORITES": {},
-          "DESSERTS": {},
-          "SIDES": {},
-          "NON-ALCOHOLIC BEVERAGES": {},
-          "GLUTEN SENSITIVE": {},
-          "KIDS MEALS – FOR CHILDREN UNDER 12": {},
-          "CATERING": {}
-        }
-      }
-    },
+
     {
       "type": "richText",
       "data": {

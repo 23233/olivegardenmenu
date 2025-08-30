@@ -406,7 +406,7 @@ const renderCategoryJumpLinks = (data: any) => {
     <details class="quick-jumps" open>
       <summary>🍝 ${data.title}</summary>
       <ul>
-        ${categories.map(category => `<li><a href="#${toKebabCase(category)}">${category}</a></li>`).join('')}
+        ${categories.map((category,index) => `<li><span class="">${index + 1}.</span><a href="#${toKebabCase(category)}">${category}</a></li>`).join('')}
       </ul>
     </details>
   `;
