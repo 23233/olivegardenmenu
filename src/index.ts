@@ -52,10 +52,12 @@ function generateHead(siteConfig: any, menuData: any): string {
     "hasMenuSection": [] as any[]
   };
 
-  for (const category in menuData) {
-    if (Object.prototype.hasOwnProperty.call(menuData, category)) {
+  for (const category in menuData.menuContent) {
+    if (Object.prototype.hasOwnProperty.call(menuData.menuContent, category)) {
       // @ts-ignore
-      const categoryData = menuData[category];
+      const categoryData = menuData.menuContent[category];
+      if (!categoryData.items) continue; // Skip if there are no items, like in the gallery
+
       const menuSection = {
         "@type": "MenuSection",
         "name": category,
@@ -198,6 +200,14 @@ function generateHead(siteConfig: any, menuData: any): string {
             .quick-jumps summary, .data-table-details summary { font-weight: bold; cursor: pointer; font-size: 0.9rem; }
             .quick-jumps ul { list-style: none; padding-left: 0; }
             .quick-jumps span { margin-right: 5px; font-size: 12px;color: var(--text-secondary) }
+            .shots-gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; margin-bottom: 30px; }
+            .shot-card { border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); overflow: hidden; cursor: pointer; }
+            .shot-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+            .shot-card:hover img { transform: scale(1.05); }
+            #lightbox-modal { display: none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); }
+            .lightbox-content { margin: auto; display: block; width: 80%; max-width: 640px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+            #lightbox-modal .close { position: absolute; top: 15px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; transition: 0.3s; }
+            #lightbox-modal .close:hover, #lightbox-modal .close:focus { color: #bbb; text-decoration: none; cursor: pointer; }
             .data-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
             .data-table th, .data-table td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #ddd; }
             .data-table th { background-color: #f2f2f2; }
@@ -263,8 +273,8 @@ function generateHeader(siteConfig: any): string {
 
 function generateFooter(siteConfig: any): string {
   const { navigation } = siteConfig;
-  const copyright = navigation.footer.find((i:any) => i.text.startsWith('©'));
-  const disclaimer = navigation.footer.find((i:any) => i.text.startsWith('This website'));
+  const copyright = navigation.footer.find((i:any) => i.text && i.text.startsWith('©'));
+  const disclaimer = navigation.footer.find((i:any) => i.text && i.text.startsWith('This website'));
   const links = navigation.footer.filter((i:any) => i.url);
 
   return `
@@ -283,99 +293,118 @@ function generateFooter(siteConfig: any): string {
 }
 
 function generateMainContent(data: typeof menuData): string {
-  const categories = Object.keys(data);
+  const { menuContent, shotsGallery } = data;
+  const menuCategories = Object.keys(menuContent);
+
+  menuCategories.push("Near Me")
+
   const formatPrice = (price: any) => {
     if (price === null || typeof price === 'undefined') { return '$0.00'; }
     const priceNumber = Number(price);
     return isNaN(priceNumber) ? '$0.00' : `$${priceNumber.toFixed(2)}`;
   };
 
-  categories.push("Near Me")
-
-
-  return `
-    <main class="container">
-        <h1>Explore the Full Olive Garden Menu for 2025 🍝</h1>
-        <p style="text-align: center;">Welcome to your complete guide to the Olive Garden menu. Find all items, prices, and calorie information for the entire Olive Garden menu lineup below.</p>
-        <details class="quick-jumps">
-            <summary>🚀 Quick Jumps to Olive Garden Menu Sections</summary>
-            <ul>
-                ${categories.map((cat, index) => `<li><span>${index + 1}.</span><a href="#${toKebabCase(cat)}">${cat}</a></li>`).join('')}
-            </ul>
-        </details>
-        ${categories.map(category => {
-    const categoryData = (data as any)[category];
-    if (!categoryData || !categoryData.items) return '';
-
+  const renderMenuCategory = (categoryName: string, categoryData: any) => {
+    if (!categoryData || !categoryData.items) { return ''; }
     const items = categoryData.items;
     const baseDescription = categoryData.description || '';
     const recommendedItemName = categoryData.recommended;
-
     let fullDescription = baseDescription;
     if (baseDescription && recommendedItemName) {
       fullDescription += ` As a special recommendation, don't miss out on the <strong>${recommendedItemName}</strong>.`;
     }
-
     return `
-            <section id="${toKebabCase(category)}">
-                <h2>${category.replace(/–/g, '-')} - Olive Garden Menu</h2>
-                ${fullDescription ? `<p class="category-description">${fullDescription}</p>` : ''}
-                <div class="menu-grid">
-                    ${items.map((item: any) => `
-                        <div class="menu-card">
-                            ${item.name === recommendedItemName ? '<div class="recommend-badge">Recommended</div>' : ''}
-                            <img src="${item.image_url}" alt="Image of ${item.name} from the Olive Garden Menu" loading="lazy">
-                            <div class="menu-card-content">
-                                <h3>${item.name}</h3>
-                                <div class="price-calories-container">
-                                    <span class="price">${formatPrice(item.price)}</span>
-                                    <span class="calories-badge">${item.calories} Cal</span>
-                                 </div>
-                            </div>
-                        </div>
-                    `).join('')}
+      <section id="${toKebabCase(categoryName)}">
+        <h2>${categoryName.replace(/–/g, '-')} - Olive Garden Menu</h2>
+        ${fullDescription ? `<p class="category-description">${fullDescription}</p>` : ''}
+        <div class="menu-grid">
+          ${items.map((item: any) => `
+            <div class="menu-card">
+              ${item.name === recommendedItemName ? '<div class="recommend-badge">Recommended</div>' : ''}
+              <img src="${item.image_url}" alt="Image of ${item.name} from the Olive Garden Menu" loading="lazy">
+              <div class="menu-card-content">
+                <h3>${item.name}</h3>
+                <div class="price-calories-container">
+                  <span class="price">${formatPrice(item.price)}</span>
+                  <span class="calories-badge">${item.calories} Cal</span>
                 </div>
-                <details class="data-table-details">
-                    <summary>Show Full Price & Calorie Data for the ${category.replace(/–/g, '-')} Olive Garden Menu</summary>
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Item</th>
-                                <th>Price</th>
-                                <th>Calories</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${items.map((item: any) => `
-                                <tr>
-                                    <td>${item.name}</td>
-                                    <td>${formatPrice(item.price)}</td>
-                                    <td>${item.calories}</td>
-                                </tr>
-                            `).join('')}
-                        </tbody>
-                    </table>
-                </details>
-            </section>
-        `
-  }).join('')}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+        <details class="data-table-details">
+          <summary>Show Full Price & Calorie Data for the ${categoryName.replace(/–/g, '-')} Olive Garden Menu</summary>
+          <table class="data-table">
+            <thead><tr><th>Item</th><th>Price</th><th>Calories</th></tr></thead>
+            <tbody>
+              ${items.map((item: any) => `
+                <tr><td>${item.name}</td><td>${formatPrice(item.price)}</td><td>${item.calories}</td></tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </details>
+      </section>
+    `;
+  };
+
+  const renderEmbededTwitter = (rawHtml :string) => {
+    return `
+      <section id="twitter-embed">
+        <div>${rawHtml}</div>
+      </section>
+    `;
+  };
+
+  const renderShotsGallery = (galleryData: any) => {
+    return `
+      <section id="shots-gallery">
+        <h2>Shots Gallery 📸 - <strong>Olive Garden Menu</strong></h2>
+        <p class="category-description">${galleryData.description}</p>
+        <div class="shots-gallery-grid">
+          ${galleryData.items.map((item: any) => `
+            <div class="shot-card">
+              <img src="${item.url}" alt="${item.alt}" loading="lazy" data-full-src="${item.url}">
+            </div>
+          `).join('')}
+        </div>
+      </section>
+    `;
+  };
+
+  return `
+    <main class="container">
+      <h1>${data.h1}</h1>
+      <p style="text-align: center;">${data.description}</p>
+      ${renderShotsGallery(shotsGallery)}
+      
+      ${renderEmbededTwitter(data.embedded_twitter.html)}
+      
+      <details class="quick-jumps" open>
+        <summary>🚀 Quick Jumps to Olive Garden Menu Sections</summary>
+        <ul>
+          ${menuCategories.map((cat, index) => `<li><span>${index + 1}.</span><a href="#${toKebabCase(cat)}">${cat}</a></li>`).join('')}
+        </ul>
+      </details>
+      
+      ${menuCategories.map(category => renderMenuCategory(category, (menuContent as any)[category])).join('')}
+
         
-  <section id="near-me">
-          <h2>Find an Olive Garden Near Me! 📍</h2>
-          <p>Craving some delicious Italian food? 🍝 Use the map below to find the nearest Olive Garden restaurant to you! We've got hundreds of locations across the country, so there's a good chance there's one just around the corner.</p>
-          <div style="text-align: center; margin: 20px 0;">
-            <iframe 
-              src="${siteConfig.maps.url}" 
-              width="100%" 
-              height="450px" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-          <p>For a detailed list of all Olive Garden locations, including addresses and hours, check out our new <a href="/near-me/"><strong>Olive Garden Near Me</strong></a> page. We've got all the info you need to get your pasta fix! 🚀</p>
-        </section>
+      <section id="near-me">
+        <h2>Find an Olive Garden Near Me! 📍</h2>
+        <p>Craving some delicious Italian food? 🍝 Use the map below to find the nearest Olive Garden restaurant to you! We've got hundreds of locations across the country, so there's a good chance there's one just around the corner.</p>
+        <div style="text-align: center; margin: 20px 0;">
+          <iframe 
+            src="${siteConfig.maps.url}" 
+            width="100%" 
+            height="450px" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <p>For a detailed list of all Olive Garden locations, including addresses and hours, check out our new <a href="/near-me/"><strong>Olive Garden Near Me</strong></a> page. We've got all the info you need to get your pasta fix! 🚀</p>
+      </section>
         
     </main>
     `;
@@ -401,9 +430,38 @@ app.get('/', (c) => {
         ${header}
         ${mainContent}
         ${footer}
+        <div id="lightbox-modal">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-image">
+        </div>
         <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
+                const modal = document.getElementById('lightbox-modal');
+                const modalImg = document.getElementById('lightbox-image');
+                const galleryImages = document.querySelectorAll('.shot-card img');
+                const closeBtn = document.querySelector('#lightbox-modal .close');
+
+                if (galleryImages.length > 0 && modal && modalImg && closeBtn) {
+                    galleryImages.forEach(image => {
+                        image.addEventListener('click', () => {
+                            modal.style.display = "block";
+                            // @ts-ignore
+                            modalImg.src = image.dataset.fullSrc;
+                        });
+                    });
+
+                    closeBtn.addEventListener('click', () => {
+                        modal.style.display = "none";
+                    });
+
+                    modal.addEventListener('click', (e) => {
+                        if (e.target === modal) {
+                            modal.style.display = "none";
+                        }
+                    });
+                }
+
                 const navToggle = document.querySelector('.nav-toggle');
                 const navLinks = document.querySelector('.nav-links');
 
