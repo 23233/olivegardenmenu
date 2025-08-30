@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "h1": "Olive Garden Dinner Menu With Prices & Hours September 2025",
-    "description": "Explore the Olive Garden dinner menu for September 2025. Find prices, hours, and a full list of dinner entrees, including classics like Chicken Alfredo and Lasagna Classico.",
+    "h1": "The 2025 Olive Garden Dinner Menu? Every Entrée & Price! 🍝",
+    "description": "Ready for dinner at Olive Garden? 🍝 Explore the 2025 dinner menu, with prices on every entrée from Chicken Alfredo to Lasagna. Plan your feast! 👇",
     "coreKeyword": "Olive Garden Dinner Menu",
     "author": {
       "name": "The Olive Garden Menu Guide Team",
@@ -13,23 +13,24 @@
     {
       "type": "richText",
       "data": {
-        "htmlContent": "<p>Olive Garden’s dinner menu is packed with comfort, flavor, and that warm, homestyle Italian goodness that keeps people coming back. The Chicken Alfredo steals the show as the most famous dish—creamy, rich, and satisfying, it’s a favorite for a reason. A plate of this indulgence costs around $20.99 and comes in at 1,570 calories that makes it a hearty pick for those who love a good Alfredo fix.</p>"
+        "htmlContent": "<p>Dinner at Olive Garden is an EVENT. We're talking unlimited breadsticks, that famous salad, and plates of pasta that feel like a warm hug. 🤗 The star of the show is often the legendary Chicken Alfredo—it's creamy, it's dreamy, and it's everything you want in a comfort food classic. Let's explore all the amazing entrees on the 2025 dinner menu! 🔥</p>"
       }
     },
     {
       "type": "dataTable",
       "data": {
-        "title": "Olive Garden Dinner Menu Summer 2025",
+        "title": "Olive Garden Dinner Menu & Prices (September 2025)",
         "categories": {
           "CLASSIC ENTRÉES": {
-            "description": "Timeless Italian favorites, prepared with the freshest ingredients and our signature sauces that have been loved for generations.",
+            "description": "These are the icons! The timeless Italian-American dishes that made Olive Garden a legend. You can't go wrong here. 🏆",
             "recommended": "Lasagna Classico",
             "items": [
               {
                 "name": "Chicken Alfredo",
                 "calories": "1,570",
                 "price": "19.99",
-                "image_url": "/static/image/upload/Chicken-Alfredo-1.webp"
+                "image_url": "/static/image/upload/Chicken-Alfredo-1.webp",
+                "review": "The GOAT. The legend. The creamiest, most decadent Alfredo sauce you'll ever taste. It's famous for a reason. An absolute must-try. 💯"
               },
               {
                 "name": "Chicken and Shrimp Carbonara",
@@ -41,7 +42,8 @@
                 "name": "Chicken Parmigiana",
                 "calories": "1,020",
                 "price": "19.99",
-                "image_url": "/static/image/upload/Chicken-Parmigiana-2.webp"
+                "image_url": "/static/image/upload/Chicken-Parmigiana-2.webp",
+                "review": "Crispy chicken, melted cheese, and a mountain of spaghetti. What's not to love? It's a classic for a reason. So satisfying! 🤌"
               },
               {
                 "name": "Tour of Italy",
@@ -149,7 +151,7 @@
             ]
           },
           "AMAZING ALFREDOS": {
-            "description": "Indulge in our rich, creamy, and house-made Alfredo sauce, served with a variety of perfectly cooked pasta and proteins.",
+            "description": "Get ready to indulge! This is the rich, creamy, house-made Alfredo sauce you dream about. 🤤",
             "recommended": "Chicken Alfredo",
             "items": [
               {
@@ -185,19 +187,19 @@
     {
       "type": "faq",
       "data": {
-        "title": "Frequently Asked Questions",
+        "title": "Your Dinner Questions, Answered! 🤔",
         "items": [
           {
-            "question": "Can I get lunch-sized portions during dinner hours?",
-            "answer": "Typically, lunch portions are available Monday through Friday until 3 p.m. However, some locations accommodate requests for lunch-sized portions during dinner hours."
+            "question": "Can I get lunch-sized portions for dinner?",
+            "answer": "Usually, the lunch-sized portions are a weekday, pre-3 PM deal. But hey, it never hurts to ask your server nicely! Some locations might be cool about it. 😉"
           },
           {
-            "question": "Are there gluten-free dinner options available?",
-            "answer": "Absolutely. Olive Garden offers gluten-free rotini pasta that can be paired with marinara or meat sauce. Additionally, certain salads and proteins can be modified to accommodate gluten-sensitive guests."
+            "question": "What are the best gluten-free dinner options?",
+            "answer": "You've got options! Olive Garden offers gluten-free rotini pasta you can get with marinara or meat sauce. Plus, they can modify other dishes. Just let your server know you're eating gluten-free!"
           },
           {
-            "question": "Does Olive Garden offer family-style dinner meals?",
-            "answer": "Yes, Olive Garden provides Family-Style Meals designed to serve 4-6 people. These bundles include entrees like Chicken Alfredo, Lasagna Classico, and Chicken Parmigiana, accompanied by soup or salad and breadsticks."
+            "question": "Does Olive Garden have family dinners?",
+            "answer": "YES! They have awesome Family-Style Meals that serve 4-6 people. You can get giant trays of Chicken Alfredo, Lasagna, and more. It's perfect for a night in with the whole crew. 👨‍👩‍👧‍👦"
           }
         ]
       }

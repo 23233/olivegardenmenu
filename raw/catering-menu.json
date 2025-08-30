@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "h1": "Complete Olive Garden Catering Menu September 2025",
-    "description": "Plan your event with the complete Olive Garden catering menu for September 2025. Find options for pans, meal combinations, desserts, and beverages to make your gathering a success.",
+    "h1": "Planning a Party? See the OG Catering Menu & Prices 2025! 🥳",
+    "description": "Be the hero of your next event with the Olive Garden Catering Menu! 🥳 See every party-sized pan and combo with prices for 2025. Plan your feast now! 👇",
     "coreKeyword": "Olive Garden Catering Menu",
     "author": {
       "name": "The Olive Garden Menu Guide Team",
@@ -13,16 +13,16 @@
     {
       "type": "richText",
       "data": {
-        "htmlContent": "<p>Olive Garden’s catering menu brings big Italian flavors with large portions, soft breadsticks, and creamy pasta that always tastes great. The Chicken Parmigiana Combo serves 8 to 14 people with crispy chicken, spaghetti, and Fettuccine Alfredo for about $179.99. It gives you a full Italian meal without spending too much.</p>"
+        "htmlContent": "<p>Wanna be the absolute HERO of your next party or family gathering? Easy. Just order from the Olive Garden catering menu. 😎 You get giant pans of all your favorite Italian dishes, plus their famous salad and those heavenly breadsticks. It's the easiest way to feed a crowd and make everyone happy. Let's check out the options! 🎉</p>"
       }
     },
     {
       "type": "dataTable",
       "data": {
-        "title": "Olive Garden Catering Menu Summer 2025",
+        "title": "Olive Garden Catering Menu & Prices (September 2025)",
         "categories": {
           "CATERING": {
-            "description": "Bring the taste of Olive Garden to your next event with our convenient and delicious catering pans.",
+            "description": "Bring the taste of Olive Garden to your next event with our convenient and delicious catering pans. Everyone will thank you! 🙌",
             "recommended": "Lasagna Classico (Serves up to 12)",
             "items": [
               {
@@ -118,19 +118,19 @@
     {
       "type": "faq",
       "data": {
-        "title": "Frequently Asked Questions",
+        "title": "Your Catering Questions, Answered! 🤔",
         "items": [
           {
-            "question": "What is included in my catering delivery order?",
-            "answer": "Every catering delivery comes with grated cheese, serving and eating utensils, table covers, plates, napkins, and after-dinner mints. Chafing dishes, racks, and fuel are available upon request."
+            "question": "What comes with an Olive Garden catering order?",
+            "answer": "Everything you need! Every order comes with grated cheese, all the utensils, table covers, plates, napkins, and even those little after-dinner mints. You can also ask for chafing dishes to keep things warm! 🔥"
           },
           {
-            "question": "How far in advance should I place my catering delivery order?",
-            "answer": "Place your order by 5 p.m. for next-day lunch delivery. You can also schedule orders well in advance of your event date."
+            "question": "How far in advance do I need to order catering?",
+            "answer": "Just give them a heads-up by 5 p.m. for next-day lunch delivery! But you can also be a super-planner and schedule your order way in advance. They love that!"
           },
           {
-            "question": "What is the minimum order for delivery?",
-            "answer": "The minimum order to qualify for delivery is $100 before taxes, coupons, and the 10% delivery fee."
+            "question": "Is there a minimum order for catering delivery?",
+            "answer": "Yep, there's a $100 minimum order to get it delivered. That's before taxes and the delivery fee. Easy to hit when you're ordering pans of deliciousness!"
           }
         ]
       }
