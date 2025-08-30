@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "h1": "Olive Garden Drink Menu Summer 2025",
-    "description": "Explore the full Olive Garden drink menu for Summer 2025. From classic non-alcoholic lemonades to signature cocktails, find the perfect beverage to accompany your meal.",
+    "h1": "The Official Olive Garden Drink Menu 2025? Every Price! 🍹",
+    "description": "What's on the Olive Garden Drink Menu? 🍹 We've got the full list of lemonades, cocktails, and wines, with prices. Find your perfect sip here! 👇",
     "coreKeyword": "Olive Garden Drink Menu",
     "author": {
       "name": "The Olive Garden Menu Guide Team",
@@ -13,23 +13,24 @@
     {
       "type": "richText",
       "data": {
-        "htmlContent": "<p>Olive Garden’s drink menu adds the perfect sip to every meal. From classic non-alcoholic lemonades to signature cocktails, there’s something for everyone. For a lighter option, the Raspberry Lemonade brings flavor with only 170 calories.</p>"
+        "htmlContent": "<p>Ready to get your sip on? 😉 The Olive Garden drink menu is where the party's at! Whether you're craving a bottomless Raspberry Lemonade (a true icon!) or a classy cocktail to go with your breadsticks, they've got you covered. Let's dive into all the delicious drink options for 2025! 🚀</p>"
       }
     },
     {
       "type": "dataTable",
       "data": {
-        "title": "Olive Garden Drink Menu",
+        "title": "Olive Garden Drink Menu & Prices",
         "categories": {
           "NON-ALCOHOLIC BEVERAGES": {
-            "description": "Quench your thirst with a refreshing selection of sodas, lemonades, iced teas, and more.",
+            "description": "Not drinking? No problem! These non-alcoholic superstars are here to save the day. So refreshing! ✨",
             "recommended": "Raspberry Lemonade",
             "items": [
               {
                 "name": "Gallon Iced Teas & Raspberry Lemonade",
                 "calories": "800",
                 "price": "6.49",
-                "image_url": "/static/image/upload/Gallon-Iced-Teas-Raspberry-Lemonade.webp"
+                "image_url": "/static/image/upload/Gallon-Iced-Teas-Raspberry-Lemonade.webp",
+                "review": "Hosting a party? Be the hero and bring a gallon of this liquid gold. Your friends will thank you. Trust."
               },
               {
                 "name": "To Go Fountain Drinks",
@@ -58,19 +59,19 @@
     {
       "type": "faq",
       "data": {
-        "title": "Frequently Asked Questions",
+        "title": "Your Drink Questions, Answered! 🤔",
         "items": [
           {
-            "question": "Does Olive Garden Drink menu offer free refills on drinks?",
-            "answer": "Yes, Olive Garden provides complimentary refills on soft drinks, raspberry lemonade, teas, fruit juices, and “Caffè la Toscana” upon request."
+            "question": "Does the Olive Garden Drink menu have free refills?",
+            "answer": "You know it! ✅ Olive Garden hooks you up with FREE refills on all their soft drinks, lemonades, teas, and even the 'Caffè la Toscana'. Drink up!"
           },
           {
-            "question": "Are there non-alcoholic beverages available at Olive Garden?",
-            "answer": "Yes, Olive Garden offers a variety of non-alcoholic beverages, including Italian Bottled Water, Raspberry Lemonade, Classic Lemonade, Fresh Brewed Iced Tea, Flavored Iced Teas, and Fountain Drinks."
+            "question": "What non-alcoholic drinks are on the menu?",
+            "answer": "Tons! You can grab Italian Bottled Water if you're feeling fancy, or go for their legendary Raspberry Lemonade, Classic Lemonade, Iced Teas, and all the usual fountain drinks. 🥤"
           },
           {
-            "question": "Are there kid-friendly beverage options at Olive Garden?",
-            "answer": "Absolutely, Olive Garden offers a variety of kid-friendly beverages, including Milk, Fruit Juices, and Lemonade."
+            "question": "Are there kid-friendly drinks at Olive Garden?",
+            "answer": "Of course! The little ones are covered with options like Milk, Fruit Juices, and yummy Lemonade. They won't be left out of the fun. 🙌"
           }
         ]
       }

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "h1": "Olive Garden Soup Menu September 2025 – Fresh, Flavorful, and Always Satisfying",
-    "description": "Discover the Olive Garden soup menu for September 2025. Explore our four classic soups, including the fan-favorite Zuppa Toscana, and find prices and calorie information.",
+    "h1": "Olive Garden's 4 Famous Soups? (Menu & Prices 2025) 🥣",
+    "description": "Which Olive Garden soup is the best? 🥣 See all 4 soups on the 2025 menu, from Zuppa Toscana to Minestrone, with prices. Time for a soup-off! 👇",
     "coreKeyword": "Olive Garden Soup Menu",
     "author": {
       "name": "The Olive Garden Menu Guide Team",
@@ -13,16 +13,16 @@
     {
       "type": "richText",
       "data": {
-        "htmlContent": "<p>Olive Garden’s soup menu is all about comfort, warmth, and rich flavors. Every bowl is packed with fresh ingredients, that makes it a go-to choice for anyone craving a hearty meal.</p>"
+        "htmlContent": "<p>Olive Garden's soups are LEGENDARY. Seriously. Whether you're getting them with the unlimited salad and breadsticks deal or as a starter, every spoonful is like a warm hug. They have four famous soups, and each one is a total winner. Let's get into it! 🥄</p>"
       }
     },
     {
       "type": "dataTable",
       "data": {
-        "title": "Olive Garden Soup Menu Summer 2025",
+        "title": "Olive Garden Soup Menu & Prices (September 2025)",
         "categories": {
           "SOUPS, SALAD & BREADSTICKS": {
-            "description": "Enjoy our famous unlimited breadsticks and garden salad, perfectly paired with a variety of hearty homemade soups.",
+            "description": "The iconic combo! Get our famous unlimited breadsticks and garden salad, perfectly paired with one of these hearty homemade soups. ✨",
             "recommended": "WEEKDAY Lunch Special: Soup, Salad and Breadsticks",
             "items": [
               {
@@ -42,7 +42,8 @@
                 "name": "Homemade Soups",
                 "calories": "110-230",
                 "price": "8.99",
-                "image_url": "/static/image/upload/Homemade-Soups-1.webp"
+                "image_url": "/static/image/upload/Homemade-Soups-1.webp",
+                "review": "Can't decide? Just get a bowl of your favorite! The Zuppa Toscana is a fan-fave for a reason. 🔥"
               },
               {
                 "name": "House Salad",
@@ -64,19 +65,19 @@
     {
       "type": "faq",
       "data": {
-        "title": "Frequently Asked Questions",
+        "title": "Your Soup Questions, Answered! 🤔",
         "items": [
           {
-            "question": "What soups are available at Olive Garden?",
-            "answer": "Olive Garden offers four soups: Chicken & Gnocchi, Pasta e Fagioli, Minestrone, and Zuppa Toscana."
+            "question": "What are the 4 soups at Olive Garden?",
+            "answer": "The fantastic four are: Chicken & Gnocchi (creamy & dreamy), Pasta e Fagioli (hearty & savory), Minestrone (classic & veggie-packed), and the fan-favorite Zuppa Toscana (spicy sausage & kale goodness!)."
           },
           {
-            "question": "Can I get unlimited soup, salad, and breadsticks with my entrée?",
-            "answer": "Yes, every entrée includes unlimited soup or salad and breadsticks."
+            "question": "Can I get unlimited soup with my meal?",
+            "answer": "YES! When you order an entrée, you get your choice of unlimited soup OR salad. And unlimited breadsticks, of course. The holy trinity! 🙏"
           },
           {
-            "question": "Are the soups made fresh daily?",
-            "answer": "Yes, all soups are prepared fresh every day."
+            "question": "Are Olive Garden soups made fresh?",
+            "answer": "You bet! All four of their signature soups are prepared fresh in-house every single day. You can taste the difference! 💯"
           }
         ]
       }

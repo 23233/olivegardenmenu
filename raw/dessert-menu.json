@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "h1": "Olive Garden Dessert Menu Summer 2025 – Full Menu & Prices",
-    "description": "Indulge in the Olive Garden dessert menu for Summer 2025. Explore a variety of sweet treats, including the famous Chocolate Lasagna and classic Tiramisu, with full prices and calorie information.",
+    "h1": "Got Room for Dessert? See the 2025 Olive Garden Menu! 🍰",
+    "description": "You HAVE to see the Olive Garden Dessert Menu! 🍰 From Chocolate Lasagna to Tiramisu, we've got the scoop on every sweet treat and price. See it now! 👇",
     "coreKeyword": "Olive Garden Dessert Menu",
     "author": {
       "name": "The Olive Garden Menu Guide Team",
@@ -13,29 +13,31 @@
     {
       "type": "richText",
       "data": {
-        "htmlContent": "<p>Olive Garden knows how to end a meal on a sweet note, and their dessert menu is proof. Each treat is crafted to satisfy those sugar cravings, no matter how full you think you are.</p>"
+        "htmlContent": "<p>You can't leave Olive Garden without dessert, it's basically a rule! 😉 Their dessert menu is the perfect way to end your meal on a high note. Whether you're a chocolate fiend or love a classic Italian sweet, there's a treat with your name on it. Let's dig in! 🥄</p>"
       }
     },
     {
       "type": "dataTable",
       "data": {
-        "title": "Olive Garden Desserts Menu September 2025",
+        "title": "Olive Garden Desserts Menu & Prices (September 2025)",
         "categories": {
           "DESSERTS": {
-            "description": "Indulge your sweet tooth with our decadent desserts, from rich chocolate cakes to classic Italian tiramisu.",
+            "description": "Go on, treat yourself! These desserts are legendary for a reason. From rich chocolate cakes to classic Italian tiramisu, you can't go wrong. ✨",
             "recommended": "Tiramisu (V)",
             "items": [
               {
                 "name": "Chocolate Lasagna (V)",
                 "calories": "980",
                 "price": "10.49",
-                "image_url": "/static/image/upload/Chocolate-Lasagna-V.webp"
+                "image_url": "/static/image/upload/Chocolate-Lasagna-V.webp",
+                "review": "Layers of chocolatey, creamy goodness. This isn't just a dessert, it's an experience. An absolute must for any chocolate lover. 🍫"
               },
               {
                 "name": "Black Tie Mousse Cake (V)",
                 "calories": "750",
                 "price": "10.79",
-                "image_url": "/static/image/upload/Black-Tie-Mousse-Cake.webp"
+                "image_url": "/static/image/upload/Black-Tie-Mousse-Cake.webp",
+                "review": "So fancy, so delicious! This cake is pure elegance. Rich chocolate cake, creamy cheesecake filling... what's not to love? 🤵"
               },
               {
                 "name": "Tiramisu (V)",
@@ -70,19 +72,19 @@
     {
       "type": "faq",
       "data": {
-        "title": "Frequently Asked Questions",
+        "title": "Your Dessert Questions, Answered! 🍰",
         "items": [
           {
-            "question": "Can I order dessert at Olive Garden without having a full meal?",
-            "answer": "Absolutely! You’re welcome to visit Olive Garden just for dessert, whether you’re dining in or opting for takeout."
+            "question": "Can I just go to Olive Garden for dessert?",
+            "answer": "Totally! You can pop in just for dessert anytime. Whether you're dining in or grabbing takeout, your sweet tooth is always welcome. 🥳"
           },
           {
-            "question": "Are there gluten-free dessert options available?",
-            "answer": "Yes, Olive Garden offers gluten-free desserts, such as the Flourless Chocolate Torte."
+            "question": "Are there any gluten-free desserts?",
+            "answer": "Yep! Olive Garden usually has a gluten-free option like a Flourless Chocolate Torte. Just ask your server for the latest gluten-sensitive sweet treats!"
           },
           {
             "question": "How many calories are in the Black Tie Mousse Cake?",
-            "answer": "The Black Tie Mousse Cake contains 750 calories per slice."
+            "answer": "The Black Tie Mousse Cake has 750 calories of pure, delicious indulgence. Worth it! 😉"
           }
         ]
       }

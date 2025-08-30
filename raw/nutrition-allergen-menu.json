@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "h1": "Olive Garden Nutrition, Allergen Menu & Gluten-Free Options 2025",
-    "description": "Find detailed nutrition and allergen information for the Olive Garden menu. Make informed choices with our complete guide to calories, fat, carbs, and gluten-free options.",
+    "h1": "Olive Garden Nutrition & Allergen Guide 2025 (Gluten-Free!) ✅",
+    "description": "Watching calories or have an allergy? ✅ Our Olive Garden Nutrition & Allergen Guide has all the info you need on calories, carbs, and gluten-free options! 👇",
     "coreKeyword": "Olive Garden Nutrition",
     "author": {
       "name": "The Olive Garden Menu Guide Team",
@@ -13,14 +13,14 @@
     {
       "type": "richText",
       "data": {
-        "htmlContent": "<p>Olive Garden is known for its creamy pastas, endless breadsticks, and fresh salads from their complete menu. But if olive garden nutrition, the Olive Garden allergen menu, or Olive Garden gluten-free menu matter to you, knowing what’s on your plate is key.</p>"
+        "htmlContent": "<p>We LOVE Olive Garden for its delicious, comforting food. But we also know that making informed choices is super important! Whether you're counting calories, avoiding allergens, or eating gluten-free, this guide is for you. We've broken down the nutrition info to make it easy to find what you're looking for. Let's eat smart! 💪</p>"
       }
     },
     {
       "type": "dataTable",
       "data": {
-        "title": "APPETIZERS",
-        "description": "",
+        "title": "APPETIZERS NUTRITION",
+        "description": "Here's the scoop on the starters! A great way to begin your meal.",
         "headers": ["Dish", "Calories", "Price"],
         "rows": [
           ["Fried Mozzarella", "800", "9.79"],
@@ -38,8 +38,8 @@
     {
       "type": "dataTable",
       "data": {
-        "title": "CLASSIC ENTRÉES",
-        "description": "",
+        "title": "CLASSIC ENTRÉES NUTRITION",
+        "description": "The main event! Here are the nutrition facts for the classic Olive Garden entrees.",
         "headers": ["Dish", "Calories", "Price"],
         "rows": [
           ["Chicken Alfredo", "1,570", "19.99"],
@@ -68,15 +68,15 @@
     {
       "type": "faq",
       "data": {
-        "title": "Frequently Asked Questions",
+        "title": "Your Nutrition & Allergen Questions, Answered! 🤔",
         "items": [
           {
-            "question": "Does Olive Garden offer a gluten-free menu?",
-            "answer": "Yes, Olive Garden provides a gluten-sensitive menu featuring items like Gluten-Free Rotini with Marinara or Meat Sauce, Herb-Grilled Salmon, and the Famous House Salad without croutons."
+            "question": "Does Olive Garden have a gluten-free menu?",
+            "answer": "YES! They have a great gluten-sensitive menu. You can get things like Gluten-Free Rotini pasta, Herb-Grilled Salmon, and the Famous House Salad (just ask for no croutons!). They've got you covered. ✅"
           },
           {
-            "question": "Does Olive Garden have an allergen menu?",
-            "answer": "Yes, Olive Garden offers an Allergen Guide that details which menu items contain common allergens like dairy, nuts, shellfish, and more. This guide helps guests make informed dining choices based on their dietary needs."
+            "question": "Where can I find the Olive Garden allergen menu?",
+            "answer": "Olive Garden provides a detailed Allergen Guide that lists which dishes contain common allergens like dairy, nuts, etc. It's super helpful for making safe choices for you and your family! We recommend asking for the latest version at the restaurant."
           }
         ]
       }

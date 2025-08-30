@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "h1": "Olive Garden Lunch Menu 2025 – Full Menu, Prices & Hours",
-    "description": "Discover the Olive Garden lunch menu for 2025, featuring lunch-sized favorites, prices, and hours. Enjoy classics like Fettuccine Alfredo and the famous Soup, Salad & Breadsticks combo.",
+    "h1": "Best Olive Garden Lunch Deals for 2025? 👀 See Menu! 🍝",
+    "description": "Trying the Olive Garden Lunch Menu? 🍝 Get the inside scoop on all the lunch-sized deals, prices, and hours for 2025. Don't miss out! 👇",
     "coreKeyword": "Olive Garden Lunch Menu",
     "author": {
       "name": "The Olive Garden Menu Guide Team",
@@ -13,16 +13,16 @@
     {
       "type": "richText",
       "data": {
-        "htmlContent": "<p>Olive Garden’s lunch menu is where classic Italian flavors meet comfort at a price that won’t break the bank. The famous Soup, Salad & Breadsticks combo keeps people coming back, and for good reason—unlimited fresh salad, warm breadsticks, and a bowl of hearty soup. Light, filling, and packed with flavor.</p>"
+        "htmlContent": "<p>PSA: The Olive Garden lunch menu is the ultimate life hack! 🙌 You get their legendary Italian flavors in perfect portions that won't send you into a food coma. The unlimited Soup, Salad & Breadsticks combo is ICONIC, but don't sleep on the lunch-sized classics. Let's get into these deals! 🔥</p>"
       }
     },
     {
       "type": "dataTable",
       "data": {
-        "title": "Olive Garden Lunch Menu September 2025",
+        "title": "Olive Garden Lunch Menu & Prices (Sept 2025)",
         "categories": {
           "LUNCH-SIZED FAVORITES": {
-            "description": "Enjoy your favorite Olive Garden classics in perfectly portioned lunch sizes, available weekdays until 3 p.m.",
+            "description": "Your fave Olive Garden dishes, but make 'em lunch-sized! 🤩 Available weekdays until 3 p.m. It's the perfect midday treat.",
             "recommended": "Chicken Parmigiana",
             "items": [
               {
@@ -36,7 +36,8 @@
                 "name": "Fettuccine Alfredo (V)",
                 "calories": "650",
                 "price": "12.49",
-                "image_url": "/static/image/upload/Fettuccine-Alfredo-V-1-1.webp"
+                "image_url": "/static/image/upload/Fettuccine-Alfredo-V-1-1.webp",
+                "review": "Creamy, dreamy, and the perfect portion size. This is how you do lunch right. So good! 🤤"
               },
               {
                 "name": "Shrimp Scampi",
@@ -48,7 +49,8 @@
                 "name": "Lasagna Classico",
                 "calories": "500",
                 "price": "13.49",
-                "image_url": "/static/image/upload/Lasagna-Classico-2.webp"
+                "image_url": "/static/image/upload/Lasagna-Classico-2.webp",
+                "review": "A lunch-sized slice of heaven! All the cheesy, meaty goodness of the original, but you'll still be able to function after eating it. A true win-win. 🏆"
               },
               {
                 "name": "Spaghetti & Meatballs",
@@ -76,19 +78,19 @@
     {
       "type": "faq",
       "data": {
-        "title": "Frequently Asked Questions",
+        "title": "Your Olive Garden Lunch Questions Answered! 💡",
         "items": [
           {
-            "question": "When are Olive Garden’s lunch hours?",
-            "answer": "Lunch is typically served Monday through Friday until 3:00 PM. On weekends and holidays, only the dinner menu is available all day."
+            "question": "What are Olive Garden’s lunch hours?",
+            "answer": "The magic happens Monday through Friday until 3:00 PM! 셋업. On weekends and holidays, it's the dinner menu all day, so plan accordingly."
           },
           {
-            "question": "Does Olive Garden offer lunch specials?",
-            "answer": "Yes, Olive Garden provides lunch-sized favorites, including options like Spaghetti with Marinara or Meat Sauce, Fettuccine Alfredo, and Eggplant Parmigiana, each accompanied by unlimited soup or salad and breadsticks."
+            "question": "Does Olive Garden have lunch specials?",
+            "answer": "YES! And they are amazing. You can get lunch-sized versions of classics like Fettuccine Alfredo and Lasagna, and they all come with unlimited soup or salad and those famous breadsticks. It's the best deal in town! 🥖"
           },
           {
-            "question": "Are lunch portions available on weekends?",
-            "answer": "Lunch-sized portions are generally offered Monday through Friday before 3:00 PM. On weekends, only dinner portions are available."
+            "question": "Can I get the lunch menu on weekends?",
+            "answer": "Sadly, no. The lunch-sized portions and prices are a weekday-only treat (Mon-Fri before 3 PM). Weekends are for going big with the dinner menu! 😉"
           }
         ]
       }

@@ -404,9 +404,9 @@ const renderImageGallery = (data: any) => `
     <h2>${data.title}</h2>
     <p class="category-description">${data.description}</p>
     <div class="shots-gallery-grid">
-      ${data.items.map((item: any) => `
+      ${data.items.map((item: any, index: number) => `
         <div class="shot-card">
-          <img src="${item.url}" alt="${item.alt}" loading="lazy" data-full-src="${item.url}">
+          <img src="${item.url}" alt="${item.alt} - photo ${index + 1}" loading="lazy" data-full-src="${item.url}">
         </div>
       `).join('')}
     </div>
