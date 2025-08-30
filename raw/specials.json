@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "h1": "Olive Garden Specials (August 2025) 🤑",
+    "h1": "Olive Garden Specials (September 2025) 🤑",
     "description": "OMG, you HAVE to see this week's Olive Garden specials! 🍝 We've got the scoop on Buy One Take One, Never Ending Pasta, and more. See the deals! 👇",
     "coreKeyword": "Olive Garden Specials",
     "pageGoal": "Inform users about the latest Olive Garden specials, deals, and promotions to drive interest and store visits.",
@@ -28,7 +28,7 @@
     {
       "type": "dataTable",
       "data": {
-        "title": "Current Olive Garden Specials for August 2025 🔥",
+        "title": "Current Olive Garden Specials for September 2025 🔥",
         "headers": ["Special Offer", "Details", "Price"],
         "rows": [
           ["Never Ending Classics", "Unlimited servings of your fave pasta dishes. Yes, UNLIMITED.", "Starts at $11.99 (Dine-in only)"],
