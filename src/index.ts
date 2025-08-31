@@ -1,4 +1,4 @@
-import {Hono} from 'hono'
+import {Hono, MiddlewareHandler} from 'hono'
 import {serveStatic} from 'hono/cloudflare-workers'
 import menuData from '../raw/index.json';
 import siteConfig from "../raw/site.json";
@@ -24,7 +24,7 @@ import masterMenuData from "../raw/master-menu-data.json";
 const app = new Hono()
 
 // --- Caching Middleware ---
-const cacheMiddleware = async (c, next) => {
+const cacheMiddleware: MiddlewareHandler = async (c, next) => {
   const url = new URL(c.req.url);
   const path = url.pathname;
 
@@ -685,23 +685,23 @@ app.get('/sitemap.xml', (c) => {
 
   const pageDataMap: { [key: string]: any } = {
     '/': menuData,
-    '/olive-garden-drink-menu/': drinkMenuData,
-    '/olive-garden-near-me/': nearMeData,
-    '/olive-garden-lunch-menu/': lunchMenuData,
-    '/olive-garden-dinner-menu/': dinnerMenuData,
-    '/olive-garden-dessert-menu/': dessertMenuData,
-    '/olive-garden-catering-menu/': cateringMenuData,
-    '/olive-garden-kids-menu/': kidsMenuData,
-    '/olive-garden-pasta-menu/': pastaMenuData,
-    '/olive-garden-soup-menu/': soupMenuData,
-    '/olive-garden-nutrition-allergen-menu/': nutritionAllergenMenuData,
-    '/contact-olive-garden/': contactUsData,
-    '/privacy-policy/': privacyPolicyData,
-    '/terms-of-service/': termsOfServiceData,
-    '/olive-garden-specials/': specialsData,
-    '/olive-garden-happy-hours/': happyHoursData,
-    '/olive-garden-coupons/': couponsData,
-    '/olive-garden-holiday-hours/': holidayHoursData
+    '/olive-garden-drink-menu': drinkMenuData,
+    '/olive-garden-near-me': nearMeData,
+    '/olive-garden-lunch-menu': lunchMenuData,
+    '/olive-garden-dinner-menu': dinnerMenuData,
+    '/olive-garden-dessert-menu': dessertMenuData,
+    '/olive-garden-catering-menu': cateringMenuData,
+    '/olive-garden-kids-menu': kidsMenuData,
+    '/olive-garden-pasta-menu': pastaMenuData,
+    '/olive-garden-soup-menu': soupMenuData,
+    '/olive-garden-nutrition-allergen-menu': nutritionAllergenMenuData,
+    '/contact-olive-garden': contactUsData,
+    '/privacy-policy': privacyPolicyData,
+    '/terms-of-service': termsOfServiceData,
+    '/olive-garden-specials': specialsData,
+    '/olive-garden-happy-hours': happyHoursData,
+    '/olive-garden-coupons': couponsData,
+    '/olive-garden-holiday-hours': holidayHoursData
   };
 
   const extractUrls = (navItems: any[]): string[] => {
@@ -819,8 +819,8 @@ app.get('/', (c) => {
   return c.html(finalHtml);
 })
 
-app.get('/olive-garden-drink-menu/', (c) => {
-  const head = generateHead(siteConfig, drinkMenuData, '/olive-garden-drink-menu/');
+app.get('/olive-garden-drink-menu', (c) => {
+  const head = generateHead(siteConfig, drinkMenuData, '/olive-garden-drink-menu');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(drinkMenuData);
   const footer = generateFooter(siteConfig);
@@ -843,8 +843,8 @@ app.get('/olive-garden-drink-menu/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-near-me/', (c) => {
-  const head = generateHead(siteConfig, nearMeData, '/olive-garden-near-me/');
+app.get('/olive-garden-near-me', (c) => {
+  const head = generateHead(siteConfig, nearMeData, '/olive-garden-near-me');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(nearMeData);
   const footer = generateFooter(siteConfig);
@@ -867,8 +867,8 @@ app.get('/olive-garden-near-me/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-lunch-menu/', (c) => {
-  const head = generateHead(siteConfig, lunchMenuData, '/olive-garden-lunch-menu/');
+app.get('/olive-garden-lunch-menu', (c) => {
+  const head = generateHead(siteConfig, lunchMenuData, '/olive-garden-lunch-menu');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(lunchMenuData);
   const footer = generateFooter(siteConfig);
@@ -891,8 +891,8 @@ app.get('/olive-garden-lunch-menu/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-dinner-menu/', (c) => {
-  const head = generateHead(siteConfig, dinnerMenuData, '/olive-garden-dinner-menu/');
+app.get('/olive-garden-dinner-menu', (c) => {
+  const head = generateHead(siteConfig, dinnerMenuData, '/olive-garden-dinner-menu');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(dinnerMenuData);
   const footer = generateFooter(siteConfig);
@@ -915,8 +915,8 @@ app.get('/olive-garden-dinner-menu/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-dessert-menu/', (c) => {
-  const head = generateHead(siteConfig, dessertMenuData, '/olive-garden-dessert-menu/');
+app.get('/olive-garden-dessert-menu', (c) => {
+  const head = generateHead(siteConfig, dessertMenuData, '/olive-garden-dessert-menu');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(dessertMenuData);
   const footer = generateFooter(siteConfig);
@@ -939,8 +939,8 @@ app.get('/olive-garden-dessert-menu/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-catering-menu/', (c) => {
-  const head = generateHead(siteConfig, cateringMenuData, '/olive-garden-catering-menu/');
+app.get('/olive-garden-catering-menu', (c) => {
+  const head = generateHead(siteConfig, cateringMenuData, '/olive-garden-catering-menu');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(cateringMenuData);
   const footer = generateFooter(siteConfig);
@@ -963,8 +963,8 @@ app.get('/olive-garden-catering-menu/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-kids-menu/', (c) => {
-  const head = generateHead(siteConfig, kidsMenuData, '/olive-garden-kids-menu/');
+app.get('/olive-garden-kids-menu', (c) => {
+  const head = generateHead(siteConfig, kidsMenuData, '/olive-garden-kids-menu');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(kidsMenuData);
   const footer = generateFooter(siteConfig);
@@ -987,8 +987,8 @@ app.get('/olive-garden-kids-menu/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-pasta-menu/', (c) => {
-  const head = generateHead(siteConfig, pastaMenuData, '/olive-garden-pasta-menu/');
+app.get('/olive-garden-pasta-menu', (c) => {
+  const head = generateHead(siteConfig, pastaMenuData, '/olive-garden-pasta-menu');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(pastaMenuData);
   const footer = generateFooter(siteConfig);
@@ -1011,8 +1011,8 @@ app.get('/olive-garden-pasta-menu/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-soup-menu/', (c) => {
-  const head = generateHead(siteConfig, soupMenuData, '/olive-garden-soup-menu/');
+app.get('/olive-garden-soup-menu', (c) => {
+  const head = generateHead(siteConfig, soupMenuData, '/olive-garden-soup-menu');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(soupMenuData);
   const footer = generateFooter(siteConfig);
@@ -1035,8 +1035,8 @@ app.get('/olive-garden-soup-menu/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-nutrition-allergen-menu/', (c) => {
-  const head = generateHead(siteConfig, nutritionAllergenMenuData, '/olive-garden-nutrition-allergen-menu/');
+app.get('/olive-garden-nutrition-allergen-menu', (c) => {
+  const head = generateHead(siteConfig, nutritionAllergenMenuData, '/olive-garden-nutrition-allergen-menu');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(nutritionAllergenMenuData);
   const footer = generateFooter(siteConfig);
@@ -1059,8 +1059,8 @@ app.get('/olive-garden-nutrition-allergen-menu/', (c) => {
   return c.html(html);
 });
 
-app.get('/contact-olive-garden/', (c) => {
-  const head = generateHead(siteConfig, contactUsData, '/contact-olive-garden/');
+app.get('/contact-olive-garden', (c) => {
+  const head = generateHead(siteConfig, contactUsData, '/contact-olive-garden');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(contactUsData);
   const footer = generateFooter(siteConfig);
@@ -1083,8 +1083,8 @@ app.get('/contact-olive-garden/', (c) => {
   return c.html(html);
 });
 
-app.get('/privacy-policy/', (c) => {
-  const head = generateHead(siteConfig, privacyPolicyData, '/privacy-policy/');
+app.get('/privacy-policy', (c) => {
+  const head = generateHead(siteConfig, privacyPolicyData, '/privacy-policy');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(privacyPolicyData);
   const footer = generateFooter(siteConfig);
@@ -1107,8 +1107,8 @@ app.get('/privacy-policy/', (c) => {
   return c.html(html);
 });
 
-app.get('/terms-of-service/', (c) => {
-  const head = generateHead(siteConfig, termsOfServiceData, '/terms-of-service/');
+app.get('/terms-of-service', (c) => {
+  const head = generateHead(siteConfig, termsOfServiceData, '/terms-of-service');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(termsOfServiceData);
   const footer = generateFooter(siteConfig);
@@ -1131,8 +1131,8 @@ app.get('/terms-of-service/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-specials/', (c) => {
-  const head = generateHead(siteConfig, specialsData, '/olive-garden-specials/');
+app.get('/olive-garden-specials', (c) => {
+  const head = generateHead(siteConfig, specialsData, '/olive-garden-specials');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(specialsData);
   const footer = generateFooter(siteConfig);
@@ -1155,8 +1155,8 @@ app.get('/olive-garden-specials/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-happy-hours/', (c) => {
-  const head = generateHead(siteConfig, happyHoursData, '/olive-garden-happy-hours/');
+app.get('/olive-garden-happy-hours', (c) => {
+  const head = generateHead(siteConfig, happyHoursData, '/olive-garden-happy-hours');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(happyHoursData);
   const footer = generateFooter(siteConfig);
@@ -1179,8 +1179,8 @@ app.get('/olive-garden-happy-hours/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-coupons/', (c) => {
-  const head = generateHead(siteConfig, couponsData, '/olive-garden-coupons/');
+app.get('/olive-garden-coupons', (c) => {
+  const head = generateHead(siteConfig, couponsData, '/olive-garden-coupons');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(couponsData);
   const footer = generateFooter(siteConfig);
@@ -1203,8 +1203,8 @@ app.get('/olive-garden-coupons/', (c) => {
   return c.html(html);
 });
 
-app.get('/olive-garden-holiday-hours/', (c) => {
-  const head = generateHead(siteConfig, holidayHoursData, '/olive-garden-holiday-hours/');
+app.get('/olive-garden-holiday-hours', (c) => {
+  const head = generateHead(siteConfig, holidayHoursData, '/olive-garden-holiday-hours');
   const header = generateHeader(siteConfig);
   const mainContent = generatePageBody(holidayHoursData);
   const footer = generateFooter(siteConfig);
