@@ -19,6 +19,7 @@ import specialsData from "../raw/specials.json";
 import happyHoursData from "../raw/happy-hours.json";
 import couponsData from "../raw/coupons.json";
 import holidayHoursData from "../raw/holiday-hours.json";
+import masterMenuData from "../raw/master-menu-data.json";
 
 
 const app = new Hono()
@@ -427,28 +428,46 @@ const renderImageGallery = (data: any) => `
 `;
 
 const renderDataTable = (data: any) => {
+  // Helper to format price strings consistently
   const formatPrice = (price: any) => {
-    if (price === null || typeof price === 'undefined') {
-      return '$0.00';
+    if (price === null || typeof price === 'undefined') return '$0.00';
+    const priceStr = String(price);
+    if (/^\d+(\.\d+)?$/.test(priceStr)) {
+      return `$${Number(priceStr).toFixed(2)}`;
     }
-    // 判断是否为纯数字
-    const isPureNumber = /^\d+$/.test(price);
-    if (isPureNumber) {
-      const priceNumber = Number(price);
-      return isNaN(priceNumber) ? '$0.00' : `$${priceNumber.toFixed(2)}`;
+    if (priceStr.includes("$")) {
+      return priceStr;
     }
-    // 如果包含了符号则直接返回 否则加上符号返回
-    if (price.includes("$")) {
-      return price;
-    }
-    return "$" + price
+    return `$${priceStr}`;
   };
+
+  let categoriesToRender: { [key: string]: any } = {};
+
+  // Check if we need to load data dynamically
+  if (data.categoriesDataUrl) {
+    let sourceData = masterMenuData; // In a real dynamic scenario, you'd fetch this. Here, we use the imported JSON.
+
+    if (data.categoriesFilter === '*') {
+      categoriesToRender = sourceData;
+    } else if (Array.isArray(data.categoriesFilter)) {
+      data.categoriesFilter.forEach((key: string) => {
+        // @ts-ignore
+        if (sourceData[key]) {
+          // @ts-ignore
+          categoriesToRender[key] = sourceData[key];
+        }
+      });
+    }
+  } else {
+    // Fallback to inline categories
+    categoriesToRender = data.categories;
+  }
 
   return `
     <section id="${toKebabCase(data.title)}">
       <h2>${data.title}</h2>
-      ${Object.keys(data.categories).map(categoryName => {
-    const categoryData = data.categories[categoryName];
+      ${Object.keys(categoriesToRender).map(categoryName => {
+    const categoryData = categoriesToRender[categoryName];
     const recommendedItemName = categoryData.recommended;
     return `
           <div id="${toKebabCase(categoryName)}">
@@ -546,7 +565,7 @@ function generatePageBody(data: any): string {
       case 'imageGallery':
         return renderImageGallery(block.data);
       case 'dataTable':
-        if (block.data.categories) {
+        if (block.data.categories || block.data.categoriesDataUrl) {
           return renderDataTable(block.data);
         }
         return renderStoreDataTable(block.data);

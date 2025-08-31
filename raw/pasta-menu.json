@@ -20,64 +20,12 @@
       "type": "dataTable",
       "data": {
         "title": "Olive Garden Pasta Menu & Prices (September 2025)",
-        "categories": {
-          "CREATE YOUR OWN PASTA": {
-            "description": "Don't let them tell you what to do! Be your own pasta artist. Choose your pasta, sauce, and toppings to create the dish of your dreams. 🎨",
-            "recommended": "Create Your Own Pasta – Cucina Mia",
-            "items": [
-              {
-                "name": "Create Your Own Pasta – Cucina Mia",
-                "calories": "540-1300",
-                "price": "19.49",
-                "image_url": "/static/image/upload/Create-Your-Own-Pasta-–-Cucina-Mia-1.webp",
-                "review": "Unleash your inner pasta artist! 🎨 Choose your pasta, sauce, and toppings to create your perfect bowl. Want angel hair with alfredo and shrimp? You got it. The possibilities are endless!"
-              }
-            ]
-          },
-          "CLASSIC PASTA ENTRÉES": {
-            "description": "These are the legends! The tried-and-true pasta dishes that everyone loves. You can't go wrong with any of these. 🏆",
-            "recommended": "Fettuccine Alfredo (V)",
-            "items": [
-              {
-                "name": "Chicken Alfredo",
-                "calories": "1,570",
-                "price": "19.99",
-                "image_url": "/static/image/upload/Chicken-Alfredo-1.webp",
-                "review": "The GOAT of pasta dishes. Creamy, cheesy, and oh-so-satisfying. It's famous for a reason. 💯"
-              },
-              {
-                "name": "Spaghetti & Meatballs",
-                "calories": "970",
-                "price": "16.78",
-                "image_url": "/static/image/upload/Spaghetti-Meatballs-1.webp"
-              },
-              {
-                "name": "Fettuccine Alfredo (V)",
-                "calories": "1,310",
-                "price": "16.49",
-                "image_url": "/static/image/upload/Fettuccine-Alfredo-V-2.webp"
-              },
-              {
-                "name": "Chicken Tortelloni Alfredo",
-                "calories": "1,980",
-                "price": "22.29",
-                "image_url": "/static/image/upload/Chicken-Tortelloni-Alfredo-1.webp"
-              },
-              {
-                "name": "Five Cheese Ziti al Forno",
-                "calories": "1,170",
-                "price": "17.99",
-                "image_url": "/static/image/upload/Five-Cheese-Ziti-al-Forno-1.webp"
-              },
-              {
-                "name": "Cheese Ravioli",
-                "calories": "780",
-                "price": "16.99",
-                "image_url": "/static/image/upload/Cheese-Ravioli-1.webp"
-              }
-            ]
-          }
-        }
+        "categoriesDataUrl": "raw/master-menu-data.json",
+        "categoriesFilter": [
+          "OVEN BAKED PASTAS MENU",
+          "AMAZING ALFREDOS!",
+          "CLASSIC ENTRÉES 2025"
+        ]
       }
     },
     {

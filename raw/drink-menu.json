@@ -20,40 +20,11 @@
       "type": "dataTable",
       "data": {
         "title": "Olive Garden Drink Menu & Prices",
-        "categories": {
-          "NON-ALCOHOLIC BEVERAGES": {
-            "description": "Not drinking? No problem! These non-alcoholic superstars are here to save the day. So refreshing! ✨",
-            "recommended": "Raspberry Lemonade",
-            "items": [
-              {
-                "name": "Gallon Iced Teas & Raspberry Lemonade",
-                "calories": "800",
-                "price": "6.49",
-                "image_url": "/static/image/upload/Gallon-Iced-Teas-Raspberry-Lemonade.webp",
-                "review": "Hosting a party? Be the hero and bring a gallon of this liquid gold. Your friends will thank you. Trust."
-              },
-              {
-                "name": "To Go Fountain Drinks",
-                "calories": "180",
-                "price": "3.99",
-                "image_url": "/static/image/upload/To-Go-Fountain-Drinks.webp"
-              },
-              {
-                "name": "Raspberry Lemonade",
-                "calories": "170",
-                "price": "4.49",
-                "image_url": "/static/image/upload/Raspberry_Lemonade-removebg-preview.webp",
-                "review": "So refreshing! 🍋 The perfect balance of sweet and tart. It's the ultimate thirst quencher. Plus, it's bottomless. What's not to love? 🥤"
-              },
-              {
-                "name": "Classic Lemonade",
-                "calories": "170",
-                "price": "3.99",
-                "image_url": "/static/image/upload/Classic-Lemonade.webp"
-              }
-            ]
-          }
-        }
+        "categoriesDataUrl": "raw/master-menu-data.json",
+        "categoriesFilter": [
+          "Non-Alcoholic Beverages Menu",
+          "Beverages Options"
+        ]
       }
     },
     {
