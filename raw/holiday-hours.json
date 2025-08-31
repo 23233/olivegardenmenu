@@ -35,11 +35,15 @@
       "type": "dataTable",
       "data": {
         "title": "Regular Weekly Hours 🕒",
-        "headers": ["Day", "Hours"],
+        "headers": ["Day", "Open", "Close"],
         "rows": [
-          ["Monday - Thursday", "11:00 AM - 10:00 PM"],
-          ["Friday - Saturday", "11:00 AM - 11:00 PM"],
-          ["Sunday", "11:00 AM - 10:00 PM"]
+          ["Monday", "11:00 AM", "10:00 PM"],
+          ["Tuesday", "11:00 AM", "10:00 PM"],
+          ["Wednesday", "11:00 AM", "10:00 PM"],
+          ["Thursday", "11:00 AM", "10:00 PM"],
+          ["Friday", "11:00 AM", "11:00 PM"],
+          ["Saturday", "11:00 AM", "11:00 PM"],
+          ["Sunday", "11:00 AM", "10:00 PM"]
         ]
       }
     },
@@ -49,12 +53,24 @@
         "title": "Holiday Hours FAQs 🤔",
         "items": [
           {
+            "question": "Is Olive Garden open on Christmas Eve?",
+            "answer": "Yes, most Olive Garden locations are open on Christmas Eve, but they may operate with reduced hours, often closing early. It's always best to call your local restaurant to confirm their specific hours. 📞"
+          },
+          {
+            "question": "Is Olive Garden open on New Year's Day?",
+            "answer": "Absolutely! Olive Garden is typically open on New Year's Day with regular hours, making it a great place to start the year with a delicious meal. 🥳"
+          },
+          {
+            "question": "Is Olive Garden open on Easter?",
+            "answer": "Yes, Olive Garden is usually open on Easter Sunday with their normal operating hours. It's a popular spot for an Easter meal, so reservations might be a good idea!"
+          },
+          {
             "question": "Is Olive Garden open on Christmas?",
-            "answer": "No, Olive Garden is closed on Christmas Day so the team can spend time with their families."
+            "answer": "No, Olive Garden is closed on Christmas Day so the team can spend time with their families. 🎄"
           },
           {
             "question": "Is Olive Garden open on Thanksgiving?",
-            "answer": "No, Olive Garden is also closed on Thanksgiving Day."
+            "answer": "No, Olive Garden is also closed on Thanksgiving Day. Time for turkey at home! 🦃"
           }
         ]
       }

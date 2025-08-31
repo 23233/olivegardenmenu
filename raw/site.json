@@ -30,61 +30,61 @@
         "submenu": [
           {
             "text": "Olive Garden Drink Menu 2025",
-            "url": "/drink-menu/"
+            "url": "/olive-garden-drink-menu/"
           },
           {
             "text": "Olive Garden Lunch Menu 2025",
-            "url": "/lunch-menu/"
+            "url": "/olive-garden-lunch-menu/"
           },
           {
             "text": "Olive Garden Dinner Menu 2025",
-            "url": "/dinner-menu/"
+            "url": "/olive-garden-dinner-menu/"
           },
           {
             "text": "Olive Garden Dessert Menu 2025",
-            "url": "/dessert-menu/"
+            "url": "/olive-garden-dessert-menu/"
           },
           {
             "text": "Olive Garden Catering Menu 2025",
-            "url": "/catering-menu/"
+            "url": "/olive-garden-catering-menu/"
           },
           {
             "text": "Olive Garden Kids Menu 2025",
-            "url": "/kids-menu/"
+            "url": "/olive-garden-kids-menu/"
           },
           {
             "text": "Olive Garden Pasta Menu 2025",
-            "url": "/pasta-menu/"
+            "url": "/olive-garden-pasta-menu/"
           },
           {
             "text": "Olive Garden Soup Menu 2025",
-            "url": "/soup-menu/"
+            "url": "/olive-garden-soup-menu/"
           },
           {
             "text": "Nutrition & Allergen Menu 2025",
-            "url": "/nutrition-allergen-menu/"
+            "url": "/olive-garden-nutrition-allergen-menu/"
           }
         ]
       },
       {
         "text": "Olive Garden Specials",
-        "url": "/specials/"
+        "url": "/olive-garden-specials/"
       },
       {
         "text": "Happy Hours 2025",
-        "url": "/happy-hours/"
+        "url": "/olive-garden-happy-hours/"
       },
       {
         "text": "Coupons",
-        "url": "/coupons/"
+        "url": "/olive-garden-coupons/"
       },
       {
         "text": "Holiday Hours 2025",
-        "url": "/holiday-hours/"
+        "url": "/olive-garden-holiday-hours/"
       },
       {
         "text": "Olive Garden Near Me",
-        "url": "/near-me/"
+        "url": "/olive-garden-near-me/"
       }
     ],
     "footer": [
@@ -96,15 +96,15 @@
       },
       {
         "text": "Contact Us",
-        "url": "/contact_us/"
+        "url": "/contact-olive-garden/"
       },
       {
         "text": "Privacy Policy",
-        "url": "/privacy_policy/"
+        "url": "/privacy-policy/"
       },
       {
         "text": "Terms of Service",
-        "url": "/terms_of_service/"
+        "url": "/terms-of-service/"
       }
     ]
   },

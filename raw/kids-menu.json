@@ -42,6 +42,14 @@
           {
             "question": "Are there gluten-free options on the kids menu?",
             "answer": "Yes! Olive Garden has gluten-sensitive options for kids, like the Rotini with Marinara or Meat Sauce made with gluten-free pasta. Just let your server know!"
+          },
+          {
+            "question": "Do kids get the unlimited breadsticks and salad too?",
+            "answer": "The famous unlimited breadsticks are for everyone at the table to enjoy, including the kids! The unlimited salad, however, is typically included with the purchase of an adult entrée."
+          },
+          {
+            "question": "Can an adult order from the kids menu?",
+            "answer": "While the kids menu is designed for guests 12 and under, some locations may allow an adult to order from it for a smaller portion. This is handled on a case-by-case basis, so it's always best to ask your server politely. 😊"
           }
         ]
       }

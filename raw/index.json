@@ -147,7 +147,7 @@
       "type": "richText",
       "data": {
         "title": "Olive Garden Hours 🕒",
-        "htmlContent": "<h3>Regular Weekly Hours</h3><ul><li><strong>Monday - Thursday:</strong> 11:00 AM - 10:00 PM</li><li><strong>Friday - Saturday:</strong> 11:00 AM - 11:00 PM</li><li><strong>Sunday:</strong> 11:00 AM - 10:00 PM</li></ul><p>Please note that holiday hours may vary. We recommend calling your local Olive Garden to confirm hours before visiting.</p>"
+        "htmlContent": "<h3>Regular Weekly Hours</h3><ul><li><strong>Monday:</strong> 11:00 AM - 10:00 PM</li><li><strong>Tuesday:</strong> 11:00 AM - 10:00 PM</li><li><strong>Wednesday:</strong> 11:00 AM - 10:00 PM</li><li><strong>Thursday:</strong> 11:00 AM - 10:00 PM</li><li><strong>Friday:</strong> 11:00 AM - 11:00 PM</li><li><strong>Saturday:</strong> 11:00 AM - 11:00 PM</li><li><strong>Sunday:</strong> 11:00 AM - 10:00 PM</li></ul><p>Please note that holiday hours may vary. We recommend calling your local Olive Garden to confirm hours before visiting, especially around holidays like Christmas, Thanksgiving, and Easter.</p>"
       }
     },
     {
@@ -178,6 +178,42 @@
           {
             "question": "Does Olive Garden offer a senior discount?",
             "answer": "Olive Garden doesn't offer a standard, chain-wide senior discount. However, some individual locations might have special promotions, so it never hurts to ask your server!"
+          },
+          {
+            "question": "What's the best thing to order at Olive Garden?",
+            "answer": "That's like asking a parent to pick a favorite child! 😅 But for real, the Tour of Italy is a classic for a reason—you get three favorites on one plate. The Chicken Alfredo is legendary creamy goodness, and you can never go wrong with Unlimited Breadsticks and Salad. Honestly, the 'best' thing is whatever you're craving!"
+          },
+          {
+            "question": "Can I get the Olive Garden salad dressing to take home?",
+            "answer": "You bet! They sell their Signature Italian dressing in bottles at the restaurant. Now you can have that iconic flavor on your salads at home. It's a game-changer. 🥗"
+          },
+          {
+            "question": "Does Olive Garden have a kids' menu?",
+            "answer": "Yes, and it's awesome! They have smaller portions of classics like spaghetti and fettuccine alfredo, plus kid-friendly options like chicken fingers and pizza. It's a great place for a family meal."
+          },
+          {
+            "question": "Are the breadsticks really unlimited?",
+            "answer": "This is the most important question, and the answer is a glorious YES. The breadsticks are truly unlimited when you dine in. It's a marathon, not a sprint. Pace yourself. Or don't. We won't judge. 😉"
+          },
+          {
+            "question": "Does Olive Garden have Wi-Fi?",
+            "answer": "Most Olive Garden locations offer free Wi-Fi for guests. So you can post pictures of your delicious pasta while you're eating it. #Priorities"
+          },
+          {
+            "question": "Can adults order off the kids' menu?",
+            "answer": "Generally, the kids' menu is intended for children 12 and under. However, some locations might be flexible if you're looking for a smaller portion. It's always up to the discretion of the restaurant, so it doesn't hurt to ask politely!"
+          },
+          {
+            "question": "Does Olive Garden have any healthy or low-calorie options?",
+            "answer": "They do! Look for the 'Tastes of the Mediterranean' section on their menu. It features dishes under 600 calories, like the Shrimp Scampi and Chicken Piccata. You can enjoy the Olive Garden experience without overdoing it. 💪"
+          },
+          {
+            "question": "Does Olive Garden have steak on the menu?",
+            "answer": "Yes, they often have a steak option! The menu can change seasonally, but they typically offer something like a 'Steak Alfredo' or a 'Steak Gorgonzola'. Check the latest menu to see what delicious steak creation they're serving up."
+          },
+          {
+            "question": "What is the 'Never-Ending Pasta Bowl'?",
+            "answer": "Ah, the legendary Never-Ending Pasta Bowl! It's a special, limited-time promotion (usually in the fall) where you can get unlimited servings of pasta, sauce, and toppings for one low price. It's a fan-favorite event, so keep an eye out for when it returns! 🍝"
           }
         ]
       }
