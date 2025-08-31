@@ -636,6 +636,84 @@ function generateCommonScripts(): string {
 // @ts-ignore
 app.get('/static/*', serveStatic({root: './'}))
 
+app.get('/robots.txt', (c) => {
+  const robotsTxt = `User-agent: *
+Allow: /
+Sitemap: ${joinUrlPaths(siteConfig.baseURL, 'sitemap.xml')}`;
+  return new Response(robotsTxt, {
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8'
+    }
+  });
+});
+
+app.get('/sitemap.xml', (c) => {
+  const today = new Date().toISOString().split('T')[0];
+
+  const pageDataMap: { [key: string]: any } = {
+    '/': menuData,
+    '/olive-garden-drink-menu/': drinkMenuData,
+    '/olive-garden-near-me/': nearMeData,
+    '/olive-garden-lunch-menu/': lunchMenuData,
+    '/olive-garden-dinner-menu/': dinnerMenuData,
+    '/olive-garden-dessert-menu/': dessertMenuData,
+    '/olive-garden-catering-menu/': cateringMenuData,
+    '/olive-garden-kids-menu/': kidsMenuData,
+    '/olive-garden-pasta-menu/': pastaMenuData,
+    '/olive-garden-soup-menu/': soupMenuData,
+    '/olive-garden-nutrition-allergen-menu/': nutritionAllergenMenuData,
+    '/contact-olive-garden/': contactUsData,
+    '/privacy-policy/': privacyPolicyData,
+    '/terms-of-service/': termsOfServiceData,
+    '/olive-garden-specials/': specialsData,
+    '/olive-garden-happy-hours/': happyHoursData,
+    '/olive-garden-coupons/': couponsData,
+    '/olive-garden-holiday-hours/': holidayHoursData
+  };
+
+  const extractUrls = (navItems: any[]): string[] => {
+    let urls: string[] = [];
+    for (const item of navItems) {
+      if (item.url) {
+        urls.push(item.url);
+      }
+      if (item.submenu) {
+        urls = urls.concat(extractUrls(item.submenu));
+      }
+    }
+    return urls;
+  };
+
+  const headerUrls = extractUrls(siteConfig.navigation.header);
+  const footerUrls = extractUrls(siteConfig.navigation.footer);
+  const allUrls = new Set(['/', ...headerUrls, ...footerUrls]);
+
+  const sitemapEntries = Array.from(allUrls).map(path => {
+    const pageData = pageDataMap[path];
+    const fullUrl = joinUrlPaths(siteConfig.baseURL, path);
+    const lastMod = pageData?.metadata?.datePublished || today;
+    const priority = path === '/' ? '1.0' : '0.8'; // Simple priority logic
+
+    return `
+  <url>
+    <loc>${fullUrl}</loc>
+    <lastmod>${lastMod}</lastmod>
+    <priority>${priority}</priority>
+  </url>`;
+  }).join('');
+
+  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapEntries}
+</urlset>`;
+
+  return new Response(sitemapXml, {
+    headers: {
+      'Content-Type': 'application/xml; charset=utf-8'
+    }
+  });
+});
+
 app.get('/', (c) => {
   const head = generateHead(siteConfig, menuData, '/');
   const header = generateHeader(siteConfig);
