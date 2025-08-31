@@ -3,7 +3,7 @@
   "pageGoal": "",
   "heroImage": "",
   "siteName": "Olive Garden Menu With Prices",
-  "baseURL": "https://olivegardenmenuguide.com/",
+  "baseURL": "https://olivegardenmenuguide.com",
   "maxWidth": 1280,
   "googleAnalyticsId": "",
   "googleAdsenseId": "",
@@ -58,11 +58,11 @@
           },
           {
             "text": "Olive Garden Soup Menu 2025",
-            "url": "/olive-garden-soup-men"
+            "url": "/olive-garden-soup-menu"
           },
           {
             "text": "Nutrition & Allergen Menu 2025",
-            "url": "/olive-garden-nutrition-allergen-menu/"
+            "url": "/olive-garden-nutrition-allergen-menu"
           }
         ]
       },

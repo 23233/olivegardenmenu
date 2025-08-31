@@ -406,14 +406,17 @@ function generateFooter(siteConfig: any): string {
 
 // --- Component Rendering Functions ---
 
-const renderHero = (data: any) => `
-  <section class="hero" style="background-image: url('${data.imageUrl}');">
+const renderHero = (data: any) => {
+  const style = data.imageUrl ? ` style="background-image: url('${data.imageUrl}');"` : '';
+  return `
+  <section class="hero"${style}>
     <div class="hero-content">
       <h1>${data.h1}</h1>
       <p>${data.tagline}</p>
     </div>
   </section>
-`;
+`
+};
 
 const renderRichText = (data: any) => `
   <section class="rich-text" id="${toKebabCase(data.title)}">
