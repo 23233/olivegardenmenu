@@ -21,7 +21,6 @@ import couponsData from "../raw/coupons.json";
 import holidayHoursData from "../raw/holiday-hours.json";
 import masterMenuData from "../raw/master-menu-data.json";
 
-
 const app = new Hono()
 
 // --- Utility Functions ---
