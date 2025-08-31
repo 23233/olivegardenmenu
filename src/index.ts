@@ -23,6 +23,40 @@ import masterMenuData from "../raw/master-menu-data.json";
 
 const app = new Hono()
 
+// --- Caching Middleware ---
+const cacheMiddleware = async (c, next) => {
+  const url = new URL(c.req.url);
+  const path = url.pathname;
+
+  // Define paths to exclude from caching
+  const excludedPaths = ['/static', '/robots.txt', '/sitemap.xml'];
+  const isExcluded = excludedPaths.some(p => path.startsWith(p));
+
+  if (isExcluded) {
+    await next();
+    return;
+  }
+
+  const cache = caches.default;
+  const cachedResponse = await cache.match(c.req.raw);
+
+  if (cachedResponse) {
+    return cachedResponse;
+  }
+
+  await next();
+
+  if (c.res.ok && c.res.headers.get('Content-Type')?.includes('text/html')) {
+    const responseToCache = c.res.clone();
+    // Add a cache control header to the response to be cached
+    responseToCache.headers.set('Cache-Control', 'public, max-age=86400'); // Cache for 24 hours
+    c.executionCtx.waitUntil(cache.put(c.req.raw, responseToCache));
+  }
+};
+
+// Apply the middleware to all requests
+app.use(cacheMiddleware);
+
 // --- Utility Functions ---
 
 function toKebabCase(str: string): string {
