@@ -1,3 +1,4 @@
+// @ts-ignore
 import fs from 'fs/promises';
 import app from './src/index.js';
 import { toSSG } from 'hono/ssg';
@@ -16,6 +17,7 @@ const main = async () => {
     }
   } catch (e) {
     console.error('An unexpected error occurred:', e);
+    // @ts-ignore
     process.exit(1);
   }
 };
