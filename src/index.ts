@@ -55,7 +55,7 @@ const cacheMiddleware: MiddlewareHandler = async (c, next) => {
 };
 
 // Apply the middleware to all requests
-app.use(cacheMiddleware);
+// app.use(cacheMiddleware);
 
 // --- Utility Functions ---
 
@@ -64,23 +64,25 @@ function toKebabCase(str: string): string {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
+
 /**
- * Safely and robustly joins a base URL with multiple path segments.
- * Handles any number of leading/trailing slashes and ensures the final URL does not end with one.
+ * Safely joins a base URL with multiple path segments.
+ * Handles leading/trailing slashes to prevent duplicates.
  * @param base The base URL (e.g., "https://example.com/")
  * @param paths The path segments to join (e.g., "path1", "/path2")
- * @returns A correctly formatted full URL.
+ * @returns A correctly formatted full URL, not ending with a slash.
  */
 function joinUrlPaths(base: string, ...paths: string[]): string {
-  // Remove all trailing slashes from the base
-  const trimmedBase = base.replace(/\/+$/, '');
+  const trimmedBase = base.endsWith('/') ? base.slice(0, -1) : base;
+  const trimmedPaths = paths.map(p => p.startsWith('/') ? p.slice(1) : p);
+  let fullUrl = [trimmedBase, ...trimmedPaths].join('/');
 
-  // For each path, remove all leading and trailing slashes, then filter out any empty parts
-  const normalizedPaths = paths
-    .map(p => p.replace(/^\/+/, '').replace(/\/+$/, ''))
-    .filter(p => p); // This removes empty strings that could result from paths like "/" or "//"
+  // Ensure the final URL does not end with a slash, unless it is just "/"
+  if (fullUrl.length > 1 && fullUrl.endsWith('/')) {
+    fullUrl = fullUrl.slice(0, -1);
+  }
 
-  return [trimmedBase, ...normalizedPaths].join('/');
+  return fullUrl;
 }
 
 
@@ -92,7 +94,6 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
   const {h1, description, coreKeyword, author, datePublished} = metadata;
 
   const pageUrl = joinUrlPaths(baseURL, pagePath);
-  console.log('pageUrl:', pageUrl);
   const logoUrl = joinUrlPaths(pageUrl, siteConfig.logoUrl);
 
   const graph = [
@@ -779,7 +780,7 @@ app.get('/', (c) => {
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
-        <p>For a detailed list of all Olive Garden locations, including addresses and hours, check out our new <a href="/near-me/"><strong>Olive Garden Near Me</strong></a> page. We've got all the info you need to get your pasta fix! 🚀</p>
+        <p>For a detailed list of all Olive Garden locations, including addresses and hours, check out our new <a href="/olive-garden-near-me"><strong>Olive Garden Near Me</strong></a> page. We've got all the info you need to get your pasta fix! 🚀</p>
       </section>
   `;
 
@@ -807,7 +808,6 @@ app.get('/', (c) => {
                     galleryImages.forEach(image => {
                         image.addEventListener('click', () => {
                             modal.style.display = "block";
-                            // @ts-ignore
                             modalImg.src = image.dataset.fullSrc;
                         });
                     });
