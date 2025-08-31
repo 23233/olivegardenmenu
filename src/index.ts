@@ -192,6 +192,8 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
     }
   }
 
+
+
   return `
     <head>
         <meta charset="UTF-8">
@@ -206,6 +208,22 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
         <link rel="icon" href="${siteConfig.favicon.url}" sizes="${siteConfig.favicon.size}x${siteConfig.favicon.size}">
         <link rel="apple-touch-icon" href="${siteConfig.appleTouchIcon}">
         <script type="application/ld+json">${JSON.stringify({"@context": "https://schema.org", "@graph": graph})}</script>
+        ${siteConfig.googleAnalyticsId ? `
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=${siteConfig.googleAnalyticsId}"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${siteConfig.googleAnalyticsId}');
+        </script>
+        ` : ''}
+        ${siteConfig.googleAdsenseId ? `
+        <!-- Google AdSense -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.googleAdsenseId}"
+     crossorigin="anonymous"></script>
+        ` : ''}
         <style>
             :root {
                 --primary: ${colors.primary}; --secondary: ${colors.secondary}; --background: ${colors.background};
