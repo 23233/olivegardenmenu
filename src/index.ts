@@ -65,16 +65,22 @@ function toKebabCase(str: string): string {
 }
 
 /**
- * Safely joins a base URL with multiple path segments.
- * Handles leading/trailing slashes to prevent duplicates.
+ * Safely and robustly joins a base URL with multiple path segments.
+ * Handles any number of leading/trailing slashes and ensures the final URL does not end with one.
  * @param base The base URL (e.g., "https://example.com/")
  * @param paths The path segments to join (e.g., "path1", "/path2")
  * @returns A correctly formatted full URL.
  */
 function joinUrlPaths(base: string, ...paths: string[]): string {
-  const trimmedBase = base.endsWith('/') ? base.slice(0, -1) : base;
-  const trimmedPaths = paths.map(p => p.startsWith('/') ? p.slice(1) : p);
-  return [trimmedBase, ...trimmedPaths].join('/');
+  // Remove all trailing slashes from the base
+  const trimmedBase = base.replace(/\/+$/, '');
+
+  // For each path, remove all leading and trailing slashes, then filter out any empty parts
+  const normalizedPaths = paths
+    .map(p => p.replace(/^\/+/, '').replace(/\/+$/, ''))
+    .filter(p => p); // This removes empty strings that could result from paths like "/" or "//"
+
+  return [trimmedBase, ...normalizedPaths].join('/');
 }
 
 
@@ -86,6 +92,7 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
   const {h1, description, coreKeyword, author, datePublished} = metadata;
 
   const pageUrl = joinUrlPaths(baseURL, pagePath);
+  console.log('pageUrl:', pageUrl);
   const logoUrl = joinUrlPaths(pageUrl, siteConfig.logoUrl);
 
   const graph = [
