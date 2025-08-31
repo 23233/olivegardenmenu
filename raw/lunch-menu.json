@@ -34,7 +34,7 @@
         "items": [
           {
             "question": "What are Olive Garden’s lunch hours?",
-            "answer": "The magic happens Monday through Friday until 3:00 PM! 셋업. On weekends and holidays, it's the dinner menu all day, so plan accordingly."
+            "answer": "The magic happens Monday through Friday until 3:00 PM! On weekends and holidays, it's the dinner menu all day, so plan accordingly."
           },
           {
             "question": "Does Olive Garden have lunch specials?",
@@ -43,6 +43,14 @@
           {
             "question": "Can I get the lunch menu on weekends?",
             "answer": "Sadly, no. The lunch-sized portions and prices are a weekday-only treat (Mon-Fri before 3 PM). Weekends are for going big with the dinner menu! 😉"
+          },
+          {
+            "question": "What comes with the Unlimited Soup, Salad & Breadsticks lunch?",
+            "answer": "It's exactly what it sounds like - pure bliss! You get unlimited servings of their fresh garden salad, your choice of homemade soups (like Zuppa Toscana or Pasta e Fagioli), and warm, garlicky breadsticks. You can switch soups with each refill!"
+          },
+          {
+            "question": "Can I order the lunch specials for takeout?",
+            "answer": "Yes, you can! Olive Garden offers their lunch specials for takeout, so you can enjoy a delicious and affordable Italian lunch at your desk or at home. Just be aware that the 'unlimited' part of the soup, salad, and breadsticks deal doesn't apply to takeout orders."
           }
         ]
       }

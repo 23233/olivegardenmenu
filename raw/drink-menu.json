@@ -43,6 +43,14 @@
           {
             "question": "Are there kid-friendly drinks at Olive Garden?",
             "answer": "Of course! The little ones are covered with options like Milk, Fruit Juices, and yummy Lemonade. They won't be left out of the fun. 🙌"
+          },
+          {
+            "question": "Does Olive Garden have a full bar?",
+            "answer": "Yes, most Olive Garden locations have a full bar! They serve a variety of cocktails, beers, and a pretty impressive wine list. So whether you want a classic Italian Peroni or a fruity cocktail, you're in luck. 🍸"
+          },
+          {
+            "question": "Can I sample a wine before buying a glass?",
+            "answer": "Definitely! Olive Garden is famous for its complimentary wine tasting. You can typically sample up to three different wines to find the one you love before committing to a glass or bottle. Just ask your server for a taste!"
           }
         ]
       }
