@@ -160,7 +160,7 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
         <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
         <link rel="alternate" hreflang="en" href="${pageUrl}"><link rel="alternate" hreflang="x-default" href="${pageUrl}">
         <meta property="og:title" content="${h1}"><meta property="og:description" content="${description}"><meta property="og:url" content="${pageUrl}"><meta property="og:site_name" content="${siteName}"><meta property="og:type" content="website"><meta property="og:image" content="${logoUrl}">
-        <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${h1}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${logoUrl}">
+        <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${h1}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${logoUrl}"><meta name="twitter:site" content="${pageUrl}">
         <link rel="icon" href="${siteConfig.favicon.url}" sizes="${siteConfig.favicon.size}x${siteConfig.favicon.size}">
         <link rel="apple-touch-icon" href="${siteConfig.appleTouchIcon}">
         <script type="application/ld+json">${JSON.stringify({"@context": "https://schema.org", "@graph": graph})}</script>
