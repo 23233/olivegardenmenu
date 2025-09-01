@@ -367,6 +367,38 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
                 .has-submenu .submenu.active { max-height: 500px; }
                 .submenu-parent-button { justify-content: center; }
             }
+            .youtube-facade {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                background-size: cover;
+                background-position: center;
+            }
+            .youtube-facade .play-button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 68px;
+                height: 48px;
+                background: url('data:image/svg+xml;utf8,<svg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 68 48\\"><path d=\\"M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z\\" fill=\\"red\\"></path><path d=\\"M 45,24 27,14 27,34\\" fill=\\"white\\"></path></svg>') no-repeat;
+                border: none;
+                transition: opacity 0.2s ease;
+            }
+            .youtube-facade:hover .play-button {
+                opacity: 0.8;
+            }
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
         </style>
     </head>
     `;
@@ -652,6 +684,7 @@ function generateCommonScripts(): string {
   return `
         <script>
             document.addEventListener('DOMContentLoaded', function () {
+                // --- 现有导航栏逻辑 ---
                 const navToggle = document.querySelector('.nav-toggle');
                 const navLinks = document.querySelector('.nav-links');
                 if (navToggle && navLinks) {
@@ -687,6 +720,38 @@ function generateCommonScripts(): string {
                     scrollToTopBtn.addEventListener('click', () => {
                         window.scrollTo({top: 0, behavior: 'smooth'});
                     });
+                }
+
+                // --- 新增：YouTube Facade 逻辑 ---
+                const videoFacades = document.querySelectorAll('.youtube-facade');
+                videoFacades.forEach(facade => {
+                    facade.addEventListener('click', function () {
+                        const videoId = this.getAttribute('data-youtube-id');
+                        const iframe = document.createElement('iframe');
+                        iframe.setAttribute('src', \`https://www.youtube.com/embed/\${videoId}?autoplay=1&rel=0\`);
+                        iframe.setAttribute('title', 'YouTube video player');
+                        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+                        iframe.setAttribute('allowfullscreen', '');
+                        this.replaceWith(iframe);
+                    }, { once: true });
+                });
+                
+                // --- 新增：Twitter 延迟加载逻辑 ---
+                const twitterEmbed = document.querySelector('.twitter-tweet');
+                if (twitterEmbed) {
+                    const observer = new IntersectionObserver((entries, obs) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const script = document.createElement('script');
+                                script.src = "https://platform.twitter.com/widgets.js";
+                                script.async = true;
+                                script.charset = 'utf-8';
+                                document.body.appendChild(script);
+                                obs.unobserve(entry.target);
+                            }
+                        });
+                    }, { rootMargin: '800px' }); // 当元素距离视口800px时开始加载
+                    observer.observe(twitterEmbed);
                 }
             });
         </script>
@@ -792,6 +857,7 @@ app.get('/', (c) => {
             src="${siteConfig.maps.url}"
             width="100%"
             height="450px"
+            title="Olive Garden Google Map"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"

@@ -95,7 +95,7 @@
       "type": "richText",
       "data": {
         "title": "Still Not Convinced? Watch This! 😉",
-        "htmlContent": "<div class=\"video-container\"><iframe src=\"https://www.youtube.com/embed/EI-fZwltjYs?si=Uk46B5Dht_q8B_ct\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></div>"
+        "htmlContent": "<div class=\"video-container\"><div class=\"youtube-facade\" data-youtube-id=\"EI-fZwltjYs\" style=\"background-image:url('https://i.ytimg.com/vi/EI-fZwltjYs/hqdefault.jpg');\" title=\"Click to play video\"><div class=\"play-button\"></div></div></div>"
       }
     },
     {
@@ -214,7 +214,7 @@
       "type": "richText",
       "data": {
         "title": "",
-        "htmlContent": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The carbs are coming! The carbs are coming! <a href=\"https://t.co/gLawX1EeS7\">pic.twitter.com/gLawX1EeS7</a></p>&mdash; Olive Garden (@olivegarden) <a href=\"https://twitter.com/olivegarden/status/1959631862340391390?ref_src=twsrc%5Etfw\">September 24, 2025</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+        "htmlContent": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The carbs are coming! The carbs are coming! <a href=\"https://t.co/gLawX1EeS7\">pic.twitter.com/gLawX1EeS7</a></p>&mdash; Olive Garden (@olivegarden) <a href=\"https://twitter.com/olivegarden/status/1959631862340391390?ref_src=twsrc%5Etfw\">September 24, 2025</a></blockquote>"
       }
     }
   ]
