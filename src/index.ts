@@ -287,6 +287,18 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
                 border-top-left-radius: 8px;
                 border-top-right-radius: 8px;
             }
+            .no-image-placeholder {
+                width: 100%;
+                height: 200px;
+                background-color: #ccc;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #666;
+                font-size: 0.9rem;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
             
             .menu-card-content { padding: 15px; }
             .menu-card h3 , .menu-card h4 { font-size: 1.2rem; margin-top: 0; min-height: 2.9rem;}
@@ -572,7 +584,7 @@ const renderDataTable = (data: any) => {
               ${categoryData.items.map((item: any) => `
                 <div class="menu-card">
                   ${item.name === recommendedItemName ? '<div class="recommend-badge">Recommended</div>' : ''}
-                  <img src="${item.image_url}" alt="Image of ${item.name}" loading="lazy">
+                  ${item.image_url ? `<img src="${item.image_url}" alt="Image of ${item.name}" loading="lazy">` : '<div class="no-image-placeholder"><span>No Image Available</span></div>'}
                   <div class="menu-card-content">
                     <h4>${item.name}</h4>
                     ${item.review ? `<p class="review-text">${item.review}</p>` : ''}
