@@ -117,6 +117,34 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
     }
   ];
 
+  // Dynamically add Restaurant schema if a locationBlock exists
+  const locationBlock = data.contentBlocks.find((block: any) => block.type === 'locationBlock');
+  if (locationBlock && locationBlock.data && Array.isArray(locationBlock.data.locations)) {
+    locationBlock.data.locations.forEach((location: any) => {
+      const restaurantSchema = {
+        "@type": "Restaurant",
+        "name": location.name,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": location.streetAddress,
+          "addressLocality": location.addressLocality,
+          "addressRegion": location.addressRegion,
+          "postalCode": location.postalCode,
+          "addressCountry": "US"
+        },
+        "telephone": location.telephone,
+        "openingHoursSpecification": location.openingHoursSpecification.map((spec: any) => ({
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": spec.dayOfWeek,
+          "opens": spec.opens,
+          "closes": spec.closes
+        }))
+      };
+      // @ts-ignore
+      graph.push(restaurantSchema);
+    });
+  }
+
   // Dynamically add FAQPage schema if an FAQ block exists
   const faqBlock = data.contentBlocks.find((block: any) => block.type === 'faq');
   if (faqBlock) {
@@ -529,7 +557,7 @@ const renderRichText = (data: any) => `
 
 const renderTableOfContents = (data: any, blocks: any[]) => {
   const headings = blocks.map(block => {
-    if (block.data && block.data.title && (block.type === 'dataTable' || block.type === 'faq' || block.type === 'imageGallery' || block.type === 'richText')) {
+    if (block.data && block.data.title && (block.type === 'dataTable' || block.type === 'faq' || block.type === 'imageGallery' || block.type === 'richText' || block.type === "locationBlock")) {
       return {title: block.data.title, id: toKebabCase(block.data.title)};
     }
     return null;
@@ -695,6 +723,23 @@ const renderGoogleMap = (data: any) => `
   </section>
 `;
 
+const renderLocationBlock = (data: any) => `
+  <section id="${toKebabCase(data.title)}">
+    <h2>${data.title}</h2>
+    <p>${data.intro}</p>
+    <div class='locations-container' style='display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;'>
+      ${data.locations.map((location: any) => `
+        <div class='location-card' style='border: 1px solid #eee; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);'>
+          <h3 style='margin-top:0;'>${location.displayName}</h3>
+          <p>${location.streetAddress},<br>${location.addressLocality}, ${location.addressRegion} ${location.postalCode}</p>
+          <p><strong>Phone:</strong> <a href='tel:${location.telephone}'>${location.telephone}</a></p>
+          <p><strong>Hours:</strong> ${location.hours}</p>
+        </div>
+      `).join('')}
+    </div>
+  </section>
+`;
+
 const renderStoreDataTable = (data: any) => `
   <section id="${toKebabCase(data.title)}">
     <h2>${data.title}</h2>
@@ -741,6 +786,8 @@ function generatePageBody(data: any): string {
         return renderFaq(block.data);
       case 'googleMap':
         return renderGoogleMap(block.data);
+      case 'locationBlock':
+        return renderLocationBlock(block.data);
       default:
         return `<!-- Unknown block type: ${block.type} -->`;
     }
