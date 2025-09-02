@@ -8,8 +8,8 @@
       "en-US"
     ],
     "author": {
-      "name": "Jules",
-      "email": "jules@olivegardenmenuguide.com"
+      "name": "The Olive Garden Menu Guide Team",
+      "email": "contact@olivegardenmenuguide.com"
     },
     "datePublished": "2025-09-02"
   },
@@ -52,7 +52,8 @@
       "data": {
         "title": "Full Olive Garden Hawaii Menu 🌴",
         "categoriesDataUrl": "raw/hawai-full-menu.json",
-        "categoriesFilter": "*"
+        "categoriesFilter": "*",
+        "suffix": "of Olive Garden Hawaii Menu"
       }
     },
     {

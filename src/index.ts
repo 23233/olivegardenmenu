@@ -11,7 +11,8 @@ import lunchMenuData from "../raw/lunch-menu.json";
 import dinnerMenuData from "../raw/dinner-menu.json";
 import dessertMenuData from "../raw/dessert-menu.json";
 import cateringMenuData from "../raw/catering-menu.json";
-import hawaiiData from "../raw/hawaii.json"
+import hawaiiData from "../raw/hawaii.json";
+import hawaiiFullMenuData from "../raw/hawai-full-menu.json";
 import kidsMenuData from "../raw/kids-menu.json";
 import pastaMenuData from "../raw/pasta-menu.json";
 import soupMenuData from "../raw/soup-menu.json";
@@ -96,7 +97,7 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
   const {h1, description, coreKeyword, author, datePublished} = metadata;
 
   const pageUrl = joinUrlPaths(baseURL, pagePath);
-  const logoUrl = joinUrlPaths(pageUrl, siteConfig.logoUrl);
+  const logoUrl = joinUrlPaths(baseURL, siteConfig.logoUrl);
 
   const graph = [
     {"@type": "WebSite", "name": siteName, "url": pageUrl, "@id": `${pageUrl}#website`},
@@ -323,6 +324,20 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
                 background-color: #f9f9f9;
                 border-radius: 4px;
             }
+            .menu-item-description {
+                font-size: 0.9rem;
+                color: #666;
+                cursor: pointer;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                transition: -webkit-line-clamp 0.2s ease-in-out;
+            }
+            .menu-item-description.expanded {
+                -webkit-line-clamp: 99; /* A large number to show all lines */
+            }
             .recommend-badge {
                 position: absolute;
                 width: 100px; /* Smaller width */
@@ -534,7 +549,12 @@ const renderImageGallery = (data: any) => `
   </section>
 `;
 
-const renderDataTable = (data: any) => {
+const menuDataSources: { [key: string]: any } = {
+  'raw/master-menu-data.json': masterMenuData,
+  'raw/hawai-full-menu.json': hawaiiFullMenuData
+};
+
+const renderDataTable = (data: any,suffix = "of Olive Garden Menu") => {
   // Helper to format price strings consistently
   const formatPrice = (price: any) => {
     if (price === null || typeof price === 'undefined') return '$0.00';
@@ -548,11 +568,28 @@ const renderDataTable = (data: any) => {
     return `$${priceStr}`;
   };
 
+  const formatCalories = (calories: any): string => {
+    if (calories === null || typeof calories === 'undefined' || String(calories).trim().toUpperCase() === 'N/A') {
+      return '';
+    }
+    const calStr = String(calories).trim();
+    if (calStr.toLowerCase().includes('cal')) {
+      return calStr;
+    }
+    if (/^\d+$/.test(calStr)) {
+      return `${calStr} Cal`;
+    }
+    return calStr;
+  };
+
   let categoriesToRender: { [key: string]: any } = {};
 
   // Check if we need to load data dynamically
   if (data.categoriesDataUrl) {
-    let sourceData = masterMenuData; // In a real dynamic scenario, you'd fetch this. Here, we use the imported JSON.
+    const sourceData = menuDataSources[data.categoriesDataUrl];
+    if (!sourceData) {
+      return `<p>Error: Menu data not found for ${data.categoriesDataUrl}</p>`;
+    }
 
     if (data.categoriesFilter === '*') {
       categoriesToRender = sourceData;
@@ -571,26 +608,27 @@ const renderDataTable = (data: any) => {
   }
 
   return `
-    <section id="${toKebabCase(data.title)}">
-      <h2>${data.title}</h2>
+    <section id="${toKebabCase(data.title || '')}">
+      <h2>${data.title || ''}</h2>
       ${Object.keys(categoriesToRender).map(categoryName => {
     const categoryData = categoriesToRender[categoryName];
     const recommendedItemName = categoryData.recommended;
     return `
-          <div id="${toKebabCase(categoryName)}">
-            <h3>${categoryName} of Olive Garden Menu</h3>
-            <p class="category-description">${categoryData.description}</p>
+          <div id="${toKebabCase(categoryName || '')}">
+            <h3>${categoryName || ''} ${suffix || ""}</h3>
+            ${categoryData.description ? `<p class="category-description">${categoryData.description}</p>` : ''}
             <div class="menu-grid">
               ${categoryData.items.map((item: any) => `
                 <div class="menu-card">
-                  ${item.name === recommendedItemName ? '<div class="recommend-badge">Recommended</div>' : ''}
-                  ${item.image_url ? `<img src="${item.image_url}" alt="Image of ${item.name}" loading="lazy">` : '<div class="no-image-placeholder"><span>No Image Available</span></div>'}
+                  ${recommendedItemName && item.name === recommendedItemName ? '<div class="recommend-badge">Recommended</div>' : ''}
+                  ${item.image_url ? `<img src="${item.image_url}" alt="Image of ${item.name || ''}" loading="lazy">` : '<div class="no-image-placeholder"><span>No Image Available</span></div>'}
                   <div class="menu-card-content">
-                    <h4>${item.name}</h4>
+                    <h4>${item.title || item.name || ''}</h4>
+                    ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ''}
                     ${item.review ? `<p class="review-text">${item.review}</p>` : ''}
                     <div class="price-calories-container">
                       <span class="price">${formatPrice(item.price)}</span>
-                      <span class="calories-badge">${item.calories} Cal</span>
+                      <span class="calories-badge">${formatCalories(item.calories)}</span>
                     </div>
                   </div>
                 </div>
@@ -673,7 +711,7 @@ function generatePageBody(data: any): string {
         return renderImageGallery(block.data);
       case 'dataTable':
         if (block.data.categories || block.data.categoriesDataUrl) {
-          return renderDataTable(block.data);
+          return renderDataTable(block.data,block.data.suffix);
         }
         return renderStoreDataTable(block.data);
       case 'faq':
@@ -765,6 +803,16 @@ function generateCommonScripts(): string {
                         });
                     }, { rootMargin: '800px' }); // 当元素距离视口800px时开始加载
                     observer.observe(twitterEmbed);
+                }
+
+                // --- 新增：可折叠的描述文本 ---
+                const mainContainer = document.querySelector('main.container');
+                if (mainContainer) {
+                    mainContainer.addEventListener('click', function(event) {
+                        if (event.target.classList.contains('menu-item-description')) {
+                            event.target.classList.toggle('expanded');
+                        }
+                    });
                 }
             });
         </script>
