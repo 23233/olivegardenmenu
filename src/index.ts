@@ -164,15 +164,36 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
 
   // Dynamically add Menu and MenuItem schema
   const dataTableBlock = data.contentBlocks.find((block: any) => block.type === 'dataTable');
-  if (dataTableBlock && dataTableBlock.data && dataTableBlock.data.categories) {
-    const categories = dataTableBlock.data.categories;
-    for (const categoryName in categories) {
-      const category = categories[categoryName];
+  if (dataTableBlock && dataTableBlock.data) {
+    let categoriesToRender: { [key: string]: any } = {};
+    const suffix = dataTableBlock.data.suffix || "of Olive Garden Menu";
+
+    if (dataTableBlock.data.categoriesDataUrl) {
+      const sourceData = menuDataSources[dataTableBlock.data.categoriesDataUrl];
+      if (sourceData) {
+        if (dataTableBlock.data.categoriesFilter === '*') {
+          categoriesToRender = sourceData;
+        } else if (Array.isArray(dataTableBlock.data.categoriesFilter)) {
+          dataTableBlock.data.categoriesFilter.forEach((key: string) => {
+            if (sourceData[key]) {
+              categoriesToRender[key] = sourceData[key];
+            }
+          });
+        }
+      }
+    } else if (dataTableBlock.data.categories) {
+      categoriesToRender = dataTableBlock.data.categories;
+    }
+
+    for (const categoryName in categoriesToRender) {
+      const category = categoriesToRender[categoryName];
+      if (!category.items) continue;
+
       const menuItems = category.items.map((item: any) => ({
         "@type": "MenuItem",
-        "name": item.name,
-        "description": item.review || `A delicious ${item.name} from the Olive Garden menu.`,
-        "image": joinUrlPaths(pageUrl, item.image_url),
+        "name": item.title || item.name,
+        "description": item.review || item.description || `A delicious ${item.title || item.name} from the Olive Garden menu.`,
+        "image": item.image_url ? joinUrlPaths(baseURL, item.image_url) : undefined,
         "offers": {
           "@type": "Offer",
           "price": item.price,
@@ -180,18 +201,20 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
         },
         "nutrition": {
           "@type": "NutritionInformation",
-          "calories": `${item.calories} Cal`
+          "calories": item.calories ? `${item.calories} Cal` : undefined
         }
-      }));
+      })).filter((item: any) => item.name); // Ensure item has a name
 
-      const menuSchema = {
-        "@type": "Menu",
-        "name": categoryName,
-        "description": category.description,
-        "hasMenuItem": menuItems
-      };
-      // @ts-ignore
-      graph.push(menuSchema);
+      if (menuItems.length > 0) {
+        const menuSchema = {
+          "@type": "Menu",
+          "name": `${categoryName} ${suffix}`,
+          "description": category.description || `A selection of ${categoryName} from our menu.`,
+          "hasMenuItem": menuItems
+        };
+        // @ts-ignore
+        graph.push(menuSchema);
+      }
     }
   }
 
