@@ -11,6 +11,7 @@ import lunchMenuData from "../raw/lunch-menu.json";
 import dinnerMenuData from "../raw/dinner-menu.json";
 import dessertMenuData from "../raw/dessert-menu.json";
 import cateringMenuData from "../raw/catering-menu.json";
+import hawaiiData from "../raw/hawaii.json"
 import kidsMenuData from "../raw/kids-menu.json";
 import pastaMenuData from "../raw/pasta-menu.json";
 import soupMenuData from "../raw/soup-menu.json";
@@ -55,7 +56,8 @@ const cacheMiddleware: MiddlewareHandler = async (c, next) => {
 };
 
 // Apply the middleware to all requests
-app.use(cacheMiddleware);
+// app.use(cacheMiddleware);
+
 
 // --- Utility Functions ---
 
@@ -191,7 +193,6 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
       graph.push(menuSchema);
     }
   }
-
 
 
   return `
@@ -841,6 +842,19 @@ ${sitemapEntries}
   });
 });
 
+app.get("/ads.txt", (c) => {
+  if (siteConfig.googleAdsTxt) {
+    return new Response(siteConfig.googleAdsTxt, {
+      headers: {
+        'Content-Type': 'text/plain; charset=utf-8'
+      }
+    });
+  }
+  // 404
+  return c.notFound();
+
+})
+
 app.get('/', (c) => {
   const head = generateHead(siteConfig, menuData, '/');
   const header = generateHeader(siteConfig);
@@ -1320,5 +1334,29 @@ app.get('/olive-garden-holiday-hours', (c) => {
 
   return c.html(html);
 });
+
+app.get("/olive-garden-hawaii",(c)=>{
+  const head = generateHead(siteConfig, hawaiiData, '/olive-garden-hawaii');
+  const header = generateHeader(siteConfig);
+  const mainContent = generatePageBody(hawaiiData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+})
 
 export default app;

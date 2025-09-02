@@ -1,0 +1,3731 @@
+[
+  {
+    "routeName": "Appetizers",
+    "name": "Appetizers",
+    "subMenuId": "39",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Appetizers.png&companyCode=OGKA001&designId=1",
+    "restrictions": null,
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Fried-Mozzarella",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Fried mozzarella cheese with homemade marinara sauce. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FriedMozzarella_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1555",
+        "name": "Fried Mozzarella",
+        "unitPrice": 13.29,
+        "salesItemId": "2555",
+        "modifierGroups": [],
+        "salesItems": [
+          "2555"
+        ],
+        "posItemId": "206",
+        "defaultSalesItemId": "2555",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Stuffed-Ziti-Fritta",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Crispy fried ziti filled with five melted Italian cheeses. Served with homemade marinara and alfredo. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=StuffedZitiFritta_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1556",
+        "name": "Stuffed Ziti Fritta",
+        "unitPrice": 13.89,
+        "salesItemId": "2556",
+        "modifierGroups": [],
+        "salesItems": [
+          "2556"
+        ],
+        "posItemId": "208",
+        "defaultSalesItemId": "2556",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Dipping-Sauces-Inclu",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Homemade marinara, alfredo or five cheese marinara. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=DippingSauces_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1561",
+        "name": "Dipping Sauces Includes Breadsticks",
+        "unitPrice": 8.49,
+        "salesItemId": "2687",
+        "modifierGroups": [
+          "8332"
+        ],
+        "salesItems": [
+          "2687"
+        ],
+        "posItemId": "7416",
+        "defaultSalesItemId": "2687",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Calamari",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Hand-breaded and fried to order. Served with marinara and spicy ranch. 670 cal, marinara 35 cal, ranch 240 cal  17.69 ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Calamari_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1553",
+        "name": "Calamari",
+        "unitPrice": 17.99,
+        "salesItemId": "2553",
+        "modifierGroups": [],
+        "salesItems": [
+          "2553"
+        ],
+        "posItemId": "204",
+        "defaultSalesItemId": "2553",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Meatball-Parmigiana",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Five hearty meatballs baked in homemade marinara, topped with melted Italian cheeses and toasted breadcrumbs. 1040 cal  16.69",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=MeatballsParmigiana_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1560",
+        "name": "Meatball Parmigiana",
+        "unitPrice": 16.99,
+        "salesItemId": "2560",
+        "modifierGroups": [],
+        "salesItems": [
+          "2560"
+        ],
+        "posItemId": "224",
+        "defaultSalesItemId": "2560",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Spinach-Artichoke-Di",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "A blend of spinach, artichokes and cheese, served with flatbread crisps. 1160 cal  15.69",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SpinachArtichokeDip_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1558",
+        "name": "Spinach Artichoke Dip",
+        "unitPrice": 15.89,
+        "salesItemId": "2558",
+        "modifierGroups": [],
+        "salesItems": [
+          "2558"
+        ],
+        "posItemId": "210",
+        "defaultSalesItemId": "2558",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Lasagna-Fritta",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Parmesan breaded lasagna, served with homemade alfredo and meat sauce.** 1130 cal  16.69",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=LasagnaFritta_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1554",
+        "name": "Lasagna Fritta",
+        "unitPrice": 16.99,
+        "salesItemId": "2554",
+        "modifierGroups": [],
+        "salesItems": [
+          "2554"
+        ],
+        "posItemId": "205",
+        "defaultSalesItemId": "2554",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Shrimp-Fritto-Misto",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Over a half-pound of shrimp mixed with onions and bell peppers, hand-breaded and lightly fried. Served with marinara and spicy ranch. 1280 cal, marinara 35 cal, ranch 240 cal  18.89  ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpFrittoMisto_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1559",
+        "name": "Shrimp Fritto Misto",
+        "unitPrice": 19.29,
+        "salesItemId": "2559",
+        "modifierGroups": [],
+        "salesItems": [
+          "2559"
+        ],
+        "posItemId": "223",
+        "defaultSalesItemId": "2559",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Toasted-Ravioli",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Lightly fried ravioli filled with seasoned beef. Served with homemade marinara sauce. 650 cal, marinara 35 cal  13.59",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ToastedRavioli_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1557",
+        "name": "Toasted Ravioli",
+        "unitPrice": 13.89,
+        "salesItemId": "2557",
+        "modifierGroups": [],
+        "salesItems": [
+          "2557"
+        ],
+        "posItemId": "209",
+        "defaultSalesItemId": "2557",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Breadsticks",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "An Olive Garden Favorite. Available Freshly-Baked or Bake-At-Home. Add an extra dozen or half dozen breadsticks to your online order",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=breadsticks.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1619",
+        "name": "Breadsticks",
+        "unitPrice": 6.39,
+        "salesItemId": "2619",
+        "modifierGroups": [],
+        "salesItems": [
+          "2619",
+          "2625",
+          "2620",
+          "2626"
+        ],
+        "posItemId": "8010",
+        "defaultSalesItemId": "2619",
+        "priceRange": {
+          "min": 6.39,
+          "max": 9.89
+        },
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Alfredo-Dipping-Sauc",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=DippingSauces_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1676",
+        "name": "Alfredo Dipping Sauce",
+        "unitPrice": 10.99,
+        "salesItemId": "2681",
+        "modifierGroups": [],
+        "salesItems": [
+          "2682",
+          "2681"
+        ],
+        "posItemId": "211",
+        "defaultSalesItemId": "2681",
+        "priceRange": {
+          "min": 7.99,
+          "max": 10.99
+        },
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Five-Cheese-Dipping-",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=DippingSauces_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1677",
+        "name": "Five Cheese Dipping Sauce",
+        "unitPrice": 7.99,
+        "salesItemId": "2683",
+        "modifierGroups": [],
+        "salesItems": [
+          "2683",
+          "2684"
+        ],
+        "posItemId": "214",
+        "defaultSalesItemId": "2683",
+        "priceRange": {
+          "min": 7.99,
+          "max": 9.99
+        },
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Marinara-Sauce",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=DippingSauces_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1678",
+        "name": "Marinara Sauce",
+        "unitPrice": 7.99,
+        "salesItemId": "2685",
+        "modifierGroups": [],
+        "salesItems": [
+          "2685",
+          "2686"
+        ],
+        "posItemId": "216",
+        "defaultSalesItemId": "2685",
+        "priceRange": {
+          "min": 7.99,
+          "max": 9.99
+        },
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  },
+  {
+    "routeName": "Classic-Entrees",
+    "name": "Classic Entrees",
+    "subMenuId": "41",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Entrees.png&companyCode=OGKA001&designId=1",
+    "restrictions": null,
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Chicken-Alfredo",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8288",
+            "name": "Fettuccini",
+            "quantity": 1,
+            "salesItemOptionId": "2540",
+            "defaultReason": "RECIPE"
+          }
+        ],
+        "description": "Creamy alfredo sauce made from scratch with ingredients like parmesan, cream, garlic and butter, served with fettuccine pasta and topped with sliced grilled chicken.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1621",
+        "name": "Chicken Alfredo",
+        "unitPrice": 30.59,
+        "salesItemId": "2622",
+        "modifierGroups": [
+          "8289",
+          "8084",
+          "8287",
+          "8288"
+        ],
+        "salesItems": [
+          "2622"
+        ],
+        "posItemId": "1014",
+        "defaultSalesItemId": "2622",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Chicken-and-Shrimp-C",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8284",
+            "name": "Spaghetti",
+            "quantity": 1,
+            "salesItemOptionId": "2537",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8285",
+            "name": "Grilled Chicken",
+            "quantity": 1,
+            "salesItemOptionId": "2581",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8285",
+            "name": "Sauteed Shrimp",
+            "quantity": 1,
+            "salesItemOptionId": "2584",
+            "defaultReason": "RECIPE"
+          }
+        ],
+        "description": "Chicken and shrimp sautéed in a creamy sauce with bacon and roasted red peppers, over spaghetti. 1370 cal  32.29",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenShrimpCarbonara_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1569",
+        "name": "Chicken and Shrimp Carbonara",
+        "unitPrice": 32.99,
+        "salesItemId": "2569",
+        "modifierGroups": [
+          "8084",
+          "8284",
+          "8285"
+        ],
+        "salesItems": [
+          "2569"
+        ],
+        "posItemId": "1009",
+        "defaultSalesItemId": "2569",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Shrimp-Carbonara",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Shrimp sautéed in a creamy sauce with bacon and roasted red peppers, over spaghetti. 1200 cal  32.29",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpCarbonara_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1577",
+        "name": "Shrimp Carbonara",
+        "unitPrice": 32.99,
+        "salesItemId": "2577",
+        "modifierGroups": [
+          "8084"
+        ],
+        "salesItems": [
+          "2577"
+        ],
+        "posItemId": "1037",
+        "defaultSalesItemId": "2577",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Chicken-Parmigiana",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8284",
+            "name": "Spaghetti",
+            "quantity": 1,
+            "salesItemOptionId": "2537",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8283",
+            "name": "Marinara",
+            "quantity": 1,
+            "salesItemOptionId": "2553",
+            "defaultReason": "RECIPE"
+          }
+        ],
+        "description": "A classic with our homemade marinara and a side of spaghetti. 1020 cal  29.19",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenParmigiana_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1564",
+        "name": "Chicken Parmigiana",
+        "unitPrice": 29.59,
+        "salesItemId": "2564",
+        "modifierGroups": [
+          "8084",
+          "8284",
+          "8283",
+          "8286"
+        ],
+        "salesItems": [
+          "2564"
+        ],
+        "posItemId": "1004",
+        "defaultSalesItemId": "2564",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Tour-Of-Italy",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Chicken Parmigiana, Lasagna Classico and our signature Fettuccine Alfredo.**  1550 cal  31.29",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=TourOfItaly_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1563",
+        "name": "Tour Of Italy",
+        "unitPrice": 31.89,
+        "salesItemId": "2563",
+        "modifierGroups": [
+          "8084",
+          "8298"
+        ],
+        "salesItems": [
+          "2563"
+        ],
+        "posItemId": "1003",
+        "defaultSalesItemId": "2563",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Shrimp-Alfredo",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Creamy alfredo sauce made from scratch with ingredients like parmesan, cream, garlic and butter, tossed with fettuccine and sautéed shrimp",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1622",
+        "name": "Shrimp Alfredo",
+        "unitPrice": 31.69,
+        "salesItemId": "2623",
+        "modifierGroups": [
+          "8084",
+          "8289"
+        ],
+        "salesItems": [
+          "2623"
+        ],
+        "posItemId": "1015",
+        "defaultSalesItemId": "2623",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Ravioli-Carbonara",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Cheese ravioli baked in a creamy sauce with bacon, topped with a blend of Italian cheeses. 1390 cal  24.79",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=RavioliCarbonara_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1580",
+        "name": "Ravioli Carbonara",
+        "unitPrice": 25.29,
+        "salesItemId": "2580",
+        "modifierGroups": [
+          "8290",
+          "8084"
+        ],
+        "salesItems": [
+          "2580"
+        ],
+        "posItemId": "1046",
+        "defaultSalesItemId": "2580",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Lasagna-Classico",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Layers of pasta, parmesan, mozzarella, pecorino romano and homemade meat sauce, prepared fresh daily.** 940 cal  26.99",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=LasagnaClassico_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1566",
+        "name": "Lasagna Classico",
+        "unitPrice": 27.49,
+        "salesItemId": "2566",
+        "modifierGroups": [
+          "8291",
+          "8084"
+        ],
+        "salesItems": [
+          "2566"
+        ],
+        "posItemId": "1006",
+        "defaultSalesItemId": "2566",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Spaghetti-Meatballs",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8292",
+            "name": "Spaghetti",
+            "quantity": 1,
+            "salesItemOptionId": "2537",
+            "defaultReason": "SELECTION"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8330",
+            "name": "3 Meatballs ",
+            "quantity": 1,
+            "salesItemOptionId": "2881",
+            "defaultReason": "SELECTION"
+          }
+        ],
+        "description": "Spaghetti and meatballs with your choice of marinara or meat sauce. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Spaghetti_Meatballs_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1593",
+        "name": "Spaghetti & Meatballs",
+        "unitPrice": 20.29,
+        "salesItemId": "2593",
+        "modifierGroups": [
+          "8084",
+          "8197",
+          "8292",
+          "8330"
+        ],
+        "salesItems": [
+          "2593"
+        ],
+        "posItemId": "1018",
+        "defaultSalesItemId": "2593",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Spaghetti-with-Meat-",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Spaghetti and meatballs with your choice of marinara or meat sauce",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SpaghettiWithMeatSauce_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1623",
+        "name": "Spaghetti with Meat Sauce",
+        "unitPrice": 20.29,
+        "salesItemId": "2624",
+        "modifierGroups": [
+          "8293",
+          "8084",
+          "8292",
+          "8197"
+        ],
+        "salesItems": [
+          "2624"
+        ],
+        "posItemId": "1018",
+        "defaultSalesItemId": "2624",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Spaghetti-with-Marin",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Our homemade marinara served over spaghetti.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SpaghettiWithMarinara_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1617",
+        "name": "Spaghetti with Marinara",
+        "unitPrice": 20.29,
+        "salesItemId": "2617",
+        "modifierGroups": [
+          "8294",
+          "8084",
+          "8292",
+          "8197"
+        ],
+        "salesItems": [
+          "2617"
+        ],
+        "posItemId": "1018",
+        "defaultSalesItemId": "2617",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Fettuccine-Alfredo",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8295",
+            "name": "Fettuccini",
+            "quantity": 1,
+            "salesItemOptionId": "2540",
+            "defaultReason": "RECIPE"
+          }
+        ],
+        "description": "Our signature alfredo sauce made fresh in-house every morning with ingredients like parmesan, cream, garlic and butter, served over fettuccine.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FettuccineAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1620",
+        "name": "Fettuccine Alfredo",
+        "unitPrice": 23.39,
+        "salesItemId": "2621",
+        "modifierGroups": [
+          "8296",
+          "8084",
+          "8295"
+        ],
+        "salesItems": [
+          "2621"
+        ],
+        "posItemId": "1013",
+        "defaultSalesItemId": "2621",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Chicken-Tortelloni-A",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Asiago cheese-filled tortelloni baked in alfredo with a blend of Italian cheeses and toasted breadcrumbs, topped with sliced grilled chicken. 1980 cal  30.89",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenTortelloniAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1572",
+        "name": "Chicken Tortelloni Alfredo ",
+        "unitPrice": 31.49,
+        "salesItemId": "2572",
+        "modifierGroups": [
+          "8084"
+        ],
+        "salesItems": [
+          "2572"
+        ],
+        "posItemId": "1025",
+        "defaultSalesItemId": "2572",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Stuffed-Chicken-Mars",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Grilled chicken breast stuffed with Italian cheeses and sun-dried tomatoes, topped with a creamy marsala mushroom sauce. Served with mashed potatoes. 1090 cal  29.49",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=StuffedChickenMarsala_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1579",
+        "name": "Stuffed Chicken Marsala",
+        "unitPrice": 29.49,
+        "salesItemId": "2579",
+        "modifierGroups": [
+          "8084"
+        ],
+        "salesItems": [
+          "2579"
+        ],
+        "posItemId": "1045",
+        "defaultSalesItemId": "2579",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Steak-Gorganzola-Alf",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8170",
+            "name": "",
+            "quantity": 1,
+            "salesItemOptionId": "2556",
+            "defaultReason": "SELECTION"
+          }
+        ],
+        "description": "Grilled sirloin tips (6 oz) over fettuccine alfredo, tossed with gorgonzola blue cheese and spinach. Topped with sun-dried tomatoes and a balsamic drizzle. Steak prepared medium 1580 cal  30.99",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SteakGorgonzolaAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1583",
+        "name": "Steak Gorganzola Alfredo",
+        "unitPrice": 30.99,
+        "salesItemId": "2583",
+        "modifierGroups": [
+          "8170",
+          "8084"
+        ],
+        "salesItems": [
+          "2583"
+        ],
+        "posItemId": "1050",
+        "defaultSalesItemId": "2583",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Shrimp-Scampi",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Lighter take on an Italian classic! Shrimp sautéed in a garlic sauce, tossed with asparagus, tomatoes and angel hair. 490 cal  27.39",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpScampi_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1567",
+        "name": "Shrimp Scampi",
+        "unitPrice": 27.89,
+        "salesItemId": "2567",
+        "modifierGroups": [
+          "8084"
+        ],
+        "salesItems": [
+          "2567"
+        ],
+        "posItemId": "1007",
+        "defaultSalesItemId": "2567",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Seafood-Alfredo",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Fettuccine alfredo tossed with sautéed shrimp and scallops. 1450 cal  31.69",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SeafoodAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1587",
+        "name": "Seafood Alfredo",
+        "unitPrice": 32.19,
+        "salesItemId": "2587",
+        "modifierGroups": [
+          "8289",
+          "8084"
+        ],
+        "salesItems": [
+          "2587"
+        ],
+        "posItemId": "1016",
+        "defaultSalesItemId": "2587",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Five-Cheese-Ziti-al-",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "A baked blend of Italian cheeses, pasta and our signature five cheese marinara.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FiveCheeseZitiAlForno_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1570",
+        "name": "Five Cheese Ziti al Forno",
+        "unitPrice": 25.19,
+        "salesItemId": "2570",
+        "modifierGroups": [
+          "8084",
+          "8297"
+        ],
+        "salesItems": [
+          "2570"
+        ],
+        "posItemId": "1010",
+        "defaultSalesItemId": "2570",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Cheese-Ravioli",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Topped with melted mozzarella and your choice of homemade marinara (V) or meat sauce.** with marinara 750 cal, with meat sauce 860 cal  22.89",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=CheeseRavioli_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1571",
+        "name": "Cheese Ravioli",
+        "unitPrice": 23.39,
+        "salesItemId": "2571",
+        "modifierGroups": [
+          "8125",
+          "8298",
+          "8084"
+        ],
+        "salesItems": [
+          "2571"
+        ],
+        "posItemId": "1012",
+        "defaultSalesItemId": "2571",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Chicken-Scampi",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Chicken sautéed with fresh bell peppers and red onions in a creamy scampi sauce. Served over angel hair.  1050 cal  29.39 ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenScampi_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1568",
+        "name": "Chicken Scampi",
+        "unitPrice": 29.89,
+        "salesItemId": "2568",
+        "modifierGroups": [
+          "8084",
+          "8284"
+        ],
+        "salesItems": [
+          "2568"
+        ],
+        "posItemId": "1008",
+        "defaultSalesItemId": "2568",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Eggplant-Parmigiana",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Hand-breaded eggplant, lightly fried to order, topped with melted mozzarella and homemade marinara. Served with a side of spaghetti. 1070 cal  24.99",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=EggplantParmigiana_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1565",
+        "name": "Eggplant Parmigiana",
+        "unitPrice": 25.49,
+        "salesItemId": "2565",
+        "modifierGroups": [
+          "8303",
+          "8084",
+          "8302"
+        ],
+        "salesItems": [
+          "2565"
+        ],
+        "posItemId": "1005",
+        "defaultSalesItemId": "2565",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Grilled-Chicken-Marg",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Topped with freshly chopped tomatoes, mozzarella, basil pesto and lemon garlic sauce. Served with parmesan garlic broccoli. 650 cal  28.49",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=GrilledChickenMargarita_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1574",
+        "name": "Grilled Chicken Margarita",
+        "unitPrice": 29.09,
+        "salesItemId": "2574",
+        "modifierGroups": [
+          "8084"
+        ],
+        "salesItems": [
+          "2574"
+        ],
+        "posItemId": "1027",
+        "defaultSalesItemId": "2574",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Herb-Grilled-Salmon",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Grilled filet topped with garlic herb butter. Served with steamed parmesan garlic broccoli. 610 cal  30.59",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=HerbGrilledSalmon_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1573",
+        "name": "Herb-Grilled Salmon",
+        "unitPrice": 31.19,
+        "salesItemId": "2573",
+        "modifierGroups": [
+          "8084"
+        ],
+        "salesItems": [
+          "2573"
+        ],
+        "posItemId": "1026",
+        "defaultSalesItemId": "2573",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Create-Your-Own-Past",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Create a new Italian classic with pasta your way, handcrafted from our Italian kitchen!",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=CreateYourOwnPasta.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1624",
+        "name": "Create Your Own Pasta",
+        "unitPrice": 20.29,
+        "salesItemId": "2627",
+        "modifierGroups": [
+          "8304",
+          "8305",
+          "8306",
+          "8084"
+        ],
+        "salesItems": [
+          "2627"
+        ],
+        "posItemId": "1018",
+        "defaultSalesItemId": "2627",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  },
+  {
+    "routeName": "Amazing-Alfredos",
+    "name": "Amazing Alfredos",
+    "subMenuId": "42",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Alfredos.png&companyCode=OGKA001&designId=1",
+    "restrictions": null,
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Chicken-Alfredo",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8288",
+            "name": "Fettuccini",
+            "quantity": 1,
+            "salesItemOptionId": "2540",
+            "defaultReason": "RECIPE"
+          }
+        ],
+        "description": "Creamy alfredo sauce made from scratch with ingredients like parmesan, cream, garlic and butter, served with fettuccine pasta and topped with sliced grilled chicken.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1621",
+        "name": "Chicken Alfredo",
+        "unitPrice": 30.59,
+        "salesItemId": "2622",
+        "modifierGroups": [
+          "8289",
+          "8084",
+          "8287",
+          "8288"
+        ],
+        "salesItems": [
+          "2622"
+        ],
+        "posItemId": "1014",
+        "defaultSalesItemId": "2622",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Shrimp-Alfredo",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Creamy alfredo sauce made from scratch with ingredients like parmesan, cream, garlic and butter, tossed with fettuccine and sautéed shrimp",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1622",
+        "name": "Shrimp Alfredo",
+        "unitPrice": 31.69,
+        "salesItemId": "2623",
+        "modifierGroups": [
+          "8084",
+          "8289"
+        ],
+        "salesItems": [
+          "2623"
+        ],
+        "posItemId": "1015",
+        "defaultSalesItemId": "2623",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Fettuccine-Alfredo",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8295",
+            "name": "Fettuccini",
+            "quantity": 1,
+            "salesItemOptionId": "2540",
+            "defaultReason": "RECIPE"
+          }
+        ],
+        "description": "Our signature alfredo sauce made fresh in-house every morning with ingredients like parmesan, cream, garlic and butter, served over fettuccine.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FettuccineAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1620",
+        "name": "Fettuccine Alfredo",
+        "unitPrice": 23.39,
+        "salesItemId": "2621",
+        "modifierGroups": [
+          "8296",
+          "8084",
+          "8295"
+        ],
+        "salesItems": [
+          "2621"
+        ],
+        "posItemId": "1013",
+        "defaultSalesItemId": "2621",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Chicken-Tortelloni-A",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Asiago cheese-filled tortelloni baked in alfredo with a blend of Italian cheeses and toasted breadcrumbs, topped with sliced grilled chicken. 1980 cal  30.89",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenTortelloniAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1572",
+        "name": "Chicken Tortelloni Alfredo ",
+        "unitPrice": 31.49,
+        "salesItemId": "2572",
+        "modifierGroups": [
+          "8084"
+        ],
+        "salesItems": [
+          "2572"
+        ],
+        "posItemId": "1025",
+        "defaultSalesItemId": "2572",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Seafood-Alfredo",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Fettuccine alfredo tossed with sautéed shrimp and scallops. 1450 cal  31.69",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SeafoodAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1587",
+        "name": "Seafood Alfredo",
+        "unitPrice": 32.19,
+        "salesItemId": "2587",
+        "modifierGroups": [
+          "8289",
+          "8084"
+        ],
+        "salesItems": [
+          "2587"
+        ],
+        "posItemId": "1016",
+        "defaultSalesItemId": "2587",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  },
+  {
+    "routeName": "Soups-Salad-Breadsti",
+    "name": "Soups, Salad & Breadsticks",
+    "subMenuId": "40",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=HomemadeSoups_SSB.png&companyCode=OGKA001&designId=1",
+    "restrictions": [
+      {
+        "restrictionId": "5",
+        "dayOfWeek": 1,
+        "startTime": "2011-01-01T11:00:00",
+        "endTime": "2011-01-01T15:00:00"
+      },
+      {
+        "restrictionId": "6",
+        "dayOfWeek": 2,
+        "startTime": "2011-01-01T11:00:00",
+        "endTime": "2011-01-01T15:00:00"
+      },
+      {
+        "restrictionId": "7",
+        "dayOfWeek": 3,
+        "startTime": "2011-01-01T11:00:00",
+        "endTime": "2011-01-01T15:00:00"
+      },
+      {
+        "restrictionId": "8",
+        "dayOfWeek": 4,
+        "startTime": "2011-01-01T11:00:00",
+        "endTime": "2011-01-01T15:00:00"
+      },
+      {
+        "restrictionId": "9",
+        "dayOfWeek": 5,
+        "startTime": "2011-01-01T11:00:00",
+        "endTime": "2011-01-01T15:00:00"
+      }
+    ],
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Weekday-Lunch-Specia",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8310",
+            "name": "Olives",
+            "quantity": 1,
+            "salesItemOptionId": "2709",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8310",
+            "name": "Onions",
+            "quantity": 1,
+            "salesItemOptionId": "2695",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8310",
+            "name": "Pepperoncini",
+            "quantity": 1,
+            "salesItemOptionId": "2681",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8310",
+            "name": "Tomato",
+            "quantity": 1,
+            "salesItemOptionId": "2704",
+            "defaultReason": "RECIPE"
+          }
+        ],
+        "description": "Your choice of homemade soup served with famous house salad and hot breadsticks (V)",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SoupsSaladsAndBreadsticks_SSB.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1603",
+        "name": "Weekday Lunch Special: Soup AND Salad AND Breadsticks",
+        "unitPrice": 15.49,
+        "salesItemId": "2603",
+        "modifierGroups": [
+          "8245",
+          "8310"
+        ],
+        "salesItems": [
+          "2603"
+        ],
+        "posItemId": "910",
+        "defaultSalesItemId": "2603",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Soup-AND-Salad-AND-B",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8299",
+            "name": "Onions",
+            "quantity": 1,
+            "salesItemOptionId": "2695",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8299",
+            "name": "Pepperoncini",
+            "quantity": 1,
+            "salesItemOptionId": "2681",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Croutons",
+            "quantity": 1,
+            "salesItemOptionId": "2684",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Olives",
+            "quantity": 1,
+            "salesItemOptionId": "2709",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Onions",
+            "quantity": 1,
+            "salesItemOptionId": "2695",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Pepperoncini",
+            "quantity": 1,
+            "salesItemOptionId": "2681",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Tomato",
+            "quantity": 1,
+            "salesItemOptionId": "2704",
+            "defaultReason": "RECIPE"
+          }
+        ],
+        "description": "Our famous house salad (150 cal per serving), breadsticks (V) (140 cal each)  and your choice of homemade soup.  18.89   Lunch Special  15.19  (11-3 p.m. Mon - Fri)",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SoupsSaladsAndBreadsticks_SSB.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1562",
+        "name": "Soup AND Salad AND Breadsticks ",
+        "unitPrice": 19.29,
+        "salesItemId": "2562",
+        "modifierGroups": [
+          "8245",
+          "8299",
+          "8043"
+        ],
+        "salesItems": [
+          "2562"
+        ],
+        "posItemId": "1019",
+        "defaultSalesItemId": "2562",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Homemade-Soup",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Choice of homemade soups:",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=HomemadeSoups_SSB.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1627",
+        "name": "Homemade Soup",
+        "unitPrice": 9.29,
+        "salesItemId": "2631",
+        "modifierGroups": [
+          "8245"
+        ],
+        "salesItems": [
+          "2631"
+        ],
+        "posItemId": "221",
+        "defaultSalesItemId": "2631",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Our-Famous-House-Sal",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Croutons",
+            "quantity": 1,
+            "salesItemOptionId": "2684",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Olives",
+            "quantity": 1,
+            "salesItemOptionId": "2709",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Onions",
+            "quantity": 1,
+            "salesItemOptionId": "2695",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Pepperoncini",
+            "quantity": 1,
+            "salesItemOptionId": "2681",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Tomato",
+            "quantity": 1,
+            "salesItemOptionId": "2704",
+            "defaultReason": "RECIPE"
+          }
+        ],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Garden-Salad.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1628",
+        "name": "Our Famous House Salad",
+        "unitPrice": 9.29,
+        "salesItemId": "2632",
+        "modifierGroups": [
+          "8043"
+        ],
+        "salesItems": [
+          "2632"
+        ],
+        "posItemId": "8009",
+        "defaultSalesItemId": "2632",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Dipping-Sauces-Inclu",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Homemade marinara, alfredo or five cheese marinara. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=DippingSauces_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1561",
+        "name": "Dipping Sauces Includes Breadsticks",
+        "unitPrice": 8.49,
+        "salesItemId": "2687",
+        "modifierGroups": [
+          "8332"
+        ],
+        "salesItems": [
+          "2687"
+        ],
+        "posItemId": "7416",
+        "defaultSalesItemId": "2687",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Breadsticks",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "An Olive Garden Favorite. Available Freshly-Baked or Bake-At-Home. Add an extra dozen or half dozen breadsticks to your online order",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=breadsticks.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1619",
+        "name": "Breadsticks",
+        "unitPrice": 6.39,
+        "salesItemId": "2619",
+        "modifierGroups": [],
+        "salesItems": [
+          "2619",
+          "2625",
+          "2620",
+          "2626"
+        ],
+        "posItemId": "8010",
+        "defaultSalesItemId": "2619",
+        "priceRange": {
+          "min": 6.39,
+          "max": 9.89
+        },
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  },
+  {
+    "routeName": "Soups-Salad-Breadsti",
+    "name": "Soups, Salad & Breadsticks",
+    "subMenuId": "50",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=HomemadeSoups_SSB.png&companyCode=OGKA001&designId=1",
+    "restrictions": [
+      {
+        "restrictionId": "24",
+        "dayOfWeek": 0,
+        "startTime": "2011-01-01T00:00:00",
+        "endTime": "2011-01-01T00:00:00"
+      },
+      {
+        "restrictionId": "25",
+        "dayOfWeek": 1,
+        "startTime": "2011-01-01T15:01:00",
+        "endTime": "2011-01-01T00:00:00"
+      },
+      {
+        "restrictionId": "26",
+        "dayOfWeek": 2,
+        "startTime": "2011-01-01T15:01:00",
+        "endTime": "2011-01-01T00:00:00"
+      },
+      {
+        "restrictionId": "27",
+        "dayOfWeek": 3,
+        "startTime": "2011-01-01T15:01:00",
+        "endTime": "2011-01-01T00:00:00"
+      },
+      {
+        "restrictionId": "28",
+        "dayOfWeek": 4,
+        "startTime": "2011-01-01T15:01:00",
+        "endTime": "2011-01-01T00:00:00"
+      },
+      {
+        "restrictionId": "29",
+        "dayOfWeek": 5,
+        "startTime": "2011-01-01T15:01:00",
+        "endTime": "2011-01-01T00:00:00"
+      },
+      {
+        "restrictionId": "30",
+        "dayOfWeek": 6,
+        "startTime": "2011-01-01T00:00:00",
+        "endTime": "2011-01-01T00:00:00"
+      }
+    ],
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Breadsticks",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "An Olive Garden Favorite. Available Freshly-Baked or Bake-At-Home. Add an extra dozen or half dozen breadsticks to your online order",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=breadsticks.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1619",
+        "name": "Breadsticks",
+        "unitPrice": 6.39,
+        "salesItemId": "2619",
+        "modifierGroups": [],
+        "salesItems": [
+          "2619",
+          "2625",
+          "2620",
+          "2626"
+        ],
+        "posItemId": "8010",
+        "defaultSalesItemId": "2619",
+        "priceRange": {
+          "min": 6.39,
+          "max": 9.89
+        },
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Dipping-Sauces-Inclu",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Homemade marinara, alfredo or five cheese marinara. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=DippingSauces_Appetizers.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1561",
+        "name": "Dipping Sauces Includes Breadsticks",
+        "unitPrice": 8.49,
+        "salesItemId": "2687",
+        "modifierGroups": [
+          "8332"
+        ],
+        "salesItems": [
+          "2687"
+        ],
+        "posItemId": "7416",
+        "defaultSalesItemId": "2687",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Homemade-Soup",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Choice of homemade soups:",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=HomemadeSoups_SSB.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1627",
+        "name": "Homemade Soup",
+        "unitPrice": 9.29,
+        "salesItemId": "2631",
+        "modifierGroups": [
+          "8245"
+        ],
+        "salesItems": [
+          "2631"
+        ],
+        "posItemId": "221",
+        "defaultSalesItemId": "2631",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Our-Famous-House-Sal",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Croutons",
+            "quantity": 1,
+            "salesItemOptionId": "2684",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Olives",
+            "quantity": 1,
+            "salesItemOptionId": "2709",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Onions",
+            "quantity": 1,
+            "salesItemOptionId": "2695",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Pepperoncini",
+            "quantity": 1,
+            "salesItemOptionId": "2681",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Tomato",
+            "quantity": 1,
+            "salesItemOptionId": "2704",
+            "defaultReason": "RECIPE"
+          }
+        ],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Garden-Salad.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1628",
+        "name": "Our Famous House Salad",
+        "unitPrice": 9.29,
+        "salesItemId": "2632",
+        "modifierGroups": [
+          "8043"
+        ],
+        "salesItems": [
+          "2632"
+        ],
+        "posItemId": "8009",
+        "defaultSalesItemId": "2632",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Soup-AND-Salad-AND-B",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8299",
+            "name": "Onions",
+            "quantity": 1,
+            "salesItemOptionId": "2695",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8299",
+            "name": "Pepperoncini",
+            "quantity": 1,
+            "salesItemOptionId": "2681",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Croutons",
+            "quantity": 1,
+            "salesItemOptionId": "2684",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Olives",
+            "quantity": 1,
+            "salesItemOptionId": "2709",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Onions",
+            "quantity": 1,
+            "salesItemOptionId": "2695",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Pepperoncini",
+            "quantity": 1,
+            "salesItemOptionId": "2681",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8043",
+            "name": "Tomato",
+            "quantity": 1,
+            "salesItemOptionId": "2704",
+            "defaultReason": "RECIPE"
+          }
+        ],
+        "description": "Our famous house salad (150 cal per serving), breadsticks (V) (140 cal each)  and your choice of homemade soup.  18.89   Lunch Special  15.19  (11-3 p.m. Mon - Fri)",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SoupsSaladsAndBreadsticks_SSB.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1562",
+        "name": "Soup AND Salad AND Breadsticks ",
+        "unitPrice": 19.29,
+        "salesItemId": "2562",
+        "modifierGroups": [
+          "8245",
+          "8299",
+          "8043"
+        ],
+        "salesItems": [
+          "2562"
+        ],
+        "posItemId": "1019",
+        "defaultSalesItemId": "2562",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  },
+  {
+    "routeName": "Create-Your-Own-Past",
+    "name": "Create Your Own Pasta",
+    "subMenuId": "44",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=CreateYourOwnPasta.png&companyCode=OGKA001&designId=1",
+    "restrictions": null,
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Create-Your-Own-Past",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Create a new Italian classic with pasta your way, handcrafted from our Italian kitchen!",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=CreateYourOwnPasta.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1624",
+        "name": "Create Your Own Pasta",
+        "unitPrice": 20.29,
+        "salesItemId": "2627",
+        "modifierGroups": [
+          "8304",
+          "8305",
+          "8306",
+          "8084"
+        ],
+        "salesItems": [
+          "2627"
+        ],
+        "posItemId": "1018",
+        "defaultSalesItemId": "2627",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  },
+  {
+    "routeName": "Lunch-Sized-Favorite",
+    "name": "Lunch-Sized Favorites",
+    "subMenuId": "45",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=LunchSizedFavorites.png&companyCode=OGKA001&designId=1",
+    "restrictions": [
+      {
+        "restrictionId": "15",
+        "dayOfWeek": 1,
+        "startTime": "2011-01-01T11:00:00",
+        "endTime": "2011-01-01T15:00:00"
+      },
+      {
+        "restrictionId": "16",
+        "dayOfWeek": 2,
+        "startTime": "2011-01-01T11:00:00",
+        "endTime": "2011-01-01T15:00:00"
+      },
+      {
+        "restrictionId": "17",
+        "dayOfWeek": 3,
+        "startTime": "2011-01-01T11:00:00",
+        "endTime": "2011-01-01T15:00:00"
+      },
+      {
+        "restrictionId": "18",
+        "dayOfWeek": 4,
+        "startTime": "2011-01-01T11:00:00",
+        "endTime": "2011-01-01T15:00:00"
+      },
+      {
+        "restrictionId": "19",
+        "dayOfWeek": 5,
+        "startTime": "2011-01-01T11:00:00",
+        "endTime": "2011-01-01T15:00:00"
+      }
+    ],
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Lasagna-Classico",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Layers of pasta, Italian cheeses and our homemade meat sauce.** 500 cal",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=LasagnaClassico_Lunch.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1599",
+        "name": "Lasagna Classico",
+        "unitPrice": 17.49,
+        "salesItemId": "2599",
+        "modifierGroups": [
+          "8084",
+          "8307"
+        ],
+        "salesItems": [
+          "2599"
+        ],
+        "posItemId": "906",
+        "defaultSalesItemId": "2599",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Chicken-Parmigiana",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Served with a side of spaghetti. 630 cal",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenParmigiana_Lunch.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1600",
+        "name": "Chicken Parmigiana",
+        "unitPrice": 17.49,
+        "salesItemId": "2600",
+        "modifierGroups": [
+          "8303",
+          "8084",
+          "8302"
+        ],
+        "salesItems": [
+          "2600"
+        ],
+        "posItemId": "907",
+        "defaultSalesItemId": "2600",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Fettuccine-Alfredo",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "(V) Our signature alfredo made fresh in-house every morning, served over fettuccine. 650 cal Add Broccoli 130 cal  4.09",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FettuccineAlfredo_Lunch.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1595",
+        "name": "Fettuccine Alfredo",
+        "unitPrice": 16.49,
+        "salesItemId": "2595",
+        "modifierGroups": [
+          "8084",
+          "8296"
+        ],
+        "salesItems": [
+          "2595"
+        ],
+        "posItemId": "902",
+        "defaultSalesItemId": "2595",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Shrimp-Scampi",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": " Lighter take on an Italian classic! Shrimp sautéed in a garlic sauce, tossed with asparagus, tomatoes and angel hair. 460 cal",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpScampi_Lunch.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1602",
+        "name": "Shrimp Scampi",
+        "unitPrice": 17.49,
+        "salesItemId": "2602",
+        "modifierGroups": [
+          "8084"
+        ],
+        "salesItems": [
+          "2602"
+        ],
+        "posItemId": "909",
+        "defaultSalesItemId": "2602",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Spaghetti",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "With marinara (V) or with meat sauce.** marinara 290 cal, meat sauce 360 cal",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Spaghetti_Lunch.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1594",
+        "name": "Spaghetti",
+        "unitPrice": 16.49,
+        "salesItemId": "2594",
+        "modifierGroups": [
+          "8084",
+          "8308"
+        ],
+        "salesItems": [
+          "2594"
+        ],
+        "posItemId": "901",
+        "defaultSalesItemId": "2594",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Eggplant-Parmigiana",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "(V) Hand-breaded, lightly fried and served with a side of spaghetti. 660 cal",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=EggplantParmigiana_Lunch.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1596",
+        "name": "Eggplant Parmigiana",
+        "unitPrice": 16.49,
+        "salesItemId": "2596",
+        "modifierGroups": [
+          "8303",
+          "8084",
+          "8286"
+        ],
+        "salesItems": [
+          "2596"
+        ],
+        "posItemId": "903",
+        "defaultSalesItemId": "2596",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Spaghetti-Meatballs",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "(2) With meat sauce.** 680 cal ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Spaghetti_Meatballs_Lunch.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1601",
+        "name": "Spaghetti & Meatballs",
+        "unitPrice": 17.49,
+        "salesItemId": "2601",
+        "modifierGroups": [
+          "8084",
+          "8308"
+        ],
+        "salesItems": [
+          "2601"
+        ],
+        "posItemId": "908",
+        "defaultSalesItemId": "2601",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Cheese-Ravioli",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": "Topped with melted mozzarella and your choice of homemade marinara (V) or meat sauce.** marinara 440 cal, meat sauce 500 cal",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=CheeseRavioli_Lunch.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1597",
+        "name": "Cheese Ravioli",
+        "unitPrice": 16.49,
+        "salesItemId": "2597",
+        "modifierGroups": [
+          "8309",
+          "8084",
+          "8297"
+        ],
+        "salesItems": [
+          "2597"
+        ],
+        "posItemId": "904",
+        "defaultSalesItemId": "2597",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Five-Cheese-Ziti-al-",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [],
+        "description": " Oven baked blend of Italian cheeses, pasta and our signature homemade five cheese marinara. 630 cal",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FiveCheeseZitiAlForno_Lunch.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1598",
+        "name": "Five Cheese Ziti al Forno",
+        "unitPrice": 16.49,
+        "salesItemId": "2598",
+        "modifierGroups": [
+          "8084",
+          "8297"
+        ],
+        "salesItems": [
+          "2598"
+        ],
+        "posItemId": "905",
+        "defaultSalesItemId": "2598",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Weekday-Lunch-Specia",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8310",
+            "name": "Olives",
+            "quantity": 1,
+            "salesItemOptionId": "2709",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8310",
+            "name": "Onions",
+            "quantity": 1,
+            "salesItemOptionId": "2695",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8310",
+            "name": "Pepperoncini",
+            "quantity": 1,
+            "salesItemOptionId": "2681",
+            "defaultReason": "RECIPE"
+          },
+          {
+            "action": 0,
+            "itemOptionGroupId": "8310",
+            "name": "Tomato",
+            "quantity": 1,
+            "salesItemOptionId": "2704",
+            "defaultReason": "RECIPE"
+          }
+        ],
+        "description": "Your choice of homemade soup served with famous house salad and hot breadsticks (V)",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SoupsSaladsAndBreadsticks_SSB.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1603",
+        "name": "Weekday Lunch Special: Soup AND Salad AND Breadsticks",
+        "unitPrice": 15.49,
+        "salesItemId": "2603",
+        "modifierGroups": [
+          "8245",
+          "8310"
+        ],
+        "salesItems": [
+          "2603"
+        ],
+        "posItemId": "910",
+        "defaultSalesItemId": "2603",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  },
+  {
+    "routeName": "Desserts",
+    "name": "Desserts",
+    "subMenuId": "46",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Desserts.png&companyCode=OGKA001&designId=1",
+    "restrictions": null,
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Chocolate-Lasagna",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Decadent layers of chocolate cake, creamy chocolate mousse, and a delicate layer of crushed wafers. Topped with chocolate sauce. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChocolateLasagna_Desserts.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1608",
+        "name": "Chocolate Lasagna",
+        "unitPrice": 12.29,
+        "salesItemId": "2608",
+        "modifierGroups": [],
+        "salesItems": [
+          "2608"
+        ],
+        "posItemId": "3011",
+        "defaultSalesItemId": "2608",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Black-Tie-Mousse-Cak",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Chocolate cake, dark chocolate cheesecake and creamy custard with icing. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=BlackTieMousseCake_Desserts.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1605",
+        "name": "Black Tie Mousse Cake",
+        "unitPrice": 12.09,
+        "salesItemId": "2605",
+        "modifierGroups": [],
+        "salesItems": [
+          "2605"
+        ],
+        "posItemId": "3004",
+        "defaultSalesItemId": "2605",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Tiramisu",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Creamy custard and sweet cocoa over espresso-soaked ladyfingers. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Tiramisu_Desserts.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1604",
+        "name": "Tiramisu",
+        "unitPrice": 12.09,
+        "salesItemId": "2604",
+        "modifierGroups": [],
+        "salesItems": [
+          "2604"
+        ],
+        "posItemId": "3003",
+        "defaultSalesItemId": "2604",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Strawberry-Cream-Cak",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Vanilla sponge cake layered with sweet vanilla cream and topped with fresh strawberries. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=StrawberryCreamCake_Desserts.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1607",
+        "name": "Strawberry Cream Cake",
+        "unitPrice": 12.29,
+        "salesItemId": "2607",
+        "modifierGroups": [],
+        "salesItems": [
+          "2607"
+        ],
+        "posItemId": "3007",
+        "defaultSalesItemId": "2607",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Warm-Italian-Doughnu",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Known in Italy as Zeppoli, our doughnuts are made to order and tossed in vanilla sugar. Served with raspberry or chocolate sauce. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=WarmItalianDonuts_Desserts.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1616",
+        "name": "Warm Italian Doughnuts",
+        "unitPrice": 12.09,
+        "salesItemId": "2616",
+        "modifierGroups": [
+          "8266"
+        ],
+        "salesItems": [
+          "2616"
+        ],
+        "posItemId": "3006",
+        "defaultSalesItemId": "2616",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Sicilian-Cheesecake-",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Ricotta cheesecake with a shortbread cookie crust, topped with fresh strawberries. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SicilianCheesecake_Desserts.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1606",
+        "name": "Sicilian Cheesecake with Strawberry Topping (V)",
+        "unitPrice": 12.09,
+        "salesItemId": "2606",
+        "modifierGroups": [],
+        "salesItems": [
+          "2606"
+        ],
+        "posItemId": "3005",
+        "defaultSalesItemId": "2606",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  },
+  {
+    "routeName": "Sides-Sauces",
+    "name": "Sides & Sauces",
+    "subMenuId": "43",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Meatballs_Sides.png&companyCode=OGKA001&designId=1",
+    "restrictions": null,
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Side-of-Meatballs",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Served with homemade marinara. 520 cal  6.49",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Meatballs_Sides.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1588",
+        "name": "Side of Meatballs",
+        "unitPrice": 6.49,
+        "salesItemId": "2588",
+        "modifierGroups": [],
+        "salesItems": [
+          "2588"
+        ],
+        "posItemId": "7349",
+        "defaultSalesItemId": "2588",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Side-of-Grilled-Chic",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Grilled-Chicken-Side.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1625",
+        "name": "Side of Grilled Chicken",
+        "unitPrice": 6.79,
+        "salesItemId": "2629",
+        "modifierGroups": [],
+        "salesItems": [
+          "2629"
+        ],
+        "posItemId": "7304",
+        "defaultSalesItemId": "2629",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Side-of-Italian-Saus",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Italian-Sausage-Side.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1618",
+        "name": "Side of Italian Sausage",
+        "unitPrice": 6.59,
+        "salesItemId": "2618",
+        "modifierGroups": [],
+        "salesItems": [
+          "2618"
+        ],
+        "posItemId": "7342",
+        "defaultSalesItemId": "2618",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Side-of-Mashed-Potat",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Creamy mashed potatoes made with milk and butter. 200 cal  5.39",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=MashedPotatoes_Sides.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1591",
+        "name": "Side of Mashed Potatoes",
+        "unitPrice": 5.39,
+        "salesItemId": "2591",
+        "modifierGroups": [],
+        "salesItems": [
+          "2591"
+        ],
+        "posItemId": "7363",
+        "defaultSalesItemId": "2591",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Side-of-Broccoli",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": " (V) Steamed and seasoned with parmesan cheese and garlic. 150 cal  5.39",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Broccoli_Sides.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1589",
+        "name": "Side of Broccoli",
+        "unitPrice": 5.39,
+        "salesItemId": "2589",
+        "modifierGroups": [],
+        "salesItems": [
+          "2589"
+        ],
+        "posItemId": "7353",
+        "defaultSalesItemId": "2589",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Large-Five-Cheese-Ma",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=d-Five-Cheese-Marinara-Sauce-dpv.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1640",
+        "name": "Large Five Cheese Marinara Sauce",
+        "unitPrice": 11.89,
+        "salesItemId": "2644",
+        "modifierGroups": [],
+        "salesItems": [
+          "2644"
+        ],
+        "posItemId": "8014",
+        "defaultSalesItemId": "2644",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Large-Alfredo-Sauce",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=d-Pint-Alfredo-Sauce-dpv.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1641",
+        "name": "Large Alfredo Sauce",
+        "unitPrice": 13.09,
+        "salesItemId": "2680",
+        "modifierGroups": [],
+        "salesItems": [
+          "2680"
+        ],
+        "posItemId": "8015",
+        "defaultSalesItemId": "2680",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Large-Marinara-Sauce",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=d-Pint-Marinara-Sauce-dpv.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1642",
+        "name": "Large Marinara Sauce",
+        "unitPrice": 11.89,
+        "salesItemId": "2646",
+        "modifierGroups": [],
+        "salesItems": [
+          "2646"
+        ],
+        "posItemId": "8016",
+        "defaultSalesItemId": "2646",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Large-Meat-Sauce",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=d-Pint-Meat-Sauce-dpv.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1643",
+        "name": "Large Meat Sauce",
+        "unitPrice": 12.19,
+        "salesItemId": "2647",
+        "modifierGroups": [],
+        "salesItems": [
+          "2647"
+        ],
+        "posItemId": "8017",
+        "defaultSalesItemId": "2647",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  },
+  {
+    "routeName": "Beverages",
+    "name": "Beverages",
+    "subMenuId": "47",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=NonAlcoholicBeverages.png&companyCode=OGKA001&designId=1",
+    "restrictions": null,
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Coke",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FountainDrinks_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1535",
+        "name": "Coke",
+        "unitPrice": 4.49,
+        "salesItemId": "2535",
+        "modifierGroups": [],
+        "salesItems": [
+          "2535"
+        ],
+        "posItemId": "100",
+        "defaultSalesItemId": "2535",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Diet-Coke",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FountainDrinks_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1536",
+        "name": "Diet Coke",
+        "unitPrice": 4.49,
+        "salesItemId": "2536",
+        "modifierGroups": [],
+        "salesItems": [
+          "2536"
+        ],
+        "posItemId": "101",
+        "defaultSalesItemId": "2536",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Coke-Zero",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FountainDrinks_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1537",
+        "name": "Coke Zero",
+        "unitPrice": 4.49,
+        "salesItemId": "2537",
+        "modifierGroups": [],
+        "salesItems": [
+          "2537"
+        ],
+        "posItemId": "102",
+        "defaultSalesItemId": "2537",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Acqua-Panna1L",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=AcquaPanna_Wet_0760.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1538",
+        "name": "Acqua Panna1L",
+        "unitPrice": 6.99,
+        "salesItemId": "2538",
+        "modifierGroups": [],
+        "salesItems": [
+          "2538"
+        ],
+        "posItemId": "104",
+        "defaultSalesItemId": "2538",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Sprite",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FountainDrinks_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1539",
+        "name": "Sprite",
+        "unitPrice": 4.49,
+        "salesItemId": "2539",
+        "modifierGroups": [],
+        "salesItems": [
+          "2539"
+        ],
+        "posItemId": "106",
+        "defaultSalesItemId": "2539",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Dr-Pepper",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FountainDrinks_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1540",
+        "name": "Dr. Pepper",
+        "unitPrice": 4.49,
+        "salesItemId": "2540",
+        "modifierGroups": [],
+        "salesItems": [
+          "2540"
+        ],
+        "posItemId": "107",
+        "defaultSalesItemId": "2540",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "San-Pelegrino-1L",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Pellegrino_14685.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1541",
+        "name": "San Pelegrino 1L",
+        "unitPrice": 6.99,
+        "salesItemId": "2541",
+        "modifierGroups": [],
+        "salesItems": [
+          "2541"
+        ],
+        "posItemId": "108",
+        "defaultSalesItemId": "2541",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Iced-Tea",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FreshBrewedIcedTea_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1542",
+        "name": "Iced Tea",
+        "unitPrice": 4.29,
+        "salesItemId": "2542",
+        "modifierGroups": [],
+        "salesItems": [
+          "2542"
+        ],
+        "posItemId": "109",
+        "defaultSalesItemId": "2542",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Peach-Raspberry-Iced",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=BelliniPeachRaspberryIcedTea_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1543",
+        "name": "Peach Raspberry Iced Tea",
+        "unitPrice": 5.79,
+        "salesItemId": "2543",
+        "modifierGroups": [],
+        "salesItems": [
+          "2543"
+        ],
+        "posItemId": "110",
+        "defaultSalesItemId": "2543",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Mango-Strawberry-Ice",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=MangoStrawberryIcedTea_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1544",
+        "name": "Mango Strawberry Iced Tea",
+        "unitPrice": 5.79,
+        "salesItemId": "2544",
+        "modifierGroups": [],
+        "salesItems": [
+          "2544"
+        ],
+        "posItemId": "111",
+        "defaultSalesItemId": "2544",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Classic-Lemonade",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ClassicLemonade_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1545",
+        "name": "Classic Lemonade",
+        "unitPrice": 4.49,
+        "salesItemId": "2545",
+        "modifierGroups": [],
+        "salesItems": [
+          "2545"
+        ],
+        "posItemId": "113",
+        "defaultSalesItemId": "2545",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Raspberry-Lemonade",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=RaspberryLemonade_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1546",
+        "name": "Raspberry Lemonade",
+        "unitPrice": 5.79,
+        "salesItemId": "2546",
+        "modifierGroups": [],
+        "salesItems": [
+          "2546"
+        ],
+        "posItemId": "114",
+        "defaultSalesItemId": "2546",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Vanilla-Iced-Coffee",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=VanillaIcedCoffee_NonAlc copy.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1547",
+        "name": "Vanilla Iced Coffee",
+        "unitPrice": 5.99,
+        "salesItemId": "2547",
+        "modifierGroups": [
+          "8058"
+        ],
+        "salesItems": [
+          "2547"
+        ],
+        "posItemId": "116",
+        "defaultSalesItemId": "2547",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Caramel-Iced-Coffee",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "",
+        "menuItemId": "1548",
+        "name": "Caramel Iced Coffee",
+        "unitPrice": 5.99,
+        "salesItemId": "2548",
+        "modifierGroups": [
+          "8059"
+        ],
+        "salesItems": [
+          "2548"
+        ],
+        "posItemId": "117",
+        "defaultSalesItemId": "2548",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Hot-Coffee",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=HotCoffee_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1549",
+        "name": "Hot Coffee",
+        "unitPrice": 4.49,
+        "salesItemId": "2549",
+        "modifierGroups": [
+          "8060"
+        ],
+        "salesItems": [
+          "2549"
+        ],
+        "posItemId": "119",
+        "defaultSalesItemId": "2549",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Strawberry-Passion-L",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Lemonade, sparkling water and strawberry-passion fruit. 180 cal  5.59",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=StrawberryPassionFruitLimonata_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1550",
+        "name": "Strawberry-Passion Limonata",
+        "unitPrice": 5.79,
+        "salesItemId": "2550",
+        "modifierGroups": [],
+        "salesItems": [
+          "2550"
+        ],
+        "posItemId": "126",
+        "defaultSalesItemId": "2550",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Reg-Iced-Coffee",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=TraditionalIcedCoffee_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1551",
+        "name": "Reg Iced Coffee",
+        "unitPrice": 5.99,
+        "salesItemId": "2551",
+        "modifierGroups": [
+          "8061"
+        ],
+        "salesItems": [
+          "2551"
+        ],
+        "posItemId": "133",
+        "defaultSalesItemId": "2551",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Hot-Tea",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=HotTea_NonAlc.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1552",
+        "name": "Hot Tea",
+        "unitPrice": 4.49,
+        "salesItemId": "2552",
+        "modifierGroups": [],
+        "salesItems": [
+          "2552"
+        ],
+        "posItemId": "136",
+        "defaultSalesItemId": "2552",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  },
+  {
+    "routeName": "Kids-Menu",
+    "name": "Kids Menu",
+    "subMenuId": "48",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=KidsMenu.png&companyCode=OGKA001&designId=1",
+    "restrictions": null,
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Kids-Alfredo-Sauce-w",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8318",
+            "name": "KD Milk",
+            "quantity": 1,
+            "salesItemOptionId": "2841",
+            "defaultReason": "SELECTION"
+          }
+        ],
+        "description": "Pick your favorite kid-sized pasta with alfredo sauce! Add protein for an additional charge.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Kids-Meals-Fett-Alf.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1634",
+        "name": "Kids Alfredo Sauce with Choice of Pasta",
+        "unitPrice": 7.49,
+        "salesItemId": "2638",
+        "modifierGroups": [
+          "8319",
+          "8320",
+          "8321",
+          "8318",
+          "8329"
+        ],
+        "salesItems": [
+          "2638"
+        ],
+        "posItemId": "4132",
+        "defaultSalesItemId": "2638",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Kids-Pizza",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8318",
+            "name": "KD Milk",
+            "quantity": 1,
+            "salesItemOptionId": "2841",
+            "defaultReason": "SELECTION"
+          }
+        ],
+        "description": "Enjoy a kid-sized cheese or pepperoni pizza with homemade marinara sauce and mozzarella cheese. Includes 1% low fat milk and side for children under 12. Does not include soup or salad.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Pizza_Kids.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1612",
+        "name": "Kids Pizza",
+        "unitPrice": 7.49,
+        "salesItemId": "2612",
+        "modifierGroups": [
+          "8317",
+          "8318"
+        ],
+        "salesItems": [
+          "2612",
+          "2628"
+        ],
+        "posItemId": "4129",
+        "defaultSalesItemId": "2612",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Kids-Chicken-Fingers",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8318",
+            "name": "KD Milk",
+            "quantity": 1,
+            "salesItemOptionId": "2841",
+            "defaultReason": "SELECTION"
+          }
+        ],
+        "description": "Lightly breaded chicken tenders Includes 1% low fat milk and side for children under 12. Does not include soup or salad. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenFingers_Kids.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1613",
+        "name": "Kids Chicken Fingers",
+        "unitPrice": 7.49,
+        "salesItemId": "2613",
+        "modifierGroups": [
+          "8318",
+          "8317"
+        ],
+        "salesItems": [
+          "2613"
+        ],
+        "posItemId": "4131",
+        "defaultSalesItemId": "2613",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Kids-Macaroni-Cheese",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8318",
+            "name": "KD Milk",
+            "quantity": 1,
+            "salesItemOptionId": "2841",
+            "defaultReason": "SELECTION"
+          }
+        ],
+        "description": "Kid-sized pasta shells in a creamy cheese sauce. Includes 1% low fat milk and side for children under 12. Does not include soup or salad. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Macaroni_Cheese_Kids.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1614",
+        "name": "Kids Macaroni & Cheese",
+        "unitPrice": 7.49,
+        "salesItemId": "2614",
+        "modifierGroups": [
+          "8318",
+          "8317"
+        ],
+        "salesItems": [
+          "2614"
+        ],
+        "posItemId": "4133",
+        "defaultSalesItemId": "2614",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Kids-Meat-Sauce-with",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8318",
+            "name": "KD Milk",
+            "quantity": 1,
+            "salesItemOptionId": "2841",
+            "defaultReason": "SELECTION"
+          }
+        ],
+        "description": "Pick your favorite kid-sized pasta with meat sauce!** Add protein for an additional charge. Includes 1% low fat milk and side for children under 12. **Our meat sauce is made with pan-seared beef and Italian sausage. Does not include soup or salad.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Kids-Meals-Spag-Meatsauce.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1609",
+        "name": "Kids Meat Sauce with Choice of Pasta",
+        "unitPrice": 7.49,
+        "salesItemId": "2609",
+        "modifierGroups": [
+          "8319",
+          "8320",
+          "8321",
+          "8318",
+          "8322"
+        ],
+        "salesItems": [
+          "2609"
+        ],
+        "posItemId": "4132",
+        "defaultSalesItemId": "2609",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Kids-Tomato-Sauce-wi",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8318",
+            "name": "KD Milk",
+            "quantity": 1,
+            "salesItemOptionId": "2841",
+            "defaultReason": "SELECTION"
+          }
+        ],
+        "description": "Pick your favorite kid-sized pasta with tomato sauce! Add protein for an additional charge. Includes 1% low fat milk and side for children under 12. Does not include soup or salad. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Kids-Meals-Spag-Marinara.jpg&companyCode=OGKA001&designId=1",
+        "menuItemId": "1629",
+        "name": "Kids Tomato Sauce with Choice of Pasta",
+        "unitPrice": 7.49,
+        "salesItemId": "2633",
+        "modifierGroups": [
+          "8319",
+          "8320",
+          "8321",
+          "8318",
+          "8322"
+        ],
+        "salesItems": [
+          "2633"
+        ],
+        "posItemId": "4132",
+        "defaultSalesItemId": "2633",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Kids-Five-Cheese-Mar",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8318",
+            "name": "KD Milk",
+            "quantity": 1,
+            "salesItemOptionId": "2841",
+            "defaultReason": "SELECTION"
+          }
+        ],
+        "description": "Pick your favorite kid-sized pasta with five cheese marinara! Add protein for an additional charge. Includes 1% low fat milk and side for children under 12. Does not include soup or salad. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=d-kids-five-cheese-marinara-with-pasta-.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1630",
+        "name": "Kids Five Cheese Marinara with Choice of Pasta",
+        "unitPrice": 7.49,
+        "salesItemId": "2634",
+        "modifierGroups": [
+          "8319",
+          "8320",
+          "8321",
+          "8318",
+          "8322"
+        ],
+        "salesItems": [
+          "2634"
+        ],
+        "posItemId": "4132",
+        "defaultSalesItemId": "2634",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Kids-Cheese-Ravioli",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8318",
+            "name": "KD Milk",
+            "quantity": 1,
+            "salesItemOptionId": "2841",
+            "defaultReason": "SELECTION"
+          }
+        ],
+        "description": "Kid-sized Italian cheese-filled ravioli with tomato sauce. Includes 1% low fat milk and side for children under 12. Does not include soup or salad.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=CheeseRavioli_Kids.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1631",
+        "name": "Kids Cheese Ravioli",
+        "unitPrice": 7.49,
+        "salesItemId": "2635",
+        "modifierGroups": [
+          "8318",
+          "8317",
+          "8328"
+        ],
+        "salesItems": [
+          "2635"
+        ],
+        "posItemId": "4130",
+        "defaultSalesItemId": "2635",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Kids-Rotini-with-Mar",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8318",
+            "name": "KD Milk",
+            "quantity": 1,
+            "salesItemOptionId": "2841",
+            "defaultReason": "SELECTION"
+          }
+        ],
+        "description": "Kid-sized gluten-free rotini pasta with marinara sauce. Served with a side of grapes or broccoli.. Includes 1% low fat milk for children under 12. Does not include soup or salad.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=KidsRotiniWithMarinara_GlutenSensitive.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1632",
+        "name": "Kids Rotini with Marinara (V)",
+        "unitPrice": 7.49,
+        "salesItemId": "2636",
+        "modifierGroups": [
+          "8318",
+          "8327"
+        ],
+        "salesItems": [
+          "2636"
+        ],
+        "posItemId": "4136",
+        "defaultSalesItemId": "2636",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Kids-Rotini-with-Mea",
+        "calories": null,
+        "canBeOrderedAsIs": false,
+        "modifiers": [
+          {
+            "action": 0,
+            "itemOptionGroupId": "8318",
+            "name": "KD Milk",
+            "quantity": 1,
+            "salesItemOptionId": "2841",
+            "defaultReason": "SELECTION"
+          }
+        ],
+        "description": "Kid-sized gluten-free rotini pasta with meat sauce.** Served with a side of grapes or broccoli. Includes 1% low fat milk for children under 12. *Our meat sauce is made with pan-seared beef and Italian sausage. Does not include soup or salad. ",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=Kids-Meals-Rotini-Meatsauce.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1633",
+        "name": "Kids  Rotini with Meat Sauce",
+        "unitPrice": 7.49,
+        "salesItemId": "2637",
+        "modifierGroups": [
+          "8318",
+          "8327"
+        ],
+        "salesItems": [
+          "2637"
+        ],
+        "posItemId": "4137",
+        "defaultSalesItemId": "2637",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  },
+  {
+    "routeName": "Catering-Family-Bund",
+    "name": "Catering Family Bundles",
+    "subMenuId": "54",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=LasagnaFamily.png&companyCode=OGKA001&designId=1",
+    "restrictions": null,
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Family-Style-Lasagna",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Bring home our Family-Style Lasagna Bundle for dinner tonight, serving 4-6 people. Your bundle features Lasagna Classico**, our Famous House Salad, and a dozen breadsticks. 6,700 cal. Please allow 4 hours when ordering this combination",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=LasagnaFamily.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1660",
+        "name": "Family-Style Lasagna Bundle (Serves 4-6)",
+        "unitPrice": 95.59,
+        "salesItemId": "2664",
+        "modifierGroups": [],
+        "salesItems": [
+          "2664"
+        ],
+        "posItemId": "70057",
+        "defaultSalesItemId": "2664",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Large-Family-Style-L",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Bring home our Family-Style Lasagna Bundle for dinner tonight, serving up to 12 people. Your bundle features Lasagna Classico**, 2 of our Jumbo Famous House Salads, and 2 dozen breadsticks. Please allow 4 hours when ordering this combination.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=LasagnaCater.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1661",
+        "name": "Large Family-Style Lasagna Bundle (Serves up to 12",
+        "unitPrice": 151.69,
+        "salesItemId": "2665",
+        "modifierGroups": [],
+        "salesItems": [
+          "2665"
+        ],
+        "posItemId": "70058",
+        "defaultSalesItemId": "2665",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Our-Famous-Jumbo-Hou",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=JumboSalad.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1662",
+        "name": "Our Famous Jumbo House Salad includes 12 Breadstic",
+        "unitPrice": 27.99,
+        "salesItemId": "2666",
+        "modifierGroups": [],
+        "salesItems": [
+          "2666"
+        ],
+        "posItemId": "8007",
+        "defaultSalesItemId": "2666",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  },
+  {
+    "routeName": "Catering-Family-Size",
+    "name": "Catering Family Size Pans (Serves 4-6)",
+    "subMenuId": "55",
+    "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SpaghettiMeatFamily.png&companyCode=OGKA001&designId=1",
+    "restrictions": null,
+    "menuItems": [
+      {
+        "isAvailable": true,
+        "routeName": "Chicken-Alfredo-Serv",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Includes: A pan of sliced grilled chicken and fettuccine pasta with our signature homemade alfredo sauce.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickAlfredoFam.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1663",
+        "name": "Chicken Alfredo (Serves 4-6",
+        "unitPrice": 97.89,
+        "salesItemId": "2667",
+        "modifierGroups": [],
+        "salesItems": [
+          "2667"
+        ],
+        "posItemId": "70023",
+        "defaultSalesItemId": "2667",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Chicken-Parmigiana-S",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Incudes: A pan of Chicken Parmigiana and Spaghetti with our homemade marinara.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickParmFam.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1664",
+        "name": "Chicken Parmigiana (Serves 4-6)",
+        "unitPrice": 90.59,
+        "salesItemId": "2668",
+        "modifierGroups": [],
+        "salesItems": [
+          "2668"
+        ],
+        "posItemId": "70025",
+        "defaultSalesItemId": "2668",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Fettuccine-Alfredo-S",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Includes: A pan of fettuccine with our homemade alfredo sauce.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FettAlfredoFam.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1670",
+        "name": "Fettuccine Alfredo (Serves 4-6)",
+        "unitPrice": 68.59,
+        "salesItemId": "2674",
+        "modifierGroups": [],
+        "salesItems": [
+          "2674"
+        ],
+        "posItemId": "70018",
+        "defaultSalesItemId": "2674",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Shrimp-Alfredo-Serve",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Includes: A pan of fettuccine with our homemade alfredo sauce and sautéed shrimp.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpAlfredoFam.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1671",
+        "name": "Shrimp Alfredo (Serves 4-6)",
+        "unitPrice": 102.09,
+        "salesItemId": "2675",
+        "modifierGroups": [],
+        "salesItems": [
+          "2675"
+        ],
+        "posItemId": "70024",
+        "defaultSalesItemId": "2675",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Five-Cheese-Ziti-al-",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Includes: A pan of ziti pasta in a five cheese marinara sauce, baked with a layer of melted Italian cheeses.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=FiveCheeseFamily.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1669",
+        "name": "Five Cheese Ziti al Forno (Serves 4-6)",
+        "unitPrice": 76.49,
+        "salesItemId": "2673",
+        "modifierGroups": [],
+        "salesItems": [
+          "2673"
+        ],
+        "posItemId": "70015",
+        "defaultSalesItemId": "2673",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Spaghetti-with-Marin",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Includes: A pan of spaghetti with our traditional homemade marinara sauce.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SpaghettiMarinaraFamily.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1665",
+        "name": "Spaghetti with Marinara Sauce (Serves 4-6)",
+        "unitPrice": 59.19,
+        "salesItemId": "2669",
+        "modifierGroups": [],
+        "salesItems": [
+          "2669"
+        ],
+        "posItemId": "70007",
+        "defaultSalesItemId": "2669",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Spaghetti-with-Meat-",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Includes: A pan of spaghetti with our traditional homemade meat sauce. **Our meat sauces are made with pan-seared beef and Italian sausage.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=SpaghettiMeatFamily.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1666",
+        "name": "Spaghetti with Meat Sauce** (Serves 4-6)",
+        "unitPrice": 79.89,
+        "salesItemId": "2670",
+        "modifierGroups": [],
+        "salesItems": [
+          "2670"
+        ],
+        "posItemId": "70011",
+        "defaultSalesItemId": "2670",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Cheese-Ravioli-with-",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Includes: A pan of cheese-filled ravioli topped with marinara",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=CheeseRavFamily.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1668",
+        "name": "Cheese Ravioli with Marinara",
+        "unitPrice": 70.89,
+        "salesItemId": "2672",
+        "modifierGroups": [],
+        "salesItems": [
+          "2672"
+        ],
+        "posItemId": "70013",
+        "defaultSalesItemId": "2672",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Cheese-Ravioli-with-",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Includes: A pan of cheese-filled ravioli topped with meat sauce",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=CheeseRavFamily.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1675",
+        "name": "Cheese Ravioli with Meat Sauce",
+        "unitPrice": 151.69,
+        "salesItemId": "2679",
+        "modifierGroups": [],
+        "salesItems": [
+          "2679"
+        ],
+        "posItemId": "70060",
+        "defaultSalesItemId": "2679",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Chicken-and-Shrimp-C",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Includes: A pan of sautéed seasoned chicken, shrimp and spaghetti tossed in a creamy sauce with bacon and roasted red peppers.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickShrimpFam.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1673",
+        "name": "Chicken and Shrimp Carbonara",
+        "unitPrice": 99.89,
+        "salesItemId": "2677",
+        "modifierGroups": [],
+        "salesItems": [
+          "2677"
+        ],
+        "posItemId": "70027",
+        "defaultSalesItemId": "2677",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Chicken-Scampi-Serve",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Includes: A pan of bell peppers and red onions sautéed with chicken tenderloins in a creamy scampi sauce. Served over angel hair pasta.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenScampiFam.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1672",
+        "name": "Chicken Scampi (Serves 4-6)",
+        "unitPrice": 91.09,
+        "salesItemId": "2676",
+        "modifierGroups": [],
+        "salesItems": [
+          "2676"
+        ],
+        "posItemId": "70026",
+        "defaultSalesItemId": "2676",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      },
+      {
+        "isAvailable": true,
+        "routeName": "Shrimp-Scampi",
+        "calories": null,
+        "canBeOrderedAsIs": true,
+        "modifiers": [],
+        "description": "Includes: A pan of shrimp sautéed in a garlic sauce, tossed with asparagus, tomatoes, and angel hair pasta.",
+        "imageUrl": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpScampFam.png&companyCode=OGKA001&designId=1",
+        "menuItemId": "1674",
+        "name": "Shrimp Scampi",
+        "unitPrice": 81.69,
+        "salesItemId": "2678",
+        "modifierGroups": [],
+        "salesItems": [
+          "2678"
+        ],
+        "posItemId": "70029",
+        "defaultSalesItemId": "2678",
+        "priceRange": null,
+        "calorieRange": null,
+        "orderingMode": 0,
+        "daysOfWeekAvailable": null
+      }
+    ]
+  }
+]

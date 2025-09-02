@@ -3,23 +3,54 @@ import os
 import requests
 import threading
 import uuid
+import argparse
+import hashlib
 from datetime import datetime
-from urllib.parse import urlparse, unquote
+from urllib.parse import urlparse, unquote, parse_qs
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 import piexif
 import piexif.helper
 
 # --- 配置信息 ---
-JSON_FILE_PATH = 'raw/ue-menu-data.json'
-IMAGE_DOWNLOAD_DIR = 'public/static/image/upload/'
-NEW_IMAGE_URL_PREFIX = '/static/image/upload/'
+# 1. 移除全局配置，这些将通过CLI传入
+# IMAGE_DOWNLOAD_DIR = 'public/static/image/upload/'
+# NEW_IMAGE_URL_PREFIX = '/static/image/upload/'
 MAX_WORKERS = 10
 MAX_FILE_SIZE_KB = 300
 MIN_WEBP_QUALITY = 65
 INITIAL_WEBP_QUALITY = 85
 
 print_lock = threading.Lock()
+
+def generate_unique_filename_base(url: str) -> str:
+    """
+    根据URL智能生成一个唯一的文件名基础部分（不含扩展名）。
+    优先级: URL查询参数 'ContentFile' > URL路径中的文件名 > 完整URL的MD5哈希值。
+    """
+    try:
+        parsed_url = urlparse(url)
+
+        query_params = parse_qs(parsed_url.query)
+        if 'ContentFile' in query_params and query_params['ContentFile'][0]:
+            filename = query_params['ContentFile'][0]
+            return os.path.splitext(os.path.basename(filename))[0]
+
+        decoded_path = unquote(parsed_url.path)
+        basename = os.path.basename(decoded_path)
+        if basename and '.' in basename and basename.lower() != 'content':
+             return os.path.splitext(basename)[0]
+
+        url_bytes = url.encode('utf-8')
+        md5_hash = hashlib.md5(url_bytes).hexdigest()
+        with print_lock:
+            print(f"  [提示] ⓘ 未找到明确文件名，使用哈希值 {md5_hash[:12]}... 作为文件名")
+        return md5_hash
+
+    except Exception:
+        url_bytes = url.encode('utf-8')
+        return hashlib.md5(url_bytes).hexdigest()
+
 
 def find_all_items_recursive(data):
     """通过递归遍历，查找并返回JSON结构中所有在'items'列表里的项目。"""
@@ -41,9 +72,13 @@ def get_image_dimensions(image_path):
     try:
         with Image.open(image_path) as img:
             return img.size
+    except (UnidentifiedImageError, FileNotFoundError):
+        with print_lock:
+            print(f"  [警告] ✗ 无法读取图片尺寸 (文件可能无效或不存在): {os.path.basename(image_path)}")
+        return (0, 0)
     except Exception as e:
         with print_lock:
-            print(f"  [警告] ✗ 无法读取图片尺寸: {os.path.basename(image_path)} (错误: {e})")
+            print(f"  [警告] ✗ 读取图片尺寸时发生未知错误: {os.path.basename(image_path)} (错误: {e})")
         return (0, 0)
 
 def finalize_and_compress_image(image_path):
@@ -73,17 +108,14 @@ def finalize_and_compress_image(image_path):
             with Image.open(image_path) as img:
                 img = img.convert('RGB')
                 current_quality = INITIAL_WEBP_QUALITY
-                # 确保保存一次，以便 getsize 能获取最新大小
                 temp_path = image_path + ".tmp"
                 while os.path.getsize(image_path) > max_size_bytes and current_quality > MIN_WEBP_QUALITY:
                     current_quality -= 5
                     with print_lock:
                         print(f"  [压缩中] -> {os.path.basename(image_path)} 质量调整为 {current_quality}")
                     img.save(temp_path, 'webp', quality=current_quality)
-                    # 只有在成功保存后才替换原文件
                     if os.path.exists(temp_path):
                         os.replace(temp_path, image_path)
-
 
         final_size_kb = os.path.getsize(image_path) / 1024
         if final_size_kb > MAX_FILE_SIZE_KB:
@@ -93,12 +125,19 @@ def finalize_and_compress_image(image_path):
             with print_lock:
                 print(f"  [成功] ✓ {os.path.basename(image_path)} 的最终大小: {final_size_kb:.1f}KB")
         return True
+    except UnidentifiedImageError:
+        with print_lock:
+            print(f"  [失败] ✗ 图片最终处理失败: {os.path.basename(image_path)} 不是一个有效的图片文件。")
+        if os.path.exists(image_path):
+            os.remove(image_path)
+        return False
     except Exception as e:
         with print_lock:
             print(f"  [失败] ✗ 图片最终处理失败: {os.path.basename(image_path)}: {e}")
         return False
 
-def process_item(item):
+# 2. 将目录和前缀作为参数传入
+def process_item(item, image_download_dir, new_image_url_prefix):
     """
     处理单个菜品项：确定源URL，下载、转换、压缩并获取尺寸。
     如果最终的WebP图片已存在，则跳过大部分处理步骤。
@@ -123,8 +162,8 @@ def process_item(item):
 
     if not isinstance(source_url, str) or not source_url.startswith(('http://', 'https://')):
         with print_lock:
-            # 检查是否已经是处理过的本地路径
-            if 'image_url' in item and item['image_url'].startswith(NEW_IMAGE_URL_PREFIX):
+            # 使用传入的参数进行检查
+            if 'image_url' in item and item['image_url'].startswith(new_image_url_prefix):
                  print(f"  [跳过] ✓ '{item_title}' 已是处理过的本地路径。")
             else:
                  print(f"  [跳过] ✓ '{item_title}' 的图片URL [{source_url}] 无效。")
@@ -132,22 +171,21 @@ def process_item(item):
 
     is_first_run = source_key is not None and 'raw_image_url' not in item
 
-    parsed_path = urlparse(source_url).path
-    decoded_path = unquote(parsed_path)
-    original_filename = os.path.basename(decoded_path)
-    original_filename_base, _ = os.path.splitext(original_filename)
+    filename_base = generate_unique_filename_base(source_url)
 
-    webp_filename = f"{original_filename_base}.webp"
-    local_image_path = os.path.join(IMAGE_DOWNLOAD_DIR, original_filename)
-    webp_local_path = os.path.join(IMAGE_DOWNLOAD_DIR, webp_filename)
-    final_url = f"{NEW_IMAGE_URL_PREFIX}{webp_filename}"
+    original_file_hash = hashlib.md5(source_url.encode('utf-8')).hexdigest()
+    # 使用传入的参数构建路径
+    local_image_path = os.path.join(image_download_dir, f"{original_file_hash}.tmp")
 
-    # --- 新增的核心逻辑 ---
-    # 如果 WebP 文件已经存在，直接跳过下载和转换过程
+    webp_filename = f"{filename_base}.webp"
+    # 使用传入的参数构建路径
+    webp_local_path = os.path.join(image_download_dir, webp_filename)
+    # 使用传入的参数构建URL
+    final_url = f"{new_image_url_prefix}{webp_filename}"
+
     if os.path.exists(webp_local_path):
         with print_lock:
             print(f"  [已存在] ✓ {webp_filename} 本地已存在，跳过下载和转换。")
-        # 仍然需要获取尺寸并返回成功信息
         width, height = get_image_dimensions(webp_local_path)
         if width == 0 or height == 0:
             return {'status': 'error', 'reason': f'无法获取已存在文件 {webp_filename} 的尺寸'}
@@ -161,29 +199,38 @@ def process_item(item):
             'width': width,
             'height': height
         }
-    # --- 结束新增逻辑 ---
-
-    if not os.path.exists(local_image_path):
-        try:
-            with print_lock:
-                print(f"  [下载中] -> {original_filename}")
-            response = requests.get(source_url, stream=True, timeout=20)
-            response.raise_for_status()
-            with open(local_image_path, 'wb') as f:
-                for chunk in response.iter_content(chunk_size=8192):
-                    f.write(chunk)
-        except requests.exceptions.RequestException as e:
-            # 下载失败时，最好清理掉可能产生的空文件或不完整文件
-            if os.path.exists(local_image_path):
-                os.remove(local_image_path)
-            return {'status': 'error', 'reason': f'下载失败: {e}'}
 
     try:
         with print_lock:
-            print(f"  [转换中] -> {original_filename} to WebP")
+            print(f"  [下载中] -> {source_url}")
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+        response = requests.get(source_url, stream=True, timeout=20, headers=headers)
+        response.raise_for_status()
+
+        content_type = response.headers.get('content-type', '').lower()
+        if not content_type.startswith('image/'):
+            return {'status': 'error', 'reason': f"下载内容不是图片 (Content-Type: {content_type})"}
+
+        with open(local_image_path, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=812):
+                f.write(chunk)
+    except requests.exceptions.RequestException as e:
+        if os.path.exists(local_image_path):
+            os.remove(local_image_path)
+        return {'status': 'error', 'reason': f'下载失败: {e}'}
+
+    try:
+        with print_lock:
+            print(f"  [转换中] -> {os.path.basename(local_image_path)} to {webp_filename}")
         with Image.open(local_image_path) as img:
             img.convert('RGB').save(webp_local_path, 'webp', quality=INITIAL_WEBP_QUALITY)
+    except UnidentifiedImageError:
+        if os.path.exists(local_image_path):
+            os.remove(local_image_path)
+        return {'status': 'error', 'reason': f'转换失败: 下载的文件不是有效的图片格式'}
     except Exception as e:
+        if os.path.exists(local_image_path):
+            os.remove(local_image_path)
         return {'status': 'error', 'reason': f'转换失败: {e}'}
 
     if not finalize_and_compress_image(webp_local_path):
@@ -192,6 +239,13 @@ def process_item(item):
     width, height = get_image_dimensions(webp_local_path)
     if width == 0 or height == 0:
         return {'status': 'error', 'reason': '无法获取尺寸'}
+
+    if os.path.exists(local_image_path):
+        try:
+            os.remove(local_image_path)
+        except OSError as e:
+            with print_lock:
+                print(f"  [警告] ✗ 无法删除临时文件 {os.path.basename(local_image_path)}: {e}")
 
     return {
         'status': 'success',
@@ -203,16 +257,18 @@ def process_item(item):
         'height': height
     }
 
-def update_and_run_downloader():
+# 2. 将目录和前缀作为参数传入
+def update_and_run_downloader(json_file_path, image_download_dir, new_image_url_prefix):
     """主函数，读取JSON，递归查找所有项目，并发处理图片，并统一图片URL字段。"""
-    os.makedirs(IMAGE_DOWNLOAD_DIR, exist_ok=True)
-    print(f"图片目录 '{IMAGE_DOWNLOAD_DIR}' 已就绪。")
+    # 使用传入的参数创建目录
+    os.makedirs(image_download_dir, exist_ok=True)
+    print(f"图片目录 '{image_download_dir}' 已就绪。")
 
     try:
-        with open(JSON_FILE_PATH, 'r', encoding='utf-8') as f:
+        with open(json_file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError) as e:
-        print(f"错误: 读取JSON文件 '{JSON_FILE_PATH}' 失败: {e}")
+        print(f"错误: 读取JSON文件 '{json_file_path}' 失败: {e}")
         return
 
     items_to_process = list(find_all_items_recursive(data))
@@ -227,7 +283,11 @@ def update_and_run_downloader():
     skipped_count = 0
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        future_to_item = {executor.submit(process_item, item): item for item in items_to_process}
+        # 将参数传递给 process_item
+        future_to_item = {
+            executor.submit(process_item, item, image_download_dir, new_image_url_prefix): item
+            for item in items_to_process
+        }
         for future in as_completed(future_to_item):
             try:
                 result = future.result()
@@ -263,7 +323,7 @@ def update_and_run_downloader():
                 del item['imageUrl']
 
         try:
-            with open(JSON_FILE_PATH, 'w', encoding='utf-8') as f:
+            with open(json_file_path, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
             print("JSON文件更新成功！")
         except Exception as e:
@@ -279,4 +339,58 @@ def update_and_run_downloader():
     print("------------------\n")
 
 if __name__ == '__main__':
-    update_and_run_downloader()
+    parser = argparse.ArgumentParser(
+        description="一个用于下载、转换和优化菜单图片，并更新JSON数据的脚本。",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    )
+
+    # 必要的位置参数
+    parser.add_argument('json_file', type=str, help='需要处理的JSON文件的路径。')
+
+    # 可选参数
+    parser.add_argument(
+        '--output-dir',
+        type=str,
+        default='public/static/image/upload/',
+        help='本地图片存储的目录路径。'
+    )
+    # 1. 修改这里：移除默认值，让我们可以判断用户是否真的输入了这个参数
+    parser.add_argument(
+        '--url-prefix',
+        type=str,
+        help='写入JSON文件中的图片URL前缀。如果未提供，将根据output-dir自动推断。'
+    )
+
+    args = parser.parse_args()
+
+    # --- 2. 新增的智能逻辑 ---
+    final_output_dir = args.output_dir
+    final_url_prefix = args.url_prefix
+
+    # 如果用户没有手动指定 url-prefix
+    if final_url_prefix is None:
+        # 我们就根据 output-dir 自动生成一个
+        # 简单规则：替换路径分隔符为'/'，并确保前后都有'/'
+        # 同时，我们假设 'public' 目录是网站根目录，所以把它从URL中去掉
+
+        # 将所有反斜杠'\' 替换为 正斜杠'/'
+        path_as_url = final_output_dir.replace('\\', '/')
+
+        # 如果路径以 'public/' 开头，就去掉它
+        if path_as_url.startswith('public/'):
+            path_as_url = path_as_url[len('public/'):]
+
+        # 确保路径以'/'开头
+        if not path_as_url.startswith('/'):
+            path_as_url = '/' + path_as_url
+
+        # 确保路径以'/'结尾
+        if not path_as_url.endswith('/'):
+            path_as_url += '/'
+
+        final_url_prefix = path_as_url
+        print(f"[提示] ⓘ 未提供 --url-prefix，已根据输出目录自动生成: {final_url_prefix}")
+
+
+    # 将最终确定好的参数传递给主函数
+    update_and_run_downloader(args.json_file, final_output_dir, final_url_prefix)

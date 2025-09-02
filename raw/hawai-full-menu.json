@@ -1,0 +1,1207 @@
+{
+  "Appetizers": {
+    "items": [
+      {
+        "title": "Fried Mozzarella",
+        "price": 13.29,
+        "calories": "800",
+        "description": "Fried mozzarella cheese with homemade marinara sauce. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FriedMozzarella_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FriedMozzarella_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Stuffed Ziti Fritta",
+        "price": 13.89,
+        "calories": "500",
+        "description": "Crispy fried ziti filled with five melted Italian cheeses. Served with homemade marinara and alfredo. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=StuffedZitiFritta_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/StuffedZitiFritta_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Dipping Sauces Includes Breadsticks",
+        "price": 8.49,
+        "calories": "90 cal. – 440 cal.",
+        "description": "Homemade marinara, alfredo or five cheese marinara. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=DippingSauces_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/DippingSauces_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Calamari",
+        "price": 17.99,
+        "calories": "670",
+        "description": "Hand-breaded and fried to order. Served with marinara and spicy ranch. 670 cal, marinara 35 cal, ranch 240 cal  17.69 ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Calamari_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Calamari_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Meatball Parmigiana",
+        "price": 16.99,
+        "calories": "N/A",
+        "description": "Five hearty meatballs baked in homemade marinara, topped with melted Italian cheeses and toasted breadcrumbs. 1040 cal  16.69",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=MeatballsParmigiana_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/MeatballsParmigiana_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Spinach Artichoke Dip",
+        "price": 15.89,
+        "calories": "1160",
+        "description": "A blend of spinach, artichokes and cheese, served with flatbread crisps. 1160 cal  15.69",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=SpinachArtichokeDip_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/SpinachArtichokeDip_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Lasagna Fritta",
+        "price": 16.99,
+        "calories": "1130",
+        "description": "Parmesan breaded lasagna, served with homemade alfredo and meat sauce.** 1130 cal  16.69",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=LasagnaFritta_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/LasagnaFritta_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Shrimp Fritto Misto",
+        "price": 19.29,
+        "calories": "1280",
+        "description": "Over a half-pound of shrimp mixed with onions and bell peppers, hand-breaded and lightly fried. Served with marinara and spicy ranch. 1280 cal, marinara 35 cal, ranch 240 cal  18.89  ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpFrittoMisto_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ShrimpFrittoMisto_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Toasted Ravioli",
+        "price": 13.89,
+        "calories": "650",
+        "description": "Lightly fried ravioli filled with seasoned beef. Served with homemade marinara sauce. 650 cal, marinara 35 cal  13.59",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ToastedRavioli_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ToastedRavioli_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Breadsticks",
+        "price": 6.39,
+        "calories": "140",
+        "description": "An Olive Garden Favorite. Available Freshly-Baked or Bake-At-Home. Add an extra dozen or half dozen breadsticks to your online order",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=breadsticks.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/breadsticks.webp",
+        "width": 590,
+        "height": 365
+      },
+      {
+        "title": "Alfredo Dipping Sauce",
+        "price": 10.99,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=DippingSauces_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/DippingSauces_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Five Cheese Dipping Sauce",
+        "price": 7.99,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=DippingSauces_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/DippingSauces_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Marinara Sauce",
+        "price": 7.99,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=DippingSauces_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/DippingSauces_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      }
+    ]
+  },
+  "Classic Entrees": {
+    "items": [
+      {
+        "title": "Chicken Alfredo",
+        "price": 30.59,
+        "calories": "1570",
+        "description": "Creamy alfredo sauce made from scratch with ingredients like parmesan, cream, garlic and butter, served with fettuccine pasta and topped with sliced grilled chicken.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickenAlfredo_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Chicken and Shrimp Carbonara",
+        "price": 32.99,
+        "calories": "1370",
+        "description": "Chicken and shrimp sautéed in a creamy sauce with bacon and roasted red peppers, over spaghetti. 1370 cal  32.29",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenShrimpCarbonara_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickenShrimpCarbonara_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Shrimp Carbonara",
+        "price": 32.99,
+        "calories": "N/A",
+        "description": "Shrimp sautéed in a creamy sauce with bacon and roasted red peppers, over spaghetti. 1200 cal  32.29",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpCarbonara_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ShrimpCarbonara_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Chicken Parmigiana",
+        "price": 29.59,
+        "calories": "1370",
+        "description": "A classic with our homemade marinara and a side of spaghetti. 1020 cal  29.19",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenParmigiana_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickenParmigiana_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Tour Of Italy",
+        "price": 31.89,
+        "calories": "1550",
+        "description": "Chicken Parmigiana, Lasagna Classico and our signature Fettuccine Alfredo.**  1550 cal  31.29",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=TourOfItaly_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/TourOfItaly_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Shrimp Alfredo",
+        "price": 31.69,
+        "calories": "1470",
+        "description": "Creamy alfredo sauce made from scratch with ingredients like parmesan, cream, garlic and butter, tossed with fettuccine and sautéed shrimp",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ShrimpAlfredo_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Ravioli Carbonara",
+        "price": 25.29,
+        "calories": "1390",
+        "description": "Cheese ravioli baked in a creamy sauce with bacon, topped with a blend of Italian cheeses. 1390 cal  24.79",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=RavioliCarbonara_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/RavioliCarbonara_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Lasagna Classico",
+        "price": 27.49,
+        "calories": "940",
+        "description": "Layers of pasta, parmesan, mozzarella, pecorino romano and homemade meat sauce, prepared fresh daily.** 940 cal  26.99",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=LasagnaClassico_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/LasagnaClassico_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Spaghetti & Meatballs",
+        "price": 20.29,
+        "calories": "970",
+        "description": "Spaghetti and meatballs with your choice of marinara or meat sauce. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Spaghetti_Meatballs_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Spaghetti_Meatballs_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Spaghetti with Meat Sauce",
+        "price": 20.29,
+        "calories": "640",
+        "description": "Spaghetti and meatballs with your choice of marinara or meat sauce",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=SpaghettiWithMeatSauce_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/SpaghettiWithMeatSauce_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Spaghetti with Marinara",
+        "price": 20.29,
+        "calories": "490",
+        "description": "Our homemade marinara served over spaghetti.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=SpaghettiWithMarinara_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/SpaghettiWithMarinara_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Fettuccine Alfredo",
+        "price": 23.39,
+        "calories": "1310",
+        "description": "Our signature alfredo sauce made fresh in-house every morning with ingredients like parmesan, cream, garlic and butter, served over fettuccine.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FettuccineAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FettuccineAlfredo_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Chicken Tortelloni Alfredo ",
+        "price": 31.49,
+        "calories": "1980",
+        "description": "Asiago cheese-filled tortelloni baked in alfredo with a blend of Italian cheeses and toasted breadcrumbs, topped with sliced grilled chicken. 1980 cal  30.89",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenTortelloniAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickenTortelloniAlfredo_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Stuffed Chicken Marsala",
+        "price": 29.49,
+        "calories": "N/A",
+        "description": "Grilled chicken breast stuffed with Italian cheeses and sun-dried tomatoes, topped with a creamy marsala mushroom sauce. Served with mashed potatoes. 1090 cal  29.49",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=StuffedChickenMarsala_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/StuffedChickenMarsala_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Steak Gorganzola Alfredo",
+        "price": 30.99,
+        "calories": "N/A",
+        "description": "Grilled sirloin tips (6 oz) over fettuccine alfredo, tossed with gorgonzola blue cheese and spinach. Topped with sun-dried tomatoes and a balsamic drizzle. Steak prepared medium 1580 cal  30.99",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=SteakGorgonzolaAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/SteakGorgonzolaAlfredo_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Shrimp Scampi",
+        "price": 27.89,
+        "calories": "490",
+        "description": "Lighter take on an Italian classic! Shrimp sautéed in a garlic sauce, tossed with asparagus, tomatoes and angel hair. 490 cal  27.39",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpScampi_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ShrimpScampi_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Seafood Alfredo",
+        "price": 32.19,
+        "calories": "1450",
+        "description": "Fettuccine alfredo tossed with sautéed shrimp and scallops. 1450 cal  31.69",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=SeafoodAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/SeafoodAlfredo_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Five Cheese Ziti al Forno",
+        "price": 25.19,
+        "calories": "1170",
+        "description": "A baked blend of Italian cheeses, pasta and our signature five cheese marinara.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FiveCheeseZitiAlForno_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FiveCheeseZitiAlForno_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Cheese Ravioli",
+        "price": 23.39,
+        "calories": "780 cal. – 860 cal.",
+        "description": "Topped with melted mozzarella and your choice of homemade marinara (V) or meat sauce.** with marinara 750 cal, with meat sauce 860 cal  22.89",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=CheeseRavioli_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/CheeseRavioli_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Chicken Scampi",
+        "price": 29.89,
+        "calories": "1050",
+        "description": "Chicken sautéed with fresh bell peppers and red onions in a creamy scampi sauce. Served over angel hair.  1050 cal  29.39 ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenScampi_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickenScampi_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Eggplant Parmigiana",
+        "price": 25.49,
+        "calories": "1070",
+        "description": "Hand-breaded eggplant, lightly fried to order, topped with melted mozzarella and homemade marinara. Served with a side of spaghetti. 1070 cal  24.99",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=EggplantParmigiana_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/EggplantParmigiana_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Grilled Chicken Margarita",
+        "price": 29.09,
+        "calories": "N/A",
+        "description": "Topped with freshly chopped tomatoes, mozzarella, basil pesto and lemon garlic sauce. Served with parmesan garlic broccoli. 650 cal  28.49",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=GrilledChickenMargarita_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/GrilledChickenMargarita_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Herb-Grilled Salmon",
+        "price": 31.19,
+        "calories": "610",
+        "description": "Grilled filet topped with garlic herb butter. Served with steamed parmesan garlic broccoli. 610 cal  30.59",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=HerbGrilledSalmon_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/HerbGrilledSalmon_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Create Your Own Pasta",
+        "price": 20.29,
+        "calories": "530 cal. - 1,300 cal.",
+        "description": "Create a new Italian classic with pasta your way, handcrafted from our Italian kitchen!",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=CreateYourOwnPasta.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/CreateYourOwnPasta.webp",
+        "width": 528,
+        "height": 396
+      }
+    ]
+  },
+  "Amazing Alfredos": {
+    "items": [
+      {
+        "title": "Chicken Alfredo",
+        "price": 30.59,
+        "calories": "1570",
+        "description": "Creamy alfredo sauce made from scratch with ingredients like parmesan, cream, garlic and butter, served with fettuccine pasta and topped with sliced grilled chicken.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickenAlfredo_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Shrimp Alfredo",
+        "price": 31.69,
+        "calories": "1470",
+        "description": "Creamy alfredo sauce made from scratch with ingredients like parmesan, cream, garlic and butter, tossed with fettuccine and sautéed shrimp",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ShrimpAlfredo_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Fettuccine Alfredo",
+        "price": 23.39,
+        "calories": "1310",
+        "description": "Our signature alfredo sauce made fresh in-house every morning with ingredients like parmesan, cream, garlic and butter, served over fettuccine.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FettuccineAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FettuccineAlfredo_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Chicken Tortelloni Alfredo ",
+        "price": 31.49,
+        "calories": "1980",
+        "description": "Asiago cheese-filled tortelloni baked in alfredo with a blend of Italian cheeses and toasted breadcrumbs, topped with sliced grilled chicken. 1980 cal  30.89",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenTortelloniAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickenTortelloniAlfredo_Entrees.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Seafood Alfredo",
+        "price": 32.19,
+        "calories": "1450",
+        "description": "Fettuccine alfredo tossed with sautéed shrimp and scallops. 1450 cal  31.69",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=SeafoodAlfredo_Entrees.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/SeafoodAlfredo_Entrees.webp",
+        "width": 528,
+        "height": 396
+      }
+    ]
+  },
+  "Soups, Salad & Breadsticks": {
+    "items": [
+      {
+        "title": "Breadsticks",
+        "price": 6.39,
+        "calories": "140",
+        "description": "An Olive Garden Favorite. Available Freshly-Baked or Bake-At-Home. Add an extra dozen or half dozen breadsticks to your online order",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=breadsticks.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/breadsticks.webp",
+        "width": 590,
+        "height": 365
+      },
+      {
+        "title": "Dipping Sauces Includes Breadsticks",
+        "price": 8.49,
+        "calories": "N/A",
+        "description": "Homemade marinara, alfredo or five cheese marinara. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=DippingSauces_Appetizers.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/DippingSauces_Appetizers.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Homemade Soup",
+        "price": 9.29,
+        "calories": "N/A",
+        "description": "Choice of homemade soups:",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=HomemadeSoups_SSB.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/HomemadeSoups_SSB.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Our Famous House Salad",
+        "price": 9.29,
+        "calories": "290",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Garden-Salad.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Garden-Salad.webp",
+        "width": 5000,
+        "height": 3093
+      },
+      {
+        "title": "Soup AND Salad AND Breadsticks ",
+        "price": 19.29,
+        "calories": "400 cal. – 520 cal.",
+        "description": "Our famous house salad (150 cal per serving), breadsticks (V) (140 cal each)  and your choice of homemade soup.  18.89   Lunch Special  15.19  (11-3 p.m. Mon - Fri)",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=SoupsSaladsAndBreadsticks_SSB.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/SoupsSaladsAndBreadsticks_SSB.webp",
+        "width": 528,
+        "height": 396
+      }
+    ]
+  },
+  "Create Your Own Pasta": {
+    "items": [
+      {
+        "title": "Create Your Own Pasta",
+        "price": 20.29,
+        "calories": "530 cal. - 1,300 cal.",
+        "description": "Create a new Italian classic with pasta your way, handcrafted from our Italian kitchen!",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=CreateYourOwnPasta.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/CreateYourOwnPasta.webp",
+        "width": 528,
+        "height": 396
+      }
+    ]
+  },
+  "Lunch-Sized Favorites": {
+    "items": [
+      {
+        "title": "Lasagna Classico",
+        "price": 17.49,
+        "calories": "500",
+        "description": "Layers of pasta, Italian cheeses and our homemade meat sauce.** 500 cal",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=LasagnaClassico_Lunch.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/LasagnaClassico_Lunch.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Chicken Parmigiana",
+        "price": 17.49,
+        "calories": "630",
+        "description": "Served with a side of spaghetti. 630 cal",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenParmigiana_Lunch.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickenParmigiana_Lunch.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Fettuccine Alfredo",
+        "price": 16.49,
+        "calories": "650",
+        "description": "(V) Our signature alfredo made fresh in-house every morning, served over fettuccine. 650 cal Add Broccoli 130 cal  4.09",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FettuccineAlfredo_Lunch.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FettuccineAlfredo_Lunch.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Shrimp Scampi",
+        "price": 17.49,
+        "calories": "460",
+        "description": " Lighter take on an Italian classic! Shrimp sautéed in a garlic sauce, tossed with asparagus, tomatoes and angel hair. 460 cal",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpScampi_Lunch.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ShrimpScampi_Lunch.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Spaghetti",
+        "price": 16.49,
+        "calories": "360",
+        "description": "With marinara (V) or with meat sauce.** marinara 290 cal, meat sauce 360 cal",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Spaghetti_Lunch.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Spaghetti_Lunch.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Eggplant Parmigiana",
+        "price": 16.49,
+        "calories": "660",
+        "description": "(V) Hand-breaded, lightly fried and served with a side of spaghetti. 660 cal",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=EggplantParmigiana_Lunch.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/EggplantParmigiana_Lunch.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Spaghetti & Meatballs",
+        "price": 17.49,
+        "calories": "680",
+        "description": "(2) With meat sauce.** 680 cal ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Spaghetti_Meatballs_Lunch.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Spaghetti_Meatballs_Lunch.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Cheese Ravioli",
+        "price": 16.49,
+        "calories": "450 cal. – 500 cal.",
+        "description": "Topped with melted mozzarella and your choice of homemade marinara (V) or meat sauce.** marinara 440 cal, meat sauce 500 cal",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=CheeseRavioli_Lunch.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/CheeseRavioli_Lunch.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Five Cheese Ziti al Forno",
+        "price": 16.49,
+        "calories": "630",
+        "description": " Oven baked blend of Italian cheeses, pasta and our signature homemade five cheese marinara. 630 cal",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FiveCheeseZitiAlForno_Lunch.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FiveCheeseZitiAlForno_Lunch.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Weekday Lunch Special: Soup AND Salad AND Breadsticks",
+        "price": 15.49,
+        "calories": "400 cal. – 520 cal.",
+        "description": "Your choice of homemade soup served with famous house salad and hot breadsticks (V)",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=SoupsSaladsAndBreadsticks_SSB.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/SoupsSaladsAndBreadsticks_SSB.webp",
+        "width": 528,
+        "height": 396
+      }
+    ]
+  },
+  "Desserts": {
+    "items": [
+      {
+        "title": "Chocolate Lasagna",
+        "price": 12.29,
+        "calories": "980",
+        "description": "Decadent layers of chocolate cake, creamy chocolate mousse, and a delicate layer of crushed wafers. Topped with chocolate sauce. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChocolateLasagna_Desserts.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChocolateLasagna_Desserts.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Black Tie Mousse Cake",
+        "price": 12.09,
+        "calories": "750",
+        "description": "Chocolate cake, dark chocolate cheesecake and creamy custard with icing. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=BlackTieMousseCake_Desserts.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/BlackTieMousseCake_Desserts.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Tiramisu",
+        "price": 12.09,
+        "calories": "470",
+        "description": "Creamy custard and sweet cocoa over espresso-soaked ladyfingers. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Tiramisu_Desserts.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Tiramisu_Desserts.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Strawberry Cream Cake",
+        "price": 12.29,
+        "calories": "540",
+        "description": "Vanilla sponge cake layered with sweet vanilla cream and topped with fresh strawberries. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=StrawberryCreamCake_Desserts.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/StrawberryCreamCake_Desserts.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Warm Italian Doughnuts",
+        "price": 12.09,
+        "calories": "810",
+        "description": "Known in Italy as Zeppoli, our doughnuts are made to order and tossed in vanilla sugar. Served with raspberry or chocolate sauce. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=WarmItalianDonuts_Desserts.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/WarmItalianDonuts_Desserts.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Sicilian Cheesecake with Strawberry Topping (V)",
+        "price": 12.09,
+        "calories": "700",
+        "description": "Ricotta cheesecake with a shortbread cookie crust, topped with fresh strawberries. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=SicilianCheesecake_Desserts.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/SicilianCheesecake_Desserts.webp",
+        "width": 528,
+        "height": 396
+      }
+    ]
+  },
+  "Sides & Sauces": {
+    "items": [
+      {
+        "title": "Side of Meatballs",
+        "price": 6.49,
+        "calories": "480",
+        "description": "Served with homemade marinara. 520 cal  6.49",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Meatballs_Sides.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Meatballs_Sides.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Side of Grilled Chicken",
+        "price": 6.79,
+        "calories": "130",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Grilled-Chicken-Side.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Grilled-Chicken-Side.webp",
+        "width": 1180,
+        "height": 730
+      },
+      {
+        "title": "Side of Italian Sausage",
+        "price": 6.59,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Italian-Sausage-Side.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Italian-Sausage-Side.webp",
+        "width": 1180,
+        "height": 730
+      },
+      {
+        "title": "Side of Mashed Potatoes",
+        "price": 5.39,
+        "calories": "N/A",
+        "description": "Creamy mashed potatoes made with milk and butter. 200 cal  5.39",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=MashedPotatoes_Sides.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/MashedPotatoes_Sides.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Side of Broccoli",
+        "price": 5.39,
+        "calories": "150",
+        "description": " (V) Steamed and seasoned with parmesan cheese and garlic. 150 cal  5.39",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Broccoli_Sides.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Broccoli_Sides.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Large Five Cheese Marinara Sauce",
+        "price": 11.89,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=d-Five-Cheese-Marinara-Sauce-dpv.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/d-Five-Cheese-Marinara-Sauce-dpv.webp",
+        "width": 590,
+        "height": 365
+      },
+      {
+        "title": "Large Alfredo Sauce",
+        "price": 13.09,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=d-Pint-Alfredo-Sauce-dpv.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/d-Pint-Alfredo-Sauce-dpv.webp",
+        "width": 590,
+        "height": 365
+      },
+      {
+        "title": "Large Marinara Sauce",
+        "price": 11.89,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=d-Pint-Marinara-Sauce-dpv.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/d-Pint-Marinara-Sauce-dpv.webp",
+        "width": 590,
+        "height": 365
+      },
+      {
+        "title": "Large Meat Sauce",
+        "price": 12.19,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=d-Pint-Meat-Sauce-dpv.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/d-Pint-Meat-Sauce-dpv.webp",
+        "width": 590,
+        "height": 365
+      }
+    ]
+  },
+  "Beverages": {
+    "items": [
+      {
+        "title": "Coke",
+        "price": 4.49,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FountainDrinks_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FountainDrinks_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Diet Coke",
+        "price": 4.49,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FountainDrinks_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FountainDrinks_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Coke Zero",
+        "price": 4.49,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FountainDrinks_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FountainDrinks_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Acqua Panna1L",
+        "price": 6.99,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=AcquaPanna_Wet_0760.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/AcquaPanna_Wet_0760.webp",
+        "width": 2013,
+        "height": 1436
+      },
+      {
+        "title": "Sprite",
+        "price": 4.49,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FountainDrinks_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FountainDrinks_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Dr. Pepper",
+        "price": 4.49,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FountainDrinks_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FountainDrinks_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "San Pelegrino 1L",
+        "price": 6.99,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Pellegrino_14685.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Pellegrino_14685.webp",
+        "width": 2013,
+        "height": 1436
+      },
+      {
+        "title": "Iced Tea",
+        "price": 4.29,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FreshBrewedIcedTea_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FreshBrewedIcedTea_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Peach Raspberry Iced Tea",
+        "price": 5.79,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=BelliniPeachRaspberryIcedTea_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/BelliniPeachRaspberryIcedTea_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Mango Strawberry Iced Tea",
+        "price": 5.79,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=MangoStrawberryIcedTea_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/MangoStrawberryIcedTea_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Classic Lemonade",
+        "price": 4.49,
+        "calories": "170",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ClassicLemonade_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ClassicLemonade_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Raspberry Lemonade",
+        "price": 5.79,
+        "calories": "170",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=RaspberryLemonade_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/RaspberryLemonade_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Vanilla Iced Coffee",
+        "price": 5.99,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=VanillaIcedCoffee_NonAlc copy.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/VanillaIcedCoffee_NonAlc copy.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Caramel Iced Coffee",
+        "price": 5.99,
+        "calories": "N/A",
+        "image_url": "",
+        "description": ""
+      },
+      {
+        "title": "Hot Coffee",
+        "price": 4.49,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=HotCoffee_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/HotCoffee_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Strawberry-Passion Limonata",
+        "price": 5.79,
+        "calories": "N/A",
+        "description": "Lemonade, sparkling water and strawberry-passion fruit. 180 cal  5.59",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=StrawberryPassionFruitLimonata_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/StrawberryPassionFruitLimonata_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Reg Iced Coffee",
+        "price": 5.99,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=TraditionalIcedCoffee_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/TraditionalIcedCoffee_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Hot Tea",
+        "price": 4.49,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=HotTea_NonAlc.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/HotTea_NonAlc.webp",
+        "width": 528,
+        "height": 396
+      }
+    ]
+  },
+  "Kids Menu": {
+    "items": [
+      {
+        "title": "Kids Alfredo Sauce with Choice of Pasta",
+        "price": 7.49,
+        "calories": "305 cal. – 570 cal.",
+        "description": "Pick your favorite kid-sized pasta with alfredo sauce! Add protein for an additional charge.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Kids-Meals-Fett-Alf.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Kids-Meals-Fett-Alf.webp",
+        "width": 1180,
+        "height": 730
+      },
+      {
+        "title": "Kids Pizza",
+        "price": 7.49,
+        "calories": "35 cal. – 250 cal.",
+        "description": "Enjoy a kid-sized cheese or pepperoni pizza with homemade marinara sauce and mozzarella cheese. Includes 1% low fat milk and side for children under 12. Does not include soup or salad.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Pizza_Kids.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Pizza_Kids.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Kids Chicken Fingers",
+        "price": 7.49,
+        "calories": "35 cal. – 250 cal.",
+        "description": "Lightly breaded chicken tenders Includes 1% low fat milk and side for children under 12. Does not include soup or salad. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenFingers_Kids.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickenFingers_Kids.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Kids Macaroni & Cheese",
+        "price": 7.49,
+        "calories": "35 cal. – 250 cal.",
+        "description": "Kid-sized pasta shells in a creamy cheese sauce. Includes 1% low fat milk and side for children under 12. Does not include soup or salad. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Macaroni_Cheese_Kids.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Macaroni_Cheese_Kids.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Kids Meat Sauce with Choice of Pasta",
+        "price": 7.49,
+        "calories": "305 cal. – 570 cal.",
+        "description": "Pick your favorite kid-sized pasta with meat sauce!** Add protein for an additional charge. Includes 1% low fat milk and side for children under 12. **Our meat sauce is made with pan-seared beef and Italian sausage. Does not include soup or salad.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Kids-Meals-Spag-Meatsauce.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Kids-Meals-Spag-Meatsauce.webp",
+        "width": 1180,
+        "height": 730
+      },
+      {
+        "title": "Kids Tomato Sauce with Choice of Pasta",
+        "price": 7.49,
+        "calories": "305 cal. – 570 cal.",
+        "description": "Pick your favorite kid-sized pasta with tomato sauce! Add protein for an additional charge. Includes 1% low fat milk and side for children under 12. Does not include soup or salad. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Kids-Meals-Spag-Marinara.jpg&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Kids-Meals-Spag-Marinara.webp",
+        "width": 1180,
+        "height": 730
+      },
+      {
+        "title": "Kids Five Cheese Marinara with Choice of Pasta",
+        "price": 7.49,
+        "calories": "305 cal. – 570 cal.",
+        "description": "Pick your favorite kid-sized pasta with five cheese marinara! Add protein for an additional charge. Includes 1% low fat milk and side for children under 12. Does not include soup or salad. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=d-kids-five-cheese-marinara-with-pasta-.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/d-kids-five-cheese-marinara-with-pasta-.webp",
+        "width": 590,
+        "height": 365
+      },
+      {
+        "title": "Kids Cheese Ravioli",
+        "price": 7.49,
+        "calories": "35 cal. – 250 cal.",
+        "description": "Kid-sized Italian cheese-filled ravioli with tomato sauce. Includes 1% low fat milk and side for children under 12. Does not include soup or salad.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=CheeseRavioli_Kids.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/CheeseRavioli_Kids.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Kids Rotini with Marinara (V)",
+        "price": 7.49,
+        "calories": "260",
+        "description": "Kid-sized gluten-free rotini pasta with marinara sauce. Served with a side of grapes or broccoli.. Includes 1% low fat milk for children under 12. Does not include soup or salad.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=KidsRotiniWithMarinara_GlutenSensitive.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/KidsRotiniWithMarinara_GlutenSensitive.webp",
+        "width": 528,
+        "height": 396
+      },
+      {
+        "title": "Kids  Rotini with Meat Sauce",
+        "price": 7.49,
+        "calories": "N/A",
+        "description": "Kid-sized gluten-free rotini pasta with meat sauce.** Served with a side of grapes or broccoli. Includes 1% low fat milk for children under 12. *Our meat sauce is made with pan-seared beef and Italian sausage. Does not include soup or salad. ",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=Kids-Meals-Rotini-Meatsauce.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/Kids-Meals-Rotini-Meatsauce.webp",
+        "width": 1180,
+        "height": 730
+      }
+    ]
+  },
+  "Catering Family Bundles": {
+    "items": [
+      {
+        "title": "Family-Style Lasagna Bundle (Serves 4-6)",
+        "price": 95.59,
+        "calories": "3420",
+        "description": "Bring home our Family-Style Lasagna Bundle for dinner tonight, serving 4-6 people. Your bundle features Lasagna Classico**, our Famous House Salad, and a dozen breadsticks. 6,700 cal. Please allow 4 hours when ordering this combination",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=LasagnaFamily.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/LasagnaFamily.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Large Family-Style Lasagna Bundle (Serves up to 12",
+        "price": 151.69,
+        "calories": "N/A",
+        "description": "Bring home our Family-Style Lasagna Bundle for dinner tonight, serving up to 12 people. Your bundle features Lasagna Classico**, 2 of our Jumbo Famous House Salads, and 2 dozen breadsticks. Please allow 4 hours when ordering this combination.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=LasagnaCater.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/LasagnaCater.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Our Famous Jumbo House Salad includes 12 Breadstic",
+        "price": 27.99,
+        "calories": "N/A",
+        "description": "",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=JumboSalad.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/JumboSalad.webp",
+        "width": 420,
+        "height": 276
+      }
+    ]
+  },
+  "Catering Family Size Pans (Serves 4-6)": {
+    "items": [
+      {
+        "title": "Chicken Alfredo (Serves 4-6",
+        "price": 97.89,
+        "calories": "N/A",
+        "description": "Includes: A pan of sliced grilled chicken and fettuccine pasta with our signature homemade alfredo sauce.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickAlfredoFam.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickAlfredoFam.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Chicken Parmigiana (Serves 4-6)",
+        "price": 90.59,
+        "calories": "4790",
+        "description": "Incudes: A pan of Chicken Parmigiana and Spaghetti with our homemade marinara.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickParmFam.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickParmFam.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Fettuccine Alfredo (Serves 4-6)",
+        "price": 68.59,
+        "calories": "5010",
+        "description": "Includes: A pan of fettuccine with our homemade alfredo sauce.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FettAlfredoFam.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FettAlfredoFam.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Shrimp Alfredo (Serves 4-6)",
+        "price": 102.09,
+        "calories": "5600",
+        "description": "Includes: A pan of fettuccine with our homemade alfredo sauce and sautéed shrimp.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpAlfredoFam.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ShrimpAlfredoFam.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Five Cheese Ziti al Forno (Serves 4-6)",
+        "price": 76.49,
+        "calories": "4680",
+        "description": "Includes: A pan of ziti pasta in a five cheese marinara sauce, baked with a layer of melted Italian cheeses.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=FiveCheeseFamily.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/FiveCheeseFamily.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Spaghetti with Marinara Sauce (Serves 4-6)",
+        "price": 59.19,
+        "calories": "2270",
+        "description": "Includes: A pan of spaghetti with our traditional homemade marinara sauce.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=SpaghettiMarinaraFamily.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/SpaghettiMarinaraFamily.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Spaghetti with Meat Sauce** (Serves 4-6)",
+        "price": 79.89,
+        "calories": "2840",
+        "description": "Includes: A pan of spaghetti with our traditional homemade meat sauce. **Our meat sauces are made with pan-seared beef and Italian sausage.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=SpaghettiMeatFamily.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/SpaghettiMeatFamily.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Cheese Ravioli with Marinara",
+        "price": 70.89,
+        "calories": "2990",
+        "description": "Includes: A pan of cheese-filled ravioli topped with marinara",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=CheeseRavFamily.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/CheeseRavFamily.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Cheese Ravioli with Meat Sauce",
+        "price": 151.69,
+        "calories": "N/A",
+        "description": "Includes: A pan of cheese-filled ravioli topped with meat sauce",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=CheeseRavFamily.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/CheeseRavFamily.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Chicken and Shrimp Carbonara",
+        "price": 99.89,
+        "calories": "5550",
+        "description": "Includes: A pan of sautéed seasoned chicken, shrimp and spaghetti tossed in a creamy sauce with bacon and roasted red peppers.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickShrimpFam.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickShrimpFam.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Chicken Scampi (Serves 4-6)",
+        "price": 91.09,
+        "calories": "5020",
+        "description": "Includes: A pan of bell peppers and red onions sautéed with chicken tenderloins in a creamy scampi sauce. Served over angel hair pasta.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ChickenScampiFam.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ChickenScampiFam.webp",
+        "width": 420,
+        "height": 276
+      },
+      {
+        "title": "Shrimp Scampi",
+        "price": 81.69,
+        "calories": "2050",
+        "description": "Includes: A pan of shrimp sautéed in a garlic sauce, tossed with asparagus, tomatoes, and angel hair pasta.",
+        "raw_image_url": "https://nolocdnv.azureedge.net/Content?ContentFile=ShrimpScampFam.png&companyCode=OGKA001&designId=1",
+        "image_url": "/static/image/hawaii-upload/ShrimpScampFam.webp",
+        "width": 420,
+        "height": 276
+      }
+    ]
+  }
+}

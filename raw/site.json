@@ -7,6 +7,7 @@
   "maxWidth": 1280,
   "googleAnalyticsId": "G-JWDGNTZQ2Z",
   "googleAdsenseId": "",
+  "googleAdsTxt": "",
   "logoUrl": "/static/image/logo-2.png",
   "favicon": {
     "url": "/static/image/favicon32.ico",
@@ -67,24 +68,33 @@
         ]
       },
       {
-        "text": "Olive Garden Specials",
-        "url": "/olive-garden-specials"
+        "text": "Olive Hours 2025",
+        "submenu": [
+          {
+            "text": "Olive Garden Hours 2025",
+            "url": "/olive-garden-happy-hours"
+          },
+          {
+            "text": "Olive Garden Holiday Hours 2025",
+            "url": "/olive-garden-holiday-hours"
+          }
+        ]
       },
       {
-        "text": "Happy Hours 2025",
-        "url": "/olive-garden-happy-hours"
+        "text": "Olive Garden Specials",
+        "url": "/olive-garden-specials"
       },
       {
         "text": "Coupons",
         "url": "/olive-garden-coupons"
       },
       {
-        "text": "Holiday Hours 2025",
-        "url": "/olive-garden-holiday-hours"
-      },
-      {
         "text": "Olive Garden Near Me",
         "url": "/olive-garden-near-me"
+      },
+      {
+        "text": "Olive Garden Hawaii",
+        "url": "/olive-garden-hawaii"
       }
     ],
     "footer": [
