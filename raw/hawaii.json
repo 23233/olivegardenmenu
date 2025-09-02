@@ -1,12 +1,98 @@
 {
   "metadata": {
+    "h1": "Olive Garden Hawaii Menu (Sept 2025) 🌺 Aloha Prices! 🤙",
+    "description": "Planning a visit to Olive Garden in Hawaii? 🌴 Check out the EXCLUSIVE Hawaii menu, prices, locations (Ala Moana & Kapolei), and FAQs before you go. Your island guide to pasta paradise! 🥳",
+    "coreKeyword": "Olive Garden Hawaii",
+    "pageGoal": "To provide a dedicated resource for the Olive Garden restaurants in Hawaii, including their specific menu, pricing, locations, and frequently asked questions, to help locals and tourists plan their visit.",
+    "languages": [
+      "en-US"
+    ],
     "author": {
-      "name": "The Olive Garden Menu Guide Team",
-      "email": "contact@olivegardenmenuguide.com"
+      "name": "Jules",
+      "email": "jules@olivegardenmenuguide.com"
     },
     "datePublished": "2025-09-02"
   },
   "contentBlocks": [
-
+    {
+      "type": "hero",
+      "data": {
+        "h1": "Olive Garden Hawaii's Menu! 🌺 Prices for September 2025!",
+        "tagline": "Aloha! 🤙 Thinking about some 'ohana time at Olive Garden in Hawaii? You're in the right place! We've got the complete, up-to-date menu and prices for the Ala Moana and Kapolei locations. Let's find your perfect pasta! 🍝"
+      }
+    },
+    {
+      "type": "tableOfContents",
+      "data": {
+        "title": "Page Contents"
+      }
+    },
+    {
+      "type": "categoryJumpLinks",
+      "data": {
+        "title": "Jump to a Menu Category 👇",
+        "categories": {
+          "Appetizers": {},
+          "Classic Entrees": {},
+          "Amazing Alfredos": {},
+          "Soups, Salad & Breadsticks": {},
+          "Create Your Own Pasta": {},
+          "Lunch-Sized Favorites": {},
+          "Desserts": {},
+          "Sides & Sauces": {},
+          "Beverages": {},
+          "Kids Menu": {},
+          "Catering Family Bundles": {},
+          "Catering Family Size Pans (Serves 4-6)": {}
+        }
+      }
+    },
+    {
+      "type": "dataTable",
+      "data": {
+        "title": "Full Olive Garden Hawaii Menu 🌴",
+        "categoriesDataUrl": "raw/hawai-full-menu.json",
+        "categoriesFilter": "*"
+      }
+    },
+    {
+      "type": "richText",
+      "data": {
+        "title": "Olive Garden Hawaii Locations 🤙",
+        "htmlContent": "<p>Unlike the mainland, Olive Garden in Hawaii is a special treat with only two locations! No need for a complicated map, here are the two spots where you can get your breadstick fix. Reservations are recommended!</p><div class='locations-container' style='display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;'><div class='location-card' style='border: 1px solid #eee; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);'><h3 style='margin-top:0;'>📍 ALA MOANA CENTER</h3><p>1450 Ala Moana Blvd Space 3253,<br>Honolulu, HI 96814</p><p><strong>Phone:</strong> <a href='tel:808-942-2000'>808.942.2000</a></p></div><div class='location-card' style='border: 1px solid #eee; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);'><h3 style='margin-top:0;'>📍 KA MAKANA ALI’I</h3><p>91-5431 Kapolei Pkwy Suite 200,<br>Kapolei, HI 96707</p><p><strong>Phone:</strong> <a href='tel:808-670-2766'>808.670.2766</a></p></div></div>"
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "Hawaii Olive Garden FAQs 🤔",
+        "items": [
+          {
+            "question": "Do your breadsticks contain dairy?",
+            "answer": "Good news! There is no dairy in our breadsticks or in the garlic topping, which is made from margarine. They are vegan-friendly! 🌱"
+          },
+          {
+            "question": "Do you have a separate fryer for allergens?",
+            "answer": "No, we do not have a separate fryer at this time. This means any food that is fried can come in contact with major allergens like wheat, shellfish, dairy, soy, and egg. Please inform your server of any allergies!"
+          },
+          {
+            "question": "What is the gluten-free pasta made of?",
+            "answer": "Our gluten-free rotini pasta is made primarily from brown rice flour, which gives it a great texture that's very close to traditional pasta."
+          },
+          {
+            "question": "Is the Italian salad dressing gluten-free?",
+            "answer": "There are no gluten-containing ingredients in the dressing itself. However, gluten is present in the facility where it's made. When you order, please request 'no croutons' to make the salad fully gluten-sensitive."
+          },
+          {
+            "question": "Do you use MSG in your food?",
+            "answer": "We do not add any MSG to our recipes. However, some ingredients like tomatoes, cheeses, and mushrooms naturally contain glutamate. "
+          },
+          {
+            "question": "Are there any vegan options available?",
+            "answer": "Yes! Our famous breadsticks (ask for them without the butter brush) and marinara sauce are vegan. You can create a delicious vegan pasta dish. The Minestrone soup is also a great vegan choice!"
+          }
+        ]
+      }
+    }
   ]
 }
