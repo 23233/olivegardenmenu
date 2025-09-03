@@ -972,6 +972,21 @@ ${sitemapEntries}
   });
 });
 
+app.get('/:filename{.+\\.txt$}', (c) => {
+  const { filename } = c.req.param();
+  const key = filename.slice(0, -4); // Remove .txt extension
+
+  // @ts-ignore
+  const { indexNowKey } = siteConfig.metadata;
+
+  if (key === indexNowKey) {
+    return new Response(indexNowKey, {
+      headers: { 'Content-Type': 'text/plain; charset=utf-8' },
+    });
+  }
+  return c.notFound();
+});
+
 app.get("/ads.txt", (c) => {
   if (siteConfig.googleAdsTxt) {
     return new Response(siteConfig.googleAdsTxt, {
@@ -1503,33 +1518,33 @@ app.post('/api/index-now-submit', async (c) => {
 
     // 2. Get URL List
     const pageDataMap: { [key: string]: any } = {
-        '/': menuData,
-        '/olive-garden-drink-menu': drinkMenuData,
-        '/olive-garden-near-me': nearMeData,
-        '/olive-garden-lunch-menu': lunchMenuData,
-        '/olive-garden-dinner-menu': dinnerMenuData,
-        '/olive-garden-dessert-menu': dessertMenuData,
-        '/olive-garden-catering-menu': cateringMenuData,
-        '/olive-garden-kids-menu': kidsMenuData,
-        '/olive-garden-pasta-menu': pastaMenuData,
-        '/olive-garden-soup-menu': soupMenuData,
-        '/olive-garden-nutrition-allergen-menu': nutritionAllergenMenuData,
-        '/contact-olive-garden': contactUsData,
-        '/privacy-policy': privacyPolicyData,
-        '/terms-of-service': termsOfServiceData,
-        '/olive-garden-specials': specialsData,
-        '/olive-garden-happy-hours': happyHoursData,
-        '/olive-garden-coupons': couponsData,
-        '/olive-garden-holiday-hours': holidayHoursData,
-        '/olive-garden-hawaii': hawaiiData,
+      '/': menuData,
+      '/olive-garden-drink-menu': drinkMenuData,
+      '/olive-garden-near-me': nearMeData,
+      '/olive-garden-lunch-menu': lunchMenuData,
+      '/olive-garden-dinner-menu': dinnerMenuData,
+      '/olive-garden-dessert-menu': dessertMenuData,
+      '/olive-garden-catering-menu': cateringMenuData,
+      '/olive-garden-kids-menu': kidsMenuData,
+      '/olive-garden-pasta-menu': pastaMenuData,
+      '/olive-garden-soup-menu': soupMenuData,
+      '/olive-garden-nutrition-allergen-menu': nutritionAllergenMenuData,
+      '/contact-olive-garden': contactUsData,
+      '/privacy-policy': privacyPolicyData,
+      '/terms-of-service': termsOfServiceData,
+      '/olive-garden-specials': specialsData,
+      '/olive-garden-happy-hours': happyHoursData,
+      '/olive-garden-coupons': couponsData,
+      '/olive-garden-holiday-hours': holidayHoursData,
+      '/olive-garden-hawaii': hawaiiData,
     };
     const extractUrls = (navItems: any[]): string[] => {
-        let urls: string[] = [];
-        for (const item of navItems) {
-            if (item.url) { urls.push(item.url); }
-            if (item.submenu) { urls = urls.concat(extractUrls(item.submenu)); }
-        }
-        return urls;
+      let urls: string[] = [];
+      for (const item of navItems) {
+        if (item.url) { urls.push(item.url); }
+        if (item.submenu) { urls = urls.concat(extractUrls(item.submenu)); }
+      }
+      return urls;
     };
     const headerUrls = extractUrls(siteConfig.navigation.header);
     const footerUrls = extractUrls(siteConfig.navigation.footer);
@@ -1553,9 +1568,9 @@ app.post('/api/index-now-submit', async (c) => {
     });
 
     if (!response.ok) {
-        // Try to get error text from IndexNow response
-        const errorText = await response.text();
-        throw new Error(`IndexNow API returned status ${response.status}: ${errorText}`);
+      // Try to get error text from IndexNow response
+      const errorText = await response.text();
+      throw new Error(`IndexNow API returned status ${response.status}: ${errorText}`);
     }
 
     const responseData = await response.text();
@@ -1661,7 +1676,7 @@ app.get('/admin-panel/:key', (c) => {
         document.getElementById('submit-btn').addEventListener('click', async () => {
           const btn = document.getElementById('submit-btn');
           const statusDiv = document.getElementById('status-message');
-
+          
           btn.disabled = true;
           btn.textContent = '提交中...';
           statusDiv.style.display = 'none';
