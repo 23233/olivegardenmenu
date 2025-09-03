@@ -1489,4 +1489,213 @@ app.get("/olive-garden-hawaii",(c)=>{
   return c.html(html);
 })
 
+app.post('/api/index-now-submit', async (c) => {
+  try {
+    const body = await c.req.json();
+    // @ts-ignore
+    const { adminKey, indexNowKey } = siteConfig.metadata;
+    const { baseURL } = siteConfig;
+
+    // 1. Authorize
+    if (!body || body.adminKey !== adminKey) {
+      return c.json({ error: 'Unauthorized' }, 401);
+    }
+
+    // 2. Get URL List
+    const pageDataMap: { [key: string]: any } = {
+        '/': menuData,
+        '/olive-garden-drink-menu': drinkMenuData,
+        '/olive-garden-near-me': nearMeData,
+        '/olive-garden-lunch-menu': lunchMenuData,
+        '/olive-garden-dinner-menu': dinnerMenuData,
+        '/olive-garden-dessert-menu': dessertMenuData,
+        '/olive-garden-catering-menu': cateringMenuData,
+        '/olive-garden-kids-menu': kidsMenuData,
+        '/olive-garden-pasta-menu': pastaMenuData,
+        '/olive-garden-soup-menu': soupMenuData,
+        '/olive-garden-nutrition-allergen-menu': nutritionAllergenMenuData,
+        '/contact-olive-garden': contactUsData,
+        '/privacy-policy': privacyPolicyData,
+        '/terms-of-service': termsOfServiceData,
+        '/olive-garden-specials': specialsData,
+        '/olive-garden-happy-hours': happyHoursData,
+        '/olive-garden-coupons': couponsData,
+        '/olive-garden-holiday-hours': holidayHoursData,
+        '/olive-garden-hawaii': hawaiiData,
+    };
+    const extractUrls = (navItems: any[]): string[] => {
+        let urls: string[] = [];
+        for (const item of navItems) {
+            if (item.url) { urls.push(item.url); }
+            if (item.submenu) { urls = urls.concat(extractUrls(item.submenu)); }
+        }
+        return urls;
+    };
+    const headerUrls = extractUrls(siteConfig.navigation.header);
+    const footerUrls = extractUrls(siteConfig.navigation.footer);
+    const allRelativeUrls = new Set(['/', ...headerUrls, ...footerUrls]);
+    const allFullUrls = Array.from(allRelativeUrls).map(path => joinUrlPaths(baseURL, path));
+
+    // 3. Construct IndexNow Payload
+    const payload = {
+      host: new URL(baseURL).hostname,
+      key: indexNowKey,
+      urlList: allFullUrls,
+    };
+
+    // 4. Send to IndexNow
+    const response = await fetch('https://api.indexnow.org/indexnow', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (!response.ok) {
+        // Try to get error text from IndexNow response
+        const errorText = await response.text();
+        throw new Error(`IndexNow API returned status ${response.status}: ${errorText}`);
+    }
+
+    const responseData = await response.text();
+
+
+    // 5. Return success response
+    return c.json({ success: true, message: 'Submitted to IndexNow.', submittedUrls: allFullUrls.length, apiResponse: responseData || "OK" }, 200);
+
+  } catch (error: any) {
+    console.error('IndexNow submission failed:', error);
+    return c.json({ error: error.message }, 500);
+  }
+});
+
+app.get('/admin-panel/:key', (c) => {
+  const { key } = c.req.param();
+  // @ts-ignore
+  const { adminKey, indexNowKey } = siteConfig.metadata;
+  const { baseURL } = siteConfig;
+
+  if (!adminKey || key !== adminKey) {
+    return c.notFound();
+  }
+
+  // --- Logic to get all URLs (copied from sitemap) ---
+  const pageDataMap: { [key: string]: any } = {
+    '/': menuData,
+    '/olive-garden-drink-menu': drinkMenuData,
+    '/olive-garden-near-me': nearMeData,
+    '/olive-garden-lunch-menu': lunchMenuData,
+    '/olive-garden-dinner-menu': dinnerMenuData,
+    '/olive-garden-dessert-menu': dessertMenuData,
+    '/olive-garden-catering-menu': cateringMenuData,
+    '/olive-garden-kids-menu': kidsMenuData,
+    '/olive-garden-pasta-menu': pastaMenuData,
+    '/olive-garden-soup-menu': soupMenuData,
+    '/olive-garden-nutrition-allergen-menu': nutritionAllergenMenuData,
+    '/contact-olive-garden': contactUsData,
+    '/privacy-policy': privacyPolicyData,
+    '/terms-of-service': termsOfServiceData,
+    '/olive-garden-specials': specialsData,
+    '/olive-garden-happy-hours': happyHoursData,
+    '/olive-garden-coupons': couponsData,
+    '/olive-garden-holiday-hours': holidayHoursData,
+    '/olive-garden-hawaii': hawaiiData,
+  };
+
+  const extractUrls = (navItems: any[]): string[] => {
+    let urls: string[] = [];
+    for (const item of navItems) {
+      if (item.url) {
+        urls.push(item.url);
+      }
+      if (item.submenu) {
+        urls = urls.concat(extractUrls(item.submenu));
+      }
+    }
+    return urls;
+  };
+
+  const headerUrls = extractUrls(siteConfig.navigation.header);
+  const footerUrls = extractUrls(siteConfig.navigation.footer);
+  const allRelativeUrls = new Set(['/', ...headerUrls, ...footerUrls]);
+  const allFullUrls = Array.from(allRelativeUrls).map(path => joinUrlPaths(baseURL, path));
+
+  // --- Generate HTML page ---
+  const html = `
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>IndexNow 手动提交</title>
+      <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 0; background-color: #f8f9fa; color: #212529; }
+        .container { max-width: 800px; margin: 2em auto; background: white; padding: 2em; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #343a40; }
+        #url-list { list-style-type: none; padding: 0; max-height: 50vh; overflow-y: auto; border: 1px solid #dee2e6; border-radius: 4px; padding: 1em; }
+        #url-list li { padding: 0.5em; border-bottom: 1px solid #e9ecef; font-size: 0.9em; }
+        #url-list li:last-child { border-bottom: none; }
+        button { background-color: #007bff; color: white; padding: 0.8em 1.5em; border: none; border-radius: 5px; font-size: 1em; cursor: pointer; transition: background-color 0.3s; margin-top: 1em; }
+        button:hover { background-color: #0056b3; }
+        button:disabled { background-color: #6c757d; cursor: not-allowed; }
+        .status { margin-top: 1em; padding: 1em; border-radius: 5px; display: none; font-weight: bold; }
+        .status.success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .status.error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        code { background-color: #e9ecef; padding: .2em .4em; margin: 0; font-size: 85%; border-radius: 3px; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1>IndexNow 手动提交面板</h1>
+        <p>找到以下 <strong>${allFullUrls.length}</strong> 个页面。点击按钮将它们全部提交到 IndexNow。</p>
+        <p><small>您的 IndexNow Key: <code>${indexNowKey}</code></small></p>
+        <button id="submit-btn">🚀 一键提交到 IndexNow</button>
+        <div id="status-message" class="status"></div>
+        <h2>将要提交的 URLs:</h2>
+        <ul id="url-list">
+          ${allFullUrls.map(url => `<li>${url}</li>`).join('')}
+        </ul>
+      </div>
+      <script>
+        document.getElementById('submit-btn').addEventListener('click', async () => {
+          const btn = document.getElementById('submit-btn');
+          const statusDiv = document.getElementById('status-message');
+
+          btn.disabled = true;
+          btn.textContent = '提交中...';
+          statusDiv.style.display = 'none';
+
+          try {
+            const response = await fetch('/api/index-now-submit', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ adminKey: '${adminKey}' })
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+              statusDiv.className = 'status success';
+              statusDiv.textContent = '✅ 提交成功! IndexNow 已接收请求。服务器响应: ' + JSON.stringify(result);
+            } else {
+              throw new Error(result.error || '提交失败，服务器返回错误。');
+            }
+          } catch (error) {
+            statusDiv.className = 'status error';
+            statusDiv.textContent = '❌ 提交失败: ' + error.message;
+          } finally {
+            statusDiv.style.display = 'block';
+            btn.disabled = false;
+            btn.textContent = '🚀 一键提交到 IndexNow';
+          }
+        });
+      </script>
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
 export default app;
