@@ -28,26 +28,6 @@
       }
     },
     {
-      "type": "categoryJumpLinks",
-      "data": {
-        "title": "Jump to a Menu Category 👇",
-        "categories": {
-          "Appetizers": {},
-          "Classic Entrees": {},
-          "Amazing Alfredos": {},
-          "Soups, Salad & Breadsticks": {},
-          "Create Your Own Pasta": {},
-          "Lunch-Sized Favorites": {},
-          "Desserts": {},
-          "Sides & Sauces": {},
-          "Beverages": {},
-          "Kids Menu": {},
-          "Catering Family Bundles": {},
-          "Catering Family Size Pans (Serves 4-6)": {}
-        }
-      }
-    },
-    {
       "type": "dataTable",
       "data": {
         "title": "Full Olive Garden Hawaii Menu 🌴",
