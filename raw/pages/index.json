@@ -11,7 +11,7 @@
       "name": "Jackal",
       "email": "menu@olivegardenmenuguide.com"
     },
-    "datePublished": "2025-09-02"
+    "datePublished": "2025-09-05"
   },
   "contentBlocks": [
     {
@@ -98,35 +98,7 @@
         "htmlContent": "<div class=\"video-container\"><div class=\"youtube-facade\" data-youtube-id=\"EI-fZwltjYs\" style=\"background-image:url('https://i.ytimg.com/vi/EI-fZwltjYs/hqdefault.jpg');\" title=\"Click to play video\"><div class=\"play-button\"></div></div></div>"
       }
     },
-    {
-      "type": "categoryJumpLinks",
-      "data": {
-        "title": "Quick Jumps to Menu Categories 🍝",
-        "categories": {
-          "CLASSIC ENTRÉES 2025": {},
-          "OLIVE GARDEN APPETIZERS MENU 2025": {},
-          "FAMILY STYLE MEALS - FAMILY BUNDLES": {},
-          "OVEN BAKED PASTAS MENU": {},
-          "AMAZING ALFREDOS!": {},
-          "WEEKDAY SOUPS, SALAD & BREADSTICKS": {},
-          "LUNCH-SIZED FAVORITES": {},
-          "DESSERT OPTIONS AT OLIVE GARDEN": {},
-          "SIDES & SAUCES": {},
-          "NON-ALCOHOLIC BEVERAGES MENU": {},
-          "GLUTEN SENSITIVE OPTIONS AT OLIVE GARDEN": {},
-          "KIDS MEALS 2025": {},
-          "OLIVE GARDEN’S CATERING MENU - 1. CATERING PANS (SERVES 4 – 6)": {},
-          "MEAL COMBINATION": {},
-          "CREATE YOUR OWN PASTA STATION": {},
-          "SOUPS, SALAD & BREADSTICKS": {},
-          "APPETIZERS": {},
-          "PERFECT NEW ADDITIONS 2025": {},
-          "HOMEMADE SAUCES": {},
-          "OLIVE CATERING GARDEN": {},
-          "BEVERAGES OPTIONS": {}
-        }
-      }
-    },
+
     {
       "type": "dataTable",
       "data": {
