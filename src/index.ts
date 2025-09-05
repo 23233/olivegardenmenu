@@ -22,6 +22,7 @@ import happyHoursData from "../raw/happy-hours.json";
 import couponsData from "../raw/coupons.json";
 import holidayHoursData from "../raw/holiday-hours.json";
 import masterMenuData from "../raw/master-menu-data.json";
+import indexFullMenuData from "../raw/index-full-menu.json";
 
 const pageDataMap: { [key: string]: any } = {
   '/': indexData,
@@ -426,6 +427,17 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
                 box-shadow: 0 2px 4px rgba(0,0,0,0.2);
                 z-index: 2;
             }
+            .indicator-badge {
+                margin-top: 10px;
+                padding: 5px;
+                background-color: #fff3cd;
+                color: #856404;
+                border: 1px solid #ffeeba;
+                border-radius: 4px;
+                font-size: 0.8rem;
+                font-weight: 500;
+                text-align: center;
+            }
             .quick-jumps, .data-table-details { background-color: #f9f9f9; padding: 15px; border: 1px solid #eee; border-radius: 8px; margin: 20px 0; }
             .quick-jumps summary, .data-table-details summary { font-weight: bold; cursor: pointer; font-size: 0.9rem; }
             .quick-jumps ul { list-style: none; padding-left: 0; }
@@ -624,40 +636,16 @@ const renderImageGallery = (data: any) => `
 
 const menuDataSources: { [key: string]: any } = {
   'raw/master-menu-data.json': masterMenuData,
-  'raw/hawai-full-menu.json': hawaiiFullMenuData
+  'raw/hawai-full-menu.json': hawaiiFullMenuData,
+  'raw/index-full-menu.json': indexFullMenuData
 };
 
-const renderDataTable = (data: any,suffix = "of Olive Garden Menu") => {
-  // Helper to format price strings consistently
-  const formatPrice = (price: any) => {
-    if (price === null || typeof price === 'undefined') return '$0.00';
-    const priceStr = String(price);
-    if (/^\d+(\.\d+)?$/.test(priceStr)) {
-      return `$${Number(priceStr).toFixed(2)}`;
-    }
-    if (priceStr.includes("$")) {
-      return priceStr;
-    }
-    return `$${priceStr}`;
-  };
-
-  const formatCalories = (calories: any): string => {
-    if (calories === null || typeof calories === 'undefined' || String(calories).trim().toUpperCase() === 'N/A') {
-      return '';
-    }
-    const calStr = String(calories).trim();
-    if (calStr.toLowerCase().includes('cal')) {
-      return calStr;
-    }
-    if (/^\d+$/.test(calStr)) {
-      return `${calStr} Cal`;
-    }
-    return calStr;
-  };
+const renderDataTable = (data: any, suffix = "of Olive Garden Menu", coreKeyword = "Menu") => {
+  // Helper functions like formatPrice and formatCalories are no longer needed
+  // as the new data fields are pre-formatted.
 
   let categoriesToRender: { [key: string]: any } = {};
 
-  // Check if we need to load data dynamically
   if (data.categoriesDataUrl) {
     const sourceData = menuDataSources[data.categoriesDataUrl];
     if (!sourceData) {
@@ -676,7 +664,6 @@ const renderDataTable = (data: any,suffix = "of Olive Garden Menu") => {
       });
     }
   } else {
-    // Fallback to inline categories
     categoriesToRender = data.categories;
   }
 
@@ -694,15 +681,18 @@ const renderDataTable = (data: any,suffix = "of Olive Garden Menu") => {
               ${categoryData.items.map((item: any) => `
                 <div class="menu-card">
                   ${recommendedItemName && item.name === recommendedItemName ? '<div class="recommend-badge">Recommended</div>' : ''}
-                  ${item.image_url ? `<img src="${item.image_url}" alt="Image of ${item.name || ''}" loading="lazy">` : '<div class="no-image-placeholder"><span>No Image Available</span></div>'}
+                  ${item.image_url ? `<img src="${item.image_url}" alt="${item.imgAltText || item.name} - ${coreKeyword}" loading="lazy">` : '<div class="no-image-placeholder"><span>No Image Available</span></div>'}
                   <div class="menu-card-content">
                     <h4>${item.title || item.name || ''}</h4>
                     ${item.description ? `<p class="menu-item-description">${item.description}</p>` : ''}
                     ${item.review ? `<p class="review-text">${item.review}</p>` : ''}
                     <div class="price-calories-container">
-                      <span class="price">${formatPrice(item.price)}</span>
-                      <span class="calories-badge">${formatCalories(item.calories)}</span>
+                      <span class="price">${item.displayPrice || ''}</span>
+                      <span class="calories-badge">${item.nutritionalFDAMessage || ''}</span>
                     </div>
+                    ${item.indicators && item.indicators.bottomIndicators && item.indicators.bottomIndicators.length > 0 ?
+    `<div class="indicator-badge">${item.indicators.bottomIndicators[0].tooltipText}</div>` : ''
+  }
                   </div>
                 </div>
               `).join('')}
@@ -801,7 +791,8 @@ function generatePageBody(data: any): string {
         return renderImageGallery(block.data);
       case 'dataTable':
         if (block.data.categories || block.data.categoriesDataUrl) {
-          return renderDataTable(block.data,block.data.suffix);
+          const coreKeyword = data.metadata?.coreKeyword || "Menu";
+          return renderDataTable(block.data, block.data.suffix, coreKeyword);
         }
         return renderStoreDataTable(block.data);
       case 'faq':

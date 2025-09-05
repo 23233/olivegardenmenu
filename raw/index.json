@@ -131,7 +131,7 @@
       "type": "dataTable",
       "data": {
         "title": "The Full Olive Garden Menu (September 2025)",
-        "categoriesDataUrl": "raw/master-menu-data.json",
+        "categoriesDataUrl": "raw/index-full-menu.json",
         "categoriesFilter": "*"
       }
     },
