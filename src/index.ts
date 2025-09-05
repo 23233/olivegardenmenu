@@ -1,6 +1,6 @@
 import {Hono, MiddlewareHandler} from 'hono'
 import {serveStatic} from 'hono/cloudflare-workers'
-import menuData from '../raw/index.json';
+import indexData from '../raw/index.json';
 import siteConfig from "../raw/site.json";
 import nearMeData from "../raw/near_me.json";
 import contactUsData from "../raw/contact_us.json";
@@ -24,7 +24,7 @@ import holidayHoursData from "../raw/holiday-hours.json";
 import masterMenuData from "../raw/master-menu-data.json";
 
 const pageDataMap: { [key: string]: any } = {
-  '/': menuData,
+  '/': indexData,
   '/olive-garden-drink-menu': drinkMenuData,
   '/olive-garden-near-me': nearMeData,
   '/olive-garden-lunch-menu': lunchMenuData,

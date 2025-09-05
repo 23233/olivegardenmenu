@@ -203,8 +203,13 @@ def process_item(item, image_download_dir, new_image_url_prefix):
     try:
         with print_lock:
             print(f"  [下载中] -> {source_url}")
+
+        proxies = {
+           'http': 'socks5://127.0.0.1:1080',
+           'https': 'socks5://127.0.0.1:1080'
+        }
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
-        response = requests.get(source_url, stream=True, timeout=20, headers=headers)
+        response = requests.get(source_url, stream=True, timeout=20, headers=headers,proxies=proxies)
         response.raise_for_status()
 
         content_type = response.headers.get('content-type', '').lower()
