@@ -7,7 +7,7 @@
       "name": "The Olive Garden Menu Guide Team",
       "email": "contact@olivegardenmenuguide.com"
     },
-    "datePublished": "2025-09-01"
+    "datePublished": "2025-09-05"
   },
   "contentBlocks": [
     {
@@ -20,9 +20,9 @@
       "type": "dataTable",
       "data": {
         "title": "Gluten Sensitive Menu Options",
-        "categoriesDataUrl": "raw/master-menu-data.json",
+        "categoriesDataUrl": "raw/index-full-menu.json",
         "categoriesFilter": [
-          "Gluten Sensitive Options at Olive Garden"
+          "Gluten Sensitive"
         ]
       }
     },

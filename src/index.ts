@@ -15,13 +15,12 @@ import hawaiiData from "../raw/pages/hawaii.json";
 import hawaiiFullMenuData from "../raw/hawai-full-menu.json";
 import kidsMenuData from "../raw/pages/kids-menu.json";
 import pastaMenuData from "../raw/pages/pasta-menu.json";
-import soupMenuData from "../raw/soup-menu.json";
-import nutritionAllergenMenuData from "../raw/nutrition-allergen-menu.json";
+import soupMenuData from "../raw/pages/soup-menu.json";
+import nutritionAllergenMenuData from "../raw/pages/nutrition-allergen-menu.json";
 import specialsData from "../raw/pages/specials.json";
 import happyHoursData from "../raw/pages/happy-hours.json";
 import couponsData from "../raw/pages/coupons.json";
 import holidayHoursData from "../raw/pages/holiday-hours.json";
-import masterMenuData from "../raw/master-menu-data.json";
 import indexFullMenuData from "../raw/pages/index-full-menu.json";
 
 const pageDataMap: { [key: string]: any } = {
@@ -46,7 +45,6 @@ const pageDataMap: { [key: string]: any } = {
   '/olive-garden-hawaii': hawaiiData,
 };
 const menuDataSources: { [key: string]: any } = {
-  'raw/master-menu-data.json': masterMenuData,
   'raw/hawai-full-menu.json': hawaiiFullMenuData,
   'raw/index-full-menu.json': indexFullMenuData
 };
@@ -85,7 +83,7 @@ const cacheMiddleware: MiddlewareHandler = async (c, next) => {
 };
 
 // Apply the middleware to all requests
-app.use(cacheMiddleware);
+// app.use(cacheMiddleware);
 
 
 // --- Utility Functions ---
@@ -354,8 +352,8 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
             }
             .container { max-width: ${siteConfig.maxWidth}px; margin: 0 auto; padding: 20px; }
             h1, h2, h3 , h4 { color: var(--text-primary); line-height: 1.2; }
-            h1 { font-size: 2.5rem; text-align: center; margin-bottom: 0.5rem; }
-            h2 { font-size: 2rem; border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-top: 40px; }
+            h1 { font-size: 2.2rem; text-align: center; margin-bottom: 0.5rem; }
+            h2 { font-size: 1.7rem; border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-top: 40px; }
             p { color: var(--text-secondary); }
             a { color: var(--accent); text-decoration: none; }
             header { 

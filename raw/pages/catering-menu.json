@@ -7,7 +7,7 @@
       "name": "The Olive Garden Menu Guide Team",
       "email": "contact@olivegardenmenuguide.com"
     },
-    "datePublished": "2025-09-01"
+    "datePublished": "2025-09-05"
   },
   "contentBlocks": [
     {
@@ -20,18 +20,18 @@
       "type": "dataTable",
       "data": {
         "title": "Olive Garden Catering Menu & Prices (September 2025)",
-        "categoriesDataUrl": "raw/master-menu-data.json",
+        "categoriesDataUrl": "raw/index-full-menu.json",
         "categoriesFilter": [
-          "Family Style Meals - Family Bundles",
-          "Olive Garden’s Catering Menu - 1. Catering Pans (Serves 4 – 6)",
-          "Meal Combination",
+          "Family Bundles",
+          "Family-Size Pans (Serves 4-6)",
+          "Catering Pans (Serves 4 - 6)",
+          "Meal Combinations",
           "Create Your Own Pasta Station",
-          "Soups, Salad & Breadsticks",
-          "Appetizers",
-          "Perfect New Additions 2025",
-          "Homemade Sauces",
-          "Olive Catering Garden",
-          "Beverages Options"
+          "Catering - Soups, Salad & Breadsticks",
+          "Catering - Appetizers",
+          "Perfect Additions",
+          "Homemade Sauces ",
+          "Beverages"
         ]
       }
     },

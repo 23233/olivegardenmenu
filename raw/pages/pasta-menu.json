@@ -7,7 +7,7 @@
       "name": "The Olive Garden Menu Guide Team",
       "email": "contact@olivegardenmenuguide.com"
     },
-    "datePublished": "2025-09-01"
+    "datePublished": "2025-09-05"
   },
   "contentBlocks": [
     {
@@ -20,11 +20,11 @@
       "type": "dataTable",
       "data": {
         "title": "Olive Garden Pasta Menu & Prices (September 2025)",
-        "categoriesDataUrl": "raw/master-menu-data.json",
+        "categoriesDataUrl": "raw/index-full-menu.json",
         "categoriesFilter": [
-          "OVEN BAKED PASTAS MENU",
-          "AMAZING ALFREDOS!",
-          "CLASSIC ENTRÉES 2025"
+          "Classic Entrées",
+          "Amazing Alfredos!",
+          "Create Your Own Pasta"
         ]
       }
     },

@@ -7,7 +7,7 @@
       "name": "The Olive Garden Menu Guide Team",
       "email": "contact@olivegardenmenuguide.com"
     },
-    "datePublished": "2025-09-01"
+    "datePublished": "2025-09-05"
   },
   "contentBlocks": [
     {
@@ -20,9 +20,10 @@
       "type": "dataTable",
       "data": {
         "title": "Olive Garden Desserts Menu & Prices (September 2025)",
-        "categoriesDataUrl": "raw/master-menu-data.json",
+        "categoriesDataUrl": "raw/index-full-menu.json",
         "categoriesFilter": [
-          "Dessert Options at Olive Garden"
+          "Desserts",
+          "Catering - Desserts"
         ]
       }
     },

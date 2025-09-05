@@ -26,7 +26,47 @@
   },
   "navigation": {
     "header": [
-
+      {
+        "text": "Olive Garden Menu 2025",
+        "submenu": [
+          {
+            "text": "Olive Garden Drink Menu 2025",
+            "url": "/olive-garden-drink-menu"
+          },
+          {
+            "text": "Olive Garden Lunch Menu 2025",
+            "url": "/olive-garden-lunch-menu"
+          },
+          {
+            "text": "Olive Garden Dinner Menu 2025",
+            "url": "/olive-garden-dinner-menu"
+          },
+          {
+            "text": "Olive Garden Dessert Menu 2025",
+            "url": "/olive-garden-dessert-menu"
+          },
+          {
+            "text": "Olive Garden Catering Menu 2025",
+            "url": "/olive-garden-catering-menu"
+          },
+          {
+            "text": "Olive Garden Kids Menu 2025",
+            "url": "/olive-garden-kids-menu"
+          },
+          {
+            "text": "Olive Garden Pasta Menu 2025",
+            "url": "/olive-garden-pasta-menu"
+          },
+          {
+            "text": "Olive Garden Soup Menu 2025",
+            "url": "/olive-garden-soup-menu"
+          },
+          {
+            "text": "Nutrition & Allergen Menu 2025",
+            "url": "/olive-garden-nutrition-allergen-menu"
+          }
+        ]
+      },
       {
         "text": "Olive Hours 2025",
         "submenu": [
