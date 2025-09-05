@@ -1062,100 +1062,6 @@ app.get("/ads.txt", (c) => {
 
 })
 
-app.get('*', (c) => {
-  let path = new URL(c.req.url).pathname;
-  if (path.length > 1 && path.endsWith('/')) {
-    path = path.slice(0, -1);
-  }
-
-  const pageData = pageDataMap[path];
-
-  if (!pageData) {
-    // Before 404, check if it's a known URL with a trailing slash
-    const pathWithoutSlash = path.endsWith('/') ? path.slice(0, -1) : null;
-    if (pathWithoutSlash && pageDataMap[pathWithoutSlash]) {
-      return c.redirect(pathWithoutSlash, 301);
-    }
-    return c.notFound();
-  }
-
-  const head = generateHead(siteConfig, pageData, path);
-  const header = generateHeader(siteConfig);
-  let mainContent = generatePageBody(pageData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  // Special handling for the homepage to inject the Near Me section
-  if (path === '/') {
-    const nearMeSection = `
-       <section id="near-me">
-        <h2>Find an Olive Garden Near Me! 📍</h2>
-        <p>Craving some delicious Italian food? 🍝 Use the map below to find the nearest Olive Garden restaurant to you! We've got thousands of locations across the country, so there's a good chance there's one just around the corner.</p>
-        <div style="text-align: center; margin: 20px 0;">
-          <iframe
-            src="${siteConfig.maps.url}"
-            width="100%"
-            height="450px"
-            title="Olive Garden Google Map"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-        <p>For a detailed list of all Olive Garden locations, including addresses and hours, check out our new <a href="/olive-garden-near-me"><strong>Olive Garden Near Me</strong></a> page. We've got all the info you need to get your pasta fix! 🚀</p>
-      </section>
-    `;
-    mainContent = mainContent.replace('</main>', nearMeSection + '</main>');
-  }
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <div id="lightbox-modal">
-            <span class="close">&times;</span>
-            <img class="lightbox-content" id="lightbox-image">
-        </div>
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-        ${path === '/' ? `
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const modal = document.getElementById('lightbox-modal');
-                const modalImg = document.getElementById('lightbox-image');
-                const galleryImages = document.querySelectorAll('.shot-card img');
-                const closeBtn = document.querySelector('#lightbox-modal .close');
-                if (galleryImages.length > 0 && modal && modalImg && closeBtn) {
-                    galleryImages.forEach(image => {
-                        image.addEventListener('click', () => {
-                            modal.style.display = "block";
-                            modalImg.src = image.dataset.fullSrc;
-                        });
-                    });
-                    closeBtn.addEventListener('click', () => {
-                        modal.style.display = "none";
-                    });
-                    modal.addEventListener('click', (e) => {
-                        if (e.target === modal) {
-                            modal.style.display = "none";
-                        }
-                    });
-                }
-            });
-        </script>
-        ` : ''}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
 app.post('/api/index-now-submit', async (c) => {
   try {
     const body = await c.req.json();
@@ -1293,6 +1199,101 @@ app.get('/admin-panel/:key', (c) => {
           }
         });
       </script>
+    </body>
+    </html>
+  `;
+
+  return c.html(html);
+});
+
+// 这个必须放最后
+app.get('*', (c) => {
+  let path = new URL(c.req.url).pathname;
+  if (path.length > 1 && path.endsWith('/')) {
+    path = path.slice(0, -1);
+  }
+
+  const pageData = pageDataMap[path];
+
+  if (!pageData) {
+    // Before 404, check if it's a known URL with a trailing slash
+    const pathWithoutSlash = path.endsWith('/') ? path.slice(0, -1) : null;
+    if (pathWithoutSlash && pageDataMap[pathWithoutSlash]) {
+      return c.redirect(pathWithoutSlash, 301);
+    }
+    return c.notFound();
+  }
+
+  const head = generateHead(siteConfig, pageData, path);
+  const header = generateHeader(siteConfig);
+  let mainContent = generatePageBody(pageData);
+  const footer = generateFooter(siteConfig);
+  const commonScripts = generateCommonScripts();
+
+  // Special handling for the homepage to inject the Near Me section
+  if (path === '/') {
+    const nearMeSection = `
+       <section id="near-me">
+        <h2>Find an Olive Garden Near Me! 📍</h2>
+        <p>Craving some delicious Italian food? 🍝 Use the map below to find the nearest Olive Garden restaurant to you! We've got thousands of locations across the country, so there's a good chance there's one just around the corner.</p>
+        <div style="text-align: center; margin: 20px 0;">
+          <iframe
+            src="${siteConfig.maps.url}"
+            width="100%"
+            height="450px"
+            title="Olive Garden Google Map"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <p>For a detailed list of all Olive Garden locations, including addresses and hours, check out our new <a href="/olive-garden-near-me"><strong>Olive Garden Near Me</strong></a> page. We've got all the info you need to get your pasta fix! 🚀</p>
+      </section>
+    `;
+    mainContent = mainContent.replace('</main>', nearMeSection + '</main>');
+  }
+
+  const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+    ${head}
+    <body>
+        ${header}
+        ${mainContent}
+        ${footer}
+        <div id="lightbox-modal">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-image">
+        </div>
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
+        ${commonScripts}
+        ${path === '/' ? `
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const modal = document.getElementById('lightbox-modal');
+                const modalImg = document.getElementById('lightbox-image');
+                const galleryImages = document.querySelectorAll('.shot-card img');
+                const closeBtn = document.querySelector('#lightbox-modal .close');
+                if (galleryImages.length > 0 && modal && modalImg && closeBtn) {
+                    galleryImages.forEach(image => {
+                        image.addEventListener('click', () => {
+                            modal.style.display = "block";
+                            modalImg.src = image.dataset.fullSrc;
+                        });
+                    });
+                    closeBtn.addEventListener('click', () => {
+                        modal.style.display = "none";
+                    });
+                    modal.addEventListener('click', (e) => {
+                        if (e.target === modal) {
+                            modal.style.display = "none";
+                        }
+                    });
+                }
+            });
+        </script>
+        ` : ''}
     </body>
     </html>
   `;
