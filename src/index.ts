@@ -27,15 +27,15 @@ import indexFullMenuData from "../raw/pages/index-full-menu.json";
 const pageDataMap: { [key: string]: any } = {
   '/': indexData,
   '/olive-garden-near-me': nearMeData,
-  // '/olive-garden-drink-menu': drinkMenuData,
-  // '/olive-garden-lunch-menu': lunchMenuData,
-  // '/olive-garden-dinner-menu': dinnerMenuData,
-  // '/olive-garden-dessert-menu': dessertMenuData,
-  // '/olive-garden-catering-menu': cateringMenuData,
-  // '/olive-garden-kids-menu': kidsMenuData,
-  // '/olive-garden-pasta-menu': pastaMenuData,
-  // '/olive-garden-soup-menu': soupMenuData,
-  // '/olive-garden-nutrition-allergen-menu': nutritionAllergenMenuData,
+  '/olive-garden-drink-menu': drinkMenuData,
+  '/olive-garden-lunch-menu': lunchMenuData,
+  '/olive-garden-dinner-menu': dinnerMenuData,
+  '/olive-garden-dessert-menu': dessertMenuData,
+  '/olive-garden-catering-menu': cateringMenuData,
+  '/olive-garden-kids-menu': kidsMenuData,
+  '/olive-garden-pasta-menu': pastaMenuData,
+  '/olive-garden-soup-menu': soupMenuData,
+  '/olive-garden-nutrition-allergen-menu': nutritionAllergenMenuData,
   '/contact-olive-garden': contactUsData,
   '/privacy-policy': privacyPolicyData,
   '/terms-of-service': termsOfServiceData,
@@ -85,7 +85,7 @@ const cacheMiddleware: MiddlewareHandler = async (c, next) => {
 };
 
 // Apply the middleware to all requests
-// app.use(cacheMiddleware);
+app.use(cacheMiddleware);
 
 
 // --- Utility Functions ---
