@@ -23,6 +23,28 @@ import couponsData from "../raw/coupons.json";
 import holidayHoursData from "../raw/holiday-hours.json";
 import masterMenuData from "../raw/master-menu-data.json";
 
+const pageDataMap: { [key: string]: any } = {
+  '/': menuData,
+  '/olive-garden-drink-menu': drinkMenuData,
+  '/olive-garden-near-me': nearMeData,
+  '/olive-garden-lunch-menu': lunchMenuData,
+  '/olive-garden-dinner-menu': dinnerMenuData,
+  '/olive-garden-dessert-menu': dessertMenuData,
+  '/olive-garden-catering-menu': cateringMenuData,
+  '/olive-garden-kids-menu': kidsMenuData,
+  '/olive-garden-pasta-menu': pastaMenuData,
+  '/olive-garden-soup-menu': soupMenuData,
+  '/olive-garden-nutrition-allergen-menu': nutritionAllergenMenuData,
+  '/contact-olive-garden': contactUsData,
+  '/privacy-policy': privacyPolicyData,
+  '/terms-of-service': termsOfServiceData,
+  '/olive-garden-specials': specialsData,
+  '/olive-garden-happy-hours': happyHoursData,
+  '/olive-garden-coupons': couponsData,
+  '/olive-garden-holiday-hours': holidayHoursData,
+  '/olive-garden-hawaii': hawaiiData,
+};
+
 const app = new Hono()
 
 // --- Caching Middleware ---
@@ -908,45 +930,9 @@ Sitemap: ${joinUrlPaths(siteConfig.baseURL, 'sitemap.xml')}`;
 app.get('/sitemap.xml', (c) => {
   const today = new Date().toISOString().split('T')[0];
 
-  const pageDataMap: { [key: string]: any } = {
-    '/': menuData,
-    '/olive-garden-drink-menu': drinkMenuData,
-    '/olive-garden-near-me': nearMeData,
-    '/olive-garden-lunch-menu': lunchMenuData,
-    '/olive-garden-dinner-menu': dinnerMenuData,
-    '/olive-garden-dessert-menu': dessertMenuData,
-    '/olive-garden-catering-menu': cateringMenuData,
-    '/olive-garden-kids-menu': kidsMenuData,
-    '/olive-garden-pasta-menu': pastaMenuData,
-    '/olive-garden-soup-menu': soupMenuData,
-    '/olive-garden-nutrition-allergen-menu': nutritionAllergenMenuData,
-    '/contact-olive-garden': contactUsData,
-    '/privacy-policy': privacyPolicyData,
-    '/terms-of-service': termsOfServiceData,
-    '/olive-garden-specials': specialsData,
-    '/olive-garden-happy-hours': happyHoursData,
-    '/olive-garden-coupons': couponsData,
-    '/olive-garden-holiday-hours': holidayHoursData
-  };
+  const allUrls = Object.keys(pageDataMap);
 
-  const extractUrls = (navItems: any[]): string[] => {
-    let urls: string[] = [];
-    for (const item of navItems) {
-      if (item.url) {
-        urls.push(item.url);
-      }
-      if (item.submenu) {
-        urls = urls.concat(extractUrls(item.submenu));
-      }
-    }
-    return urls;
-  };
-
-  const headerUrls = extractUrls(siteConfig.navigation.header);
-  const footerUrls = extractUrls(siteConfig.navigation.footer);
-  const allUrls = new Set(['/', ...headerUrls, ...footerUrls]);
-
-  const sitemapEntries = Array.from(allUrls).map(path => {
+  const sitemapEntries = allUrls.map(path => {
     const pageData = pageDataMap[path];
     const fullUrl = joinUrlPaths(siteConfig.baseURL, path);
     const lastMod = pageData?.metadata?.datePublished || today;
@@ -1000,14 +986,32 @@ app.get("/ads.txt", (c) => {
 
 })
 
-app.get('/', (c) => {
-  const head = generateHead(siteConfig, menuData, '/');
+app.get('*', (c) => {
+  let path = new URL(c.req.url).pathname;
+  if (path.length > 1 && path.endsWith('/')) {
+    path = path.slice(0, -1);
+  }
+
+  const pageData = pageDataMap[path];
+
+  if (!pageData) {
+    // Before 404, check if it's a known URL with a trailing slash
+    const pathWithoutSlash = path.endsWith('/') ? path.slice(0, -1) : null;
+    if (pathWithoutSlash && pageDataMap[pathWithoutSlash]) {
+      return c.redirect(pathWithoutSlash, 301);
+    }
+    return c.notFound();
+  }
+
+  const head = generateHead(siteConfig, pageData, path);
   const header = generateHeader(siteConfig);
-  let mainContent = generatePageBody(menuData);
+  let mainContent = generatePageBody(pageData);
   const footer = generateFooter(siteConfig);
   const commonScripts = generateCommonScripts();
 
-  const nearMeSection = `
+  // Special handling for the homepage to inject the Near Me section
+  if (path === '/') {
+    const nearMeSection = `
        <section id="near-me">
         <h2>Find an Olive Garden Near Me! 📍</h2>
         <p>Craving some delicious Italian food? 🍝 Use the map below to find the nearest Olive Garden restaurant to you! We've got thousands of locations across the country, so there's a good chance there's one just around the corner.</p>
@@ -1025,15 +1029,17 @@ app.get('/', (c) => {
         </div>
         <p>For a detailed list of all Olive Garden locations, including addresses and hours, check out our new <a href="/olive-garden-near-me"><strong>Olive Garden Near Me</strong></a> page. We've got all the info you need to get your pasta fix! 🚀</p>
       </section>
-  `;
+    `;
+    mainContent = mainContent.replace('</main>', nearMeSection + '</main>');
+  }
 
-  const finalHtml = `
+  const html = `
     <!DOCTYPE html>
     <html lang="en">
     ${head}
     <body>
         ${header}
-        ${mainContent.replace('</main>', nearMeSection + '</main>')}
+        ${mainContent}
         ${footer}
         <div id="lightbox-modal">
             <span class="close">&times;</span>
@@ -1041,6 +1047,7 @@ app.get('/', (c) => {
         </div>
         <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
         ${commonScripts}
+        ${path === '/' ? `
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const modal = document.getElementById('lightbox-modal');
@@ -1065,444 +1072,13 @@ app.get('/', (c) => {
                 }
             });
         </script>
-    </body>
-    </html>
-  `;
-
-  return c.html(finalHtml);
-})
-
-app.get('/olive-garden-drink-menu', (c) => {
-  const head = generateHead(siteConfig, drinkMenuData, '/olive-garden-drink-menu');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(drinkMenuData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
+        ` : ''}
     </body>
     </html>
   `;
 
   return c.html(html);
 });
-
-app.get('/olive-garden-near-me', (c) => {
-  const head = generateHead(siteConfig, nearMeData, '/olive-garden-near-me');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(nearMeData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/olive-garden-lunch-menu', (c) => {
-  const head = generateHead(siteConfig, lunchMenuData, '/olive-garden-lunch-menu');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(lunchMenuData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/olive-garden-dinner-menu', (c) => {
-  const head = generateHead(siteConfig, dinnerMenuData, '/olive-garden-dinner-menu');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(dinnerMenuData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/olive-garden-dessert-menu', (c) => {
-  const head = generateHead(siteConfig, dessertMenuData, '/olive-garden-dessert-menu');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(dessertMenuData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/olive-garden-catering-menu', (c) => {
-  const head = generateHead(siteConfig, cateringMenuData, '/olive-garden-catering-menu');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(cateringMenuData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/olive-garden-kids-menu', (c) => {
-  const head = generateHead(siteConfig, kidsMenuData, '/olive-garden-kids-menu');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(kidsMenuData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/olive-garden-pasta-menu', (c) => {
-  const head = generateHead(siteConfig, pastaMenuData, '/olive-garden-pasta-menu');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(pastaMenuData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/olive-garden-soup-menu', (c) => {
-  const head = generateHead(siteConfig, soupMenuData, '/olive-garden-soup-menu');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(soupMenuData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/olive-garden-nutrition-allergen-menu', (c) => {
-  const head = generateHead(siteConfig, nutritionAllergenMenuData, '/olive-garden-nutrition-allergen-menu');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(nutritionAllergenMenuData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/contact-olive-garden', (c) => {
-  const head = generateHead(siteConfig, contactUsData, '/contact-olive-garden');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(contactUsData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/privacy-policy', (c) => {
-  const head = generateHead(siteConfig, privacyPolicyData, '/privacy-policy');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(privacyPolicyData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/terms-of-service', (c) => {
-  const head = generateHead(siteConfig, termsOfServiceData, '/terms-of-service');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(termsOfServiceData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/olive-garden-specials', (c) => {
-  const head = generateHead(siteConfig, specialsData, '/olive-garden-specials');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(specialsData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/olive-garden-happy-hours', (c) => {
-  const head = generateHead(siteConfig, happyHoursData, '/olive-garden-happy-hours');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(happyHoursData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/olive-garden-coupons', (c) => {
-  const head = generateHead(siteConfig, couponsData, '/olive-garden-coupons');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(couponsData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get('/olive-garden-holiday-hours', (c) => {
-  const head = generateHead(siteConfig, holidayHoursData, '/olive-garden-holiday-hours');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(holidayHoursData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-});
-
-app.get("/olive-garden-hawaii",(c)=>{
-  const head = generateHead(siteConfig, hawaiiData, '/olive-garden-hawaii');
-  const header = generateHeader(siteConfig);
-  const mainContent = generatePageBody(hawaiiData);
-  const footer = generateFooter(siteConfig);
-  const commonScripts = generateCommonScripts();
-
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    ${head}
-    <body>
-        ${header}
-        ${mainContent}
-        ${footer}
-        <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">▲</button>
-        ${commonScripts}
-    </body>
-    </html>
-  `;
-
-  return c.html(html);
-})
 
 app.post('/api/index-now-submit', async (c) => {
   try {
@@ -1517,39 +1093,7 @@ app.post('/api/index-now-submit', async (c) => {
     }
 
     // 2. Get URL List
-    const pageDataMap: { [key: string]: any } = {
-      '/': menuData,
-      '/olive-garden-drink-menu': drinkMenuData,
-      '/olive-garden-near-me': nearMeData,
-      '/olive-garden-lunch-menu': lunchMenuData,
-      '/olive-garden-dinner-menu': dinnerMenuData,
-      '/olive-garden-dessert-menu': dessertMenuData,
-      '/olive-garden-catering-menu': cateringMenuData,
-      '/olive-garden-kids-menu': kidsMenuData,
-      '/olive-garden-pasta-menu': pastaMenuData,
-      '/olive-garden-soup-menu': soupMenuData,
-      '/olive-garden-nutrition-allergen-menu': nutritionAllergenMenuData,
-      '/contact-olive-garden': contactUsData,
-      '/privacy-policy': privacyPolicyData,
-      '/terms-of-service': termsOfServiceData,
-      '/olive-garden-specials': specialsData,
-      '/olive-garden-happy-hours': happyHoursData,
-      '/olive-garden-coupons': couponsData,
-      '/olive-garden-holiday-hours': holidayHoursData,
-      '/olive-garden-hawaii': hawaiiData,
-    };
-    const extractUrls = (navItems: any[]): string[] => {
-      let urls: string[] = [];
-      for (const item of navItems) {
-        if (item.url) { urls.push(item.url); }
-        if (item.submenu) { urls = urls.concat(extractUrls(item.submenu)); }
-      }
-      return urls;
-    };
-    const headerUrls = extractUrls(siteConfig.navigation.header);
-    const footerUrls = extractUrls(siteConfig.navigation.footer);
-    const allRelativeUrls = new Set(['/', ...headerUrls, ...footerUrls]);
-    const allFullUrls = Array.from(allRelativeUrls).map(path => joinUrlPaths(baseURL, path));
+    const allFullUrls = Object.keys(pageDataMap).map(path => joinUrlPaths(baseURL, path));
 
     // 3. Construct IndexNow Payload
     const payload = {
@@ -1595,46 +1139,8 @@ app.get('/admin-panel/:key', (c) => {
     return c.notFound();
   }
 
-  // --- Logic to get all URLs (copied from sitemap) ---
-  const pageDataMap: { [key: string]: any } = {
-    '/': menuData,
-    '/olive-garden-drink-menu': drinkMenuData,
-    '/olive-garden-near-me': nearMeData,
-    '/olive-garden-lunch-menu': lunchMenuData,
-    '/olive-garden-dinner-menu': dinnerMenuData,
-    '/olive-garden-dessert-menu': dessertMenuData,
-    '/olive-garden-catering-menu': cateringMenuData,
-    '/olive-garden-kids-menu': kidsMenuData,
-    '/olive-garden-pasta-menu': pastaMenuData,
-    '/olive-garden-soup-menu': soupMenuData,
-    '/olive-garden-nutrition-allergen-menu': nutritionAllergenMenuData,
-    '/contact-olive-garden': contactUsData,
-    '/privacy-policy': privacyPolicyData,
-    '/terms-of-service': termsOfServiceData,
-    '/olive-garden-specials': specialsData,
-    '/olive-garden-happy-hours': happyHoursData,
-    '/olive-garden-coupons': couponsData,
-    '/olive-garden-holiday-hours': holidayHoursData,
-    '/olive-garden-hawaii': hawaiiData,
-  };
-
-  const extractUrls = (navItems: any[]): string[] => {
-    let urls: string[] = [];
-    for (const item of navItems) {
-      if (item.url) {
-        urls.push(item.url);
-      }
-      if (item.submenu) {
-        urls = urls.concat(extractUrls(item.submenu));
-      }
-    }
-    return urls;
-  };
-
-  const headerUrls = extractUrls(siteConfig.navigation.header);
-  const footerUrls = extractUrls(siteConfig.navigation.footer);
-  const allRelativeUrls = new Set(['/', ...headerUrls, ...footerUrls]);
-  const allFullUrls = Array.from(allRelativeUrls).map(path => joinUrlPaths(baseURL, path));
+  // --- Logic to get all URLs ---
+  const allFullUrls = Object.keys(pageDataMap).map(path => joinUrlPaths(baseURL, path));
 
   // --- Generate HTML page ---
   const html = `
