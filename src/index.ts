@@ -80,7 +80,7 @@ const cacheMiddleware: MiddlewareHandler = async (c, next) => {
 };
 
 // Apply the middleware to all requests
-app.use(cacheMiddleware);
+// app.use(cacheMiddleware);
 
 
 // --- Utility Functions ---
@@ -240,6 +240,19 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
       const category = categoriesToRender[categoryName];
       if (!category.items) continue;
 
+      const parsePriceForSchema = (priceString: string | number | undefined): string | undefined => {
+        if (typeof priceString === 'number') return String(priceString);
+        if (typeof priceString !== 'string') return undefined;
+        const match = priceString.match(/\$?(\d+\.?\d*)/);
+        return match ? match[1] : undefined;
+      };
+
+      const parseCaloriesForSchema = (calorieString: string | undefined): string | undefined => {
+        if (!calorieString) return undefined;
+        const match = calorieString.match(/(\d{1,3}(,\d{3})*|\d+)/);
+        return match ? `${match[0].replace(/,/g, '')} Cal` : undefined;
+      };
+
       const menuItems = category.items.map((item: any) => ({
         "@type": "MenuItem",
         "name": item.title || item.name,
@@ -247,14 +260,14 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
         "image": item.image_url ? joinUrlPaths(baseURL, item.image_url) : undefined,
         "offers": {
           "@type": "Offer",
-          "price": item.price,
+          "price": parsePriceForSchema(item.displayPrice || item.price),
           "priceCurrency": "USD"
         },
         "nutrition": {
           "@type": "NutritionInformation",
-          "calories": item.calories ? `${item.calories} Cal` : undefined
+          "calories": parseCaloriesForSchema(item.nutritionalFDAMessage || item.calories)
         }
-      })).filter((item: any) => item.name); // Ensure item has a name
+      })).filter((item: any) => item.name && item.offers.price);
 
       if (menuItems.length > 0) {
         const menuSchema = {
@@ -376,7 +389,7 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
             }
             
             .menu-card-content { padding: 15px; }
-            .menu-card h3 , .menu-card h4 { font-size: 1.2rem; margin-top: 0; min-height: 2.9rem;}
+            .menu-card h3 , .menu-card h4 { font-size: 1.2rem; margin-top: 0;margin-bottom: 0; min-height: 2.9rem;}
             
             .price-calories-container {
                 display: flex;
@@ -385,7 +398,7 @@ function generateHead(siteConfig: any, data: any, pagePath: string): string {
                 margin-top: 15px;
             }
             .price { font-size: 1.1rem; font-weight: bold; color: var(--accent); }
-            .calories-badge { color: var(--text-secondary); font-size: 0.9rem; font-weight: 500; }
+            .calories-badge { color: var(--text-secondary); font-size: 0.9rem; font-weight: 500;max-width: 50% }
             .category-description { margin: -5px 0 25px; font-style: italic; color: var(--text-secondary); text-align: left; }
             .category-description strong { color: var(--text-primary); font-weight: 600; }
             .review-text {
@@ -670,6 +683,7 @@ const renderDataTable = (data: any, suffix = "of Olive Garden Menu", coreKeyword
   return `
     <section id="${toKebabCase(data.title || '')}">
       <h2>${data.title || ''}</h2>
+      ${data?.description ? `<p class="category-description">${data.description}</p>` : ''}
       ${Object.keys(categoriesToRender).map(categoryName => {
     const categoryData = categoriesToRender[categoryName];
     const recommendedItemName = categoryData.recommended;
@@ -688,11 +702,11 @@ const renderDataTable = (data: any, suffix = "of Olive Garden Menu", coreKeyword
                     ${item.review ? `<p class="review-text">${item.review}</p>` : ''}
                     <div class="price-calories-container">
                       <span class="price">${item.displayPrice || ''}</span>
-                      <span class="calories-badge">${item.nutritionalFDAMessage || ''}</span>
+                      <span class="calories-badge">${(item.nutritionalFDAMessage || '').split('|').map(part => part.trim()).join('<br>')}</span>
                     </div>
                     ${item.indicators && item.indicators.bottomIndicators && item.indicators.bottomIndicators.length > 0 ?
-    `<div class="indicator-badge">${item.indicators.bottomIndicators[0].tooltipText}</div>` : ''
-  }
+      `<div class="indicator-badge">${item.indicators.bottomIndicators[0].tooltipText}</div>` : ''
+    }
                   </div>
                 </div>
               `).join('')}

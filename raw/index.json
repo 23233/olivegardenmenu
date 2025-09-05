@@ -131,6 +131,7 @@
       "type": "dataTable",
       "data": {
         "title": "The Full Olive Garden Menu (September 2025)",
+        "description": "Source: New York store. Prices may differ slightly in other locations. Updated: September.",
         "categoriesDataUrl": "raw/index-full-menu.json",
         "categoriesFilter": "*"
       }
