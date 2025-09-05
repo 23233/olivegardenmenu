@@ -83,7 +83,9 @@ const cacheMiddleware: MiddlewareHandler = async (c, next) => {
 };
 
 // Apply the middleware to all requests
-// app.use(cacheMiddleware);
+if (typeof caches !== 'undefined' && caches.default) {
+  app.use(cacheMiddleware);
+}
 
 
 // --- Utility Functions ---
