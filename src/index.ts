@@ -42,7 +42,7 @@ const pageDataMap: { [key: string]: any } = {
   '/olive-garden-happy-hours': happyHoursData,
   '/olive-garden-coupons': couponsData,
   '/olive-garden-holiday-hours': holidayHoursData,
-  '/olive-garden-hawaii': hawaiiData,
+  // '/olive-garden-hawaii': hawaiiData,
 };
 const menuDataSources: { [key: string]: any } = {
   'raw/hawai-full-menu.json': hawaiiFullMenuData,
