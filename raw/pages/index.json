@@ -30,7 +30,7 @@
     {
       "type": "imageGallery",
       "data": {
-        "title": "Customer Photos of Olive Garden Dishes! 📸",
+        "title": "Customer Photos of Olive Garden Menu - Dishes! 📸",
         "description": "Check out these real-life shots from Olive Garden restaurants! See the deliciousness for yourself!",
         "items": [
           {
@@ -94,7 +94,7 @@
     {
       "type": "richText",
       "data": {
-        "title": "Still Not Convinced? Watch This! 😉",
+        "title": "Still Not Convinced? Watch This! Olive Garden Menu",
         "htmlContent": "<div class=\"video-container\"><div class=\"youtube-facade\" data-youtube-id=\"EI-fZwltjYs\" style=\"background-image:url('https://i.ytimg.com/vi/EI-fZwltjYs/hqdefault.jpg');\" title=\"Click to play video\"><div class=\"play-button\"></div></div></div>"
       }
     },
@@ -102,8 +102,8 @@
     {
       "type": "dataTable",
       "data": {
-        "title": "The Full Olive Garden Menu (September 2025)",
-        "description": "Source: New York store. Prices may differ slightly in other locations. Updated: September.",
+        "title": "The Full Olive Garden Menu (October 2025)",
+        "description": "Source: New York store. Prices may differ slightly in other locations. Updated: October.",
         "categoriesDataUrl": "raw/index-full-menu.json",
         "categoriesFilter": "*"
       }
@@ -178,7 +178,7 @@
           },
           {
             "question": "Does Olive Garden still have the Never Ending pasta 2025?",
-            "answer": "The moment we've all been waiting for! 🍝 The Never-Ending Pasta Bowl typically returns in the fall. Since it's September 2025, our pasta senses are tingling! It hasn't been officially announced yet, but you should keep your eyes peeled and your forks ready. It's the best deal in pasta history and it's coming back... we can feel it! 🚀"
+            "answer": "The moment we've all been waiting for! 🍝 The Never-Ending Pasta Bowl typically returns in the fall. Since it's October 2025, our pasta senses are tingling! It hasn't been officially announced yet, but you should keep your eyes peeled and your forks ready. It's the best deal in pasta history and it's coming back... we can feel it! 🚀"
           },
 		  {
             "question": "What's included in Olive Garden's 2 for $25 deal?",
@@ -191,7 +191,7 @@
       "type": "richText",
       "data": {
         "title": "",
-        "htmlContent": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The carbs are coming! The carbs are coming! <a href=\"https://t.co/gLawX1EeS7\">pic.twitter.com/gLawX1EeS7</a></p>&mdash; Olive Garden (@olivegarden) <a href=\"https://twitter.com/olivegarden/status/1959631862340391390?ref_src=twsrc%5Etfw\">September 24, 2025</a></blockquote>"
+        "htmlContent": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The carbs are coming! The carbs are coming! <a href=\"https://t.co/gLawX1EeS7\">pic.twitter.com/gLawX1EeS7</a></p>&mdash; Olive Garden (@olivegarden) <a href=\"https://twitter.com/olivegarden/status/1959631862340391390?ref_src=twsrc%5Etfw\">October 24, 2025</a></blockquote>"
       }
     }
   ]
