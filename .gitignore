@@ -4,3 +4,4 @@ logs
 dist
 .env
 node_modules
+.wrangler/
