@@ -5,3 +5,6 @@
 
 ### 做的好的
 - https://olivegardenmenue.com
+
+### 记录
+- 因hawaii 跟 主页关键词打架 所以暂时放弃

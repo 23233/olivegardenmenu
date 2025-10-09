@@ -78,10 +78,16 @@
         * 此JSON块**必须**包含一个`@graph`数组，至少定义以下Schema类型：`WebSite`, `Organization` (包含logo), `WebPage` (
           包含 `primaryImageOfPage`), `Article` (如果适用), 以及 `Person` (作者)。如果页面包含FAQ，还需生成`FAQPage`
           Schema。
+        * **Schema 类型自动检测模块 (Auto Schema Type Detection)**
+            * 根据蓝图中 contentBlocks 的 `type` 自动决定是否添加 `Menu`, `Product`, 或 `Restaurant` Schema。
     * **谷歌集成**: 仅当`site.json`中存在ID时，才注入Google Analytics/Adsense脚本。
     * **CSS生成**: 在`<style>`标签内，使用确定的`colors`对象定义CSS变量，并编写所有高对比度、移动优先的CSS规则。字体使用系统默认字体栈。
         * 字体:
           `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";`
+    * **关键词一致性校验 (Keyword Consistency Check)**:
+        * `<title>`、H1、`meta[name=description]`、`og:title`、`og:description`、`JSON-LD.WebPage.name` 必须包含
+          `metadata.coreKeyword`。
+        * 若任何一项缺失或拼写错误，生成器应进行解决.
 
 3. **生成`<body>`部分 (Generate `<body>`)**:
     * 使用`site.json`的`navigation`数据渲染全局`<header>`。
@@ -126,6 +132,13 @@
 * **个性: "懂行的超级粉丝 (Savvy Foodie Superfan)"**
     * **语言**: 热情有趣，多用表情符号🍪🔥🚀，像顶级YouTuber脚本。
     * **语气示例**: 不用 "View our products"，用 "Check out this week's legendary lineup 👇"。
+    * **语气调节器 (Tone Balancer)**:
+        * 对 `metadata.coreKeyword` 属于品牌、机构、或官方词时（如 Olive Garden, Starbucks 等），应降低 slang 和 emoji 密度。
+        * 允许最多 1 个 emoji 出现在 `<title>`，最多 2 个出现在 `<meta description>`。
+        * 优先使用 “authority + enthusiasm” 语气，而非 “shock + meme”。
+          * 示例:
+            * 好的: ✅ Olive Garden Menu 2025 – Every Pasta & Price, Updated Weekly 🍝
+            * 差的: ❌ Olive Garden Menu? 👀 You Won’t Believe These Prices! 🔥
 
 * **视觉: "内容为王，视觉点睛 (Content-First, Visually Enhanced)"**
     * **布局哲学**: 视觉焦点始终落在文本上。
@@ -157,6 +170,19 @@
     * **本地化SEO**: 思考目标语言用户的搜索意图。例如，西班牙语用户搜索的可能是 `menú semanal de crumbl`
       而非直译。你的文案需要反映这种本地化意图。
     * **CTA调整**: 号召性用语(CTA)在不同文化中效果不同。你需要选择最适合当地文化的表达方式。
+
+* **版本同步约束 (Version Sync Enforcement)**:
+    * 每次重新生成页面时，自动对比 `/raw/pages/{slug}.json` 中的 `metadata.dateModified`。
+    * 若与今日日期不符，则自动更新并写入日志。
+    * 在生成HTML时，为 `<head>` 自动注入：
+      `<meta property="article:modified_time" content="{metadata.dateModified}">`
+
+## 约束系统 (Constraints)
+- [SEO] 关键词一致性: title/meta/H1/OG/Schema 必须包含 coreKeyword
+- [SEO] Robots/Hreflang/Canonical 必须存在
+- [Performance] 所有图片 lazy-load + descriptive alt
+- [Content] 首屏 H1 必须位于 header 后第一个可见节点
+- [Data] 所有 page.json 需包含 datePublished/dateModified
 
 ## 补充 (Supplementary Info)
 
