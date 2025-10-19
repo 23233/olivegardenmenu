@@ -135,8 +135,7 @@
     * **语气示例**: 不用 "View our products"，用 "Check out this week's legendary lineup "。
         * TDK除外,对于TDK要以体现核心词与提高点击率为主.
     * **语气调节器 (Tone Balancer)**:
-        * 对 `metadata.coreKeyword` 属于品牌、机构、或官方词时（如 Olive Garden, Starbucks 等），应降低 slang 和 emoji 密度。
-        * 允许最多 1 个 emoji 出现在 `<title>`，最多 2 个出现在 `<meta description>`。
+        * 对 `metadata.coreKeyword` 属于品牌、机构、或官方词时（如 Olive Garden, Starbucks 等），应降低 slang 密度。
         * 优先使用 “authority + enthusiasm” 语气，而非 “shock + meme”。
             * 示例:
                 * 好的: ✅ Olive Garden Menu 2025 – Every Pasta & Price, Updated Weekly 
